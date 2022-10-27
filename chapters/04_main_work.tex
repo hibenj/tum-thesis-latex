@@ -1,0 +1,22 @@
+\chapter{Methodology}\label{chapter:Methodology}
+
+\section{Input Network}
+Reduces area and wire crossings.\\
+Sorts the inputs.\\
+Idea is simple place Fanout nodes at the beginning since they produce the most crossings\\
+Needs a conditional east west coloring.\\
+
+\section{Majority Gates Placement Network}
+Reference to the importance of this part in the QCA technology. \\
+Point out that 2DD-Wave is still used but clocking scheme is adjusted to place majority gates.\\
+This is why buffers have to be used.\\
+Point out the overhead that is produced by buffers.\\
+Maybe assumption why it doesn't make sense to only use RES. (you lose really much space for the cells which are no majority gates)
+
+
+\section{Sequential Circuits Placement}
+
+Importance of sequential circuits.\\
+Point out how the registers are implemented.\\
+Show how the distribution network is generated, where Ris and Ros are placed and how they are treated within the network.\\
+Make clear that this implementation is slowing down the circuit significantly.
