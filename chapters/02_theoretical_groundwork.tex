@@ -252,17 +252,60 @@ In order to transfer information, cells are placed side by side, whereby the pol
 		\draw (0.9+\x,0.3) circle (2mm);
 		\draw (0.3+\x,0.9) circle (2mm);
 		\draw [fill = black](0.9+\x,0.9) circle (2mm);
+		
+		%One QCA-Cell
+		\def\x{4.8}
+		\draw[rounded corners] (\x, 0) rectangle (1.2 + \x, 1.2) {};
+		\draw [fill = black](0.3+\x,0.3) circle (2mm);
+		\draw (0.9+\x,0.3) circle (2mm);
+		\draw (0.3+\x,0.9) circle (2mm);
+		\draw [fill = black](0.9+\x,0.9) circle (2mm);
 		\node (C1) at (1.5+\x,0.6) {$1$};
 		
 		
 	\end{tikzpicture} 
 	
-	\caption{Adjacent QCA-cells forming a wire} \label{fig:QCAWire}
+	\caption{Adjacent QCA-cells forming a wire segment} \label{fig:QCAWire}
 \end{figure}
 
-\subsection{Clocking}
+\subsection{Information Transfer}
 
+As already mentioned the data transfer in the QCA paradigm is accomplished by cell-to-cell interaction. The leftmost cell has a fixed polarization and is called the input, while the right most cell represents the output of the simplified  QCA-circuit. Looking at the wire segment in figure \ref{fig:QCAWire}, we can see that in the ground state, all neighboring cells have the same polarization. This means that, with this given input, there exists exactly one configuration of cell polarization resulting in the minimum state energy of the wire. When the input of the system is changed, the systems energy rises, as depicted in figure \ref{fig:info_pass}. It results from the so called \textit{kink}-energy, which describes the energy difference between two QCA-cells with opposing polarization. In this state the \textit{kink} moves along the cells. While the \textit{kink}-energy stays the same, an increasing number of cells results in a rising degeneracy of the excited state. This again means, that the system is in an excited state at non-zero temperature. After time $\tau$ the system dissipates again into the ground state, with newly computed outputs.\\
 
+The described process is called abrupt switching with dissipative coupling to the environment and can be summarized in the following three steps:
+\begin{enumerate}
+	\item Write the input bit by fixing the polarization state of
+	cells along the input edge.
+	\item Allow the array to relax to its ground state while the
+	new inputs are kept fixed.
+	\item Non-invasively read the results of the computation
+	by sensing the polarization state of cells.
+	%this is just copied
+\end{enumerate}
+
+In the second step, highly complex dissipation mechanisms like phonon and plasmon emission take place, making it nearly impossible to get a complete theoretical description of the system. The dissipation time $\tau$ is therefore determined via experiments.\\
+The first and third step require an environment, which provides the features for fixing inputs and sensing the output polarization. Such a system has to be integrated with classical CMOS devices as seen in Figure \ref{fig:QCA_array}.\\
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.6]{QCA_array}
+	\caption{Schematic of a combined QCA and CMOS sytem.} 
+	\label{fig:QCA_array}
+\end{figure}
+
+In order to implement a full QCA-system without CMOS-components, the QCA-Array has to be divided into smaller decoupled sub-regions. Therefore an adiabatic switching or rather a clocking is introduced. The clocking utilizes an external signal, the clock, to activate and deactivate said regions. The approach first used, decreases the interdot barriers of all cells in a region, when applying a new input. When all cells in the region are stable, the barriers are raised again, while the barriers of the subsequent region are lowered simultaneously. This way the ground state gradually propagates through the whole circuit. Today's used approaches utilize electrical fields, created by an
+external clock generator and distributed to the cells through the device substrate
+using embedded electrodes. Thereby the energy level of the \textit{null} state can be controlled, resulting in a equivalent effect as in the former approach.
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.6]{information_passing}
+	\caption{Schematic representation of a metastable state. Instead
+		of relaxing correctly to the new ground state, a system may be
+		delayed in an excited state due to an inability to tunnel through a
+		kinetic barrier.} 
+	\label{fig:info_pass}
+\end{figure}
 
 \begin{figure}
 	\centering
@@ -277,6 +320,7 @@ In order to transfer information, cells are placed side by side, whereby the pol
 			\draw (0.3/3+ \x + \xx,0.9/3) circle (0.65mm);
 			\draw (0.9/3+ \x + \xx,0.9/3) circle (0.65mm);
 		}
+	\node[text=black] (A1) at (2,-0.65) {$1$};
 	\end{tikzpicture}%
 	\begin{tikzpicture}
 		\draw[rounded corners, fill=lightgray] (-0.05, -0.05 - 0.85) rectangle (2.3-0.05, 2.3-0.05 - 0.85){};
@@ -289,6 +333,7 @@ In order to transfer information, cells are placed side by side, whereby the pol
 			\draw (0.3/3+ \x + \xx,0.9/3) circle (0.65mm);
 			\draw (0.9/3+ \x + \xx,0.9/3) circle (0.65mm);
 		}
+		\node[text=black] (A1) at (2,-0.65) {$2$};
 	\end{tikzpicture}%
 	\begin{tikzpicture}
 		\draw[rounded corners, fill=gray] (-0.05, -0.05 - 0.85) rectangle (2.3-0.05, 2.3-0.05 - 0.85){};
@@ -301,6 +346,7 @@ In order to transfer information, cells are placed side by side, whereby the pol
 			\draw (0.3/3+ \x + \xx,0.9/3) circle (0.65mm);
 			\draw (0.9/3+ \x + \xx,0.9/3) circle (0.65mm);
 		}
+	\node[text=white] (A1) at (2,-0.65) {$3$};
 	\end{tikzpicture}%
 	\begin{tikzpicture}
 		\draw[rounded corners, fill=darkgray] (-0.05, -0.05 - 0.85) rectangle (2.3-0.05, 2.3-0.05 - 0.85){};
@@ -313,6 +359,7 @@ In order to transfer information, cells are placed side by side, whereby the pol
 			\draw (0.3/3+ \x + \xx,0.9/3) circle (0.65mm);
 			\draw (0.9/3+ \x + \xx,0.9/3) circle (0.65mm);
 		}
+	\node[text=white] (A1) at (2,-0.65) {$4$};
 	\end{tikzpicture}%
 	\begin{tikzpicture}
 		\draw[rounded corners] (-0.05, -0.05 - 0.85) rectangle (2.3-0.05, 2.3-0.05 - 0.85){};
@@ -325,9 +372,212 @@ In order to transfer information, cells are placed side by side, whereby the pol
 			\draw (0.3/3+ \x + \xx,0.9/3) circle (0.65mm);
 			\draw (0.9/3+ \x + \xx,0.9/3) circle (0.65mm);
 		}
+		\node[text=black] (A1) at (2,-0.65) {$1$};
 	\end{tikzpicture}%
 	
 	\caption{QCA-Cell wire with corresponding clock zones} \label{fig:QCAClock}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usetikzlibrary{arrows,positioning,shapes}
+
+\tikzset{
+	pics/cici/.style args={#1}{
+		code = {
+			\draw [fill = #1](0.3/3,0.3/3) circle (0.65mm);
+}}}
+
+\begin{tikzpicture}[auto]
+       % above initial
+
+	\draw pic {cici=pink};
+\end{tikzpicture}
+
+
+\begin{figure}
+\tikzset{
+	pics/cico/.style args={#1/#2/#3}{
+		code = {
+			\draw[rounded corners = 0.3mm] (#2 , #3) rectangle (1.2/3 + #2, 1.2/3 +#3){};
+			\draw[fill = #1](0.3/3+ #2 ,0.3/3+ #3) circle (0.65mm);
+			\draw (0.9/3+ #2 ,0.3/3+ #3) circle (0.65mm);
+			\draw (0.3/3+ #2 ,0.9/3+ #3) circle (0.65mm);
+			\draw[fill = #1] (0.9/3+ #2 ,0.9/3+ #3) circle (0.65mm);
+}}}
+	\centering
+	\begin{tikzpicture}[rotate=90, scale=0.9, every node/.style={scale=0.9}]
+		\draw[rounded corners] (-0.05, -0.05 - 0.85) rectangle (2.3-0.05, 2.3-0.05 - 0.85){};
+		\foreach \x/\xx in {0/0 ,0.4/0.05, 0.8/0.1, 1.2/0.15, 1.6/0.2}
+		{
+			
+			\draw[rounded corners = 0.3mm, fill=SpringGreen] (\x + \xx, 0) rectangle (\xx + 1.2/3 + \x, 1.2/3){};
+			\draw (0.3/3+ \x + \xx,0.3/3) circle (0.65mm);
+			\draw (0.9/3+ \x + \xx,0.3/3) circle (0.65mm);
+			\draw (0.3/3+ \x + \xx,0.9/3) circle (0.65mm);
+			\draw (0.9/3+ \x + \xx,0.9/3) circle (0.65mm);
+		}
+		\node[text=black] (A1) at (0.2,-0.65) {$1$};
+	\end{tikzpicture}
+\begin{tikzpicture}
+	
+	% horizontal axis
+	\draw[->] (0,0) -- (10,0) node[anchor=north] {};
+	
+	% vertical axis
+	\draw[->] (0,0) -- (0,1.5) node[anchor=west] {$E$};
+	% vertical lines
+	\draw[dotted] (2,0) -- (2,1.4);
+	\draw[dotted] (4,0) -- (4,1.4);
+	\draw[dotted] (6,0) -- (6,1.4);
+	\draw[dotted] (8,0) -- (8,1.4);
+	
+	% E
+	\draw[thick] (0,0) -- (2,0.75) -- (4,0.75) -- (6,0) -- (8,0) --  (10,0.75);
+	\draw (1,1.4) node {}; %label
+	
+	% Cells
+	{
+		\draw pic {cico=lightgray/0.4/0.4};		\draw pic {cico=gray/1.1/0.65};
+		\draw pic {cico=black/2.4/0.85};		\draw pic {cico=black/3.1/0.85};
+		\draw pic {cico=gray/4.4/0.65};			\draw pic {cico=lightgray/5.1/0.4};
+		\draw pic {cico=white/6.4/0.2};			\draw pic {cico=white/7.1/0.2};
+		\draw pic {cico=lightgray/8.4/0.4};		\draw pic {cico=gray/9.1/0.65};
+	}
+	
+	
+\end{tikzpicture}
+\\
+\vspace{-1.1pt}
+	\begin{tikzpicture}[rotate=90, scale=0.9, every node/.style={scale=0.9}]
+		\draw[rounded corners, fill=lightgray] (-0.05, -0.05 - 0.85) rectangle (2.3-0.05, 2.3-0.05 - 0.85){};
+		\foreach \x/\xx in {0/0 ,0.4/0.05, 0.8/0.1, 1.2/0.15, 1.6/0.2}
+		{
+			
+			\draw[rounded corners = 0.3mm, fill=Orchid] (\x + \xx, 0) rectangle (\xx + 1.2/3 + \x, 1.2/3){};
+			\draw (0.3/3+ \x + \xx,0.3/3) circle (0.65mm);
+			\draw (0.9/3+ \x + \xx,0.3/3) circle (0.65mm);
+			\draw (0.3/3+ \x + \xx,0.9/3) circle (0.65mm);
+			\draw (0.9/3+ \x + \xx,0.9/3) circle (0.65mm);
+		}
+		\node[text=black] (A1) at (0.2,-0.65) {$2$};
+	\end{tikzpicture}
+\begin{tikzpicture}
+	
+	% horizontal axis
+	\draw[->] (0,0) -- (10,0) node[anchor=north] {};
+	
+	% vertical axis
+	\draw[->] (0,0) -- (0,1.5) node[anchor=west] {$E$};
+	% nominal speed
+	\draw[dotted] (2,0) -- (2,1.4);
+	\draw[dotted] (4,0) -- (4,1.4);
+	\draw[dotted] (6,0) -- (6,1.4);
+	\draw[dotted] (8,0) -- (8,1.4);
+	
+	% Us
+	\draw[thick] (0,0) -- (2,0) -- (4,0.75) -- (6,0.75) -- (8,0) --  (10,0);
+	\draw (1,1.4) node {}; %label
+	
+	% Cells
+
+	{
+		\draw pic {cico=white/0.4/0.2};			\draw pic {cico=white/1.1/0.2};
+		\draw pic {cico=lightgray/2.4/0.4};		\draw pic {cico=gray/3.1/0.65};
+		\draw pic {cico=black/4.4/0.85};		\draw pic {cico=black/5.1/0.85};
+		\draw pic {cico=gray/6.4/0.65};			\draw pic {cico=lightgray/7.1/0.4};
+		\draw pic {cico=white/8.4/0.2};			\draw pic {cico=white/9.1/0.2};
+	}
+	
+	
+\end{tikzpicture}
+\\
+\vspace{-1.1pt}
+	\begin{tikzpicture}[rotate=90, scale=0.9, every node/.style={scale=0.9}]
+		\draw[rounded corners, fill=gray] (-0.05, -0.05 - 0.85) rectangle (2.3-0.05, 2.3-0.05 - 0.85){};
+		\foreach \x/\xx in {0/0 ,0.4/0.05, 0.8/0.1, 1.2/0.15, 1.6/0.2}
+		{
+			
+			\draw[rounded corners = 0.3mm, fill=BlueGreen] (\x + \xx, 0) rectangle (\xx + 1.2/3 + \x, 1.2/3){};
+			\draw (0.3/3+ \x + \xx,0.3/3) circle (0.65mm);
+			\draw (0.9/3+ \x + \xx,0.3/3) circle (0.65mm);
+			\draw (0.3/3+ \x + \xx,0.9/3) circle (0.65mm);
+			\draw (0.9/3+ \x + \xx,0.9/3) circle (0.65mm);
+		}
+		\node[text=white] (A1) at (0.2,-0.65) {$3$};
+	\end{tikzpicture}
+\begin{tikzpicture}
+	
+	% horizontal axis
+	\draw[->] (0,0) -- (10,0) node[anchor=north] {};
+	
+	% vertical axis
+	\draw[->] (0,0) -- (0,1.5) node[anchor=west] {$E$};
+	% nominal speed
+	\draw[dotted] (2,0) -- (2,1.4);
+	\draw[dotted] (4,0) -- (4,1.4);
+	\draw[dotted] (6,0) -- (6,1.4);
+	\draw[dotted] (8,0) -- (8,1.4);
+	
+	% Us
+	\draw[thick] (0,0.75) -- (2,0) -- (4,0) -- (6,0.75) -- (8,0.75) --  (10,0);
+	\draw (1,1.4) node {}; %label
+	
+	% Cells
+	{
+		\draw pic {cico=gray/0.4/0.65};			\draw pic {cico=lightgray/1.1/0.4};
+		\draw pic {cico=white/2.4/0.2};			\draw pic {cico=white/3.1/0.2};
+		\draw pic {cico=lightgray/4.4/0.4};		\draw pic {cico=gray/5.1/0.65};
+		\draw pic {cico=black/6.4/0.85};		\draw pic {cico=black/7.1/0.85};
+		\draw pic {cico=gray/8.4/0.65};			\draw pic {cico=lightgray/9.1/0.4};
+	}
+	
+	
+\end{tikzpicture}
+\\
+\vspace{-1.1pt}
+	\begin{tikzpicture}[rotate=90, scale=0.9, every node/.style={scale=0.9}]
+		\draw[rounded corners, fill=darkgray] (-0.05, -0.05 - 0.85) rectangle (2.3-0.05, 2.3-0.05 - 0.85){};
+		\foreach \x/\xx in {0/0 ,0.4/0.05, 0.8/0.1, 1.2/0.15, 1.6/0.2}
+		{
+			
+			\draw[rounded corners = 0.3mm, , fill=white] (\x + \xx, 0) rectangle (\xx + 1.2/3 + \x, 1.2/3){};
+			\draw (0.3/3+ \x + \xx,0.3/3) circle (0.65mm);
+			\draw (0.9/3+ \x + \xx,0.3/3) circle (0.65mm);
+			\draw (0.3/3+ \x + \xx,0.9/3) circle (0.65mm);
+			\draw (0.9/3+ \x + \xx,0.9/3) circle (0.65mm);
+		}
+		\node[text=white] (A1) at (0.2,-0.65) {$4$};
+	\end{tikzpicture}
+\begin{tikzpicture}
+	
+	% horizontal axis
+	\draw[->] (0,0) -- (10,0) node[anchor=north] {};
+	
+	% vertical axis
+	\draw[->] (0,0) -- (0,1.5) node[anchor=west] {$E$};
+	% nominal speed
+	\draw[dotted] (2,0) -- (2,1.4);
+	\draw[dotted] (4,0) -- (4,1.4);
+	\draw[dotted] (6,0) -- (6,1.4);
+	\draw[dotted] (8,0) -- (8,1.4);
+	
+	% Us
+	\draw[thick] (0,0.75) -- (2,0.75) -- (4,0) -- (6,0) -- (8,0.75) --  (10,0.75);
+	\draw (1,1.4) node {}; %label
+	
+	% Cells
+	
+	{
+		\draw pic {cico=black/0.4/0.85};		\draw pic {cico=black/1.1/0.85};
+		\draw pic {cico=gray/2.4/0.65};			\draw pic {cico=lightgray/3.1/0.4};
+		\draw pic {cico=white/4.4/0.2};			\draw pic {cico=white/5.1/0.2};
+		\draw pic {cico=lightgray/6.4/0.4};		\draw pic {cico=gray/7.1/0.65};
+		\draw pic {cico=black/8.4/0.85};		\draw pic {cico=black/9.1/0.85};
+	}
+	
+	
+\end{tikzpicture}
+	\caption{QCA clocking pipeline} \label{fig:QCAClockpipeline}
 \end{figure}
 
 Explain the clocking of cells. \\

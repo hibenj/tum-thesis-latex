@@ -11,9 +11,15 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.2}{\ignorespaces QCA-Cell sates\relax }}{7}{figure.caption.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Adjacent QCA-cells forming a wire\relax }}{7}{figure.caption.5}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Adjacent QCA-cells forming a wire segment\relax }}{7}{figure.caption.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.4}{\ignorespaces QCA-Cell wire with corresponding clock zones\relax }}{8}{figure.caption.6}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Schematic of a combined QCA and CMOS sytem.\relax }}{8}{figure.caption.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Schematic representation of a metastable state. Instead of relaxing correctly to the new ground state, a system may be delayed in an excited state due to an inability to tunnel through a kinetic barrier.\relax }}{9}{figure.caption.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.6}{\ignorespaces QCA-Cell wire with corresponding clock zones\relax }}{9}{figure.caption.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.7}{\ignorespaces QCA clocking pipeline\relax }}{10}{figure.caption.9}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
