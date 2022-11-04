@@ -17,21 +17,30 @@
 \endgroup
 
 \datalist[entry]{nty/global//global/global}
-  \entry{sequential-logic-gate}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=HSJZHPC}{%
+  \entry{hawkins2012cmos}{book}{}
+    \name{author}{3}{}{%
+      {{hash=HC}{%
          family={Hawkins},
          familyi={H\bibinitperiod},
-         suffix={Charles},
-         suffixi={C\bibinitperiod},
-         given={Segura Jaume Zarkesh-Ha\bibnamedelima Payman},
-         giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim
-  Z\bibinithyphendelim H\bibinitperiod\bibinitdelim P\bibinitperiod},
+         given={C.},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Segura},
+         familyi={S\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=ZHP}{%
+         family={Zarkesh-Ha},
+         familyi={Z\bibinithyphendelim H\bibinitperiod},
+         given={P.},
+         giveni={P\bibinitperiod},
       }}%
     }
     \list{publisher}{2}{%
       {Institution of Engineering}%
-      {Technology (The IET)}%
+      {Technology}%
     }
     \strng{namehash}{HCSJZHP1}
     \strng{fullhash}{HCSJZHP1}
@@ -39,14 +48,13 @@
     \field{labeltitlesource}{title}
     \field{sortinit}{H}
     \field{sortinithash}{H}
-    \field{booktitle}{CMOS Digital Integrated Circuits - A First Course}
-    \field{isbn}{978-1-61353-002-3}
-    \field{title}{8. Sequential Logic Gate Design and Timing}
+    \field{isbn}{9781613530023}
+    \field{series}{Materials, Circuits and Devices}
+    \field{title}{CMOS Digital Integrated Circuits: A First Course}
     \verb{url}
-    \verb https://app.knovel.com/hotlink/khtml/id:kt011I2AEA/cmos-digital-integ
-    \verb rated/sequential-logic-gate
+    \verb https://books.google.de/books?id=8HmtMQEACAAJ
     \endverb
-    \field{year}{2013}
+    \field{year}{2012}
   \endentry
 
   \entry{majorityrotated}{article}{}
@@ -238,6 +246,36 @@
     \field{journaltitle}{J. Emerg. Technol. Comput. Syst.}
     \field{year}{2007}
     \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Walter}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=WM}{%
+         family={Walter},
+         familyi={W\bibinitperiod},
+         given={Marcel},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=DR}{%
+         family={Drechsler},
+         familyi={D\bibinitperiod},
+         given={Rolf},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WMDR1}
+    \strng{fullhash}{WMDR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \verb{doi}
+    \verb 10.1109/ISVLSI49217.2020.00040
+    \endverb
+    \field{pages}{176\bibrangedash 181}
+    \field{title}{Design Automation for Field-Coupled Nanotechnologies}
+    \field{month}{07}
+    \field{year}{2020}
   \endentry
 \enddatalist
 \endinput

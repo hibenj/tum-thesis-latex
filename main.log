@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.12)  4 NOV 2022 12:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.12)  4 NOV 2022 13:09
 entering extended mode
 **./main.tex
 (main.tex
@@ -1904,14 +1904,9 @@ LaTeX Warning: Command \textdegree invalid in math mode on input line 778.
 LaTeX Warning: Command \textdegree invalid in math mode on input line 778.
 
 Missing character: There is no ° in font pplr9t!
-[12] [13]
-Underfull \hbox (badness 10000) in paragraph at lines 781--783
-
- []
-
-) (chapters/03_state_of_the_art.tex [14]
+[12] [13] [14]) (chapters/03_state_of_the_art.tex [15]
 chapter 3.
-) (chapters/04_main_work.tex [15
+) (chapters/04_main_work.tex [16
 
 
 ]
@@ -1921,12 +1916,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--8
 
  []
 
-) (chapters/05_experimental_evaluation.tex [16
+) (chapters/05_experimental_evaluation.tex [17
 
 
 ]
 chapter 5.
-) [17
+) [18
 
 
 ]
@@ -1936,7 +1931,7 @@ Package tocbasic Info: character protrusion at lof deactivated on input line 51
 \tf@lof=\write7
 \openout7 = `main.lof'.
 
- [18
+ [19
 
 
 ]
@@ -1946,7 +1941,7 @@ Package tocbasic Info: character protrusion at lot deactivated on input line 52
 \tf@lot=\write8
 \openout8 = `main.lot'.
 
- [19
+ [20
 
 
 ]
@@ -1967,7 +1962,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 Package nag Warning: 8 complaints in total.
 
-[20
+[21
 
 
 ] (main.aux)
@@ -1978,11 +1973,11 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 52612 strings out of 478927
- 1175744 string characters out of 2862391
- 2231588 words of memory out of 3000000
- 69003 multiletter control sequences out of 15000+600000
- 468779 words of font info for 413 fonts, out of 8000000 for 9000
+ 52622 strings out of 478927
+ 1175905 string characters out of 2862391
+ 2232027 words of memory out of 3000000
+ 69007 multiletter control sequences out of 15000+600000
+ 468989 words of font info for 416 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  115i,10n,111p,10601b,2241s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\benja\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt
@@ -1996,9 +1991,9 @@ fb><C:/Program Files/MiKTeX/fonts/type1/public/mathpazo/fplmri.pfb><C:/Program
 Files/MiKTeX/fonts/type1/public/fpl/fplrc8a.pfb><C:/Program Files/MiKTeX/fonts/
 type1/urw/palatino/uplb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino
 /uplr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (27 pages, 294244 bytes).
+Output written on main.pdf (28 pages, 297700 bytes).
 PDF statistics:
- 463 PDF objects out of 1000 (max. 8388607)
- 90 named destinations out of 1000 (max. 500000)
+ 474 PDF objects out of 1000 (max. 8388607)
+ 92 named destinations out of 1000 (max. 500000)
  89431 words of extra memory for PDF output out of 106986 (max. 10000000)
 

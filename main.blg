@@ -22,338 +22,47 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Database file #1: main-blx.bib
 Database file #2: bibliography.bib
-Warning--entry type for "sequential-logic-gate" isn't style-file defined
---line 60 of file bibliography.bib
 Biblatex version: 3.16
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2697 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2701 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2701 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2701 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2701 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2701 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2701 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2701 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2701 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2701 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2707 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2707 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2707 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2707 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2707 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2707 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2707 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2707 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2707 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2711 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2711 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2711 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2711 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2711 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2711 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2711 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2711 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2711 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2711 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2711 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2711 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2711 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2711 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2711 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2711 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2711 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2711 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2715 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2715 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2715 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2715 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2715 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2715 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2715 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2715 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2715 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2721 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2721 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2721 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2721 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2721 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2721 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2721 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2721 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2721 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2725 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2725 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2725 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2725 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2725 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2725 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2725 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2725 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2725 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2725 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2725 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2725 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2725 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2725 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2725 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2725 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2725 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2725 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2765 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2765 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2765 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2765 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2765 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2765 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2765 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2765 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2765 of file biblatex.bst
 Reallocating 'singl_function' (item size: 4) to 100 items.
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2813 of file biblatex.bst
-Too many commas in name 1 of "Hawkins, Charles, Segura, Jaume, Zarkesh-Ha, Payman" for entry sequential-logic-gate
-while executing---line 2813 of file biblatex.bst
-You've used 6 entries,
+You've used 7 entries,
             6393 wiz_defined-function locations,
-            1247 strings with 11127 characters,
-and the built_in function-call counts, 50007 in all, are:
-= -- 3972
-> -- 871
-< -- 271
-+ -- 1071
-- -- 353
-* -- 4047
-:= -- 5473
+            1254 strings with 11177 characters,
+and the built_in function-call counts, 54526 in all, are:
+= -- 4138
+> -- 1045
+< -- 307
++ -- 1274
+- -- 436
+* -- 4357
+:= -- 6018
 add.period$ -- 0
-call.type$ -- 6
-change.case$ -- 145
-chr.to.int$ -- 51
-cite$ -- 10
-duplicate$ -- 3980
-empty$ -- 4499
-format.name$ -- 429
-if$ -- 10509
+call.type$ -- 7
+change.case$ -- 146
+chr.to.int$ -- 57
+cite$ -- 12
+duplicate$ -- 4754
+empty$ -- 4799
+format.name$ -- 535
+if$ -- 11340
 int.to.chr$ -- 0
-int.to.str$ -- 13
+int.to.str$ -- 15
 missing$ -- 0
-newline$ -- 226
-num.names$ -- 309
-pop$ -- 1829
+newline$ -- 265
+num.names$ -- 342
+pop$ -- 2199
 preamble$ -- 1
-purify$ -- 183
+purify$ -- 195
 quote$ -- 0
-skip$ -- 1330
+skip$ -- 1522
 stack$ -- 0
-substring$ -- 8228
-swap$ -- 980
-text.length$ -- 202
-text.prefix$ -- 5
+substring$ -- 8151
+swap$ -- 1149
+text.length$ -- 247
+text.prefix$ -- 6
 top$ -- 1
-type$ -- 191
+type$ -- 226
 warning$ -- 0
-while$ -- 601
+while$ -- 723
 width$ -- 0
-write$ -- 221
-(There were 144 error messages)
+write$ -- 259
