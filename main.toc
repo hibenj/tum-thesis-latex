@@ -25,36 +25,36 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.2}Information Transfer}{7}{subsection.2.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.3}Gates}{9}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.3}Gates}{12}{subsection.2.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\nonumberline Latches and Registers}{10}{subsubsection*.11}%
+\contentsline {subsubsection}{\nonumberline Latches and Registers}{14}{subsubsection*.13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}P\&R problem}{10}{section.2.3}%
+\contentsline {section}{\numberline {2.3}P\&R problem}{14}{section.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}State of the Art}{11}{chapter.3}%
+\contentsline {chapter}{\numberline {3}State of the Art}{15}{chapter.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Combinational P\&R Algorithms}{11}{section.3.1}%
+\contentsline {section}{\numberline {3.1}Combinational P\&R Algorithms}{15}{section.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Sequential P\&R}{11}{section.3.2}%
+\contentsline {section}{\numberline {3.2}Sequential P\&R}{15}{section.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Methodology}{12}{chapter.4}%
+\contentsline {chapter}{\numberline {4}Methodology}{16}{chapter.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Input Network}{12}{section.4.1}%
+\contentsline {section}{\numberline {4.1}Input Network}{16}{section.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Majority Gates Placement Network}{12}{section.4.2}%
+\contentsline {section}{\numberline {4.2}Majority Gates Placement Network}{16}{section.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Sequential Circuits Placement}{12}{section.4.3}%
+\contentsline {section}{\numberline {4.3}Sequential Circuits Placement}{16}{section.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Experimental Evaluation}{13}{chapter.5}%
+\contentsline {chapter}{\numberline {5}Experimental Evaluation}{17}{chapter.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Benchmarks}{13}{section.5.1}%
+\contentsline {section}{\numberline {5.1}Benchmarks}{17}{section.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Results}{13}{section.5.2}%
+\contentsline {section}{\numberline {5.2}Results}{17}{section.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline List of Figures}{14}{chapter*.12}%
+\contentsline {chapter}{\nonumberline List of Figures}{18}{chapter*.14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline List of Tables}{15}{chapter*.13}%
+\contentsline {chapter}{\nonumberline List of Tables}{19}{chapter*.15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Bibliography}{16}{chapter*.14}%
+\contentsline {chapter}{\nonumberline Bibliography}{20}{chapter*.16}%
 \defcounter {refsection}{0}\relax 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

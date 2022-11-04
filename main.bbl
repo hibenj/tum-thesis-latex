@@ -17,27 +17,227 @@
 \endgroup
 
 \datalist[entry]{nty/global//global/global}
-  \entry{latex}{book}{}
+  \entry{sequential-logic-gate}{misc}{}
     \name{author}{1}{}{%
-      {{hash=LL}{%
-         family={Lamport},
-         familyi={L\bibinitperiod},
-         given={Leslie},
-         giveni={L\bibinitperiod},
+      {{hash=HSJZHPC}{%
+         family={Hawkins},
+         familyi={H\bibinitperiod},
+         suffix={Charles},
+         suffixi={C\bibinitperiod},
+         given={Segura Jaume Zarkesh-Ha\bibnamedelima Payman},
+         giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim
+  Z\bibinithyphendelim H\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{2}{%
+      {Institution of Engineering}%
+      {Technology (The IET)}%
+    }
+    \strng{namehash}{HCSJZHP1}
+    \strng{fullhash}{HCSJZHP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{booktitle}{CMOS Digital Integrated Circuits - A First Course}
+    \field{isbn}{978-1-61353-002-3}
+    \field{title}{8. Sequential Logic Gate Design and Timing}
+    \verb{url}
+    \verb https://app.knovel.com/hotlink/khtml/id:kt011I2AEA/cmos-digital-integ
+    \verb rated/sequential-logic-gate
+    \endverb
+    \field{year}{2013}
+  \endentry
+
+  \entry{majorityrotated}{article}{}
+    \name{author}{2}{}{%
+      {{hash=KD}{%
+         family={Kumar},
+         familyi={K\bibinitperiod},
+         given={Dharmendra},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=MD}{%
+         family={Mitra},
+         familyi={M\bibinitperiod},
+         given={Debasis},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KDMD1}
+    \strng{fullhash}{KDMD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \verb{doi}
+    \verb 10.1007/s10470-018-1270-x
+    \endverb
+    \field{pages}{1\bibrangedash 15}
+    \field{title}{A systematic approach towards fault-tolerant design of QCA
+  circuits}
+    \field{volume}{98}
+    \field{journaltitle}{Analog Integrated Circuits and Signal Processing}
+    \field{month}{03}
+    \field{year}{2019}
+  \endentry
+
+  \entry{SingelElectronFaults}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=MM}{%
+         family={Mahdavi},
+         familyi={M\bibinitperiod},
+         given={Mojdeh},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=AMA}{%
+         family={Amiri},
+         familyi={A\bibinitperiod},
+         given={Mohammad\bibnamedelima Amin},
+         giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=MS}{%
+         family={Mirzakuchaki},
+         familyi={M\bibinitperiod},
+         given={Sattar},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=MMN}{%
+         family={Moghaddasi},
+         familyi={M\bibinitperiod},
+         given={Mohammad\bibnamedelima Naser},
+         giveni={M\bibinitperiod\bibinitdelim N\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MMAMAMSMMN1}
+    \strng{fullhash}{MMAMAMSMMN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{booktitle}{2009 Fifth International Conference on MEMS NANO, and
+  Smart Systems}
+    \verb{doi}
+    \verb 10.1109/ICMENS.2009.23
+    \endverb
+    \field{pages}{63\bibrangedash 66}
+    \field{title}{Single Electron Fault in QCA Inverter Gate}
+    \field{year}{2009}
+  \endentry
+
+  \entry{QCA_scl}{inproceedings}{}
+    \name{author}{5}{}{%
+      {{hash=RDA}{%
+         family={Reis},
+         familyi={R\bibinitperiod},
+         given={Dayane\bibnamedelima Alfenas},
+         giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=CCAT}{%
+         family={Campos},
+         familyi={C\bibinitperiod},
+         given={Caio Araújo\bibnamedelima T.},
+         giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim
+  T\bibinitperiod},
+      }}%
+      {{hash=STRBS}{%
+         family={Soares},
+         familyi={S\bibinitperiod},
+         given={Thiago Rodrigues B.\bibnamedelima S.},
+         giveni={T\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim
+  B\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=NOPV}{%
+         family={Neto},
+         familyi={N\bibinitperiod},
+         given={Omar Paranaiba\bibnamedelima V.},
+         giveni={O\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim
+  V\bibinitperiod},
+      }}%
+      {{hash=TFS}{%
+         family={Torres},
+         familyi={T\bibinitperiod},
+         given={Frank\bibnamedelima Sill},
+         giveni={F\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RDACCATSTRBS+1}
+    \strng{fullhash}{RDACCATSTRBSNOPVTFS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{booktitle}{2016 IEEE International Symposium on Circuits and Systems
+  (ISCAS)}
+    \verb{doi}
+    \verb 10.1109/ISCAS.2016.7538997
+    \endverb
+    \field{pages}{2114\bibrangedash 2117}
+    \field{title}{A Methodology for Standard Cell Design for QCA}
+    \field{year}{2016}
+  \endentry
+
+  \entry{Inverter_displacements}{article}{}
+    \name{author}{3}{}{%
+      {{hash=SG}{%
+         family={Schulhof},
+         familyi={S\bibinitperiod},
+         given={Gabriel},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=WK}{%
+         family={Walus},
+         familyi={W\bibinitperiod},
+         given={Konrad},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=JGA}{%
+         family={Jullien},
+         familyi={J\bibinitperiod},
+         given={Graham\bibnamedelima A.},
+         giveni={G\bibinitperiod\bibinitdelim A\bibinitperiod},
       }}%
     }
     \list{publisher}{1}{%
-      {Addison-Wesley Professional}%
+      {Association for Computing Machinery}%
     }
-    \strng{namehash}{LL1}
-    \strng{fullhash}{LL1}
+    \keyw{Quantum-dot cellular automata, QCA, fault tolerance, fabrication
+  variances}
+    \strng{namehash}{SGWKJGA1}
+    \strng{fullhash}{SGWKJGA1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{sortinit}{L}
-    \field{sortinithash}{L}
-    \field{title}{LaTeX : A Documentation Preparation System User's Guide and
-  Reference Manual}
-    \field{year}{1994}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{abstract}{%
+    We analyze the behavior of quantum-dot cellular automata (QCA) building
+  blocks in the presence of random cell displacements. The QCA cells are
+  modeled using the coherence vector description and simulated using
+  QCADesigner. We evaluate various fundamental circuits: the wire, the
+  inverter, the majority gate, and the two-wire crossing approaches: the
+  coplanar crossover and the multilayer crossover. Our results show that
+  different building blocks have different displacement tolerances. The
+  coplanar crossover and inverter perform the weakest. The wire is the most
+  robust. We have found displacement tolerances to be a function of circuit
+  layout and geometry rather than cell size.%
+    }
+    \verb{doi}
+    \verb 10.1145/1229175.1229177
+    \endverb
+    \field{issn}{1550-4832}
+    \field{number}{1}
+    \field{pages}{2–es}
+    \field{title}{Simulation of Random Cell Displacements in QCA}
+    \verb{url}
+    \verb https://doi.org/10.1145/1229175.1229177
+    \endverb
+    \field{volume}{3}
+    \list{location}{1}{%
+      {New York, NY, USA}%
+    }
+    \field{journaltitle}{J. Emerg. Technol. Comput. Syst.}
+    \field{year}{2007}
+    \warn{\item Invalid format of field 'month'}
   \endentry
 \enddatalist
 \endinput
