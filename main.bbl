@@ -185,6 +185,39 @@
     \field{year}{2016}
   \endentry
 
+  \entry{Sasamal2020QuantumDotCA}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=STN}{%
+         family={Sasamal},
+         familyi={S\bibinitperiod},
+         given={Trailokya\bibnamedelima Nath},
+         giveni={T\bibinitperiod\bibinitdelim N\bibinitperiod},
+      }}%
+      {{hash=SAK}{%
+         family={Singh},
+         familyi={S\bibinitperiod},
+         given={Ashutosh\bibnamedelima Kumar},
+         giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+      {{hash=MA}{%
+         family={Mohan},
+         familyi={M\bibinitperiod},
+         given={Anand},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{STNSAKMA1}
+    \strng{fullhash}{STNSAKMA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{booktitle}{Studies in Computational Intelligence}
+    \field{title}{Quantum-Dot Cellular Automata Based Digital Logic Circuits: A
+  Design Perspective}
+    \field{year}{2020}
+  \endentry
+
   \entry{Inverter_displacements}{article}{}
     \name{author}{3}{}{%
       {{hash=SG}{%
