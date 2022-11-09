@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.12)  7 NOV 2022 14:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.12)  9 NOV 2022 10:12
 entering extended mode
 **./main.tex
 (main.tex
@@ -1740,13 +1740,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--11
 ]
 chapter 2.
 LaTeX Font Info:    Trying to load font information for TS1+pplx on input line 
-11.
+10.
 (C:\Program Files\MiKTeX\tex/latex/psnfss\ts1pplx.fd
 File: ts1pplx.fd 2004/09/06 font definitions for TS1/pplx.
 )
 LaTeX Info: Symbol \textrightarrow not provided by
             font family pplx in TS1 encoding.
-            Default family used instead on input line 11.
+            Default family used instead on input line 10.
 
 (C:\Program Files\MiKTeX\tex/latex/microtype\mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
@@ -1754,26 +1754,26 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 )
 LaTeX Info: Symbol \textrightarrow not provided by
             font family pplx in TS1 encoding.
-            Default family used instead on input line 12.
+            Default family used instead on input line 11.
 LaTeX Info: Symbol \textrightarrow not provided by
             font family pplx in TS1 encoding.
-            Default family used instead on input line 12.
+            Default family used instead on input line 11.
 
-Underfull \hbox (badness 10000) in paragraph at lines 11--14
+Underfull \hbox (badness 10000) in paragraph at lines 10--13
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 28--30
+Underfull \hbox (badness 10000) in paragraph at lines 26--28
 
  []
 
 LaTeX Font Info:    Trying to load font information for U+fplmbb on input line 
-31.
+29.
 (C:\Program Files\MiKTeX\tex/latex/psnfss\ufplmbb.fd
 File: ufplmbb.fd 2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 31--32
+Underfull \hbox (badness 10000) in paragraph at lines 29--30
 
  []
 
@@ -1781,215 +1781,199 @@ Underfull \hbox (badness 10000) in paragraph at lines 31--32
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 49--51
+Underfull \hbox (badness 10000) in paragraph at lines 47--48
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 51--55
+Underfull \hbox (badness 10000) in paragraph at lines 48--51
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 68--73
+Underfull \hbox (badness 10000) in paragraph at lines 64--69
 
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 124--129
+Underfull \hbox (badness 10000) in paragraph at lines 133--138
 
  []
 
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 151--154
+[4] [5]
+Underfull \hbox (badness 10000) in paragraph at lines 160--163
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--157
+Underfull \hbox (badness 10000) in paragraph at lines 164--166
 
  []
 
-[5]
-Underfull \hbox (badness 10000) in paragraph at lines 165--167
+[6] [7]
+Underfull \hbox (badness 10000) in paragraph at lines 281--282
 
  []
 
-[6]
-Underfull \hbox (badness 10000) in paragraph at lines 273--274
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 294--296
 
  []
 
-[7]
-Underfull \hbox (badness 10000) in paragraph at lines 286--288
-
- []
-
-<./figures//QCA_array.png, id=178, 354.57469pt x 135.50626pt>
+<./figures//QCA_array.png, id=212, 354.57469pt x 135.50626pt>
 File: ./figures//QCA_array.png Graphic file (type png)
 <use ./figures//QCA_array.png>
-Package pdftex.def Info: ./figures//QCA_array.png  used on input line 291.
+Package pdftex.def Info: ./figures//QCA_array.png  used on input line 299.
 (pdftex.def)             Requested size: 212.74644pt x 81.30437pt.
-<./figures//information_passing.png, id=180, 475.02469pt x 222.8325pt>
+<./figures//information_passing.png, id=216, 475.02469pt x 222.8325pt>
 File: ./figures//information_passing.png Graphic file (type png)
 <use ./figures//information_passing.png>
 Package pdftex.def Info: ./figures//information_passing.png  used on input line
- 298.
+ 306.
 (pdftex.def)             Requested size: 285.017pt x 133.70053pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 306--307
+Underfull \hbox (badness 10000) in paragraph at lines 314--315
 
  []
 
-[8] [9 <./figures//QCA_array.png> <./figures//information_passing.png>]
-[10]
-
-Package nag Warning: \label in float, but not after \caption on input line 637.
-
-
-
-Package nag Warning: \label in float, but not after \caption on input line 637.
-
-
-
-Package nag Warning: \label in float, but not after \caption on input line 689.
-
-
-
-Package nag Warning: \label in float, but not after \caption on input line 689.
-
-
-
-Package nag Warning: \label in float, but not after \caption on input line 742.
-
-
-
-Package nag Warning: \label in float, but not after \caption on input line 742.
-
-
+[9 <./figures//QCA_array.png>] [10 <./figures//information_passing.png>]
 [11]
 
-Package nag Warning: \label in float, but not after \caption on input line 824.
+Package nag Warning: \label in float, but not after \caption on input line 645.
 
 
 
-Package nag Warning: \label in float, but not after \caption on input line 824.
+Package nag Warning: \label in float, but not after \caption on input line 645.
 
 
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 824.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 824.
-
-Missing character: There is no ° in font pplr9t!
-
-Package nag Warning: \label in float, but not after \caption on input line 897.
+Package nag Warning: \label in float, but not after \caption on input line 697.
 
 
 
-Package nag Warning: \label in float, but not after \caption on input line 897.
+Package nag Warning: \label in float, but not after \caption on input line 697.
 
 
 
-Package nag Warning: \label in float, but not after \caption on input line 960.
+Package nag Warning: \label in float, but not after \caption on input line 750.
 
 
 
-Package nag Warning: \label in float, but not after \caption on input line 960.
+Package nag Warning: \label in float, but not after \caption on input line 750.
+
+
+[12]
+
+Package nag Warning: \label in float, but not after \caption on input line 832.
 
 
 
-Package nag Warning: \label in float, but not after \caption on input line 1017
+Package nag Warning: \label in float, but not after \caption on input line 832.
+
+
+
+Package nag Warning: \label in float, but not after \caption on input line 905.
+
+
+
+Package nag Warning: \label in float, but not after \caption on input line 905.
+
+
+
+Package nag Warning: \label in float, but not after \caption on input line 968.
+
+
+
+Package nag Warning: \label in float, but not after \caption on input line 968.
+
+
+
+Package nag Warning: \label in float, but not after \caption on input line 1025
 .
 
 
-Package nag Warning: \label in float, but not after \caption on input line 1017
+Package nag Warning: \label in float, but not after \caption on input line 1025
 .
 
 
-Package nag Warning: \label in float, but not after \caption on input line 1073
+Package nag Warning: \label in float, but not after \caption on input line 1081
 .
 
 
-Package nag Warning: \label in float, but not after \caption on input line 1073
+Package nag Warning: \label in float, but not after \caption on input line 1081
 .
 
 
-Package nag Warning: \label in float, but not after \caption on input line 1130
+Package nag Warning: \label in float, but not after \caption on input line 1138
 .
 
 
-Package nag Warning: \label in float, but not after \caption on input line 1130
+Package nag Warning: \label in float, but not after \caption on input line 1138
 .
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 774--1135
+Underfull \hbox (badness 10000) in paragraph at lines 782--1143
 
  []
 
-[12] [13]
+[13] [14]
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 1136.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 1136.
-
-Missing character: There is no ° in font pplr9t!
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 1136.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 1136.
-
-Missing character: There is no ° in font pplr9t!
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 1136.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 1136.
-
-Missing character: There is no ° in font pplr9t!
-
-Package nag Warning: \label in float, but not after \caption on input line 1227
+Package nag Warning: \label in float, but not after \caption on input line 1235
 .
 
 
-Package nag Warning: \label in float, but not after \caption on input line 1227
+Package nag Warning: \label in float, but not after \caption on input line 1235
 .
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1227--1227
+Underfull \hbox (badness 10000) in paragraph at lines 1235--1235
 []\T1/pplx/m/n/9 (+20) (a) Copla-nar wire
  []
 
-<./figures//wire_crossing.png, id=247, 708.84825pt x 413.1435pt>
+<./figures//wire_crossing.png, id=304, 708.84825pt x 413.1435pt>
 File: ./figures//wire_crossing.png Graphic file (type png)
 <use ./figures//wire_crossing.png>
-Package pdftex.def Info: ./figures//wire_crossing.png  used on input line 1233.
+Package pdftex.def Info: ./figures//wire_crossing.png  used on input line 1241.
 
 (pdftex.def)             Requested size: 177.21162pt x 103.28561pt.
 
-Package nag Warning: \label in float, but not after \caption on input line 1233
+Package nag Warning: \label in float, but not after \caption on input line 1241
 .
 
 
-Package nag Warning: \label in float, but not after \caption on input line 1233
+Package nag Warning: \label in float, but not after \caption on input line 1241
 .
 
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 1237.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 1245.
 
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 1237.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 1245.
 
 Missing character: There is no ° in font pplr9t!
-[14] [15 <./figures//wire_crossing.png>] [16]
-Underfull \hbox (badness 10000) in paragraph at lines 1411--1413
+[15 <./figures//wire_crossing.png>]
+
+Package nag Warning: \label in float, but not after \caption on input line 1355
+.
+
+
+Package nag Warning: \label in float, but not after \caption on input line 1355
+.
+
+
+Package nag Warning: \label in float, but not after \caption on input line 1371
+.
+
+
+Package nag Warning: \label in float, but not after \caption on input line 1371
+.
+
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 1421--1423
 
  []
 
-) (chapters/03_state_of_the_art.tex [17] [18]
+[17]) (chapters/03_state_of_the_art.tex [18]
 chapter 3.
 ) (chapters/04_main_work.tex [19
 
@@ -2043,14 +2027,14 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
+ [24
 
 
-Package nag Warning: 22 complaints in total.
+]
 
-[24
+Package nag Warning: 26 complaints in total.
 
-
-] (main.aux)
+[25] (main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package logreq Info: Writing requests to 'main.run.xml'.
@@ -2058,13 +2042,13 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 52842 strings out of 478927
- 1179486 string characters out of 2862391
- 2262302 words of memory out of 3000000
- 69142 multiletter control sequences out of 15000+600000
- 478768 words of font info for 476 fonts, out of 8000000 for 9000
+ 52932 strings out of 478927
+ 1181634 string characters out of 2862391
+ 2253020 words of memory out of 3000000
+ 69185 multiletter control sequences out of 15000+600000
+ 482654 words of font info for 497 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 115i,11n,111p,10601b,2241s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 115i,11n,111p,10601b,2970s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\benja\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt
 1095.pk>{C:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc} <C:\Users\benja\A
 ppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk><C:/Program 
@@ -2077,9 +2061,9 @@ iles/MiKTeX/fonts/type1/public/mathpazo/fplmri.pfb><C:/Program Files/MiKTeX/fon
 ts/type1/public/fpl/fplrc8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palati
 no/uplb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/
 Program Files/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (31 pages, 388633 bytes).
+Output written on main.pdf (32 pages, 407579 bytes).
 PDF statistics:
- 538 PDF objects out of 1000 (max. 8388607)
- 118 named destinations out of 1000 (max. 500000)
- 99164 words of extra memory for PDF output out of 106986 (max. 10000000)
+ 611 PDF objects out of 1000 (max. 8388607)
+ 136 named destinations out of 1000 (max. 500000)
+ 101212 words of extra memory for PDF output out of 106986 (max. 10000000)
 

@@ -1,25 +1,23 @@
 \chapter{Preliminaries}\label{chapter:Preliminaries}
 
 \section{Representation of Logic Circuits}
-Independent of the underlying technology, digital circuits can be represented by logic functions. The Boolean Algebra, formed by mathematician George Boole in 1847, proposes these logic functions and provides a foundation to discuss about them.
+The Boolean Algebra, formed by mathematician George Boole in 1847, shows that every digital circuit can be represented by logic functions, independent of their underlying technology. Until today his work is the foundation for defining and discussing about them.
 
 \subsection{Boolean Functions}\label{subsec:boolfunc}
-The definition as given here is based on an addition to Boolean calculus by Edward V. Huntington. CITE
-The basis of a Boolean algebra is given as follows:
+A definition of the Boolean calculus was first provided by Edward V. Huntington in 1993. From the \textit{set of independent postulates for the algebra of logic} and his own correction \cite{HuntingtonPostulate, HuntingtonCorrection}, the following definition can be derived:
 
 \begin{definition}[Basis for Boolean algebra]\label{Def:BasBool}
 Given a finite set S, two binary functions · : S × S → S and + :
 S × S → S, and one unary function ¬ : S → S, the tuple (S, ·,+,¬) is called a
-Boolean algebra iff the following constraints hold for all a, b, c $\in$ S: \\
+Boolean algebra iff the following constraints hold for all $a, b, c \in S$ and the \textit{universe element} $u \in S$: \\
 
 \centering
 \begin{tabular}{l r l}
 
 	     (1) & a · b = b · a & a + b = b + a \\
-
 	     (2) &a · (b + c) = (a · b) + (a · c) & a + (b · c) = (a + b) · (a + c) \\
-	     (3) & $\exists 1 \in S : a \cdot 1 = a$ &  $\exists 0 \in S : a + 0 = a$ \\
-	     (4) &$\exists 0 \in S : a \cdot \neg a = 0$ & $\exists 1 \in S : a + \neg a = 1$. \\
+	     (3) & $\exists u \in S : a \cdot u = a$ &  $\exists \neg u \in S : a + \neg u = a$ \\
+	     (4) &$\exists \neg u \in S : a \cdot \neg a = \neg u$ & $\exists u \in S : a + \neg a = u$. \\
 
 \end{tabular}
 
@@ -28,9 +26,9 @@ Boolean algebra iff the following constraints hold for all a, b, c $\in$ S: \\
 With the constraints describing (1) \textit{commutativity}, (2) \textit{distributivity}, (3) \textit{neutrality}, and (4)
 \textit{complementarity}.\\
 
-In the original definition a Boolean algebra is defined by the 6-tuple $(\mathbb{B}, \vee, \wedge, \neg, 0, 1)$, where $\vee$ and $\wedge$ are another denotations for the binary operands for disjunction $+$ and conjunction $\cdot$ in $\mathbb{B}$, the known unary negation function $\neg$, and two distinct elements 0 and 1. Negation $\neg a$ is also commonly notated as $\bar{a}$.\\
+The most common Boolean algebra is defined by the 6-tuple $(\mathbb{B}, \vee, \wedge, \neg, 0, 1)$, where $\vee$ and $\wedge$ are another denotations for the binary operands for disjunction $+$ and conjunction $\cdot$ in $\mathbb{B}$, while $\neg$ is the known unary negation function. The set $S$ holds two distinct elements $\{0, 1\}$, with $u=1$ and $\neg u = 0$ respectively. Negation $\neg u$ is also commonly notated as $\bar{u}$.\\
 
-Since this definition is restricting the use of only the three Boolean functions $(\vee, \wedge, \neg)$, we want to extend by the following definition:
+Since this definition is restricting the use of only the three Boolean functions $(\vee, \wedge, \neg)$, we want to extend it by the following definition \cite{Walter}:
 
 \begin{definition}
 	A function $f : \mathbb{B}^n \to \mathbb{B}$, where $n \in N$, is called a Boolean function.
@@ -42,16 +40,14 @@ Since this definition is restricting the use of only the three Boolean functions
 A common notation for Boolean functions are the \textit{conjunctive normal form} (CNF) and \textit{disjunctive normal form} (DNF), using literals.
 
 \begin{definition}
-	A literal is an atom or the negation of an atom. In the former case the literal is positive, in the latter case it is negative.
+	A literal is either an atom $a$ (positive literal) or the negation of an atom $\neg a$ (negative literal).
 \end{definition}
 
 \begin{definition}
-A formula F is in conjunctive normal form (CNF) if it is a
-conjunction of disjunctions of literals:\\
+A propositional Boolean formula is said to be in CNF if it is a conjunction of \textit{clauses}, each of which is a disjunction of literals \cite{CNF}:\\
 \[\displaystyle\bigwedge_{i} \displaystyle\bigvee_{j} (\neg) v_{ij}, \]
 where $v_{ij} \in \mathbb{B}$.\\
-A formula F is in disjunctive normal form (DNF) if it is a
-conjunction of disjunctions of literals:\\
+A propositional Boolean formula is said to be in DNF if it is a disjunction of clauses, each of which is a conjunction of literals:\\
 \[ \displaystyle\bigvee_{i} \displaystyle\bigwedge_{j} (\neg) v_{ij}, \]
 where $v_{ij} \in \mathbb{B}$.
 
@@ -62,7 +58,7 @@ Using the CNF or rather the DNF and \textit{De Morgan's laws} following from the
 
 \subsection{Logic Networks}
 
-There are many ways of representing Boolean Functions. But most of them, including e.g. truth tables or reduced sum of products, suffer from drawbacks like exponential growth of size with the number of arguments and functions with exponential representations. The representation of combinational circuits as logic networks overcomes these restrictions and has proven to be very useful in the logic synthesis process. Following definition for directed acyclic graphs is shown in CITE:
+There are many ways of representing Boolean Functions. But most of them, including e.g. truth tables or reduced sum of products, suffer from drawbacks like exponential representations of basic functions like the parity (XOR) function. Even if a reasonable representation exists for a given function, simple operations like forming the complementary could yield an exponential function representation. Logic networks overcome these restrictions and have proven to be very useful transforming a circuit described by logic functions into a gate representation. This process is also referred to as \textit{logic synthesis}. An approach for logic networks is given in \cite{LogicNetwork}, describing \textit{function graphs}:
 
 \begin{definition}[Function graph]
 	A function graph is a rooted, directed graph with vertex set $V$ containing two types of vertices. A \textit{nonterminal} vertex $v$ has as attributes an argument index $index(v) \in \{1, . . .,n\}$, and two children $low(v),high(v) \in V$. A \textit{terminal} vertex v has as attribute a value $value(v)\in\{0,1\}$.\\
@@ -70,6 +66,19 @@ There are many ways of representing Boolean Functions. But most of them, includi
 	Furthermore, for any nonterminal vertex $v$, if $low(v)$ is also nonterminal, then we must have
 	$index(v) < index(low(v))$. Similarly, if $high(v)$ is nonterminal, then we must have
 	$index(v) < index(high(v))$.
+\end{definition}
+
+\begin{definition}[Function Graph Boolean Functions]
+	A function graph $G$ having root vertex $v$ denotes a function $f_v$ defined recursively as:
+	\begin{enumerate}
+		\item If v is a terminal vertex:
+		\begin{enumerate}
+			\item If $value(v)=1$, then $f_v=1$
+			\item If $value(v)=0$, then $f_v=0$
+		\end{enumerate}
+		\item If $v$ is a nonterminal vertex with $index(v)=i$, then $f_v$ is the function \\ 
+		$f_v(x_1, ..., x_n) = \bar{x}_i \cdot f_{low(v)}(x_1, ..., x_n) + x_i \cdot f_{high(v)}(x_1, ..., x_n)$.
+	\end{enumerate}
 \end{definition}
 
 \begin{figure}
@@ -118,18 +127,18 @@ There are many ways of representing Boolean Functions. But most of them, includi
 	\caption{Binary Logic Network of Majority Function} \label{fig:LNMaj}
 \end{figure}
 
-Since the definition dosen't yet include Boolean Functions and reduces the number of children connected to a vertice to two, therefore only  allowing binary Boolean Functions, a custom definition is given:
+Since the definition reduces the number of children connected to a vertex to two, therefore only  allowing binary Boolean Functions, a custom definition is given:
 
 \begin{definition}[Logic Network]
-	A logic network $L(V, E)$ is a rooted, directed graph with vertex set $V$ and edge set $E$. For any vertex $v \in V$, vertices connected by incoming edges $e_{inc} \in E$ are called children. A vertex connected by and outgoing edge $e_{out} \in E$ is called parent.
+	A logic network $N(V, E)$ is a rooted, directed graph with vertex set $V$ and edge set $E$. For any vertex $v \in V$, vertices connected by incoming edges $e_{inc} \in E$ are called children. A vertex connected by and outgoing edge $e_{out} \in E$ is called parent.
 	$V$ contains two types of vertices. A \textit{nonterminal} vertex $v$ has as attributes an argument index $index(v) \in \{1, . . .,n\}$, and $l$ children $child_1(v), ..., child_l(v) \in V$. 
 	A \textit{terminal} vertex v has as attribute a value $value(v)\in\{0,1\}$.\\
 	\\
-	Furthermore, for any nonterminal vertex $v$, if $child_i(v)$ with $ 1 \leq i \leq l$, then we must have $index(v) < index(child_i(v))$ respectively.
+	Furthermore, for any nonterminal vertex $v$, if $child_i(v)$ with $ 1 \leq i \leq l$, then we must have $index(child_i(v)) < index(v)$ respectively.
 \end{definition}
 
 \begin{definition}[Logic Network Boolean Functions]
-	A set of nary Boolean Functions $\mathbb{B}$ is accessed via the argument index, assigning a Boolean Function $f_v$ to every vertex:
+	A set of nary Boolean Functions $x_1, ..., x_n \in \mathbb{B}$ is assigned to every vertex via the argument index $index(v) = i$. The graph function $f_v$ is defined recursively as:
 	\begin{enumerate}
 		\item If v is a terminal vertex:
 		\begin{enumerate}
@@ -137,39 +146,35 @@ Since the definition dosen't yet include Boolean Functions and reduces the numbe
 			\item If $value(v)=0$, then $f_v=0$
 		\end{enumerate}
 		\item If $v$ is a nonterminal vertex with $index(v)=i$, then $f_v$ is the function \\ 
-		$f_v(x_1, ..., x_n) = f_v(f_v(child_1(v)), ..., f_v(child_l(v)))$.
+		$f_v(v_i) = x_i(f_{child_1(v)}(v_{i-1}), ..., f_{child_l(v)}(v_{i-n}))$.
 	\end{enumerate}
 \end{definition}
 
 The binary Logic Network of the ternary majority function is depicted figure \ref*{fig:LNMaj}.
 
 \begin{definition}[Majority Function]\label{Def:majf}
-	The ternary Boolean majority function is defined as: $<a, b, c> = ab + ac + bc$, so that the function value equals the majority of it's incoming values.\\
-	It follows: $<a, b, 0> = ab$ and $<a, b, 1> = a + b$.
+	The ternary Boolean majority function is defined as: $\langle a, b, c \rangle = ab + ac + bc$, so that the function value equals the majority of it's incoming values.\\
+	It follows: $\langle a, b, 0 \rangle = a \cdot b$ and $\langle a, b, 1 \rangle = a + b$.
 \end{definition}
 
-Adapting the names used in the underlying libraries used to program the algorithms proposed in chapter \ref{chapter:Methodology} terminal vertices are referred to as \textit{primary input} (PI) witch their set denoted as $I$. The set of nonterminal vertices referred to as \textit{nodes} is denoted as $\Lambda$. From the definition follows $I \cap \Lambda = \emptyset$. An edge connecting a children $\nu_i$ and parent vertex $\nu_j$ is called a \textit{signal}. With $\nu_i < \nu_j$ the notation of a signal is $(\nu_i, \nu_j)$. The set of all signals is denoted as $\Sigma$. If an edge doesn't point to another vertex it is called \textit{primary output} (PO) and their set is denoted as $O$. Therefore also $\Sigma \cap O = \emptyset$ holds true. From the definition of a logic network we can now describe it as acyclic directed graph $L = (\Lambda, I, \Sigma, O)$.\\
-As already mentioned in subsection \ref{subsec:boolfunc}, a set of two certain Boolean functions can form any Boolean algebra.
-As long as this universality is contained the set of node functions can be extended. Using conjunction and negation as the only node functions of a logic network, we get the so called \textit{AND-Inverter Graphs} (AIGs). Another widely used binary logic network is the \textit{Majority-Inverter Graphs} (MIGs) utilizing the ternary majority function and negation. But there also exists a wide range of logic networks permitting more than just two node functions, like \textit{XOR-AND-Inverter Graphs} (XAGs).\\
+Adapting the names used in the underlying libraries used to program the algorithms proposed subsequently following in this work (chapter \ref{chapter:Methodology}), a terminal vertex is referred to as \textit{primary input} (PI) with their set denoted as $I$. The set of nonterminal vertices referred to as \textit{nodes} is denoted as $\Lambda$. From the definition follows $I \cap \Lambda = \emptyset$. An edge connecting a children $\nu_i$ and parent vertex $\nu_j$ is called a \textit{signal}. With $i < j$ the notation of a signal is given as $(\nu_i, \nu_j)$. The set of all signals is denoted as $\Sigma$. If an edge is dangling, so it doesn't point to another vertex, it is called \textit{primary output} (PO) and their set is denoted as $O$. Therefore also $\Sigma \cap O = \emptyset$ holds true. From the definition of a logic network we can now describe it as acyclic directed graph $N = (\Lambda, I, \Sigma, O)$.\\
+As already mentioned in subsection \ref{subsec:boolfunc}, a universal set of two Boolean functions can form any Boolean algebra.
+As long as this universality is contained the set of node functions in a logic network can be extended arbitrarily. Common logic networks containing only two network functions are e.g. \textit{AND-Inverter Graphs} (AIGs) allowing only conjunction and negation. Another widely used binary logic network is the \textit{Majority-Inverter Graphs} (MIGs) utilizing the ternary majority function and negation. But there also exists a wide range of logic networks permitting more than just two node functions. One widely used example is the \textit{XOR-AND-Inverter Graph} (XAG) with the parity function, conjunction and negation functions respectively.\\
 
-Since the logic network represents the combinational circuit in the given technology, a suitable logic network representation has to be determined. Because, even though these logic networks can implement any Boolean function given in a specification, not every logic network can be synthesized into any given technology.
-Looking at the current standard technology \textit{complementary metal-oxidesemiconductor} (CMOS), the logic network is then synthesized by using building blocks consisting of \textit{metal-oxide-semiconductor field-effect transistors} (MOSFETs), the elemental unit in this technology. The process of turning a circuit specification into a logic gate representation is called \textit{logic synthesis}.\\
+As part of the logic synthesis, a suitable logic network representation of the combinational circuit has to be determined. Because, even though these logic networks can implement any Boolean function given in a specification, not every logic network can be synthesized into any given technology.
+Looking at the current standard technology \textit{complementary metal-oxidesemiconductor} (CMOS), the logic network is then synthesized by using building blocks consisting of \textit{metal-oxide-semiconductor field-effect transistors} (MOSFETs), the elemental unit in this technology.\\
 
-Given these logic network characteristics, none of the representations are \textit{canonical}, which means that a given function can be represented by different logic networks. This property can be explained by the fact that nodes with the identity function are allowed. Even the exclusion of such identity nodes has no impact, since simple node combinations, like two negotiation nodes, collapse to the identity function. Following this argumentation, there exists an infinite number of logic networks representing one Boolean Function, resulting in he widely accepted assumption, that the determination of an optimal logic network is a $\mathcal{NP}$-complete problem. Attempts to create canonical logic networks, seem to evade this problem, but include co$\mathcal{NP}$-complete problems in itself. Algorithms used for logic synthesis are therefore based on approximate solutions.
+One drawback, that sticks to this definition of logic networks and holds also true for the aforementioned representations is that they are all \textit{non-canonical}, which means that a given function can be represented by different logic networks. This property can be explained by the fact that nodes with the identity function are allowed, which can be inserted everywhere in the logic network, while the function representation of the logic network stays the same. Even the exclusion of such identity nodes has no impact, since simple node combinations, like two negotiation nodes, collapse to the identity function. Following this argumentation, there exists an infinite number of logic networks representing one Boolean Function, resulting in the widely accepted assumption, that the determination of an optimal logic network is a $\mathcal{NP}$-complete problem \cite{Walter}. Attempts to create canonical logic networks, seem to evade this problem, but include co$\mathcal{NP}$-complete problems in itself \cite{LogicNetwork}. Algorithms used for logic synthesis are therefore based on approximate solutions .
 
 
 \section{QCA Technology}
 
-Following the well known Moores law CMOS technology is facing a multitude of challenges, e.g. short channel effect, impurity variations, and most importantly the heat, resulting from static and dynamic power losses. To tackle these challenges the International Roadmap for Devices and Systems (IDRS), former ITRS, proposes solutions within the semiconductor domain, e.g. new materials and multi-core architectures. But also new technologies are researched including Quantum computing and the domain of \textit{Field-Coupled Nanocomputing} (FCN). This work focuses on one of the most promising FCN technologies, namely \textit{Quantum dot cellular automata} (QCA). The main difference of this technology compared to CMOS is the representation of logical modes, using the location of electron pairs in QCA-cells, instead of voltage levels. Data between cells is transferred based on Coulomb repulsion, utilizing electromagnetic fields. This enables the technology to achieve high performance in terms of device density, clock frequency and power consumption.
-
-Point out why majority gates are a big part of this technology. \\
-Point out why wires and especially wire crossings are so expensive to produce. \\
+Following the well known Moores law, CMOS technology is facing a multitude of challenges. Well-known are e.g. short channel effect, impurity variations, and most importantly the heat, resulting from static and dynamic power losses. To tackle these challenges the International Roadmap for Devices and Systems (IDRS), former ITRS, proposes solutions within the semiconductor domain, e.g. new materials and multi-core architectures. But also new technologies are researched including Quantum computing and the domain of \textit{Field-Coupled Nanocomputing} (FCN). This work focuses on one of the most promising FCN technologies, namely \textit{Quantum dot cellular automata} (QCA). The main difference of this technology compared to CMOS is the representation of logical modes, using the location of electron pairs in QCA-cells, instead of voltage levels. Data between cells is transferred based on Coulomb repulsion, utilizing electromagnetic fields. This enables the technology to achieve high performance in terms of device density, clock frequency and power consumption \cite{mohammadi2016efficient}.
 
 \subsection{Cells}
-As already mentioned, the elemental unit of this technology is a QCA-cell. Since there in no uniform way of build the quantum dots and connecting them to cells, we look at a rather lower-level abstraction depicted in figure \ref{fig:QCAStates}. The four circles in the corners of the QCA-cells show quantum-dots, that can be implemented by any charge container with discrete electrical energy states. Further a cell contains two excess electrons, which can be localized by the quantum dots. The energy barriers or the quantum dots are able to trap the charge of the electron. If an electron is trapped inside a quantum-dot it is filled black. Due to the Coulomb repulsion the electrons occupy diagonally opposed quantum dots,
-resulting in two possible stable cell configurations and one unstable cell configuration.\\
-A stable states indicates, that it is well distinguishable of the usual energy band and therefore has a energy difference to another stable state of minimum the thermal noise energy ($k_BT$). Only such states are suited for information transfer. The stable states can be derived from the cell Polarization, which can be $+1$ and $-1$ or $null$ in the unexcited state. The two stable states contain the same electrostatic energy and are used to encode the binary values $0$ and $1$.\\
-In order to transfer information, cells are placed side by side, whereby the polarization of the driver cell, which is the left most cell inputting the information, changes the polarization of the adjacent cell. When the adjacent cell is polarized it can give its state to the next cell and so on. This simple structure is representing a wire in QCA-technology and its function is depicted in Figure \ref{fig:QCAWire}.
+As already mentioned, the elemental unit of this technology is a QCA-cell. Since there in no uniform way of build the quantum dots and connecting them to cells, we look at a rather lower-level abstraction depicted in figure \ref{fig:QCAStates}. The four circles in the corners of the QCA-cells show quantum-dots, that can be implemented by any charge container with discrete electrical energy states. Further a cell contains two excess electrons, which can be localized by the quantum dots. The energy barriers or the quantum dots are able to trap the charge of the electron. If an electron is trapped inside a quantum-dot it is filled black. Due to the Coulomb repulsion the electrons occupy diagonally opposed quantum dots, resulting in two possible stable cell configurations and one unstable cell configuration \cite{Sasamal2020QuantumDotCA, lent1997device, lent1994quantum}.\\
+A stable states indicates, that it is well distinguishable of the usual energy band. Therefore the energy difference between two consecutive energy states must be well above the thermal noise energy ($k_BT$). Only such states are suited for information transfer. The stable states can be derived from the cell Polarization, which can be $+1$ and $-1$ or $null$ in the unexcited state. The two stable states contain the same electrostatic energy and are used to encode the binary values $0$ and $1$ \cite{Sasamal2020QuantumDotCA}.\\
+In order to transfer information, cells are placed side by side, whereby the polarization of the driver cell, which is the left most cell inputting the information, changes the polarization of the adjacent cell. When the adjacent cell is polarized it can give its state to the next cell and so on \cite{lent1997device}. This simple structure is representing a wire in QCA-technology and its function is depicted in Figure \ref{fig:QCAWire}.
 
 \begin{figure}
 	\centering
@@ -268,11 +273,14 @@ In order to transfer information, cells are placed side by side, whereby the pol
 	\caption{Adjacent QCA-cells forming a wire segment} \label{fig:QCAWire}
 \end{figure}
 
-\subsection{Information Transfer}\label{subsec:clocking}
+\subsection{Clocking}\label{subsec:clocking}
 
-As already mentioned the data transfer in the QCA paradigm is accomplished by cell-to-cell interaction. The leftmost cell has a fixed polarization and is called the input, while the right most cell represents the output of the simplified  QCA-circuit. Looking at the wire segment in figure \ref{fig:QCAWire}, we can see that in the ground state, all neighboring cells have the same polarization. This means that, with this given input, there exists exactly one configuration of cell polarization resulting in the minimum state energy of the wire. When the input of the system is changed, the systems energy rises, as depicted in figure \ref{fig:info_pass}. It results from the so called \textit{kink}-energy, which describes the energy difference between two QCA-cells with opposing polarization. In this state the \textit{kink} moves along the cells. While the \textit{kink}-energy stays the same, an increasing number of cells results in a rising degeneracy of the excited state. This again means, that the system is in an excited state at non-zero temperature. After time $\tau$ the system dissipates again into the ground state, with newly computed outputs.\\
+As already mentioned, the data transfer in the QCA paradigm is accomplished by cell-to-cell interaction. Given a fixed polarization of a cell, the next cell reacts to the Coulomb repulsion and changes its polarization accordingly. Looking at the wire segment in figure \ref{fig:QCAWire},
+the leftmost cell has a fixed polarization and is called the input. After some time the information propagates through to the right most cell, representing the output of the simplified QCA-circuit. The depicted state of the cell, where all neighboring cells have the same polarization is called ground state. Since the logic is deterministic, there exists exactly one ground state configuration of cell polarization for one choice of inputs. When in ground state, the circuit has minimum state energy.
 
-The described process is called abrupt switching with dissipative coupling to the environment and can be summarized in the following three steps:
+Given a circuit in ground state, when the input of the system is changed, the systems energy rises as depicted in figure \ref{fig:info_pass}. It results from the so called \textit{kink}-energy, which describes the energy difference between two QCA-cells with opposing polarization. Since the polarization of the cells changes one cell after the other, also the \textit{kink} moves along the cells. After time $\tau$ the system dissipates again into the ground state, with newly computed outputs. While the kink-energy stays the same with an increasing number of cells, degeneracy of the excited states rises. This again means, that the system can be illegally in an excited state at non-zero temperature \cite{lent1994quantum}.\\
+
+The described process is called abrupt switching with dissipative coupling to the environment and can be summarized in the following three steps \cite{lent1994quantum}:
 \begin{enumerate}
 	\item Write the input bit by fixing the polarization state of
 	cells along the input edge.
@@ -289,7 +297,7 @@ The first and third step require an environment, which provides the features for
 \begin{figure}
 	\centering
 	\includegraphics[scale=0.6]{QCA_array}
-	\caption{Schematic of a combined QCA and CMOS sytem.} 
+	\caption{Schematic of a combined QCA and CMOS sytem \cite{lent1994quantum}.} 
 	\label{fig:QCA_array}
 \end{figure}
 
@@ -299,11 +307,11 @@ The first and third step require an environment, which provides the features for
 	\caption{Schematic representation of a metastable state. Instead
 		of relaxing correctly to the new ground state, a system may be
 		delayed in an excited state due to an inability to tunnel through a
-		kinetic barrier.} 
+		kinetic barrier \cite{lent1997device}.} 
 	\label{fig:info_pass}
 \end{figure}
 
-In order to implement a full QCA-system without CMOS-components, the QCA-Array has to be divided into smaller decoupled sub-regions. Therefore an adiabatic switching or rather a clocking is introduced. The clocked regions are referred to as clocking zones. The clocking utilizes an external signal, the clock, to activate and deactivate said clocking zones. The approach first used, decreases the interdot barriers of all cells in a clocking zone, when applying a new input. When all cells in the region are stable, the barriers are raised again, while the barriers of the subsequent clocking zone are lowered simultaneously. This way the ground state gradually propagates through the whole circuit. Today's used approaches create electrical fields with an external clock generator and distribute it to the cells through the device substrate using embedded electrodes. Thereby the energy level of the \textit{null} state can be controlled, resulting in a equivalent effect as in the former approach.\\
+In order to implement a full QCA-system without CMOS-components, the QCA-Array has to be divided into smaller decoupled sub-regions. Therefore an adiabatic switching or rather a clocking is introduced. The clocked regions are referred to as clocking zones. The clocking utilizes an external signal, the clock, to activate and deactivate said clocking zones. The approach first used, decreases the interdot barriers of all cells in a clocking zone, when applying a new input. When all cells in the region are stable, the barriers are raised again, while the barriers of the subsequent clocking zone are lowered simultaneously. This way the ground state gradually propagates through the whole circuit \cite{lent1997device}. Today's used approaches create electrical fields with an external clock generator and distribute it to the cells through the device substrate using embedded electrodes. Thereby the energy level of the \textit{null} state can be controlled, resulting in a equivalent effect as in the former approach \cite{Walter}.\\
 
 \begin{figure}
 	\centering
@@ -376,7 +384,7 @@ In order to implement a full QCA-system without CMOS-components, the QCA-Array h
 	\caption{QCA-Cell wire with corresponding clock zones} \label{fig:QCAClock}
 \end{figure}
 
-A wire, divided in such clocking zones is shown in \ref{fig:QCAWire}. The colors of the zones and cells as well as the zone number show redundant information about the type of clocking zone. They differ in the external applied electrical field and therefore the energy of the cells. In QCA the clocking is divided into the four consecutive states, \textit{switch}, \textit{hold}, \textit{release} and \textit{relax}. They are aligned like in a pipeline like structure, where each of these state is phase shifted by $\pi/2$, forming a $2\pi$ clock cycle. In the switch-phase cells start getting polarized dependent on the polarization of the driving cell. When the cells are polarized they get fixed in the hold-phase. Afterwards in the release-phase the excitation gradually decreases, resulting in the unexcited relax-state. The scheme of such a pipeline like clocking is depicted exemplary on a wire segment in Figure \ref{fig:QCAClockpipeline}.
+A wire, divided in such clocking zones is shown in \ref{fig:QCAWire}. The colors of the zones and cells as well as the zone number show redundant information about the type of clocking zone. They differ in the external applied electrical field and therefore the energy of the cells. In QCA the clocking is divided into the four consecutive states, \textit{switch}, \textit{hold}, \textit{release} and \textit{relax}. They are aligned in a pipeline like structure, where each of these state is phase shifted by $\pi/2$, forming a $2\pi$ clock cycle. In the switch-phase cells start getting polarized dependent on the polarization of the driving cell. When the cells are polarized they get fixed in the hold-phase. Afterwards in the release-phase the excitation gradually decreases, resulting in the unexcited relax-state \cite{Sasamal2020QuantumDotCA}. The scheme of such a pipeline like clocking is depicted exemplary on a wire segment in Figure \ref{fig:QCAClockpipeline}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -567,9 +575,9 @@ A wire, divided in such clocking zones is shown in \ref{fig:QCAWire}. The colors
 \end{figure}
 
 
-The described clocking is named \textit{Landauer clocking}. The inventor Rolf Landauer himself pointed out the vast power dissipation of this clocking mechanism. This impairing property is already well known from the CMOS technology, resulting in several drawbacks including switched off chip areas referred to as dark silicon in extreme cases. One common approach is the lowering of circuit frequency utilizing e.g. multi-chip architectures. To tackle this problem in the QCA domain, Landauer pointed out that the \textit{erase} function has to be eliminated from the clocking. This function is logically irreversible and describes the erasing of information in a clock zone, when passed to the next. He argued that every erased bit dissipates at least $k_BT\ln(2)$ in heat. Exemplary if a QCA-cell has size $1nm \times 1nm$ and operating frequency of $100 GHz$, the corresponding density of devices results to $10^{14}$ $cm^{-2}$. Further a dissipation of $0.1 eV$ per electron every clock cycle is assumed, resulting in a total power dissipation of 160 $kW$ $cm^{-2}$. This directly yields to the statement, that a device operating with this clocking would be inoperable (it would evaporate due to the heat). The \textit{Bennet clocking} tackles exactly this problem by altering the timing of the clocking signals. Just as in the Landau clocking the clocking-wave moves from left to right, but leaving no trailing edge, when information is passed. Instead the cells will be held in the excited state until the information propagates through the whole QCA-array. When the output was read, the excitation is released in reverse order resulting in no erase functions. This means, that this \textit{quasi-adiabatic} clocking leads to a minimal power dissipation but with two constraints. The effective clock rate is at least halved due to the additional backwards propagation and since only one signal vector can be transmitted through the system, the pipeline capabilities are reduced.\\
-As already stated the QCA-array has to be divided into clock zones. Allowing an arbitrary number of cells in one clock zone allows lots of freedom for the clocking and is called \textit{cell-based} clocking. This freedom leads to clock zones with variable geometries, which again lead to variation in their fabrication. Assuming the necessity of an uniform fabrication to fabricate circuits with millions of cells, this clocking gets infeasible for large circuits. Also the scheme supports clocking of single cells, which means that electrodes of the same size have to be fabricated. Since this is also not feasible, this design is obsolete.\\ 
-In order to attain uniform clocking zones with a possible distribution of clocking signals, the \textit{tile-based} clocking is introduced. The approach of this design is to provide uniform square tiles of the size $3 \times 3$ or $5 \times 5$. For clocking tiles bigger than this, the information propagation was suggested to be erroneous, also following in an argument against cell-based clocking.
+The described clocking is named \textit{Landauer clocking}. The inventor Rolf Landauer himself pointed out the vast power dissipation of this clocking mechanism. This impairing property is already well known from the CMOS technology, resulting in several drawbacks including extreme cases of switched off chip areas referred to as dark silicon. One common approach in CMOS is the lowering of circuit frequency utilizing e.g. multi-chip architectures. To tackle this problem in the QCA domain, Landauer pointed out that the \textit{erase} function has to be eliminated from the clocking. This function is logically irreversible and describes the erasing of information in a clock zone, when passed to the next. He argues that every erased bit dissipates at least $k_BT\ln(2)$ in heat. Exemplary if a QCA-cell has size $1nm \times 1nm$ and operating frequency of $100 GHz$, the corresponding density of devices results to $10^{14}$ $cm^{-2}$. Further a dissipation of $0.1 eV$ per electron every clock cycle is assumed, resulting in a total power dissipation of 160 $kW$ $cm^{-2}$. This directly yields to the statement, that a device operating with this clocking would be inoperable (it would evaporate due to the heat) \cite{lent2006bennett}. The \textit{Bennet clocking} tackles exactly this problem by altering the timing of the clocking signals. Just as in the Landauer clocking the clocking-wave moves from left to right, but leaving no trailing edge, when information is passed. Instead the cells will be held in the excited state until the information propagates through the whole QCA-array. When the output was read, the excitation is released in reverse order resulting in no erase functions. This means, that this \textit{quasi-adiabatic} clocking leads to a minimal power dissipation but with two constraints. The effective clock rate is at least halved due to the additional backwards propagation and since only one signal vector can be transmitted through the system, the pipeline capabilities are reduced \cite{lent2006bennett}.\\
+In order to apply Bennet clocking, it was already stated that the QCA-array has to be divided into clock zones. Allowing an arbitrary number of cells in one clock zone gives lots of freedom in designing clock zones with variable geometries. This clocking is referred to as \textit{cell-based} and increases the fabrication process due to its variety in clock zone geometries. Assuming the necessity of an uniform fabrication in order to fabricate circuits with millions of cells, this clocking gets infeasible for large circuits. Also the scheme supports clocking of single cells, which means that electrodes of the same size have to be fabricated. Since this is also not feasible, this design is obsolete.\\ 
+In order to attain uniform clocking zones with a possible distribution of clocking signals, the \textit{tile-based} clocking is introduced. The approach of this design is to provide uniform square tiles of the size $3 \times 3$ or $5 \times 5$. For clocking tiles bigger than this, the information propagation was suggested to be erroneous, also following in an argument against cell-based clocking \cite{taucer2015consequences}.
 
 
 \begin{figure}
@@ -744,7 +752,7 @@ In order to attain uniform clocking zones with a possible distribution of clocki
 	\caption{Different clocking Schemes in QCA} \label{fig:ClockingSchemes}
 \end{figure}
 
-The tile-based clocking leads to several proposals of clocking-schemes, which give a certain distribution of clock zones. Since they follow an uniform pattern they can be extended easily for every size of the circuit. In \ref{fig:ClockingSchemes} three clocking schemes are showed, each of them based on a different idea. Since information is only allowed in ascending clock order (except 4 to 1), the 2DDWave clocking scheme in figure \ref{subfig:2DD} only allows information to propagate in two directions, south and north. This simplicity allows no back propagation, prohibiting the placement of sequential circuits. Also it restricts gates in the scheme to have a maximum input size of two. The USE scheme \ref{subfig:USE} tackles the first problem by introducing clocking loops into the scheme, giving the possibility to place sequential circuits. To tackle the second problem, the RES scheme \ref{subfig:RES} gives an opportunity to place gates of input size three. Since one tile is restricted to four adjacent cells of which one has to output the information of the cell, this gives the maximum input size allowed. This is especially important for the placement of majority-gates. In QCA-technology they can be represented by only one tile, making it to a huge advantage over CMOS technology. This is further evaluated in the next subsection on gates.
+The tile-based clocking leads to several proposals of clocking-schemes, which give a certain distribution of clock zones. Since they follow an uniform pattern they can be extended easily for every size of the circuit. In \ref{fig:ClockingSchemes} three clocking schemes are showed, each of them based on a different idea. Since information is only allowed in ascending clock order (except 4 to 1), the 2DDWave clocking scheme in figure \ref{subfig:2DD} only allows information to propagate in two directions, south and north \cite{2DD}. This simplicity allows no back propagation, prohibiting the placement of sequential circuits. Also it restricts gates in the scheme to have a maximum input size of two. The USE scheme \ref{subfig:USE} tackles the first problem by introducing clocking loops into the scheme, giving the possibility to place sequential circuits \cite{USE}. To tackle the second problem, the RES scheme \ref{subfig:RES} gives an opportunity to place gates of input size three. Since one tile is restricted to four adjacent cells of which one has to output the information of the cell, this gives the maximum input size allowed. This is especially important for the placement of majority-gates \cite{RES}. In QCA-technology they can be represented by only one tile, making it to a huge advantage over CMOS technology. This is further evaluated in the next subsection on gates.
 
 \subsection{Gates}\label{sub:gates}
 
@@ -771,11 +779,11 @@ The tile-based clocking leads to several proposals of clocking-schemes, which gi
 	\caption{Cell representation of tile}\label{fig:Celltile}
 \end{figure}
 
-In this chapter a library of gates is introduced, which are later used in the proposed placement and routing algorithms. In \cite{QCA_scl} a custom QCA library called QCA ONE is proposed. It contains gates formed by both one and multiple tiles. A major drawback of this library is the prerequisite of a clocking scheme in order to form multiple tile gates. This restricts the underlying placement and routing algorithm to this exact clocking scheme. Also manual changes of the standard cells clock zones, size or positioning is not allowed, imposing the designer with even more restrictions. The standard cell library used for this work should only contain gates occupying one tile. Every other gate is composed out of these standard cells. The tiles used are of the dimension $5 \times 5$, which means that all standard gates are reduced to this area.\\
+In this chapter a library of gates is introduced, which are later used in the placement and routing algorithms. In \cite{QCA_scl} a custom QCA library called QCA ONE is proposed. It contains gates formed by both one and multiple tiles. A major drawback of this library is the prerequisite of a clocking scheme in order to form multiple tile gates. This restricts the underlying placement and routing algorithm to this exact clocking scheme. Also manual changes of the standard cells clock zones, size or positioning is not allowed, imposing the designer with even more restrictions. For this work, the standard cell library should only contain gates occupying one tile. Every logic function is composed out of these standard cells. The tiles used are of the dimension $5 \times 5$, which means that all standard gates are reduced to this area (figure \ref{fig:Celltile}).\\
 %%%%%%Inverter
 \begin{figure}
 	\centering
-	\subfigure[$45°$ Inverter]
+	\subfigure[$45^{\circ}$ Inverter]
 	{
 		\centering
 		\begin{tikzpicture}
@@ -1133,7 +1141,7 @@ The first gate in the library is the inverter or NOT gate. The simplest implemen
 The most important gate in QCA technology is the majority gate. To implement this function in CMOS technology after Definition \ref{Def:majf} multiple AND and OR gates have to be used. In QCA technology the majority function can be represented by exactly one gate, making it one of the major advantages over CMOS technology. There are two main implementations of the majority gate. The rotated majority gate in figure \ref{subfig:rotatedMaj} and the $+$-majority gate \ref{subfig:StandardMaj}. Both of these implementations have their advantages and drawbacks. On the one hand the rotated majority gate exhibits sufficiently high degree of fault-tolerance against cell displacement or misalignment but has very poor degree of fault-tolerance against single cell omission or extra cell deposition \cite{majorityrotated}. The $+$-majority gate on the other hand is very prone to cell displacement but is also used as building block for AND and OR gates in most works. This means that the fabrication process for all these gates is very similar and since this work is more aimed to enhance the production of QCA circuits, the $+$-majority gate is chosen as standard gate for this work.\\
 Following Definition \ref{Def:majf} the AND gate can be derived by fixing one input of the majority gate to logic $0$, while the OR gate is obtained by fixing one input to logic $1$. The resulting gates, which are also part of the standard gate library of this work are shown in figure \ref{subfig:StandardAnd}.\\
 
-Another major topic regarding gates are wires. Until now only straight planar wires have been introduced. In order to distribute information on the 2D grid, provided by the tile based layout, also bent wires have to be introduced. They are depicted in Figure !! and show a bend of 90 degrees. Given that all tiles can be rotated by $90°$, $180°$ and $270°$ respectively an incoming tile can be connected to each outgoing tile of a bent wire. Also since all gates introduced so far have a fan-out of one we need a fan-out node to multiply signals. This is done by adding a bent wire to a straight wire resulting in the fan-out shown in Figure !!.\\
+Another major topic regarding gates are wires. Until now only straight planar wires have been introduced. In order to distribute information on the 2D grid, provided by the tile based layout, also bent wires have to be introduced. They are depicted in Figure \ref{subfig:BentWire} and show a bend of 90 degrees. Given that all tiles can be rotated by $90^{\circ}$, $180^{\circ}$ and $270^{\circ}$ respectively an incoming tile can be connected to each outgoing tile of a bent wire. Also since all gates introduced so far have a fan-out of one we need a fan-out node to multiply signals. This is done by adding a bent wire to a straight wire resulting in the fan-out shown in Figure \ref{subfig:FanoutWire}.\\
 %%%%Wire crossing
 \begin{figure}
 	\centering
@@ -1234,7 +1242,7 @@ Another major topic regarding gates are wires. Until now only straight planar wi
 	
 	\caption{Different wire QCA wire crossing implementations} 
 \end{figure}
-The last special case of wires are crossing cases. By rotating the cells of one wire string by $45°$ the rotated cells don't have crosstalk with non-rotated cells \cite{Inverter_displacements} as shown in figure \ref{subfig:CoplanarWire}. This solution is very handy because it supports the planar structure of the circuit and is therefore called \textit{coplanar crossover}. Further the possibility of multi-layer QCA has been investigated and found especially useful in the case of wire crossings. To use this, one wire string is raised to an additional higher layer, which is connected with a vertical interconnect as in figure \ref{subfig:mlwirecrossing}. The signal transmission in the vertical stacked cells works just as in horizontal direction. To impede any crosstalk between the wire strings two intermediate layers of cells are used in vertical direction. Theoretically the added layer cannot only be used as wire but since the signal distribution works just as in the ground layer also gates can be placed in these multi-layers. Simulations have shown that coplanar crossovers reduce the coupling between the horizontal string segments significantly. This makes the horizontal interconnect very sensitive to crosstalk and therefore highly prone to cell displacements. Multi-layer circuits on the other hand show a high robustness and therefore are used as standard in this library as well as in the state of the art researched for this work CITE. In the library the raised wire string is described with an X, while the vertical layers are described with a circle. In Figure \ref{fig:StandardCellLibrary} all gates used in this work are summarized.
+The last special case of wires are crossing cases. By rotating the cells of one wire string by $45^{\circ}°$ the rotated cells don't have crosstalk with non-rotated cells \cite{Inverter_displacements} as shown in figure \ref{subfig:CoplanarWire}. This solution is very handy because it supports the planar structure of the circuit and is therefore called \textit{coplanar crossover}. Further the possibility of multi-layer QCA has been investigated and found especially useful in the case of wire crossings. To use this, one wire string is raised to an additional higher layer, which is connected with a vertical interconnect as in figure \ref{subfig:mlwirecrossing}. The signal transmission in the vertical stacked cells works just as in horizontal direction. To impede any crosstalk between the wire strings two intermediate layers of cells are used in vertical direction. Theoretically the added layer cannot only be used as wire but since the signal distribution works just as in the ground layer also gates can be placed in these multi-layers. Simulations have shown that coplanar crossovers reduce the coupling between the horizontal string segments significantly. This makes the horizontal interconnect very sensitive to crosstalk and therefore highly prone to cell displacements. Multi-layer circuits on the other hand show a high robustness and therefore are used as standard in this library. In the gate $5 \times 5$ representation of the multi-layer interconnect, the raised wire string is described with a $\times$, while the vertical layers are described with a circle. In Figure \ref{fig:StandardCellLibrary} all gates used in this work are summarized.
 
 \begin{figure}
 	\centering
@@ -1245,7 +1253,7 @@ The last special case of wires are crossing cases. By rotating the cells of one 
 			
 			\foreach \x/\y in {0.9/0.9, 0.9/0.45, 1.35/0.45, 0.45/0.45, 1.35/0, 0.45/0, 0.9/-0.45, 0.9/-0.9}
 			{
-				\draw[rounded corners = 0.3mm] (\x, 0 + \y) rectangle (1.2/3 + \x, 1.2/3 + \y){};
+				\draw[rounded corners = 0.3mm, fill=lightgray] (\x, 0 + \y) rectangle (1.2/3 + \x, 1.2/3 + \y){};
 				\draw (0.3/3+ \x,0.3/3 + \y) circle (0.65mm);
 				\draw (0.9/3+ \x,0.3/3+ \y) circle (0.65mm);
 				\draw (0.3/3+ \x,0.9/3 + \y) circle (0.65mm);
@@ -1260,7 +1268,7 @@ The last special case of wires are crossing cases. By rotating the cells of one 
 		
 		\foreach \x/\y in {0.9/0.9, 0.9/0.45, 0.9/0, 0.9/-0.45, 0.9/-0.9, 0/0, 0.45/0, 1.35/0, 1.8/0}
 		{
-			\draw[rounded corners = 0.3mm] (\x, 0 + \y) rectangle (1.2/3 + \x, 1.2/3 + \y){};
+			\draw[rounded corners = 0.3mm, fill=lightgray] (\x, 0 + \y) rectangle (1.2/3 + \x, 1.2/3 + \y){};
 			\draw (0.3/3+ \x,0.3/3 + \y) circle (0.65mm);
 			\draw (0.9/3+ \x,0.3/3+ \y) circle (0.65mm);
 			\draw (0.3/3+ \x,0.9/3 + \y) circle (0.65mm);
@@ -1275,7 +1283,7 @@ The last special case of wires are crossing cases. By rotating the cells of one 
 		
 		\foreach \x/\y in {0.9/0.9, 0.9/0.45, 0.9/0, 0.9/-0.45, 0.9/-0.9, 0/0, 0.45/0, 1.35/0}
 		{
-			\draw[rounded corners = 0.3mm] (\x, 0 + \y) rectangle (1.2/3 + \x, 1.2/3 + \y){};
+			\draw[rounded corners = 0.3mm, fill=lightgray] (\x, 0 + \y) rectangle (1.2/3 + \x, 1.2/3 + \y){};
 			\draw (0.3/3+ \x,0.3/3 + \y) circle (0.65mm);
 			\draw (0.9/3+ \x,0.3/3+ \y) circle (0.65mm);
 			\draw (0.3/3+ \x,0.9/3 + \y) circle (0.65mm);
@@ -1298,7 +1306,7 @@ The last special case of wires are crossing cases. By rotating the cells of one 
 		
 		\foreach \x/\y in {0.9/0.9, 0.9/0.45, 0.9/0, 0.9/-0.45, 0.9/-0.9, 0/0, 0.45/0, 1.35/0}
 		{
-			\draw[rounded corners = 0.3mm] (\x, 0 + \y) rectangle (1.2/3 + \x, 1.2/3 + \y){};
+			\draw[rounded corners = 0.3mm, fill=lightgray] (\x, 0 + \y) rectangle (1.2/3 + \x, 1.2/3 + \y){};
 			\draw (0.3/3+ \x,0.3/3 + \y) circle (0.65mm);
 			\draw (0.9/3+ \x,0.3/3+ \y) circle (0.65mm);
 			\draw (0.3/3+ \x,0.9/3 + \y) circle (0.65mm);
@@ -1321,7 +1329,7 @@ The last special case of wires are crossing cases. By rotating the cells of one 
 		
 		\foreach \x/\y in {0.9/0.9, 0.9/0.45, 0.9/0, 0.9/-0.45, 0.9/-0.9}
 		{
-			\draw[rounded corners = 0.3mm] (\x, 0 + \y) rectangle (1.2/3 + \x, 1.2/3 + \y){};
+			\draw[rounded corners = 0.3mm, fill=lightgray] (\x, 0 + \y) rectangle (1.2/3 + \x, 1.2/3 + \y){};
 			\draw (0.3/3+ \x,0.3/3 + \y) circle (0.65mm);
 			\draw (0.9/3+ \x,0.3/3+ \y) circle (0.65mm);
 			\draw (0.3/3+ \x,0.9/3 + \y) circle (0.65mm);
@@ -1336,13 +1344,14 @@ The last special case of wires are crossing cases. By rotating the cells of one 
 		
 		\foreach \x/\y in {0.9/0.9, 0.9/0.45, 0.9/0, 0/0, 0.45/0}
 		{
-			\draw[rounded corners = 0.3mm] (\x, 0 + \y) rectangle (1.2/3 + \x, 1.2/3 + \y){};
+			\draw[rounded corners = 0.3mm, fill=lightgray] (\x, 0 + \y) rectangle (1.2/3 + \x, 1.2/3 + \y){};
 			\draw (0.3/3+ \x,0.3/3 + \y) circle (0.65mm);
 			\draw (0.9/3+ \x,0.3/3+ \y) circle (0.65mm);
 			\draw (0.3/3+ \x,0.9/3 + \y) circle (0.65mm);
 			\draw (0.9/3+ \x,0.9/3 + \y) circle (0.65mm);
 		}
 	\end{tikzpicture}
+	\label{subfig:BentWire}
 }
 \subfigure[Fanout]
 {
@@ -1351,13 +1360,14 @@ The last special case of wires are crossing cases. By rotating the cells of one 
 		
 		\foreach \x/\y in {0.9/0.9, 0.9/0.45, 0.9/0, 0.9/-0.45, 0.9/-0.9, 0/0, 0.45/0}
 		{
-			\draw[rounded corners = 0.3mm] (\x, 0 + \y) rectangle (1.2/3 + \x, 1.2/3 + \y){};
+			\draw[rounded corners = 0.3mm, fill=lightgray] (\x, 0 + \y) rectangle (1.2/3 + \x, 1.2/3 + \y){};
 			\draw (0.3/3+ \x,0.3/3 + \y) circle (0.65mm);
 			\draw (0.9/3+ \x,0.3/3+ \y) circle (0.65mm);
 			\draw (0.3/3+ \x,0.9/3 + \y) circle (0.65mm);
 			\draw (0.9/3+ \x,0.9/3 + \y) circle (0.65mm);
 		}
 	\end{tikzpicture}
+	\label{subfig:FanoutWire}
 }
 \subfigure[Wire crossing]
 {
@@ -1366,7 +1376,7 @@ The last special case of wires are crossing cases. By rotating the cells of one 
 		
 		\foreach \x/\y in {0/0, 0.45/0, 1.35/0, 1.8/0}
 		{
-			\draw[rounded corners = 0.3mm] (\x, 0 + \y) rectangle (1.2/3 + \x, 1.2/3 + \y){};
+			\draw[rounded corners = 0.3mm, fill=lightgray] (\x, 0 + \y) rectangle (1.2/3 + \x, 1.2/3 + \y){};
 			\draw (0.3/3+ \x,0.3/3 + \y) circle (0.65mm);
 			\draw (0.9/3+ \x,0.3/3+ \y) circle (0.65mm);
 			\draw (0.3/3+ \x,0.9/3 + \y) circle (0.65mm);
@@ -1374,13 +1384,13 @@ The last special case of wires are crossing cases. By rotating the cells of one 
 		}
 		\foreach \x/\y in {0.9/-0.45, 0.9/0, 0.9/0.45}
 		{
-			\draw[rounded corners = 0.3mm] (\x, 0 + \y) rectangle 	(1.2/3 + \x, 1.2/3 + \y){};
+			\draw[rounded corners = 0.3mm, fill=lightgray] (\x, 0 + \y) rectangle 	(1.2/3 + \x, 1.2/3 + \y){};
 			\node (X) at (\x + 0.5*0.45- 0.025, \y + 0.5*0.45 - 0.025) {$\times$};
 			
 		}
 		\foreach \x/\y in {0.9/-0.9, 0.9/0.9}
 		{
-			\draw[rounded corners = 0.3mm] (\x, 0 + \y) rectangle (1.2/3 + \x, 1.2/3 + \y){};
+			\draw[rounded corners = 0.3mm, fill=lightgray] (\x, 0 + \y) rectangle (1.2/3 + \x, 1.2/3 + \y){};
 			\draw (\x + 0.5*0.45- 0.025, \y + 0.5*0.45 - 0.025) circle (1.4mm){};
 			
 		}

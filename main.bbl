@@ -17,6 +17,131 @@
 \endgroup
 
 \datalist[entry]{nty/global//global/global}
+  \entry{LogicNetwork}{article}{}
+    \name{author}{1}{}{%
+      {{hash=BRE}{%
+         family={Bryant},
+         familyi={B\bibinitperiod},
+         given={Randal\bibnamedelima E},
+         giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{BRE1}
+    \strng{fullhash}{BRE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{number}{8}
+    \field{pages}{677\bibrangedash 691}
+    \field{title}{Graph-based algorithms for boolean function manipulation}
+    \field{volume}{100}
+    \field{journaltitle}{Computers, IEEE Transactions on}
+    \field{year}{1986}
+  \endentry
+
+  \entry{USE}{article}{}
+    \name{author}{4}{}{%
+      {{hash=CCAT}{%
+         family={Campos},
+         familyi={C\bibinitperiod},
+         given={Caio Araujo\bibnamedelima T},
+         giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim
+  T\bibinitperiod},
+      }}%
+      {{hash=MAL}{%
+         family={Marciano},
+         familyi={M\bibinitperiod},
+         given={Abner\bibnamedelima L},
+         giveni={A\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=NOPV}{%
+         family={Neto},
+         familyi={N\bibinitperiod},
+         given={Omar P\bibnamedelima Vilela},
+         giveni={O\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim
+  V\bibinitperiod},
+      }}%
+      {{hash=TFS}{%
+         family={Torres},
+         familyi={T\bibinitperiod},
+         given={Frank\bibnamedelima Sill},
+         giveni={F\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{CCATMALNOPVTFS1}
+    \strng{fullhash}{CCATMALNOPVTFS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{number}{3}
+    \field{pages}{513\bibrangedash 517}
+    \field{title}{Use: a universal, scalable, and efficient clocking scheme for
+  QCA}
+    \field{volume}{35}
+    \field{journaltitle}{IEEE Transactions on computer-aided design of
+  integrated circuits and systems}
+    \field{year}{2015}
+  \endentry
+
+  \entry{RES}{article}{}
+    \name{author}{5}{}{%
+      {{hash=GM}{%
+         family={Goswami},
+         familyi={G\bibinitperiod},
+         given={Mrinal},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=MA}{%
+         family={Mondal},
+         familyi={M\bibinitperiod},
+         given={Anindan},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=MMH}{%
+         family={Mahalat},
+         familyi={M\bibinitperiod},
+         given={Mahabub\bibnamedelima Hasan},
+         giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=SB}{%
+         family={Sen},
+         familyi={S\bibinitperiod},
+         given={Bibhash},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=SBK}{%
+         family={Sikdar},
+         familyi={S\bibinitperiod},
+         given={Biplab\bibnamedelima K},
+         giveni={B\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Taylor \& Francis}%
+    }
+    \strng{namehash}{GMMAMMH+1}
+    \strng{fullhash}{GMMAMMHSBSBK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{number}{1}
+    \field{pages}{83\bibrangedash 96}
+    \field{title}{An efficient clocking scheme for quantum-dot cellular
+  automata}
+    \field{volume}{8}
+    \field{journaltitle}{International Journal of Electronics Letters}
+    \field{year}{2020}
+  \endentry
+
   \entry{hawkins2012cmos}{book}{}
     \name{author}{3}{}{%
       {{hash=HC}{%
@@ -57,6 +182,61 @@
     \field{year}{2012}
   \endentry
 
+  \entry{HuntingtonCorrection}{article}{}
+    \name{author}{1}{}{%
+      {{hash=HEV}{%
+         family={Huntington},
+         familyi={H\bibinitperiod},
+         given={E.\bibnamedelima V.},
+         giveni={E\bibinitperiod\bibinitdelim V\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HEV1}
+    \strng{fullhash}{HEV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{pages}{557}
+    \field{title}{Boolean Algebra. A Correction}
+    \field{volume}{35}
+    \field{journaltitle}{Transactions of the American Mathematical Society}
+    \field{year}{1933}
+  \endentry
+
+  \entry{HuntingtonPostulate}{article}{}
+    \name{author}{1}{}{%
+      {{hash=HEV}{%
+         family={Huntington},
+         familyi={H\bibinitperiod},
+         given={Edward\bibnamedelima V.},
+         giveni={E\bibinitperiod\bibinitdelim V\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HEV2}
+    \strng{fullhash}{HEV2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \verb{doi}
+    \verb 10.1073/pnas.18.2.179
+    \endverb
+    \verb{eprint}
+    \verb https://www.pnas.org/doi/pdf/10.1073/pnas.18.2.179
+    \endverb
+    \field{number}{2}
+    \field{pages}{179\bibrangedash 180}
+    \field{title}{A New Set of Independent Postulates for the Algebra of Logic
+  with Special Reference to Whitehead and Russell's Principia Mathematica*}
+    \verb{url}
+    \verb https://www.pnas.org/doi/abs/10.1073/pnas.18.2.179
+    \endverb
+    \field{volume}{18}
+    \field{journaltitle}{Proceedings of the National Academy of Sciences}
+    \field{year}{1932}
+  \endentry
+
   \entry{majorityrotated}{article}{}
     \name{author}{2}{}{%
       {{hash=KD}{%
@@ -88,6 +268,115 @@
     \field{journaltitle}{Analog Integrated Circuits and Signal Processing}
     \field{month}{03}
     \field{year}{2019}
+  \endentry
+
+  \entry{lent2006bennett}{article}{}
+    \name{author}{3}{}{%
+      {{hash=LCS}{%
+         family={Lent},
+         familyi={L\bibinitperiod},
+         given={Craig\bibnamedelima S},
+         giveni={C\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=LM}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Mo},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=LY}{%
+         family={Lu},
+         familyi={L\bibinitperiod},
+         given={Yuhui},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IOP Publishing}%
+    }
+    \strng{namehash}{LCSLMLY1}
+    \strng{fullhash}{LCSLMLY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{number}{16}
+    \field{pages}{4240}
+    \field{title}{Bennett clocking of quantum-dot cellular automata and the
+  limits to binary logic scaling}
+    \field{volume}{17}
+    \field{journaltitle}{Nanotechnology}
+    \field{year}{2006}
+  \endentry
+
+  \entry{lent1997device}{article}{}
+    \name{author}{2}{}{%
+      {{hash=LCS}{%
+         family={Lent},
+         familyi={L\bibinitperiod},
+         given={Craig\bibnamedelima S},
+         giveni={C\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=TPD}{%
+         family={Tougaw},
+         familyi={T\bibinitperiod},
+         given={P\bibnamedelima Douglas},
+         giveni={P\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{LCSTPD1}
+    \strng{fullhash}{LCSTPD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{number}{4}
+    \field{pages}{541\bibrangedash 557}
+    \field{title}{A device architecture for computing with quantum dots}
+    \field{volume}{85}
+    \field{journaltitle}{Proceedings of the IEEE}
+    \field{year}{1997}
+  \endentry
+
+  \entry{lent1994quantum}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=LCS}{%
+         family={Lent},
+         familyi={L\bibinitperiod},
+         given={Craig\bibnamedelima S},
+         giveni={C\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=TPD}{%
+         family={Tougaw},
+         familyi={T\bibinitperiod},
+         given={P\bibnamedelima Douglas},
+         giveni={P\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=PW}{%
+         family={Porod},
+         familyi={P\bibinitperiod},
+         given={Wolfgang},
+         giveni={W\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{LCSTPDPW1}
+    \strng{fullhash}{LCSTPDPW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{booktitle}{Proceedings Workshop on Physics and Computation.
+  PhysComp'94}
+    \field{pages}{5\bibrangedash 13}
+    \field{title}{Quantum cellular automata: the physics of computing with
+  arrays of quantum dot molecules}
+    \field{year}{1994}
   \endentry
 
   \entry{SingelElectronFaults}{inproceedings}{}
@@ -131,6 +420,44 @@
     \field{pages}{63\bibrangedash 66}
     \field{title}{Single Electron Fault in QCA Inverter Gate}
     \field{year}{2009}
+  \endentry
+
+  \entry{mohammadi2016efficient}{article}{}
+    \name{author}{3}{}{%
+      {{hash=MM}{%
+         family={Mohammadi},
+         familyi={M\bibinitperiod},
+         given={Mohammad},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=MM}{%
+         family={Mohammadi},
+         familyi={M\bibinitperiod},
+         given={Majid},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=GS}{%
+         family={Gorgin},
+         familyi={G\bibinitperiod},
+         given={Saeid},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{MMMMGS1}
+    \strng{fullhash}{MMMMGS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{pages}{35\bibrangedash 43}
+    \field{title}{An efficient design of full adder in quantum-dot cellular
+  automata (QCA) technology}
+    \field{volume}{50}
+    \field{journaltitle}{Microelectronics journal}
+    \field{year}{2016}
   \endentry
 
   \entry{QCA_scl}{inproceedings}{}
@@ -281,6 +608,90 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{taucer2015consequences}{article}{}
+    \name{author}{4}{}{%
+      {{hash=TM}{%
+         family={Taucer},
+         familyi={T\bibinitperiod},
+         given={Marco},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=KF}{%
+         family={Karim},
+         familyi={K\bibinitperiod},
+         given={Faizal},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=WK}{%
+         family={Walus},
+         familyi={W\bibinitperiod},
+         given={Konrad},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=WRA}{%
+         family={Wolkow},
+         familyi={W\bibinitperiod},
+         given={Robert\bibnamedelima A},
+         giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{TMKFWKWRA1}
+    \strng{fullhash}{TMKFWKWRA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{number}{4}
+    \field{pages}{638\bibrangedash 647}
+    \field{title}{Consequences of many-cell correlations in clocked quantum-dot
+  cellular automata}
+    \field{volume}{14}
+    \field{journaltitle}{IEEE Transactions on Nanotechnology}
+    \field{year}{2015}
+  \endentry
+
+  \entry{2DD}{article}{}
+    \name{author}{3}{}{%
+      {{hash=VV}{%
+         family={Vankamamidi},
+         familyi={V\bibinitperiod},
+         given={Vamsi},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=OM}{%
+         family={Ottavi},
+         familyi={O\bibinitperiod},
+         given={Marco},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=LF}{%
+         family={Lombardi},
+         familyi={L\bibinitperiod},
+         given={Fabrizio},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{VVOMLF1}
+    \strng{fullhash}{VVOMLF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{V}
+    \field{sortinithash}{V}
+    \field{number}{1}
+    \field{pages}{34\bibrangedash 44}
+    \field{title}{Two-dimensional schemes for clocking/timing of QCA circuits}
+    \field{volume}{27}
+    \field{journaltitle}{IEEE Transactions on Computer-Aided Design of
+  Integrated Circuits and Systems}
+    \field{year}{2007}
+  \endentry
+
   \entry{Walter}{inproceedings}{}
     \name{author}{2}{}{%
       {{hash=WM}{%
@@ -309,6 +720,34 @@
     \field{title}{Design Automation for Field-Coupled Nanotechnologies}
     \field{month}{07}
     \field{year}{2020}
+  \endentry
+
+  \entry{CNF}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=ZL}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Lintao},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {Menlo Park, CA; Cambridge, MA; London; AAAI Press; MIT Press; 1999}%
+    }
+    \strng{namehash}{ZL1}
+    \strng{fullhash}{ZL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Z}
+    \field{sortinithash}{Z}
+    \field{booktitle}{PROCEEDINGS OF THE NATIONAL CONFERENCE ON ARTIFICIAL
+  INTELLIGENCE}
+    \field{number}{1}
+    \field{pages}{143}
+    \field{title}{Solving QBF with combined conjunctive and disjunctive normal
+  form}
+    \field{volume}{21}
+    \field{year}{2006}
   \endentry
 \enddatalist
 \endinput
