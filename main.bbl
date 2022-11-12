@@ -17,6 +17,28 @@
 \endgroup
 
 \datalist[entry]{nty/global//global/global}
+  \entry{NP-P}{book}{}
+    \name{author}{1}{}{%
+      {{hash=BC}{%
+         family={Bessiere},
+         familyi={B\bibinitperiod},
+         given={Christian},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{BC1}
+    \strng{fullhash}{BC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{title}{Principles and Practice of Constraint Programming: CP 2007}
+    \field{year}{2007}
+  \endentry
+
   \entry{LogicNetwork}{article}{}
     \name{author}{1}{}{%
       {{hash=BRE}{%
@@ -720,6 +742,87 @@
     \field{title}{Design Automation for Field-Coupled Nanotechnologies}
     \field{month}{07}
     \field{year}{2020}
+  \endentry
+
+  \entry{NP-hard}{article}{}
+    \name{author}{5}{}{%
+      {{hash=WM}{%
+         family={Walter},
+         familyi={W\bibinitperiod},
+         given={Marcel},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=WR}{%
+         family={Wille},
+         familyi={W\bibinitperiod},
+         given={Robert},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=GD}{%
+         family={Gro\ss{}e},
+         familyi={G\bibinitperiod},
+         given={Daniel},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=TFS}{%
+         family={Torres},
+         familyi={T\bibinitperiod},
+         given={Frank\bibnamedelima Sill},
+         giveni={F\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=DR}{%
+         family={Drechsler},
+         familyi={D\bibinitperiod},
+         given={Rolf},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Association for Computing Machinery}%
+    }
+    \keyw{Emerging technology, placement, routing, NP-complete, field-coupled
+  nanocomputing}
+    \strng{namehash}{WMWRGD+1}
+    \strng{fullhash}{WMWRGDTFSDR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{abstract}{%
+    Field-coupled Nanocomputing&nbsp;(FCN) technologies provide an alternative
+  to conventional CMOS-based computation technologies and are characterized by
+  intriguingly low-energy dissipation. Accordingly, their design received
+  significant attention in the recent past. FCN circuit implementations like
+  Quantum-dot Cellular Automata&nbsp;(QCA) or Nanomagnet Logic&nbsp;(NML) have
+  already been built in labs and basic operations such as inverters, Majority,
+  AND, OR, and so on,&nbsp;are already available. The design problem basically
+  boils down to the question of how to place basic operations and route their
+  connections so that the desired function results while, at the same time,
+  further constraints (related to timing, clocking, path lengths, etc.) are
+  satisfied. While several solutions for this problem have been proposed,
+  interestingly no clear understanding about the complexity of the underlying
+  task exists thus far. In this research note, we consider this problem and
+  eventually prove that placement and routing for tile-based FCN circuits is
+  NP-complete. By this, we provide a theoretical foundation for the further
+  development of corresponding design methods.%
+    }
+    \verb{doi}
+    \verb 10.1145/3312661
+    \endverb
+    \field{issn}{1550-4832}
+    \field{number}{3}
+    \field{title}{Placement and Routing for Tile-Based Field-Coupled
+  Nanocomputing Circuits Is NP-Complete (Research Note)}
+    \verb{url}
+    \verb https://doi.org/10.1145/3312661
+    \endverb
+    \field{volume}{15}
+    \list{location}{1}{%
+      {New York, NY, USA}%
+    }
+    \field{journaltitle}{J. Emerg. Technol. Comput. Syst.}
+    \field{year}{2019}
+    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{CNF}{inproceedings}{}

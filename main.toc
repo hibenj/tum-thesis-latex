@@ -35,26 +35,26 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.1}Combinational P\&R Algorithms}{19}{section.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Sequential P\&R}{19}{section.3.2}%
+\contentsline {section}{\numberline {3.2}Sequential P\&R Algorithms}{20}{section.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Methodology}{20}{chapter.4}%
+\contentsline {chapter}{\numberline {4}Methodology}{21}{chapter.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Input Network}{20}{section.4.1}%
+\contentsline {section}{\numberline {4.1}Input Network}{21}{section.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Majority Gates Placement Network}{20}{section.4.2}%
+\contentsline {section}{\numberline {4.2}Majority Gates Placement Network}{21}{section.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Sequential Circuits Placement}{20}{section.4.3}%
+\contentsline {section}{\numberline {4.3}Sequential Circuits Placement}{21}{section.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Experimental Evaluation}{21}{chapter.5}%
+\contentsline {chapter}{\numberline {5}Experimental Evaluation}{22}{chapter.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Benchmarks}{21}{section.5.1}%
+\contentsline {section}{\numberline {5.1}Benchmarks}{22}{section.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Results}{21}{section.5.2}%
+\contentsline {section}{\numberline {5.2}Results}{22}{section.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline List of Figures}{22}{chapter*.18}%
+\contentsline {chapter}{\nonumberline List of Figures}{23}{chapter*.18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline List of Tables}{23}{chapter*.19}%
+\contentsline {chapter}{\nonumberline List of Tables}{24}{chapter*.19}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Bibliography}{24}{chapter*.20}%
+\contentsline {chapter}{\nonumberline Bibliography}{25}{chapter*.20}%
 \defcounter {refsection}{0}\relax 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
