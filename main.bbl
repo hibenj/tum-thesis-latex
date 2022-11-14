@@ -39,6 +39,38 @@
     \field{year}{2007}
   \endentry
 
+  \entry{biedl1998better}{article}{}
+    \name{author}{2}{}{%
+      {{hash=BT}{%
+         family={Biedl},
+         familyi={B\bibinitperiod},
+         given={Therese},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=KG}{%
+         family={Kant},
+         familyi={K\bibinitperiod},
+         given={Goos},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{BTKG1}
+    \strng{fullhash}{BTKG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{number}{3}
+    \field{pages}{159\bibrangedash 180}
+    \field{title}{A better heuristic for orthogonal graph drawings}
+    \field{volume}{9}
+    \field{journaltitle}{Computational Geometry}
+    \field{year}{1998}
+  \endentry
+
   \entry{LogicNetwork}{article}{}
     \name{author}{1}{}{%
       {{hash=BRE}{%
@@ -63,6 +95,47 @@
     \field{volume}{100}
     \field{journaltitle}{Computers, IEEE Transactions on}
     \field{year}{1986}
+  \endentry
+
+  \entry{dummy_and_buffer_nodes}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=BM}{%
+         family={Bubna},
+         familyi={B\bibinitperiod},
+         given={Mayur},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=RS}{%
+         family={Roy},
+         familyi={R\bibinitperiod},
+         given={Sudip},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=SN}{%
+         family={Shenoy},
+         familyi={S\bibinitperiod},
+         given={Naresh},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=MS}{%
+         family={Mazumdar},
+         familyi={M\bibinitperiod},
+         given={Subhra},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BMRSSNMS1}
+    \strng{fullhash}{BMRSSNMS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{booktitle}{Proceedings of the 18th ACM Great Lakes symposium on
+  VLSI}
+    \field{pages}{243\bibrangedash 248}
+    \field{title}{A layout-aware physical design method for constructing
+  feasible QCA circuits}
+    \field{year}{2008}
   \endentry
 
   \entry{USE}{article}{}
@@ -111,6 +184,133 @@
     \field{journaltitle}{IEEE Transactions on computer-aided design of
   integrated circuits and systems}
     \field{year}{2015}
+  \endentry
+
+  \entry{node_duplication}{article}{}
+    \name{author}{3}{}{%
+      {{hash=CWJ}{%
+         family={Chung},
+         familyi={C\bibinitperiod},
+         given={Wook-Jin},
+         giveni={W\bibinithyphendelim J\bibinitperiod},
+      }}%
+      {{hash=SB}{%
+         family={Smith},
+         familyi={S\bibinitperiod},
+         given={Brian},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=LSK}{%
+         family={Lim},
+         familyi={L\bibinitperiod},
+         given={Sung\bibnamedelima Kyu},
+         giveni={S\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IET}%
+    }
+    \strng{namehash}{CWJSBLSK1}
+    \strng{fullhash}{CWJSBLSK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{number}{5}
+    \field{pages}{497\bibrangedash 505}
+    \field{title}{Node duplication and routing algorithms for quantum-dot
+  cellular automata circuits}
+    \field{volume}{153}
+    \field{journaltitle}{IEE Proceedings-Circuits, Devices and Systems}
+    \field{year}{2006}
+  \endentry
+
+  \entry{OGD}{incollection}{}
+    \name{author}{3}{}{%
+      {{hash=EM}{%
+         family={Eiglsperger},
+         familyi={E\bibinitperiod},
+         given={Markus},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=FSP}{%
+         family={Fekete},
+         familyi={F\bibinitperiod},
+         given={S{\'a}ndor\bibnamedelima P},
+         giveni={S\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=KGW}{%
+         family={Klau},
+         familyi={K\bibinitperiod},
+         given={Gunnar\bibnamedelima W},
+         giveni={G\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{EMFSPKGW1}
+    \strng{fullhash}{EMFSPKGW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{E}
+    \field{sortinithash}{E}
+    \field{booktitle}{Drawing Graphs}
+    \field{pages}{121\bibrangedash 171}
+    \field{title}{Orthogonal graph drawing}
+    \field{year}{2001}
+  \endentry
+
+  \entry{greedy_tile}{inproceedings}{}
+    \name{author}{5}{}{%
+      {{hash=FG}{%
+         family={Fontes},
+         familyi={F\bibinitperiod},
+         given={Geraldo},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=SPAR}{%
+         family={Silva},
+         familyi={S\bibinitperiod},
+         given={Pedro Arthur\bibnamedelima RL},
+         giveni={P\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim
+  R\bibinitperiod},
+      }}%
+      {{hash=NJAM}{%
+         family={Nacif},
+         familyi={N\bibinitperiod},
+         given={Jose Augusto\bibnamedelima M},
+         giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim
+  M\bibinitperiod},
+      }}%
+      {{hash=NOPV}{%
+         family={Neto},
+         familyi={N\bibinitperiod},
+         given={Omar P\bibnamedelima Vilela},
+         giveni={O\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim
+  V\bibinitperiod},
+      }}%
+      {{hash=FR}{%
+         family={Ferreira},
+         familyi={F\bibinitperiod},
+         given={Ricardo},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{FGSPARNJAM+1}
+    \strng{fullhash}{FGSPARNJAMNOPVFR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{booktitle}{2018 IEEE International Symposium on Circuits and Systems
+  (ISCAS)}
+    \field{pages}{1\bibrangedash 5}
+    \field{title}{Placement and routing by overlapping and merging qca gates}
+    \field{year}{2018}
   \endentry
 
   \entry{RES}{article}{}
@@ -675,6 +875,89 @@
     \field{year}{2015}
   \endentry
 
+  \entry{QCA-LG}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=TT}{%
+         family={Teod{\'o}sio},
+         familyi={T\bibinitperiod},
+         given={Tiago},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=SL}{%
+         family={Sousa},
+         familyi={S\bibinitperiod},
+         given={Leonel},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{TTSL1}
+    \strng{fullhash}{TTSL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{booktitle}{Norchip 2007}
+    \field{pages}{1\bibrangedash 5}
+    \field{title}{QCA-LG: A tool for the automatic layout generation of QCA
+  combinational circuits}
+    \field{year}{2007}
+  \endentry
+
+  \entry{trindade2016placement}{inproceedings}{}
+    \name{author}{5}{}{%
+      {{hash=TA}{%
+         family={Trindade},
+         familyi={T\bibinitperiod},
+         given={Alyson},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=FR}{%
+         family={Ferreira},
+         familyi={F\bibinitperiod},
+         given={Ricardo},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=NJAM}{%
+         family={Nacif},
+         familyi={N\bibinitperiod},
+         given={Jos{\'e} Augusto\bibnamedelima M},
+         giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim
+  M\bibinitperiod},
+      }}%
+      {{hash=SD}{%
+         family={Sales},
+         familyi={S\bibinitperiod},
+         given={Douglas},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=NOPV}{%
+         family={Neto},
+         familyi={N\bibinitperiod},
+         given={Omar P\bibnamedelima Vilela},
+         giveni={O\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim
+  V\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{TAFRNJAM+1}
+    \strng{fullhash}{TAFRNJAMSDNOPV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{booktitle}{2016 29th symposium on integrated circuits and systems
+  design (SBCCI)}
+    \field{pages}{1\bibrangedash 6}
+    \field{title}{A placement and routing algorithm for quantum-dot cellular
+  automata}
+    \field{year}{2016}
+  \endentry
+
   \entry{2DD}{article}{}
     \name{author}{3}{}{%
       {{hash=VV}{%
@@ -823,6 +1106,52 @@
     \field{journaltitle}{J. Emerg. Technol. Comput. Syst.}
     \field{year}{2019}
     \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{ortho}{inproceedings}{}
+    \name{author}{5}{}{%
+      {{hash=WM}{%
+         family={Walter},
+         familyi={W\bibinitperiod},
+         given={Marcel},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=WR}{%
+         family={Wille},
+         familyi={W\bibinitperiod},
+         given={Robert},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=TFS}{%
+         family={Torres},
+         familyi={T\bibinitperiod},
+         given={Frank\bibnamedelima Sill},
+         giveni={F\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=GD}{%
+         family={Gro{\ss}e},
+         familyi={G\bibinitperiod},
+         given={Daniel},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=DR}{%
+         family={Drechsler},
+         familyi={D\bibinitperiod},
+         given={Rolf},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WMWRTFS+1}
+    \strng{fullhash}{WMWRTFSGDDR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{booktitle}{Proceedings of the 24th Asia and South Pacific Design
+  Automation Conference}
+    \field{pages}{197\bibrangedash 202}
+    \field{title}{Scalable design for field-coupled nanocomputing circuits}
+    \field{year}{2019}
   \endentry
 
   \entry{CNF}{inproceedings}{}

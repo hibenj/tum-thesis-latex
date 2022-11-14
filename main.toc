@@ -31,30 +31,30 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.3}P\&R problem}{17}{section.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}State of the Art}{19}{chapter.3}%
+\contentsline {chapter}{\numberline {3}State of the Art}{20}{chapter.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Combinational P\&R Algorithms}{19}{section.3.1}%
+\contentsline {section}{\numberline {3.1}Combinational P\&R Algorithms}{20}{section.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Sequential P\&R Algorithms}{20}{section.3.2}%
+\contentsline {section}{\numberline {3.2}Sequential P\&R Algorithms}{26}{section.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Methodology}{21}{chapter.4}%
+\contentsline {chapter}{\numberline {4}Methodology}{28}{chapter.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Input Network}{21}{section.4.1}%
+\contentsline {section}{\numberline {4.1}Input Network}{28}{section.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Majority Gates Placement Network}{21}{section.4.2}%
+\contentsline {section}{\numberline {4.2}Majority Gates Placement Network}{28}{section.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Sequential Circuits Placement}{21}{section.4.3}%
+\contentsline {section}{\numberline {4.3}Sequential Circuits Placement}{28}{section.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Experimental Evaluation}{22}{chapter.5}%
+\contentsline {chapter}{\numberline {5}Experimental Evaluation}{29}{chapter.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Benchmarks}{22}{section.5.1}%
+\contentsline {section}{\numberline {5.1}Benchmarks}{29}{section.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Results}{22}{section.5.2}%
+\contentsline {section}{\numberline {5.2}Results}{29}{section.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline List of Figures}{23}{chapter*.18}%
+\contentsline {chapter}{\nonumberline List of Figures}{30}{chapter*.22}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline List of Tables}{24}{chapter*.19}%
+\contentsline {chapter}{\nonumberline List of Tables}{31}{chapter*.23}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Bibliography}{25}{chapter*.20}%
+\contentsline {chapter}{\nonumberline Bibliography}{32}{chapter*.24}%
 \defcounter {refsection}{0}\relax 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

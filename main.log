@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.12)  12 NOV 2022 17:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.12)  14 NOV 2022 16:05
 entering extended mode
 **./main.tex
 (main.tex
@@ -1458,20 +1458,46 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
 LaTeX Info: Redefining \[ on input line 2923.
 LaTeX Info: Redefining \] on input line 2924.
 )
-(C:\Program Files\MiKTeX\tex/latex/amscls\amsthm.sty
+(C:\Program Files\MiKTeX\tex/latex/algorithms\algorithm.sty
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+Package tocbasic Info: setting babel extension for `loa' on input line 95.
+\@float@every@algorithm=\toks49
+\c@algorithm=\count514
+)
+(C:\Program Files\MiKTeX\tex/latex/algorithmicx\algpseudocode.sty
+Package: algpseudocode 
+
+(C:\Program Files\MiKTeX\tex/latex/algorithmicx\algorithmicx.sty
+Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
+
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+\c@ALG@line=\count515
+\c@ALG@rem=\count516
+\c@ALG@nested=\count517
+\ALG@tlm=\skip126
+\ALG@thistlm=\skip127
+\c@ALG@Lnr=\count518
+\c@ALG@blocknr=\count519
+\c@ALG@storecount=\count520
+\c@ALG@tmpcounter=\count521
+\ALG@tmplength=\skip128
+)
+Document Style - pseudocode environments for use with the `algorithmicx' style
+) (C:\Program Files\MiKTeX\tex/latex/amscls\amsthm.sty
 Package: amsthm 2020/05/29 v2.20.6
-\thm@style=\toks49
-\thm@bodyfont=\toks50
-\thm@headfont=\toks51
-\thm@notefont=\toks52
-\thm@headpunct=\toks53
-\thm@preskip=\skip126
-\thm@postskip=\skip127
-\thm@headsep=\skip128
-\dth@everypar=\toks54
+\thm@style=\toks50
+\thm@bodyfont=\toks51
+\thm@headfont=\toks52
+\thm@notefont=\toks53
+\thm@headpunct=\toks54
+\thm@preskip=\skip129
+\thm@postskip=\skip130
+\thm@headsep=\skip131
+\dth@everypar=\toks55
 )
 Class scrbook Info: amsthm's \deferred@thm@head patched.
-\c@definition=\count514
+\c@definition=\count522
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
@@ -1578,17 +1604,17 @@ Package biblatex Info: Reference section=0 on input line 22.
 Package biblatex Info: Reference segment=0 on input line 22.
  (C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count515
+\scratchcounter=\count523
 \scratchdimen=\dimen308
 \scratchbox=\box133
-\nofMPsegments=\count516
-\nofMParguments=\count517
-\everyMPshowfont=\toks55
-\MPscratchCnt=\count518
+\nofMPsegments=\count524
+\nofMParguments=\count525
+\everyMPshowfont=\toks56
+\MPscratchCnt=\count526
 \MPscratchDim=\dimen309
-\MPnumerator=\count519
-\makeMPintoPDFobject=\count520
-\everyMPtoPDFconversion=\toks56
+\MPnumerator=\count527
+\makeMPintoPDFobject=\count528
+\everyMPtoPDFconversion=\toks57
 ) (C:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -1597,7 +1623,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 (C:\Program Files\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-\c@lstlisting=\count521
+\c@lstlisting=\count529
 Package scrhack Info: undefining \float@addtolists on input line 22.
 
 Package pgfplots notification 'compat/show suggested version=true': document ha
@@ -1632,7 +1658,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (C:\Program Files\MiKTeX\tex/generic/gettitlestring\gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count522
+\c@section@level=\count530
 )
 LaTeX Info: Redefining \ref on input line 22.
 LaTeX Info: Redefining \pageref on input line 22.
@@ -1655,7 +1681,7 @@ Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
 
 (C:\Program Files\MiKTeX\tex/latex/bookmark\bkm-pdftex.def
 File: bkm-pdftex.def 2020-11-06 v1.29 bookmark driver for pdfTeX (HO)
-\BKM@id=\count523
+\BKM@id=\count531
 ))
 Package nag Info: Command \hc@caption not defined, skipping amendment on input 
 line 22.
@@ -1973,29 +1999,107 @@ Package nag Warning: \label in float, but not after \caption on input line 1372
 Package nag Warning: \label in float, but not after \caption on input line 1372
 .
 
-[16]
+[16] [17]
 Underfull \hbox (badness 10000) in paragraph at lines 1422--1424
 
  []
 
-[17]) (chapters/03_state_of_the_art.tex [18]
+) (chapters/03_state_of_the_art.tex [18] [19]
 chapter 3.
-[19
+
+Underfull \hbox (badness 10000) in paragraph at lines 6--13
+
+ []
+
+[20
 
 
-]) (chapters/04_main_work.tex [20]
+] [21]
+<./figures//OGD.png, id=383, 241.65282pt x 240.9pt>
+File: ./figures//OGD.png Graphic file (type png)
+<use ./figures//OGD.png>
+Package pdftex.def Info: ./figures//OGD.png  used on input line 25.
+(pdftex.def)             Requested size: 169.1558pt x 168.62883pt.
+ [22]
+<./figures//OGD_sync_a.png, id=402, 111.41624pt x 191.21437pt>
+File: ./figures//OGD_sync_a.png Graphic file (type png)
+<use ./figures//OGD_sync_a.png>
+Package pdftex.def Info: ./figures//OGD_sync_a.png  used on input line 37.
+(pdftex.def)             Requested size: 89.1331pt x 152.9717pt.
+
+Underfull \hbox (badness 3930) in paragraph at lines 37--37
+[]\T1/pplx/m/n/9 (+20) (a) Par-tial rep-re-sen-ta-
+ []
+
+<./figures//OGD_sync_b.png, id=403, 127.22531pt x 187.45032pt>
+File: ./figures//OGD_sync_b.png Graphic file (type png)
+<use ./figures//OGD_sync_b.png>
+Package pdftex.def Info: ./figures//OGD_sync_b.png  used on input line 43.
+(pdftex.def)             Requested size: 101.78038pt x 149.96043pt.
+
+Package nag Warning: \label in float, but not after \caption on input line 43.
+
+
+Package nag Warning: \label in float, but not after \caption on input line 43.
+
+<./figures//OGD_sync_c.png, id=404, 128.73094pt x 188.20313pt>
+File: ./figures//OGD_sync_c.png Graphic file (type png)
+<use ./figures//OGD_sync_c.png>
+Package pdftex.def Info: ./figures//OGD_sync_c.png  used on input line 49.
+(pdftex.def)             Requested size: 102.98486pt x 150.56268pt.
+
+Package nag Warning: \label in float, but not after \caption on input line 49.
+
+
+Package nag Warning: \label in float, but not after \caption on input line 49.
+
+[23 <./figures//OGD.png>]
+<./figures//color_out.png, id=420, 197.23688pt x 197.23688pt>
+File: ./figures//color_out.png Graphic file (type png)
+<use ./figures//color_out.png>
+Package pdftex.def Info: ./figures//color_out.png  used on input line 73.
+(pdftex.def)             Requested size: 138.06485pt x 138.06485pt.
+
+
+Package nag Warning: \label in float, but not after \caption on input line 73.
+
+
+Package nag Warning: \label in float, but not after \caption on input line 73.
+
+<./figures//color_in.png, id=421, 198.7425pt x 198.7425pt>
+File: ./figures//color_in.png Graphic file (type png)
+<use ./figures//color_in.png>
+Package pdftex.def Info: ./figures//color_in.png  used on input line 79.
+(pdftex.def)             Requested size: 139.11879pt x 139.11879pt.
+
+Package nag Warning: \label in float, but not after \caption on input line 79.
+
+
+Package nag Warning: \label in float, but not after \caption on input line 79.
+
+<./figures//Coloring_conflict.png, id=424, 347.04657pt x 228.10219pt>
+File: ./figures//Coloring_conflict.png Graphic file (type png)
+<use ./figures//Coloring_conflict.png>
+Package pdftex.def Info: ./figures//Coloring_conflict.png  used on input line 8
+6.
+(pdftex.def)             Requested size: 242.93094pt x 159.67043pt.
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
+put line 127.
+[24 <./figures//OGD_sync_a.png> <./figures//OGD_sync_b.png> <./figures//OGD_syn
+c_c.png>] [25 <./figures//color_out.png> <./figures//color_in.png> <./figures//
+Coloring_conflict.png>]) (chapters/04_main_work.tex [26] [27]
 chapter 4.
 
 Underfull \hbox (badness 10000) in paragraph at lines 4--8
 
  []
 
-) (chapters/05_experimental_evaluation.tex [21
+) (chapters/05_experimental_evaluation.tex [28
 
 
 ]
 chapter 5.
-) [22
+) [29
 
 
 ]
@@ -2005,7 +2109,7 @@ Package tocbasic Info: character protrusion at lof deactivated on input line 51
 \tf@lof=\write7
 \openout7 = `main.lof'.
 
- [23
+ [30
 
 
 ]
@@ -2015,7 +2119,7 @@ Package tocbasic Info: character protrusion at lot deactivated on input line 52
 \tf@lot=\write8
 \openout8 = `main.lot'.
 
- [24
+ [31
 
 
 ]
@@ -2032,14 +2136,14 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [25
+ [32
 
 
-]
+] [33]
 
-Package nag Warning: 26 complaints in total.
+Package nag Warning: 34 complaints in total.
 
-[26] (main.aux)
+[34] (main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package logreq Info: Writing requests to 'main.run.xml'.
@@ -2047,11 +2151,11 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 52967 strings out of 478927
- 1182200 string characters out of 2862391
- 2255500 words of memory out of 3000000
- 69196 multiletter control sequences out of 15000+600000
- 483769 words of font info for 513 fonts, out of 8000000 for 9000
+ 53677 strings out of 478927
+ 1194371 string characters out of 2862391
+ 2269492 words of memory out of 3000000
+ 69860 multiletter control sequences out of 15000+600000
+ 484087 words of font info for 518 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  115i,11n,111p,10601b,2970s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\benja\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt
@@ -2066,9 +2170,9 @@ iles/MiKTeX/fonts/type1/public/mathpazo/fplmri.pfb><C:/Program Files/MiKTeX/fon
 ts/type1/public/fpl/fplrc8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palati
 no/uplb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/
 Program Files/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (33 pages, 416738 bytes).
+Output written on main.pdf (41 pages, 484694 bytes).
 PDF statistics:
- 627 PDF objects out of 1000 (max. 8388607)
- 139 named destinations out of 1000 (max. 500000)
- 101212 words of extra memory for PDF output out of 106986 (max. 10000000)
+ 731 PDF objects out of 1000 (max. 8388607)
+ 168 named destinations out of 1000 (max. 500000)
+ 101247 words of extra memory for PDF output out of 106986 (max. 10000000)
 
