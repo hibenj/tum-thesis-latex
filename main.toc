@@ -29,7 +29,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\nonumberline Latches and Registers}{16}{subsubsection*.17}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}P\&R problem}{17}{section.2.3}%
+\contentsline {section}{\numberline {2.3}P\&R problem}{18}{section.2.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}State of the Art}{20}{chapter.3}%
 \defcounter {refsection}{0}\relax 
@@ -51,10 +51,10 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5.2}Results}{29}{section.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline List of Figures}{30}{chapter*.22}%
+\contentsline {chapter}{\nonumberline List of Figures}{30}{chapter*.24}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline List of Tables}{31}{chapter*.23}%
+\contentsline {chapter}{\nonumberline List of Tables}{31}{chapter*.25}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Bibliography}{32}{chapter*.24}%
+\contentsline {chapter}{\nonumberline Bibliography}{32}{chapter*.26}%
 \defcounter {refsection}{0}\relax 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

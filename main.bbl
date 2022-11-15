@@ -17,26 +17,73 @@
 \endgroup
 
 \datalist[entry]{nty/global//global/global}
-  \entry{NP-P}{book}{}
-    \name{author}{1}{}{%
-      {{hash=BC}{%
-         family={Bessiere},
-         familyi={B\bibinitperiod},
-         given={Christian},
-         giveni={C\bibinitperiod},
+  \entry{SMT}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=AE}{%
+         family={{\'A}brah{\'a}m},
+         familyi={{\'A}\bibinitperiod},
+         given={Erika},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=KG}{%
+         family={Kremer},
+         familyi={K\bibinitperiod},
+         given={Gereon},
+         giveni={G\bibinitperiod},
       }}%
     }
-    \list{publisher}{1}{%
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{AEKG1}
+    \strng{fullhash}{AEKG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{booktitle}{2017 19th International Symposium on Symbolic and Numeric
+  Algorithms for Scientific Computing (SYNASC)}
+    \field{pages}{1\bibrangedash 8}
+    \field{title}{Smt solving for arithmetic theories: Theory and tool support}
+    \field{year}{2017}
+  \endentry
+
+  \entry{boolean_abstraction}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=BT}{%
+         family={Ball},
+         familyi={B\bibinitperiod},
+         given={Thomas},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=PA}{%
+         family={Podelski},
+         familyi={P\bibinitperiod},
+         given={Andreas},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=RSK}{%
+         family={Rajamani},
+         familyi={R\bibinitperiod},
+         given={Sriram\bibnamedelima K},
+         giveni={S\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
       {Springer}%
     }
-    \strng{namehash}{BC1}
-    \strng{fullhash}{BC1}
+    \strng{namehash}{BTPARSK1}
+    \strng{fullhash}{BTPARSK1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{B}
     \field{sortinithash}{B}
-    \field{title}{Principles and Practice of Constraint Programming: CP 2007}
-    \field{year}{2007}
+    \field{booktitle}{International Conference on Tools and Algorithms for the
+  Construction and Analysis of Systems}
+    \field{pages}{268\bibrangedash 283}
+    \field{title}{Boolean and Cartesian abstraction for model checking C
+  programs}
+    \field{year}{2001}
   \endentry
 
   \entry{biedl1998better}{article}{}
@@ -362,6 +409,32 @@
     \field{volume}{8}
     \field{journaltitle}{International Journal of Electronics Letters}
     \field{year}{2020}
+  \endentry
+
+  \entry{Boolean_def}{article}{}
+    \name{author}{1}{}{%
+      {{hash=GA}{%
+         family={Grabowski},
+         familyi={G\bibinitperiod},
+         given={Adam},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{GA1}
+    \strng{fullhash}{GA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{number}{3}
+    \field{pages}{211\bibrangedash 221}
+    \field{title}{Mechanizing complemented lattices within Mizar type system}
+    \field{volume}{55}
+    \field{journaltitle}{Journal of Automated Reasoning}
+    \field{year}{2015}
   \endentry
 
   \entry{hawkins2012cmos}{book}{}
@@ -765,6 +838,35 @@
     \field{title}{Quantum-Dot Cellular Automata Based Digital Logic Circuits: A
   Design Perspective}
     \field{year}{2020}
+  \endentry
+
+  \entry{muti_output_boolean_function}{book}{}
+    \name{author}{2}{}{%
+      {{hash=SC}{%
+         family={Scholl},
+         familyi={S\bibinitperiod},
+         given={Christoph},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=MP}{%
+         family={Molitor},
+         familyi={M\bibinitperiod},
+         given={Paul},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{SCMP1}
+    \strng{fullhash}{SCMP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{title}{Communication based FPGA synthesis for multi-output Boolean
+  functions}
+    \field{year}{1995}
   \endentry
 
   \entry{Inverter_displacements}{article}{}

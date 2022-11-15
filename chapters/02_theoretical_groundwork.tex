@@ -4,39 +4,40 @@
 The Boolean Algebra, formed by mathematician George Boole in 1847, shows that every digital circuit can be represented by logic functions, independent of their underlying technology. Until today his work is the foundation for defining and discussing about them.
 
 \subsection{Boolean Functions}\label{subsec:boolfunc}
-A definition of the Boolean calculus was first provided by Edward V. Huntington in 1993. From the \textit{set of independent postulates for the algebra of logic} and his own correction \cite{HuntingtonPostulate, HuntingtonCorrection}, the following definition can be derived:
+A definition of the Boolean calculus was first provided by Edward V. Huntington in 1993. From the \textit{set of independent postulates for the algebra of logic} and his own correction \cite{HuntingtonPostulate, HuntingtonCorrection}, the following equations form the basis of every boolean algebra:
 
 \begin{definition}[Basis for Boolean algebra]\label{Def:BasBool}
-Given a finite set S, two binary functions · : S × S → S and + :
-S × S → S, and one unary function ¬ : S → S, the tuple (S, ·,+,¬) is called a
-Boolean algebra iff the following constraints hold for all $a, b, c \in S$ and the \textit{universe element} $u \in S$: \\
+Let $a, b, c$ be arbitrary elements of an abstract algebra $(L, +, ')$ with their set denoted as $B_{abs}$. The algebra includes the binary function $+ : B_{abs} \times B_{abs} \rightarrow B_{abs}$ and the unary function $' : B_{abs} \rightarrow B_{abs}$.
+\begin{table}[h]
+	\centering
+	\begin{tabular}{c}
+		$a + b = b + a$ \\
+		$(a + b) + c =  a + (b + c)$\\
+		$(a' + b')' + (a' + b)' = a$\\
+	\end{tabular}
+\end{table}
 
-\centering
-\begin{tabular}{l r l}
+The last of his postulates named after the inventor and is commonly known as \textit{Huntington equation}. Also it exists an "universe" element $u \in B_{abs}$ for which holds:
 
-	     (1) & a · b = b · a & a + b = b + a \\
-	     (2) &a · (b + c) = (a · b) + (a · c) & a + (b · c) = (a + b) · (a + c) \\
-	     (3) & $\exists u \in S : a \cdot u = a$ &  $\exists \neg u \in S : a + \neg u = a$ \\
-	     (4) &$\exists \neg u \in S : a \cdot \neg a = \neg u$ & $\exists u \in S : a + \neg a = u$. \\
-
-\end{tabular}
+\begin{table}[h]
+	\centering
+	\begin{tabular}{l}
+		$\exists u' : a + u' = a$ \\
+		$\exists u : a + a' = u$. \\
+	\end{tabular}
+\end{table}
 
 \end{definition}
 
-With the constraints describing (1) \textit{commutativity}, (2) \textit{distributivity}, (3) \textit{neutrality}, and (4)
-\textit{complementarity}.\\
+The most common Boolean algebra $\mathbb{B}$ is defined by the 6-tuple $(\mathbb{B}, \vee, \wedge, \neg, 0, 1)$, where $\vee$ and $\wedge$ are another denotations for the binary operands for disjunction $+$ and conjunction $\cdot$ in $\mathbb{B}$. The third function $\neg$ describes the unary negotiation function, which was former denoted as $'$. The set $\mathbb{B}$ holds two distinct elements $\{0, 1\}$, with $u=1$ and $\neg u = 0$ respectively \cite{Boolean_def}.\\
 
-The most common Boolean algebra is defined by the 6-tuple $(\mathbb{B}, \vee, \wedge, \neg, 0, 1)$, where $\vee$ and $\wedge$ are another denotations for the binary operands for disjunction $+$ and conjunction $\cdot$ in $\mathbb{B}$, while $\neg$ is the known unary negation function. The set $S$ holds two distinct elements $\{0, 1\}$, with $u=1$ and $\neg u = 0$ respectively. Negation $\neg u$ is also commonly notated as $\bar{u}$.\\
+Since this definition is restricting the use of only the three Boolean functions $(\vee, \wedge, \neg)$, we want to extend it by the following definition \cite{muti_output_boolean_function}:
 
-Since this definition is restricting the use of only the three Boolean functions $(\vee, \wedge, \neg)$, we want to extend it by the following definition \cite{Walter}:
-
-\begin{definition}
-	A function $f : \mathbb{B}^n \to \mathbb{B}$, where $n \in N$, is called a Boolean function.
-	Analogously, a
-	function f : $\mathbb{B}^n \to \mathbb{B}^m$, where $n, m \in N$, is called multi-output Boolean function
-	and can be interpreted as $f_v = (f_{v1}, . . . , f_{vm})$, where $f_{vi} : \mathbb{B}^n \to \mathbb{B}$, for all $1 \leq i \leq m$.
+\begin{definition}[Boolean function]
+A Boolean function can be described as f : $\{0, 1\}^k \to \{0, 1\}$, with $k \in \mathbb{N}^*$ being the functions number of arguments or arity. A function with $k$ arguments is referred to as $k$-ary. Multi-output Boolean functions can be described as $\{0, 1\}^k \to \{0, 1\}^m$, with the integer $m > 0$.
 \end{definition}
 
+Nonetheless, every $k$-ary function can still be decomposed into a set of the common Boolean functions $(\vee, \wedge, \not)$.
 A common notation for Boolean functions are the \textit{conjunctive normal form} (CNF) and \textit{disjunctive normal form} (DNF), using literals.
 
 \begin{definition}
@@ -84,47 +85,42 @@ There are many ways of representing Boolean Functions. But most of them, includi
 \begin{figure}
 	\centering
 	\begin{tikzpicture}[node distance={2cm and 2cm}, thick, main/.style = {draw, circle}] 
-		\node[main] (1) [label=west:$v_1$]{$I_1$}; 
-		\node[main] (2) [right of=1, label=east:$v_2$] {$I_2$};
-		\node[main] (3) [right of=2, label=east:$v_3$] {$I_3$}; 
+		\node[main] (1) at (0,0) [label=west:$v_1$]{$I_1$}; 
+		\node[main] (2) at (0,-2)[label=west:$v_2$] {$I_2$};
+		\node[main] (3) at (0,-4)[label=west:$v_3$] {$I_3$};
+		\node[main] (4) at (0,-6)[label=west:$v_4$] {$I_4$}; 
 		
-		\node[main] (4) [above of=1, label=west:$v_4$]{$\wedge$}; 
-		\node[main] (5) [right of=4, label=east:$v_5$]{$\wedge$};
-		\node[main] (6) [right of=5, label=east:$v_6$] {$\wedge$};
+		\node[main] (5) at (2,-1)[label=north:$v_5$]{$\wedge$}; 
+		\node[main] (6) at (2,-5)[label=north:$v_6$]{$\vee$};
 		
-		\node[main] (7) [above of=4, label=west:$v_7$] {$\vee$};
-		\node[main] (8) [above right of=7, label=east:$v_8$] {$\wedge$}; 
-		\node [above of = 8] (f) {$f_v$};
+		\node[main] (7) at (4,-3)[label=north:$v_7$]{$\vee$};
+	
+		\node [right of = 7] (f) {$f_v$};
 		
 		
-		\draw[->] (1) -- (4);
 		\draw[->] (1) -- (5);
-		\draw[->] (2) -- (4);
-		\draw[->] (2) -- (6);
-		\draw[->] (3) -- (5);
+		\draw[->] (2) -- (5);
 		\draw[->] (3) -- (6);
-		\draw[->] (4) -- (7);
+		\draw[->] (4) -- (6);
 		\draw[->] (5) -- (7);
-		\draw[->] (7) -- (8);
-		\draw[->] (6) -- (8);
-		\draw[->] (8) -- (f);
+		\draw[->] (6) -- (7);
+		\draw[->] (7) -- (f);
 		
 	\end{tikzpicture} 
 	\\
 	\hfill \break
-	The corresponding recursive Boolean functions read:\\
+	The corresponding recursive Boolean function reads:\\
 	\hfill \break
 	\begin{tabular}{l l}
 		
-		$f_v = f_v(v_8)$ & $f_v(v_6) = f_v(v_2) \vee f_v(v_3)$ \\
-		$f_v(v_8) = f_v(v_7) \wedge f_v(v_6)$ & $f_v(v_5) = f_v(v_3) \vee f_v(v_1)$ \\
-		$f_v(v_7) = f_v(v_4) \wedge f_v(v_5)$ &  $f_v(v_4) = f_v(v_2) \vee f_v(v_1)$ \\
+		$f_v = f_v(v_7)$ &  $f_v(v_6) = f_v(v_3) \wedge f_v(v_4)$\\
+		$f_v(v_7) = f_v(v_5) \vee f_v(v_6)$ &  $f_v(v_5) = f_v(v_1) \vee f_v(v_2)$\\
 		&\\
-		with primary inputs: & 	$f_v(v_1), f_v(v_2), f_v(v_3) \in \{0, 1\}$\\
+		with primary inputs: & 	$f_v(v_1), f_v(v_2), f_v(v_3), f_v(v_4) \in \{0, 1\}$\\
 		&\\
 	\end{tabular}
 	
-	\caption{Binary Logic Network of Majority Function} \label{fig:LNMaj}
+	\caption{Binary Logic Network} \label{fig:LNEx}
 \end{figure}
 
 Since the definition reduces the number of children connected to a vertex to two, therefore only  allowing binary Boolean Functions, a custom definition is given:
@@ -150,7 +146,7 @@ Since the definition reduces the number of children connected to a vertex to two
 	\end{enumerate}
 \end{definition}
 
-The binary Logic Network of the ternary majority function is depicted figure \ref*{fig:LNMaj}.
+The recursive nature of the Boolean Function definition in logic networks can be seen in \ref*{fig:LNEx}.
 
 \begin{definition}[Majority Function]\label{Def:majf}
 	The ternary Boolean majority function is defined as: $\langle a, b, c \rangle = ab + ac + bc$, so that the function value equals the majority of it's incoming values.\\
@@ -313,82 +309,12 @@ The first and third step require an environment, which provides the features for
 
 In order to implement a full QCA-system without CMOS-components, the QCA-Array has to be divided into smaller decoupled sub-regions. Therefore an adiabatic switching or rather a clocking is introduced. The clocked regions are referred to as clocking zones. The clocking utilizes an external signal, the clock, to activate and deactivate said clocking zones. The approach first used, decreases the interdot barriers of all cells in a clocking zone, when applying a new input. When all cells in the region are stable, the barriers are raised again, while the barriers of the subsequent clocking zone are lowered simultaneously. This way the ground state gradually propagates through the whole circuit \cite{lent1997device}. Today's used approaches create electrical fields with an external clock generator and distribute it to the cells through the device substrate using embedded electrodes. Thereby the energy level of the \textit{null} state can be controlled, resulting in a equivalent effect as in the former approach \cite{Walter}.\\
 
-\begin{figure}
-	\centering
-	\begin{tikzpicture}
-		\draw[rounded corners] (-0.05, -0.05 - 0.85) rectangle (2.3-0.05, 2.3-0.05 - 0.85){};
-		\foreach \x/\xx in {0/0 ,0.4/0.05, 0.8/0.1, 1.2/0.15, 1.6/0.2}
-		{
-			
-			\draw[rounded corners = 0.3mm, fill=SpringGreen] (\x + \xx, 0) rectangle (\xx + 1.2/3 + \x, 1.2/3){};
-			\draw (0.3/3+ \x + \xx,0.3/3) circle (0.65mm);
-			\draw (0.9/3+ \x + \xx,0.3/3) circle (0.65mm);
-			\draw (0.3/3+ \x + \xx,0.9/3) circle (0.65mm);
-			\draw (0.9/3+ \x + \xx,0.9/3) circle (0.65mm);
-		}
-		\node[text=black] (A1) at (2,-0.65) {$1$};
-	\end{tikzpicture}%
-	\begin{tikzpicture}
-		\draw[rounded corners, fill=lightgray] (-0.05, -0.05 - 0.85) rectangle (2.3-0.05, 2.3-0.05 - 0.85){};
-		\foreach \x/\xx in {0/0 ,0.4/0.05, 0.8/0.1, 1.2/0.15, 1.6/0.2}
-		{
-			
-			\draw[rounded corners = 0.3mm, fill=Orchid] (\x + \xx, 0) rectangle (\xx + 1.2/3 + \x, 1.2/3){};
-			\draw (0.3/3+ \x + \xx,0.3/3) circle (0.65mm);
-			\draw (0.9/3+ \x + \xx,0.3/3) circle (0.65mm);
-			\draw (0.3/3+ \x + \xx,0.9/3) circle (0.65mm);
-			\draw (0.9/3+ \x + \xx,0.9/3) circle (0.65mm);
-		}
-		\node[text=black] (A1) at (2,-0.65) {$2$};
-	\end{tikzpicture}%
-	\begin{tikzpicture}
-		\draw[rounded corners, fill=gray] (-0.05, -0.05 - 0.85) rectangle (2.3-0.05, 2.3-0.05 - 0.85){};
-		\foreach \x/\xx in {0/0 ,0.4/0.05, 0.8/0.1, 1.2/0.15, 1.6/0.2}
-		{
-			
-			\draw[rounded corners = 0.3mm, fill=BlueGreen] (\x + \xx, 0) rectangle (\xx + 1.2/3 + \x, 1.2/3){};
-			\draw (0.3/3+ \x + \xx,0.3/3) circle (0.65mm);
-			\draw (0.9/3+ \x + \xx,0.3/3) circle (0.65mm);
-			\draw (0.3/3+ \x + \xx,0.9/3) circle (0.65mm);
-			\draw (0.9/3+ \x + \xx,0.9/3) circle (0.65mm);
-		}
-		\node[text=white] (A1) at (2,-0.65) {$3$};
-	\end{tikzpicture}%
-	\begin{tikzpicture}
-		\draw[rounded corners, fill=darkgray] (-0.05, -0.05 - 0.85) rectangle (2.3-0.05, 2.3-0.05 - 0.85){};
-		\foreach \x/\xx in {0/0 ,0.4/0.05, 0.8/0.1, 1.2/0.15, 1.6/0.2}
-		{
-			
-			\draw[rounded corners = 0.3mm, , fill=white] (\x + \xx, 0) rectangle (\xx + 1.2/3 + \x, 1.2/3){};
-			\draw (0.3/3+ \x + \xx,0.3/3) circle (0.65mm);
-			\draw (0.9/3+ \x + \xx,0.3/3) circle (0.65mm);
-			\draw (0.3/3+ \x + \xx,0.9/3) circle (0.65mm);
-			\draw (0.9/3+ \x + \xx,0.9/3) circle (0.65mm);
-		}
-		\node[text=white] (A1) at (2,-0.65) {$4$};
-	\end{tikzpicture}%
-	\begin{tikzpicture}
-		\draw[rounded corners] (-0.05, -0.05 - 0.85) rectangle (2.3-0.05, 2.3-0.05 - 0.85){};
-		\foreach \x/\xx in {0/0 ,0.4/0.05, 0.8/0.1, 1.2/0.15, 1.6/0.2}
-		{
-			
-			\draw[rounded corners = 0.3mm, fill=SpringGreen] (\x + \xx, 0) rectangle (\xx + 1.2/3 + \x, 1.2/3){};
-			\draw (0.3/3+ \x + \xx,0.3/3) circle (0.65mm);
-			\draw (0.9/3+ \x + \xx,0.3/3) circle (0.65mm);
-			\draw (0.3/3+ \x + \xx,0.9/3) circle (0.65mm);
-			\draw (0.9/3+ \x + \xx,0.9/3) circle (0.65mm);
-		}
-		\node[text=black] (A1) at (2,-0.65) {$1$};
-	\end{tikzpicture}%
-	
-	\caption{QCA-Cell wire with corresponding clock zones} \label{fig:QCAClock}
-\end{figure}
-
 A wire, divided in such clocking zones is shown in \ref{fig:QCAWire}. The colors of the zones and cells as well as the zone number show redundant information about the type of clocking zone. They differ in the external applied electrical field and therefore the energy of the cells. In QCA the clocking is divided into the four consecutive states, \textit{switch}, \textit{hold}, \textit{release} and \textit{relax}. They are aligned in a pipeline like structure, where each of these state is phase shifted by $\pi/2$, forming a $2\pi$ clock cycle. In the switch-phase cells start getting polarized dependent on the polarization of the driving cell. When the cells are polarized they get fixed in the hold-phase. Afterwards in the release-phase the excitation gradually decreases, resulting in the unexcited relax-state \cite{Sasamal2020QuantumDotCA}. The scheme of such a pipeline like clocking is depicted exemplary on a wire segment in Figure \ref{fig:QCAClockpipeline}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{figure}
+\centering
 \tikzset{
 	pics/cico/.style args={#1/#2/#3}{
 		code = {
@@ -398,27 +324,13 @@ A wire, divided in such clocking zones is shown in \ref{fig:QCAWire}. The colors
 			\draw (0.3/3+ #2 ,0.9/3+ #3) circle (0.65mm);
 			\draw[fill = #1] (0.9/3+ #2 ,0.9/3+ #3) circle (0.65mm);
 }}}
-	\centering
-	\begin{tikzpicture}[rotate=90, scale=0.9, every node/.style={scale=0.9}]
-		\draw[rounded corners] (-0.05, -0.05 - 0.85) rectangle (2.3-0.05, 2.3-0.05 - 0.85){};
-		\foreach \x/\xx in {0/0 ,0.4/0.05, 0.8/0.1, 1.2/0.15, 1.6/0.2}
-		{
-			
-			\draw[rounded corners = 0.3mm, fill=SpringGreen] (\x + \xx, 0) rectangle (\xx + 1.2/3 + \x, 1.2/3){};
-			\draw (0.3/3+ \x + \xx,0.3/3) circle (0.65mm);
-			\draw (0.9/3+ \x + \xx,0.3/3) circle (0.65mm);
-			\draw (0.3/3+ \x + \xx,0.9/3) circle (0.65mm);
-			\draw (0.9/3+ \x + \xx,0.9/3) circle (0.65mm);
-		}
-		\node[text=black] (A1) at (0.2,-0.65) {$1$};
-	\end{tikzpicture}
 \begin{tikzpicture}
 	
 	% horizontal axis
-	\draw[->] (0,0) -- (10,0) node[anchor=north] {};
+	\draw[->] (0,0) -- (10,0) node[anchor=north] {$t$};
 	
 	% vertical axis
-	\draw[->] (0,0) -- (0,1.5) node[anchor=west] {$E$};
+	\draw[->] (0,0) -- (0,1.5) node[anchor=east] {$E_{clock1}$};
 	% vertical lines
 	\draw[dotted] (2,0) -- (2,1.4);
 	\draw[dotted] (4,0) -- (4,1.4);
@@ -426,86 +338,21 @@ A wire, divided in such clocking zones is shown in \ref{fig:QCAWire}. The colors
 	\draw[dotted] (8,0) -- (8,1.4);
 	
 	% E
-	\draw[thick] (0,0) -- (2,0.75) -- (4,0.75) -- (6,0) -- (8,0) --  (10,0.75);
+	\draw[thick] (0,0) -- (2,1.3) -- (4,1.3) -- (6,0) -- (8,0) --  (10,1.3);
 	\draw (1,1.4) node {}; %label
-	
-	% Cells
-	{
-		\draw pic {cico=lightgray/0.4/0.4};		\draw pic {cico=gray/1.1/0.65};
-		\draw pic {cico=black/2.4/0.85};		\draw pic {cico=black/3.1/0.85};
-		\draw pic {cico=gray/4.4/0.65};			\draw pic {cico=lightgray/5.1/0.4};
-		\draw pic {cico=white/6.4/0.2};			\draw pic {cico=white/7.1/0.2};
-		\draw pic {cico=lightgray/8.4/0.4};		\draw pic {cico=gray/9.1/0.65};
-	}
-	
-	
+	\draw (1,1) node [rotate = 32] {$switch$};
+	\draw (3,1) node [] {$hold$};
+	\draw (5,1) node [rotate = -32] {$release$};
+	\draw (7,0.3) node [] {$relax$};
 \end{tikzpicture}
-\\
-\vspace{-1.1pt}
-	\begin{tikzpicture}[rotate=90, scale=0.9, every node/.style={scale=0.9}]
-		\draw[rounded corners, fill=lightgray] (-0.05, -0.05 - 0.85) rectangle (2.3-0.05, 2.3-0.05 - 0.85){};
-		\foreach \x/\xx in {0/0 ,0.4/0.05, 0.8/0.1, 1.2/0.15, 1.6/0.2}
-		{
-			
-			\draw[rounded corners = 0.3mm, fill=Orchid] (\x + \xx, 0) rectangle (\xx + 1.2/3 + \x, 1.2/3){};
-			\draw (0.3/3+ \x + \xx,0.3/3) circle (0.65mm);
-			\draw (0.9/3+ \x + \xx,0.3/3) circle (0.65mm);
-			\draw (0.3/3+ \x + \xx,0.9/3) circle (0.65mm);
-			\draw (0.9/3+ \x + \xx,0.9/3) circle (0.65mm);
-		}
-		\node[text=black] (A1) at (0.2,-0.65) {$2$};
-	\end{tikzpicture}
-\begin{tikzpicture}
-	
-	% horizontal axis
-	\draw[->] (0,0) -- (10,0) node[anchor=north] {};
-	
-	% vertical axis
-	\draw[->] (0,0) -- (0,1.5) node[anchor=west] {$E$};
-	% nominal speed
-	\draw[dotted] (2,0) -- (2,1.4);
-	\draw[dotted] (4,0) -- (4,1.4);
-	\draw[dotted] (6,0) -- (6,1.4);
-	\draw[dotted] (8,0) -- (8,1.4);
-	
-	% Us
-	\draw[thick] (0,0) -- (2,0) -- (4,0.75) -- (6,0.75) -- (8,0) --  (10,0);
-	\draw (1,1.4) node {}; %label
-	
-	% Cells
 
-	{
-		\draw pic {cico=white/0.4/0.2};			\draw pic {cico=white/1.1/0.2};
-		\draw pic {cico=lightgray/2.4/0.4};		\draw pic {cico=gray/3.1/0.65};
-		\draw pic {cico=black/4.4/0.85};		\draw pic {cico=black/5.1/0.85};
-		\draw pic {cico=gray/6.4/0.65};			\draw pic {cico=lightgray/7.1/0.4};
-		\draw pic {cico=white/8.4/0.2};			\draw pic {cico=white/9.1/0.2};
-	}
-	
-	
-\end{tikzpicture}
-\\
-\vspace{-1.1pt}
-	\begin{tikzpicture}[rotate=90, scale=0.9, every node/.style={scale=0.9}]
-		\draw[rounded corners, fill=gray] (-0.05, -0.05 - 0.85) rectangle (2.3-0.05, 2.3-0.05 - 0.85){};
-		\foreach \x/\xx in {0/0 ,0.4/0.05, 0.8/0.1, 1.2/0.15, 1.6/0.2}
-		{
-			
-			\draw[rounded corners = 0.3mm, fill=BlueGreen] (\x + \xx, 0) rectangle (\xx + 1.2/3 + \x, 1.2/3){};
-			\draw (0.3/3+ \x + \xx,0.3/3) circle (0.65mm);
-			\draw (0.9/3+ \x + \xx,0.3/3) circle (0.65mm);
-			\draw (0.3/3+ \x + \xx,0.9/3) circle (0.65mm);
-			\draw (0.9/3+ \x + \xx,0.9/3) circle (0.65mm);
-		}
-		\node[text=white] (A1) at (0.2,-0.65) {$3$};
-	\end{tikzpicture}
 \begin{tikzpicture}
 	
 	% horizontal axis
-	\draw[->] (0,0) -- (10,0) node[anchor=north] {};
+	\draw[->] (0,0) -- (10,0) node[anchor=north] {$t$};
 	
 	% vertical axis
-	\draw[->] (0,0) -- (0,1.5) node[anchor=west] {$E$};
+	\draw[->] (0,0) -- (0,1.5) node[anchor=east] {$E_{clock2}$};
 	% nominal speed
 	\draw[dotted] (2,0) -- (2,1.4);
 	\draw[dotted] (4,0) -- (4,1.4);
@@ -513,42 +360,23 @@ A wire, divided in such clocking zones is shown in \ref{fig:QCAWire}. The colors
 	\draw[dotted] (8,0) -- (8,1.4);
 	
 	% Us
-	\draw[thick] (0,0.75) -- (2,0) -- (4,0) -- (6,0.75) -- (8,0.75) --  (10,0);
+	\draw[thick] (0,0) -- (2,0) -- (4,1.3) -- (6,1.3) -- (8,0) --  (10,0);
 	\draw (1,1.4) node {}; %label
-	
-	% Cells
-	{
-		\draw pic {cico=gray/0.4/0.65};			\draw pic {cico=lightgray/1.1/0.4};
-		\draw pic {cico=white/2.4/0.2};			\draw pic {cico=white/3.1/0.2};
-		\draw pic {cico=lightgray/4.4/0.4};		\draw pic {cico=gray/5.1/0.65};
-		\draw pic {cico=black/6.4/0.85};		\draw pic {cico=black/7.1/0.85};
-		\draw pic {cico=gray/8.4/0.65};			\draw pic {cico=lightgray/9.1/0.4};
-	}
+	\draw (1,0.3) node [] {$relax$};
+	\draw (3,1) node [rotate = 32] {$switch$};
+	\draw (5,1) node [] {$hold$};
+	\draw (7,1) node [rotate = -32] {$release$};
 	
 	
 \end{tikzpicture}
-\\
-\vspace{-1.1pt}
-	\begin{tikzpicture}[rotate=90, scale=0.9, every node/.style={scale=0.9}]
-		\draw[rounded corners, fill=darkgray] (-0.05, -0.05 - 0.85) rectangle (2.3-0.05, 2.3-0.05 - 0.85){};
-		\foreach \x/\xx in {0/0 ,0.4/0.05, 0.8/0.1, 1.2/0.15, 1.6/0.2}
-		{
-			
-			\draw[rounded corners = 0.3mm, , fill=white] (\x + \xx, 0) rectangle (\xx + 1.2/3 + \x, 1.2/3){};
-			\draw (0.3/3+ \x + \xx,0.3/3) circle (0.65mm);
-			\draw (0.9/3+ \x + \xx,0.3/3) circle (0.65mm);
-			\draw (0.3/3+ \x + \xx,0.9/3) circle (0.65mm);
-			\draw (0.9/3+ \x + \xx,0.9/3) circle (0.65mm);
-		}
-		\node[text=white] (A1) at (0.2,-0.65) {$4$};
-	\end{tikzpicture}
+
 \begin{tikzpicture}
 	
 	% horizontal axis
-	\draw[->] (0,0) -- (10,0) node[anchor=north] {};
+	\draw[->] (0,0) -- (10,0) node[anchor=north] {$t$};
 	
 	% vertical axis
-	\draw[->] (0,0) -- (0,1.5) node[anchor=west] {$E$};
+	\draw[->] (0,0) -- (0,1.5) node[anchor=east] {$E_{clock3}$};
 	% nominal speed
 	\draw[dotted] (2,0) -- (2,1.4);
 	\draw[dotted] (4,0) -- (4,1.4);
@@ -556,19 +384,35 @@ A wire, divided in such clocking zones is shown in \ref{fig:QCAWire}. The colors
 	\draw[dotted] (8,0) -- (8,1.4);
 	
 	% Us
-	\draw[thick] (0,0.75) -- (2,0.75) -- (4,0) -- (6,0) -- (8,0.75) --  (10,0.75);
+	\draw[thick] (0,1.3) -- (2,0) -- (4,0) -- (6,1.3) -- (8,1.3) --  (10,0);
 	\draw (1,1.4) node {}; %label
+	\draw (1,1) node [rotate = -32] {$release$};
+	\draw (3,0.3) node [] {$relax$};
+	\draw (5,1) node [rotate = 32] {$switch$};
+	\draw (7,1) node [] {$hold$};
 	
-	% Cells
+\end{tikzpicture}
+
+\begin{tikzpicture}
 	
-	{
-		\draw pic {cico=black/0.4/0.85};		\draw pic {cico=black/1.1/0.85};
-		\draw pic {cico=gray/2.4/0.65};			\draw pic {cico=lightgray/3.1/0.4};
-		\draw pic {cico=white/4.4/0.2};			\draw pic {cico=white/5.1/0.2};
-		\draw pic {cico=lightgray/6.4/0.4};		\draw pic {cico=gray/7.1/0.65};
-		\draw pic {cico=black/8.4/0.85};		\draw pic {cico=black/9.1/0.85};
-	}
+	% horizontal axis
+	\draw[->] (0,0) -- (10,0) node[anchor=north] {$t$};
 	
+	% vertical axis
+	\draw[->] (0,0) -- (0,1.5) node[anchor=east] {$E_{clock4}$};
+	% nominal speed
+	\draw[dotted] (2,0) -- (2,1.4);
+	\draw[dotted] (4,0) -- (4,1.4);
+	\draw[dotted] (6,0) -- (6,1.4);
+	\draw[dotted] (8,0) -- (8,1.4);
+	
+	% Us
+	\draw[thick] (0,1.3) -- (2,1.3) -- (4,0) -- (6,0) -- (8,1.3) --  (10,1.3);
+	\draw (1,1.4) node {}; %label
+	\draw (1,1) node [] {$hold$};
+	\draw (3,1) node [rotate = -32] {$release$};
+	\draw (5,0.3) node [] {$relax$};
+	\draw (7,1) node [rotate = 32] {$switch$};
 	
 \end{tikzpicture}
 	\caption{QCA clocking pipeline} \label{fig:QCAClockpipeline}
@@ -756,31 +600,8 @@ The tile-based clocking leads to several proposals of clocking-schemes, which gi
 
 \subsection{Gates}\label{sub:gates}
 
-\begin{figure}
-	\centering
-	
-	\begin{tikzpicture}[rotate=90, scale=1.2, every node/.style={scale=1.2}]
-		\draw[rounded corners] (-0.05, -0.1 - 0.85) rectangle (2.3-0.05, 2.3-0.1 - 0.85){};
-		
-		\foreach \y in {-0.45, -0.9, 0, 0.45, 0.9}
-		{
-			\foreach \x in {0 ,0.45, 0.9, 1.35, 1.8}
-			{
-				
-				\draw[rounded corners = 0.3mm] (\x, 0 + \y) rectangle (1.2/3 + \x, 1.2/3 + \y){};
-				\draw (0.3/3+ \x,0.3/3 + \y) circle (0.65mm);
-				\draw (0.9/3+ \x,0.3/3+ \y) circle (0.65mm);
-				\draw (0.3/3+ \x,0.9/3 + \y) circle (0.65mm);
-				\draw (0.9/3+ \x,0.9/3 + \y) circle (0.65mm);
-			}
-		}
-	\end{tikzpicture}
-	
-	\caption{Cell representation of tile}\label{fig:Celltile}
-\end{figure}
-
 In this chapter a library of gates is introduced, which are later used in the placement and routing algorithms. Some of these gates are inherited from the QCA ONE library \cite{QCA_scl}, which is used as base for some works on placement and routing CITE.
-The QCA ONE library proposes gates formed by one tile as well as gates formed by multiple tiles. A major drawback of this library is the prerequisite of a clocking scheme (USE) in order to form multiple tile gates. This restricts the underlying placement and routing algorithm in the clocking domain. Also manual changes of the standard cells clock zones, size or positioning is not allowed \cite{QCA_scl}, imposing the designer with even more restrictions. For this work, the standard cell library should only contain gates occupying one tile. Every other logic function is composed out of these standard cells. The tiles used are of the dimension $5 \times 5$, which means that all standard gates are reduced to this area (figure \ref{fig:Celltile}).\\
+The QCA ONE library proposes gates formed by one tile as well as gates formed by multiple tiles. A major drawback of this library is the prerequisite of a clocking scheme (USE) in order to form multiple tile gates. This restricts the underlying placement and routing algorithm in the clocking domain. Also manual changes of the standard cells clock zones, size or positioning is not allowed \cite{QCA_scl}, imposing the designer with even more restrictions. For this work, the standard cell library should only contain gates occupying one tile. Every other logic function is composed out of these standard cells. The tiles used are of the dimension $5 \times 5$, which means that all standard gates are reduced to this area.\\
 %%%%%%Inverter
 \begin{figure}
 	\centering
@@ -1401,13 +1222,68 @@ The last special case of wires are crossing cases. By rotating the cells of one 
 \end{figure}
 
 \subsubsection{Latches and Registers}
-In order to implement sequential circuits, storage elements need to be implemented in QCA technology. Although they have to be rethought in QCA, the main characteristics can be derived from the well-known CMOS technology. Therefore, first the ideas of storage elements and their implementation is discussed. 
-The simplest element, which can store one bit is an Eccles–Jordan \text{flip-flop} (FF). It is formed by connecting the output of one inverter to the input of another inverter and vice versa. Because this element is so simple it comes with some drawbacks. First of all the latch output is directly connected to the input causing noisy behavior, called \text{transparency} \cite{hawkins2012cmos}. Further a high voltage shift is needed at the FF value and the FF is transparent in the transition region, requiring a stable voltage level during the transition. To tackle these Problems the inverters are replaced by NOR gates, reducing transparency between the input and output. Also this change introduces clear states. In the set state the latch output is set to $Q=1$ and in the reset phase it is set to $Q=0$. Furthermore there exists a hold phase, where the current value is held (latched) and an undefined state. These states give the latch the name \textit{Set-Reset-Latch} (SR-Latch). In order to use latches in synchronous circuits the Set and Reset inputs are clocked. This results in the gated SR-Latch. Because this latch still has an undefined state, which is not allowed the set and inverted reset inputs are connected together excluding the undefined state. Now the value is held when the clock $clk=0$ and the D-latch is transparent, when $clk=1$. Since transparency is still present a flip flop is formed by connecting two D-latches to a master-slave D-flip-flop producing only stable outputs.\\
+In order to implement sequential circuits, storage elements need to be implemented in QCA technology. Although they have to be rethought in QCA, the main characteristics can be derived from the well-known CMOS technology. Therefore, first the ideas of storage elements and their implementation is discussed.
+The simplest element, which can store one bit is an Eccles–Jordan \text{flip-flop} (FF). It is formed by connecting the output of one inverter to the input of another inverter and vice versa. Because this element is so simple, it comes with some drawbacks. First of all the latch output is directly connected to the input causing noisy behavior, called \text{transparency} \cite{hawkins2012cmos}. Further a high voltage shift is needed at the FF value and the FF is transparent in the transition region, requiring a stable voltage level during the transition. To tackle these Problems the inverters are replaced by NOR gates, reducing transparency between the input and output. Also this change introduces clear states. In the set state the latch output is set to $Q=1$ and in the reset phase it is set to $Q=0$. Furthermore there exists a hold phase, where the current value is held (latched) and an undefined state. These states give the latch the name \textit{Set-Reset-Latch} (SR-Latch). In order to use latches in synchronous circuits the Set and Reset inputs are clocked. This results in the gated SR-Latch. Because this latch still has an undefined state, which is not allowed the set and inverted reset inputs are connected together excluding the undefined state. Now the value is held when the clock $clk=0$ and the D-latch is transparent, when $clk=1$. Since transparency is still present a flip flop is formed by connecting two D-latches to a master-slave D-flip-flop producing only stable outputs.\\
 The goal of a storage element in QCA is to have all the properties of a D-FF. In the QCA ONE library an effort was made to translate the D-FF into QCA by just replacing the CMOS gates and wires with the corresponding QCA gates. But since clocking plays an important role in the functionality of storage elements and the clocking has some major differences from QCA to CMOS as already observed in \ref{subsec:clocking}, the sense of purpose is questionable.\\
 This means that storage elements should be completely rethought in the QCA domain. To create a QCA element which is able to store one bit the solution is rather simple. Since every tile is clocked on its own, a simple latch can be formed by a wire segment held in the hold phase of the clocking. In Figure !! such a wire segment is depicted. It is still adjacent to one ascending and one descending clock number (mod $N_{clk}$). The storage property is reached by extending the hold phase a the required number of clock cycles \cite{Walter}. 
 %It can also be observed that in the hold phase a stable polarization is already implied, so that such a wire segment can not only be referred to as latch but as flip-flop. 
 Because this implementation needs a different clock generator for every latch it is not sure if it is possible to implement. Though it can be shown that the same properties can be achieved by placing buffering wire segments instead of the introduced wire-latch. For every clock cycle the hold phase would be extended in the wire-FF, four adjacent wire segments are added delaying the information arrival by exactly the same time. Since wires have to be used to route the loops created by sequential circuits this idea is implemented for this work and explained more accurate in the next chapters.
 %D-latch can be used to delay time by the circuit frequency
+\\
+\begin{figure}
+	\centering
+	\begin{circuitikz}[american] \draw
+		(1,0) node[not port] (not1) {}
+		(1,-2) node[not port, rotate = 180] (not2) {}
+		(-1,0) -- (0, 0)
+		(0,0) -- (not1.in)
+		(not1.out) -- (2, 0)
+		(2, 0) -- (3, 0)
+		(2, 0) -- (2, -2)
+		(2, -2) -- (not2.in)
+		(not2.out) -- (0, -2)
+		(0, -2) -- (0, 0)
+		
+		(0.5,0) node [anchor=west] {$1$}
+		(1.5,-2) node [anchor=east] {$2$}
+		(-2, 0) node [anchor=west] {$in$}
+		(4, 0) node [anchor=east] {$out$}
+		(-2, -1) node [anchor=west] {$V_{o1}=V_{i2}$}
+		(4, -1) node [anchor=east] {$V_{o2}=V_{i1}$}
+		;
+	\end{circuitikz}
+\caption{Eccles-Jordan-Flip-Flop}\label{fig:EJFF}
+\end{figure}
+
+\begin{figure}
+\centering
+	\subfigure
+	{
+		\begin{circuitikz}[american] \draw
+			(1,0) node[xor port] (xor1) {}
+			(1,-2) node[xor port] (xor2) {}
+			
+			;
+		\end{circuitikz}
+	}
+\subfigure
+{
+	\begin{tabular}{| c | c | c | c |}
+		\hline
+		0 & 0 & Q & hold state\\
+		\hline
+		0 & 1 & 0 & reset\\
+		\hline
+		1 & 0 & 1 & set\\
+		\hline
+		1 & 1 & X & undefined state\\
+		\hline
+	\end{tabular}
+}
+	
+	\caption{SR-Latch}\label{fig:SR-Latch}
+\end{figure}
+
 
 
 \section{P\&R problem} \label{sec:PR}
