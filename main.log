@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.12)  15 NOV 2022 17:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.12)  18 NOV 2022 11:19
 entering extended mode
 **./main.tex
 (main.tex
@@ -2101,41 +2101,46 @@ Package nag Warning: \label in float, but not after \caption on input line 169.
 
 
 
+Package nag Warning: \label in float, but not after \caption on input line 196.
+
+
+
+Package nag Warning: \label in float, but not after \caption on input line 196.
+
+
+
+Package nag Warning: \label in float, but not after \caption on input line 211.
+
+
+
+Package nag Warning: \label in float, but not after \caption on input line 211.
+
+
+
 LaTeX Warning: Reference `fig:Coloring_conflict' on page 24 undefined on input 
-line 180.
-
-[24]
-
-Package nag Warning: \label in float, but not after \caption on input line 202.
+line 216.
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 216--218
 
-Package nag Warning: \label in float, but not after \caption on input line 202.
+ []
 
-
-
-Package nag Warning: \label in float, but not after \caption on input line 217.
-
-
-
-Package nag Warning: \label in float, but not after \caption on input line 217.
-
-
+[24] [25]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 265.
-[25]) (chapters/04_main_work.tex [26] [27]
+put line 264.
+ [26] [27] [28]) (chapters/04_main_work.tex [29] [30]
 chapter 4.
 
 Underfull \hbox (badness 10000) in paragraph at lines 4--8
 
  []
 
-) (chapters/05_experimental_evaluation.tex [28
+) (chapters/05_experimental_evaluation.tex [31
 
 
 ]
 chapter 5.
-) [29
+) [32
 
 
 ]
@@ -2145,7 +2150,7 @@ Package tocbasic Info: character protrusion at lof deactivated on input line 51
 \tf@lof=\write7
 \openout7 = `main.lof'.
 
- [30
+ [33
 
 
 ]
@@ -2155,18 +2160,18 @@ Package tocbasic Info: character protrusion at lot deactivated on input line 52
 \tf@lot=\write8
 \openout8 = `main.lot'.
 
- [31
+ [34
 
 
 ]
 chapter without number
-Package microtype Info: Character `029' is missing
-(microtype)             in font `T1/pplx/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-[32
+[35
 
 
 ]
+Package microtype Info: Character `029' is missing
+(microtype)             in font `T1/pplx/m/sc/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 5
 4.
  (C:\Program Files\MiKTeX\tex/latex/base\t1cmtt.fd
@@ -2176,11 +2181,17 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [33]
+ [36]
+Overfull \hbox (42.1764pt too wide) in paragraph at lines 54--54
+\T1/pplx/m/n/10.95 (-20) Cir-cuits. In: \T1/pplx/m/it/10.95 (-20) PREPRINT (Ve
+r-sion 1) avail-able at Re-search Square [https://doi.org/10.21203/rs.3.rs-
+ []
+
+[37]
 
 Package nag Warning: 36 complaints in total.
 
-[34] (main.aux)
+[38] (main.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -2191,11 +2202,11 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 68679 strings out of 478927
- 1653545 string characters out of 2862391
- 2943565 words of memory out of 3000000
- 84807 multiletter control sequences out of 15000+600000
- 483159 words of font info for 505 fonts, out of 8000000 for 9000
+ 68730 strings out of 478927
+ 1654788 string characters out of 2862391
+ 2948087 words of memory out of 3000000
+ 84830 multiletter control sequences out of 15000+600000
+ 484076 words of font info for 519 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  115i,12n,111p,10601b,2970s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\benja\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt
@@ -2209,9 +2220,9 @@ iKTeX/fonts/type1/public/mathpazo/fplmri.pfb><C:/Program Files/MiKTeX/fonts/typ
 e1/public/fpl/fplrc8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/upl
 b8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Progra
 m Files/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (41 pages, 449886 bytes).
+Output written on main.pdf (45 pages, 468631 bytes).
 PDF statistics:
- 725 PDF objects out of 1000 (max. 8388607)
- 175 named destinations out of 1000 (max. 500000)
+ 763 PDF objects out of 1000 (max. 8388607)
+ 185 named destinations out of 1000 (max. 500000)
  100198 words of extra memory for PDF output out of 106986 (max. 10000000)
 

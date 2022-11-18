@@ -86,6 +86,68 @@
     \field{year}{2001}
   \endentry
 
+  \entry{sequential_tile_CMOS_one}{article}{}
+    \name{author}{7}{}{%
+      {{hash=BD}{%
+         family={Bhowmik},
+         familyi={B\bibinitperiod},
+         given={Dhrubajyoti},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=PAK}{%
+         family={Pramanik},
+         familyi={P\bibinitperiod},
+         given={Amit\bibnamedelima Kumar},
+         giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+      {{hash=PJ}{%
+         family={Pal},
+         familyi={P\bibinitperiod},
+         given={Jayanta},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=SP}{%
+         family={Sen},
+         familyi={S\bibinitperiod},
+         given={Pinaki},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=SAR}{%
+         family={Singh},
+         familyi={S\bibinitperiod},
+         given={Ayush\bibnamedelima Ranjan},
+         giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=SAK}{%
+         family={Saha},
+         familyi={S\bibinitperiod},
+         given={Apu\bibnamedelima Kumar},
+         giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+      {{hash=SB}{%
+         family={Sen},
+         familyi={S\bibinitperiod},
+         given={Bibhash},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{BDPAKPJ+1}
+    \strng{fullhash}{BDPAKPJSPSARSAKSB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{pages}{107668}
+    \field{title}{Regular clocking-based Automated Cell Placement technique in
+  QCA targeting sequential circuit}
+    \field{volume}{98}
+    \field{journaltitle}{Computers \& Electrical Engineering}
+    \field{year}{2022}
+  \endentry
+
   \entry{biedl1998better}{article}{}
     \name{author}{2}{}{%
       {{hash=BT}{%
@@ -358,6 +420,45 @@
     \field{pages}{1\bibrangedash 5}
     \field{title}{Placement and routing by overlapping and merging qca gates}
     \field{year}{2018}
+  \endentry
+
+  \entry{ropper}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=FRE}{%
+         family={Formigoni},
+         familyi={F\bibinitperiod},
+         given={Ruan\bibnamedelima Evangelista},
+         giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=FRS}{%
+         family={Ferreira},
+         familyi={F\bibinitperiod},
+         given={Ricardo\bibnamedelima S},
+         giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=NJAM}{%
+         family={Nacif},
+         familyi={N\bibinitperiod},
+         given={Jos{\'e} Augusto\bibnamedelima M},
+         giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim
+  M\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{FREFRSNJAM1}
+    \strng{fullhash}{FREFRSNJAM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{booktitle}{2019 32nd Symposium on Integrated Circuits and Systems
+  Design (SBCCI)}
+    \field{pages}{1\bibrangedash 6}
+    \field{title}{Ropper: A placement and routing framework for field-coupled
+  nanotechnologies}
+    \field{year}{2019}
   \endentry
 
   \entry{RES}{article}{}
@@ -674,6 +775,51 @@
     \field{year}{1994}
   \endentry
 
+  \entry{sequential_cell_one}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=LLA}{%
+         family={Lim},
+         familyi={L\bibinitperiod},
+         given={Lee\bibnamedelima Ai},
+         giveni={L\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=GA}{%
+         family={Ghazali},
+         familyi={G\bibinitperiod},
+         given={Azrul},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=YSCT}{%
+         family={Yan},
+         familyi={Y\bibinitperiod},
+         given={Sarah Chan\bibnamedelima Tji},
+         giveni={S\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim
+  T\bibinitperiod},
+      }}%
+      {{hash=FCC}{%
+         family={Fat},
+         familyi={F\bibinitperiod},
+         given={Chau\bibnamedelima Chien},
+         giveni={C\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{LLAGAYSCTFCC1}
+    \strng{fullhash}{LLAGAYSCTFCC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{booktitle}{2012 IEEE International Conference on Circuits and
+  Systems (ICCAS)}
+    \field{pages}{162\bibrangedash 167}
+    \field{title}{Sequential circuit design using Quantum-dot Cellular Automata
+  (QCA)}
+    \field{year}{2012}
+  \endentry
+
   \entry{SingelElectronFaults}{inproceedings}{}
     \name{author}{4}{}{%
       {{hash=MM}{%
@@ -755,6 +901,35 @@
     \field{year}{2016}
   \endentry
 
+  \entry{sequential_reversible}{article}{}
+    \name{author}{1}{}{%
+      {{hash=MARSeaGE}{%
+         family={Mohammed\bibnamedelima Alharbi},
+         familyi={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+         suffix={Gerard\bibnamedelima Edwards},
+         suffixi={G\bibinitperiod\bibinitdelim E\bibinitperiod},
+         given={Richard Stocker et\bibnamedelima al.},
+         giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim
+  e\bibinitperiod\bibinitdelim a\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Research Square}%
+    }
+    \strng{namehash}{MAGERSea1}
+    \strng{fullhash}{MAGERSea1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{title}{Novel Ultra-Energy-Efficient Reversible Designs of Sequential
+  Logic Quantum-Dot Cellular Automata Flip-Flop Circuits}
+    \field{volume}{1}
+    \field{journaltitle}{PREPRINT (Version 1) available at Research Square
+  [https://doi.org/10.21203/rs.3.rs-2145478/v1]}
+    \field{year}{2022}
+  \endentry
+
   \entry{QCA_scl}{inproceedings}{}
     \name{author}{5}{}{%
       {{hash=RDA}{%
@@ -805,6 +980,41 @@
     \field{pages}{2114\bibrangedash 2117}
     \field{title}{A Methodology for Standard Cell Design for QCA}
     \field{year}{2016}
+  \endentry
+
+  \entry{sequential_cell_two}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=RJI}{%
+         family={Reshi},
+         familyi={R\bibinitperiod},
+         given={Javeed\bibnamedelima Iqbal},
+         giveni={J\bibinitperiod\bibinitdelim I\bibinitperiod},
+      }}%
+      {{hash=BMT}{%
+         family={Banday},
+         familyi={B\bibinitperiod},
+         given={M\bibnamedelima Tariq},
+         giveni={M\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+      {{hash=KFA}{%
+         family={Khanday},
+         familyi={K\bibinitperiod},
+         given={Farooq\bibnamedelima A},
+         giveni={F\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RJIBMTKFA1}
+    \strng{fullhash}{RJIBMTKFA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{booktitle}{2015 Symposium on Computers, Communication and Electronic
+  Engineering}
+    \field{pages}{143\bibrangedash 148}
+    \field{title}{Sequential circuit design using quantum dot cellular automata
+  (QCA)}
+    \field{year}{2015}
   \endentry
 
   \entry{Sasamal2020QuantumDotCA}{inproceedings}{}
@@ -1254,6 +1464,46 @@
     \field{pages}{197\bibrangedash 202}
     \field{title}{Scalable design for field-coupled nanocomputing circuits}
     \field{year}{2019}
+  \endentry
+
+  \entry{crosstalk}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=WK}{%
+         family={Walus},
+         familyi={W\bibinitperiod},
+         given={K},
+         giveni={K},
+      }}%
+      {{hash=VA}{%
+         family={Vetteth},
+         familyi={V\bibinitperiod},
+         given={A},
+         giveni={A},
+      }}%
+      {{hash=JG}{%
+         family={Jullien},
+         familyi={J\bibinitperiod},
+         given={GA},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=DV}{%
+         family={Dimitrov},
+         familyi={D\bibinitperiod},
+         given={VS},
+         giveni={V\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WKVAJGDV1}
+    \strng{fullhash}{WKVAJGDV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{booktitle}{Nanotechnology conference}
+    \field{pages}{160\bibrangedash 163}
+    \field{title}{RAM design using quantum-dot cellular automata}
+    \field{volume}{2}
+    \field{year}{2003}
   \endentry
 
   \entry{CNF}{inproceedings}{}
