@@ -1289,13 +1289,9 @@ By replacing the inverters in a EJ-FF with NOR gates, the transparency gets redu
 	\caption{SR-Latch}\label{fig:SR-Latch}
 \end{figure}
 
-Because in QCA we only discuss synchronous logic, we also need to make this latch synchronous by clocking the Set and Reset inputs resulting in a gated SR-Latch. To eliminate the undefined state, the set and inverted reset inputs are connected together forming the D-Latch. Now a value is held when the clock $clk=0$ and the D-latch is propagating the $D$ input value, when $clk=1$. Since transparency is still present a edge-triggered D-FF is formed by connecting two D-latches to a master-slave D-flip-flop producing only stable outputs.\\
-The goal of a storage element in QCA is to have all the properties of a D-FF. In the QCA ONE library an effort was made to translate the D-FF into QCA by just replacing the CMOS gates and wires with the corresponding QCA gates. But since clocking plays an important role in the functionality of storage elements and the clocking has some major differences from QCA to CMOS as already observed in \ref{subsec:clocking}, the sense of purpose is questionable.\\
-This means that storage elements should be completely rethought in the QCA domain. To create a QCA element which is able to store one bit the solution is rather simple. Since every tile is clocked on its own, a simple latch can be formed by a wire segment held in the hold phase of the clocking. In Figure !! such a wire segment is depicted. It is still adjacent to one ascending and one descending clock number (mod $N_{clk}$). The storage property is reached by extending the hold phase a the required number of clock cycles \cite{Walter}. 
-%It can also be observed that in the hold phase a stable polarization is already implied, so that such a wire segment can not only be referred to as latch but as flip-flop. 
-Because this implementation needs a different clock generator for every latch it is not sure if it is possible to implement. Though it can be shown that the same properties can be achieved by placing buffering wire segments instead of the introduced wire-latch. For every clock cycle the hold phase would be extended in the wire-FF, four adjacent wire segments are added delaying the information arrival by exactly the same time. Since wires have to be used to route the loops created by sequential circuits this idea is implemented for this work and explained more accurate in the next chapters.
-%D-latch can be used to delay time by the circuit frequency
-\\
+Because in QCA we only discuss synchronous logic, we also need to make this latch synchronous by clocking the Set and Reset inputs resulting in a gated SR-Latch. To eliminate the undefined state, the set and inverted reset inputs are connected together forming the D-Latch. Now a value is held when the clock $clk=0$ and the D-latch is propagating the $D$ input value, when $clk=1$. To give a memory element the ability to clock Boolean operations from one stage to another, \textit{edge triggered} flip flops are introduced . Rising clock edges determine when the FF overwrites and passes its data. An edge triggered D-FF can be constructed by connecting two D-latch stages behind each other. The master slave is activated at rising edges, while the slave stage is activated at falling clock edges. In this way the D-FF takes new data at a rising edge and passes it in the next clock cycle from its output. Also the master-slave principle eliminates the transparency. Regarding the term edge-sensitive for D-FFs, latches are considered to be level-sensitive \cite{hawkins2012cmos}.\\
+The goal of a storage element in QCA is to have all the properties of a D-FF, so it can store data from one clock cycle and pass it to the combinational logic in the next clock cycle. Also the element should not be transparent and the effect of an edge triggered element has to be discussed. In the QCA ONE library an effort was made to translate the D-FF into QCA by just replacing the CMOS gates and wires with the corresponding QCA gates. Thus a second external $clk$ signal is introduced, mimicking the clock of a CMOS circuit. But since the QCA circuit has already an own clock with a dependency to all gates of the circuit and the clocking has some major differences from QCA to CMOS, as already observed in \ref{subsec:clocking}, this implementation is questionable.\\
+
 \begin{figure}
 	\centering
 	\begin{minipage}{0.5\textwidth}
@@ -1339,7 +1335,7 @@ Because this implementation needs a different clock generator for every latch it
 			](not) {}
 			
 			(not.in) |- (a2) (not.out) |- (and1.in 1)  
-;
+			;
 		\end{circuitikz}
 	\end{minipage}
 	\begin{minipage}{0.4\textwidth}
@@ -1352,16 +1348,102 @@ Because this implementation needs a different clock generator for every latch it
 			0 & 1 & 0 & propagate\\
 			\hline
 			1 & 0 & 1 & propagate\\
-		
+			
 			\hline
 		\end{tabular}
 	\end{minipage}	
 	\caption{D-Latch}\label{fig:D-Latch}
 \end{figure}
 
+This leads us to ideas to look at QCA storage elements dependent on their corresponding clocking.
+The effort of rethinking storage elements in QCA from scratch was already made in \cite{Walter}. The proposed solution to create a QCA element which is able to store one bit is rather simple. Since every tile is clocked on its own, a simple latch can be formed by a wire segment held in the hold phase of the clocking. In Figure \ref{fig:sequ_el_clocking} the clocking of such a wire segment is depicted. The data is propagating into the latch and by holding the hold phase by exactly one clock cycle the data is passed to the next logic block exactly one clock cycle later. Also the question arises if this element is a level-sensitive latch or if it is a edge-sensitive FF. For the latch we could argue that the information is clearly not sampled at one time point like in an ideal FF, but rather the information is taken into the latch during the whole switch phase. On the other hand one could argue that the switch phase could be seen like a real-time rising clock edge, where the data is sampled and then held while the clock is in hold phase or "1". For this work the comparison to a FF seems to be more suited because also no transparency is allowed due to the strictly independent clocked tiles in QCA. The only functionality the wire-FF misses is a set-reset option. The idea for this was also proposed in \cite{Walter} by exchanging the wire with a majority gate but the same clocking. Now the D-FF basically has the same functionality but has two external inputs which can force the gate to zero by setting both inputs to zero or force the gate to one by setting both inputs to one. in the other configurations the majority-FF would act as normal storage element.\\
+
+\begin{figure}
+	\begin{tikzpicture}
+		
+		% horizontal axis
+		\draw[->] (0,0) -- (14,0) node[anchor=north] {$t$};
+		
+		% vertical axis
+		\draw[->] (0,0) -- (0,1.5) node[anchor=east] {$E_{clock4}$};
+		% nominal speed
+		\draw[dotted] (2,0) -- (2,1.4);
+		\draw[dotted] (4,0) -- (4,1.4);
+		\draw[dotted] (6,0) -- (6,1.4);
+		\draw[dotted] (8,0) -- (8,1.4);
+		\draw[dotted] (10,0) -- (10,1.4);
+		\draw[dotted] (12,0) -- (12,1.4);
+		
+		% Us
+		\draw[thick] (0,0) -- (2,1.3) -- (4,1.3) -- (6,1.3) -- (8,1.3) --  (10,1.3) -- (12, 1.3) -- (14, 0);
+		\draw (1,1.4) node {}; %label
+		\draw (1,1) node [rotate = 32] {$switch$};
+		\draw (7,1) node [] {$hold$};
+		\draw (13,1) node [rotate = -32] {$release$};
+		
+	\end{tikzpicture}
+	\begin{tikzpicture}
+		
+		% horizontal axis
+		\draw[->] (0,0) -- (14,0) node[anchor=north] {$t$};
+		
+		% vertical axis
+		\draw[->] (0,0) -- (0,1.5) node[anchor=east] {$E_{clock4}$};
+		% nominal speed
+		\draw[dotted] (2,0) -- (2,1.4);
+		\draw[dotted] (4,0) -- (4,1.4);
+		\draw[dotted] (6,0) -- (6,1.4);
+		\draw[dotted] (8,0) -- (8,1.4);
+		\draw[dotted] (10,0) -- (10,1.4);
+		\draw[dotted] (12,0) -- (12,1.4);
+		
+		% E
+		\draw[thick] (0,0) -- (2,1.3) -- (4,1.3) -- (6,0) -- (8,0) --  (10,1.3) -- (12,1.3) -- (14,0);
+		\draw (1,1.4) node {}; %label
+		\draw (1,1) node [rotate = 32] {$switch$};
+		\draw (3,1) node [] {$hold$};
+		\draw (5,1) node [rotate = -32] {$release$};
+		\draw (7,0.3) node [] {$relax$};
+		\draw (9,1) node [rotate = 32] {$switch$};
+		\draw (11,1) node [] {$hold$};
+		\draw (13,1) node [rotate = -32] {$release$};
+	\end{tikzpicture}
+	\caption{Clocking of a basic latch in QCA}\label{fig:sequ_el_clocking}
+\end{figure}
+
+Further the idea of a wire FF should be discussed in the domain of placement and routing and not only as single element. First of all it can be examined, that the proposed FF implementation requires more complex clock generators for every latch and it is not sure if this is possible to implement. Also if we look back at the analogy of CMOS have now a combinational logic block and our storage element formed by a wire FF. But there is still a big difference. While in CMOS the information can just be arbitrarily be wired back from the storage to the inputs of the combinational logic, in QCA the wiring back implies the placement of wire segments of which each is delaying the information by one clocking zone already. When looking back to the functionality of a storage element, it can be found that this delay is exactly the purpose of a clocking element. The idea, which is proposed in this work is now to utilize the delay, which is naturally occurring due to sequential wiring in order to mimic storage elements.\\
+Figure \ref{fig:sequential_gate_sample} shows a schematic of a sequential circuit with a combinational logic and the wiring resulting from the need for a back-loop. At the output of the combinational logic there are the normal primary outputs and also register inputs. The register inputs are then wired to the corresponding register outputs, which are treated as primary input of the next cycle of the circuit. Because the information needs additional clock cycles to pass through the register, the throughput of the logic is slowed down. But since the loop has to be closed this slow-down cannot be prevented in QCA following this approach.
+%D-latch can be used to delay time by the circuit frequency
+
+\begin{figure}
+	\centering
+	\begin{tikzpicture}[node distance={2cm and 2cm}, thick, main/.style = {draw, rectangle}] 
+		\node[fit={(0,0) (8, 8)}, inner sep=0pt, draw=black, thick] (frame) {};
+		\node[fit={(2,2) (6, 8)}, inner sep=0pt, draw=black, thick, fill=cyan] (logic) {Combinational logic};
+		\node[fit={(1,6.5) (2, 8)}, inner sep=0pt, draw=black, thick, fill=TUMGray] (Pis) {Pis};
+		\node[fit={(1,5) (2, 6.5)}, inner sep=0pt, draw=black, thick, fill=lightgray] (Ros) {Ros};
+		\node[fit={(6,3.5) (7, 5)}, inner sep=0pt, draw=black, thick, fill=TUMGray] (Pos) {Pos};
+		\node[fit={(6,2) (7, 3.5)}, inner sep=0pt, draw=black, thick, fill=lightgray] (Ris) {Ris};
+		
+		
+		\draw[] (7, 3.5) -- (8, 3.5);
+		\draw[] (0, 6.5) -- (1, 6.5);
+		\draw[fill=Apricot] (0, 0) -- (0, 6.5) -- (1, 6.5)  -- (1, 5) -- (2, 5) -- (2, 2) -- (7, 2) -- (7, 3.5) -- (8, 3.5) -- (8, 0) -- (0, 0);
+		\draw (4,1) node [align=left] {Sequential wires from Ris to Ros \\ with delay of $c$ clock cycles};
+%		\draw[->] (2) -- (5);
+%		\draw[->] (3) -- (6);
+%		\draw[->] (4) -- (6);
+%		\draw[->] (5) -- (7);
+%		\draw[->] (6) -- (7);
+%		\draw[->] (7) -- (f);
+		
+	\end{tikzpicture} 
+\caption{Scheme of a simple sequential circuit layout after placement and routing} \label{fig:sequential_gate_sample}
+\end{figure}
+
 \section{P\&R problem} \label{sec:PR}
 
-As seen in the last sections of this chapter placement and routing are strongly related to the clocking inside the QCA domain. In this section the denotation and constraints of placement and routing in the QCA domain are introduced. The P\&R problem evolves from a grid enabling tile based design in conjunction with a logic network.
+As seen in the last sections of this chapter, placement and routing are strongly related to the clocking inside the QCA domain. In this section the denotation and constraints of placement and routing in the QCA domain are introduced. The P\&R problem evolves from a grid enabling tile based design in conjunction with a logic network.
 
 \begin{definition}
 	A \textit{layout} is defined by a $w \times h$ grid $\Gamma_{w, h}$ and a graph $G(V, E)$, which is placed on the grid. Every \textit{tile} of the layout can be accessed via its $x$ and $y$ coordinates. The set of tiles is denoted as $T$ with $t = (x, y) \in T$. For any vertex of the graph $v(x, y)$ is restricted to the boundaries $x < w$ and $y < h$. For edges $\{(x, y), (x^*, y^*)\}$ it holds $\vert x-x^*\vert+\vert y-y^*\vert = 1, 0 \leq x, x^* \leq w, 0 \leq y, y^* \leq h$.

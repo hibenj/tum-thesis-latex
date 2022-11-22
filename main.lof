@@ -73,29 +73,35 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.14}{\ignorespaces D-Latch\relax }}{19}{figure.caption.20}%
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.15}{\ignorespaces Clocking of a basic latch in QCA\relax }}{20}{figure.caption.21}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Lazy SMT-solving process \cite {SMT}\relax }}{22}{figure.caption.21}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Example OGD drawing\relax }}{24}{figure.caption.22}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Insufficient timing constraints of a OGD representation \cite {Walter}\relax }}{25}{figure.caption.23}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Partial representation of a logic network}}}{25}{figure.caption.23}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {OGD representation of the logic network}}}{25}{figure.caption.23}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {No sufficient clocking for this OGD can be examined}}}{25}{figure.caption.23}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Relative positions of an OGD graph with correct color assinment\relax }}{26}{figure.caption.24}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Color assignment of incoming signals}}}{26}{figure.caption.24}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Color assignment of outgoing signals}}}{26}{figure.caption.24}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Placement and routing of a 2:1 mux network using the ortho algorithm\relax }}{29}{figure.caption.25}%
+\contentsline {figure}{\numberline {2.16}{\ignorespaces Scheme of a simple sequential circuit layout after placement and routing\relax }}{21}{figure.caption.22}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Lazy SMT-solving process \cite {SMT}\relax }}{24}{figure.caption.23}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Example OGD drawing\relax }}{26}{figure.caption.24}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Insufficient timing constraints of a OGD representation \cite {Walter}\relax }}{27}{figure.caption.25}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Partial representation of a logic network}}}{27}{figure.caption.25}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {OGD representation of the logic network}}}{27}{figure.caption.25}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {No sufficient clocking for this OGD can be examined}}}{27}{figure.caption.25}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Relative positions of an OGD graph with correct color assinment\relax }}{28}{figure.caption.26}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Color assignment of incoming signals}}}{28}{figure.caption.26}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Color assignment of outgoing signals}}}{28}{figure.caption.26}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Placement and routing of a 2:1 mux network using the ortho algorithm\relax }}{31}{figure.caption.27}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Placement and routing of a 2:1 mux network using the ortho algorithm with the input network\relax }}{37}{figure.caption.28}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
