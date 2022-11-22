@@ -1222,14 +1222,9 @@ The last special case of wires are crossing cases. By rotating the cells of one 
 \end{figure}
 
 \subsubsection{Latches and Registers}\label{subsec:latchesandregisters}
-In order to implement sequential circuits, storage elements need to be implemented in QCA technology. Although they have to be rethought in QCA, the main characteristics can be derived from the well-known CMOS technology. Therefore, first the ideas of storage elements and their implementation is discussed.
-The simplest element, which can store one bit is an Eccles–Jordan \text{flip-flop} (FF). It is formed by connecting the output of one inverter to the input of another inverter and vice versa. Because this element is so simple, it comes with some drawbacks. First of all the latch output is directly connected to the input causing noisy behavior, called \text{transparency} \cite{hawkins2012cmos}. Further a high voltage shift is needed at the FF value and the FF is transparent in the transition region, requiring a stable voltage level during the transition. To tackle these Problems the inverters are replaced by NOR gates, reducing transparency between the input and output. Also this change introduces clear states. In the set state the latch output is set to $Q=1$ and in the reset phase it is set to $Q=0$. Furthermore there exists a hold phase, where the current value is held (latched) and an undefined state. These states give the latch the name \textit{Set-Reset-Latch} (SR-Latch). In order to use latches in synchronous circuits the Set and Reset inputs are clocked. This results in the gated SR-Latch. Because this latch still has an undefined state, which is not allowed the set and inverted reset inputs are connected together excluding the undefined state. Now the value is held when the clock $clk=0$ and the D-latch is transparent, when $clk=1$. Since transparency is still present a flip flop is formed by connecting two D-latches to a master-slave D-flip-flop producing only stable outputs.\\
-The goal of a storage element in QCA is to have all the properties of a D-FF. In the QCA ONE library an effort was made to translate the D-FF into QCA by just replacing the CMOS gates and wires with the corresponding QCA gates. But since clocking plays an important role in the functionality of storage elements and the clocking has some major differences from QCA to CMOS as already observed in \ref{subsec:clocking}, the sense of purpose is questionable.\\
-This means that storage elements should be completely rethought in the QCA domain. To create a QCA element which is able to store one bit the solution is rather simple. Since every tile is clocked on its own, a simple latch can be formed by a wire segment held in the hold phase of the clocking. In Figure !! such a wire segment is depicted. It is still adjacent to one ascending and one descending clock number (mod $N_{clk}$). The storage property is reached by extending the hold phase a the required number of clock cycles \cite{Walter}. 
-%It can also be observed that in the hold phase a stable polarization is already implied, so that such a wire segment can not only be referred to as latch but as flip-flop. 
-Because this implementation needs a different clock generator for every latch it is not sure if it is possible to implement. Though it can be shown that the same properties can be achieved by placing buffering wire segments instead of the introduced wire-latch. For every clock cycle the hold phase would be extended in the wire-FF, four adjacent wire segments are added delaying the information arrival by exactly the same time. Since wires have to be used to route the loops created by sequential circuits this idea is implemented for this work and explained more accurate in the next chapters.
-%D-latch can be used to delay time by the circuit frequency
-\\
+Looking at a sequential circuit, it is the marriage of a combinational logic part and registers. When treating the combinational logic as blackbox, the outputs of it are storing the newly computed information into the registers and in the next cycle this information can be reused by connecting the registers again to the inputs of the combinational logic. This introduces a back-loop property, describing a signal propagating through combinational logic before getting stored and stabilized by a register and being reused again. This back-looping represents the key property of sequential circuits.
+Assuming that cominational logic can be implemented in QCA, registers or rather storage elements in general leave to be discussed. As already mentioned their task is to stabilize and store information which is then looped back via wires. To get a better understanding of how they can be implemented in QCA, first their main characteristics have to be derived from the well-known CMOS technology. Due to the already shown basic differences in signal propagation and clocking between the two technology domains, it will become clear that the implementation of latches and registers also has to be rethought from scratch.
+
 \begin{figure}
 	\centering
 	\begin{circuitikz}[american] \draw
@@ -1252,39 +1247,117 @@ Because this implementation needs a different clock generator for every latch it
 		(4, -1) node [anchor=east] {$V_{o2}=V_{i1}$}
 		;
 	\end{circuitikz}
-\caption{Eccles-Jordan-Flip-Flop}\label{fig:EJFF}
+	\caption{Eccles-Jordan-Flip-Flop}\label{fig:EJFF}
 \end{figure}
 
+The simplest storage element in CMOS, which can store one bit, is the so called Eccles–Jordan \text{flip-flop} (FF). It is formed by connecting the output of one inverter to the input of another inverter and vice versa. Therefore the logic level is propagated from one inverter stage to the other, while the same value is held in it. Due to its simplicity, a high voltage shift is needed in order to change its stored value making the FF really sluggish.
+
+Also the direct connection of the input and output makes their voltage levels highly dependent on each other, which can be interpreted as noisy behavior, also referred to as \text{transparency} \cite{hawkins2012cmos}. To circumvent errors caused by the transparent behavior in the transition region, the input voltage needs to be really stable. In order to receive more robust storage elements, more sophisticated ideas were implemented while preserving the general idea introduced by the EJ-FF.
+
+By replacing the inverters in a EJ-FF with NOR gates, the transparency gets reduced and two inputs a set $S$ and a reset $R$ are introduced leading to four possible input combinations and clear states. When both $S=0$ and $R=0$, the current value is latched and the storage element is in the hold state. By holding $R=0$ and changing $S=1$, the latch output is forced to $Q=1$, called the set state. Reversing both inputs to $R=1$ and $S=0$ leads to the reset state where the latch output is $Q=0$. Furthermore with $S, R = 1$, the latch value is unstable and therefore we get an undefined state, prohibiting this input combination. Based on its behavior this element is called \textit{Set-Reset-Latch} (SR-Latch). 
+
 \begin{figure}
-\centering
-	\subfigure
-	{
+	\centering
+	\begin{minipage}{0.35\textwidth}
 		\begin{circuitikz}[american] \draw
-			(1,0) node[xor port] (xor1) {}
-			(1,-2) node[xor port] (xor2) {}
-			
+			(0,2) node[nor port] (NOR1) {}
+			(1,2) node[anchor=east] {Q}
+			(1,0) node[anchor=east] {$\overline{Q}$}
+			(0,0) node[nor port] (NOR2) {}
+			(NOR1.in 1) node[anchor=east] {R}
+			(NOR2.in 2) node[anchor=east] {S}
+			(NOR1.out) -- ++(0,-0.5) -- ($(NOR2.in 1) +(0,0.5)$) -- (NOR2.in 1)
+			(NOR2.out) -- ++(0,+0.5) -- ($(NOR1.in 2) +(0,-0.5)$)--(NOR1.in 2)
 			;
 		\end{circuitikz}
-	}
-\subfigure
-{
-	\begin{tabular}{| c | c | c | c |}
-		\hline
-		0 & 0 & Q & hold state\\
-		\hline
-		0 & 1 & 0 & reset\\
-		\hline
-		1 & 0 & 1 & set\\
-		\hline
-		1 & 1 & X & undefined state\\
-		\hline
-	\end{tabular}
-}
-	
+	\end{minipage}
+	\begin{minipage}{0.35\textwidth}
+		\begin{tabular}{| c | c | c | c |}
+			\hline
+			\textbf{S} & \textbf{R} & \textbf{$Q_{next}$} & \textbf{State}\\
+			\hline
+			0 & 0 & Q & hold state\\
+			\hline
+			0 & 1 & 0 & reset\\
+			\hline
+			1 & 0 & 1 & set\\
+			\hline
+			1 & 1 & X & undefined state\\
+			\hline
+		\end{tabular}
+	\end{minipage}	
 	\caption{SR-Latch}\label{fig:SR-Latch}
 \end{figure}
 
-
+Because in QCA we only discuss synchronous logic, we also need to make this latch synchronous by clocking the Set and Reset inputs resulting in a gated SR-Latch. To eliminate the undefined state, the set and inverted reset inputs are connected together forming the D-Latch. Now a value is held when the clock $clk=0$ and the D-latch is propagating the $D$ input value, when $clk=1$. Since transparency is still present a edge-triggered D-FF is formed by connecting two D-latches to a master-slave D-flip-flop producing only stable outputs.\\
+The goal of a storage element in QCA is to have all the properties of a D-FF. In the QCA ONE library an effort was made to translate the D-FF into QCA by just replacing the CMOS gates and wires with the corresponding QCA gates. But since clocking plays an important role in the functionality of storage elements and the clocking has some major differences from QCA to CMOS as already observed in \ref{subsec:clocking}, the sense of purpose is questionable.\\
+This means that storage elements should be completely rethought in the QCA domain. To create a QCA element which is able to store one bit the solution is rather simple. Since every tile is clocked on its own, a simple latch can be formed by a wire segment held in the hold phase of the clocking. In Figure !! such a wire segment is depicted. It is still adjacent to one ascending and one descending clock number (mod $N_{clk}$). The storage property is reached by extending the hold phase a the required number of clock cycles \cite{Walter}. 
+%It can also be observed that in the hold phase a stable polarization is already implied, so that such a wire segment can not only be referred to as latch but as flip-flop. 
+Because this implementation needs a different clock generator for every latch it is not sure if it is possible to implement. Though it can be shown that the same properties can be achieved by placing buffering wire segments instead of the introduced wire-latch. For every clock cycle the hold phase would be extended in the wire-FF, four adjacent wire segments are added delaying the information arrival by exactly the same time. Since wires have to be used to route the loops created by sequential circuits this idea is implemented for this work and explained more accurate in the next chapters.
+%D-latch can be used to delay time by the circuit frequency
+\\
+\begin{figure}
+	\centering
+	\begin{minipage}{0.5\textwidth}
+		\begin{circuitikz}[american] \draw
+			% Draw and gates
+			(0,2) node[and port] (and1) {}
+			(0,0) node[and port] (and2) {}
+			
+			% Draw nor gates
+			(and1.out) -- ++(0.25,0) node
+			[
+			nor port,
+			anchor=in 1
+			] (nor1) {}
+			
+			(and2.out) -- ++(0.25,0) node
+			[
+			nor port,
+			anchor=in 2
+			] (nor2) {}
+			
+			(nor1.in 2) -| ++ (-0.3,-0.25) -- ++(2,-0.5) coordinate(a) |- (nor2.out)
+			(nor2.in 1) -| ++ (-0.3,0.25) -- ++(2,0.5) |- (nor1.out)
+			
+			% Clock
+			(and1.in 2) -- (and2.in 1)node[midway](clk){}
+			(clk.center) -- ++(-1.25,0) node[left]{Clk}
+			
+			% Output labels
+			(nor1.out -| a) -- ++(0.75,0) node[right]{$Q$}
+			(nor2.out -| a) -- ++(0.75,0) node[right]{$\overline{Q}$}
+			
+			(and2.in 2) -- ++(-1.25,0) coordinate(a2) node[left=0.1cm]{D}
+			
+			% Not port
+			(-1.9,0.2) node
+			[
+			not port,
+			rotate=90,
+			scale=0.5,
+			](not) {}
+			
+			(not.in) |- (a2) (not.out) |- (and1.in 1)  
+;
+		\end{circuitikz}
+	\end{minipage}
+	\begin{minipage}{0.4\textwidth}
+		\begin{tabular}{| c | c | c | c |}
+			\hline
+			\textbf{clk} & \textbf{D} & $Q_{next}$ & \textbf{State}\\
+			\hline
+			0 & 0 & * & hold state\\
+			\hline
+			0 & 1 & 0 & propagate\\
+			\hline
+			1 & 0 & 1 & propagate\\
+		
+			\hline
+		\end{tabular}
+	\end{minipage}	
+	\caption{D-Latch}\label{fig:D-Latch}
+\end{figure}
 
 \section{P\&R problem} \label{sec:PR}
 

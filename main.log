@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.12)  18 NOV 2022 11:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.12)  22 NOV 2022 12:26
 entering extended mode
 **./main.tex
 (main.tex
@@ -571,7 +571,7 @@ File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 (C:\Program Files\MiKTeX\tex/latex/listings\listings.cfg
 File: listings.cfg 2020/03/24 1.8d listings configuration
 ))
-Package scrhack Info: loading listings hack on input line 22.
+Package scrhack Info: loading listings hack on input line 24.
 
 (C:\Program Files\MiKTeX\tex/latex/koma-script\listings.hak
 File: listings.hak 2021/06/25 v3.34 KOMA-Script scrhack part (hacking package l
@@ -1042,7 +1042,7 @@ Package caption Info: subfigure package is loaded.
 )
 Package scrhack Info: hyperref hack deactivated because of
 (scrhack)             detection of KOMA-Script class, that doesn't
-(scrhack)             need that hack, on input line 30.
+(scrhack)             need that hack, on input line 32.
 
 (C:\Program Files\MiKTeX\tex/latex/hyperref\hyperref.sty
 Package: hyperref 2021-06-07 v7.00m Hypertext links for LaTeX
@@ -1159,7 +1159,7 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks41
 \@floatcapt=\box70
 )
-Package scrhack Info: loading float hack on input line 33.
+Package scrhack Info: loading float hack on input line 35.
 
 (C:\Program Files\MiKTeX\tex/latex/koma-script\float.hak
 File: float.hak 2021/06/25 v3.34 KOMA-Script scrhack part (hacking package floa
@@ -2057,17 +2057,22 @@ Package nag Warning: \label in float, but not after \caption on input line 1193
 .
 
 [16 <./figures//wire_crossing.png>] [17]
-Underfull \hbox (badness 10000) in paragraph at lines 1298--1300
+Overfull \hbox (18.3794pt too wide) in paragraph at lines 1275--1288
+[][] 
+ []
+
+[18]
+Underfull \hbox (badness 10000) in paragraph at lines 1371--1373
 
  []
 
-[18]) (chapters/03_state_of_the_art.tex [19]
+[19]) (chapters/03_state_of_the_art.tex [20]
 chapter 3.
-[20
+[21
 
 
 ]
-<./figures//SMT_solving.png, id=372, 274.626pt x 211.992pt>
+<./figures//SMT_solving.png, id=375, 274.626pt x 211.992pt>
 File: ./figures//SMT_solving.png Graphic file (type png)
 <use ./figures//SMT_solving.png>
 Package pdftex.def Info: ./figures//SMT_solving.png  used on input line 10.
@@ -2077,13 +2082,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--19
 
  []
 
-[21 <./figures//SMT_solving.png>] [22]
-<./figures//OGD.png, id=400, 241.65282pt x 240.9pt>
+[22 <./figures//SMT_solving.png>] [23]
+<./figures//OGD.png, id=403, 241.65282pt x 240.9pt>
 File: ./figures//OGD.png Graphic file (type png)
 <use ./figures//OGD.png>
 Package pdftex.def Info: ./figures//OGD.png  used on input line 31.
 (pdftex.def)             Requested size: 169.1558pt x 168.62883pt.
- [23 <./figures//OGD.png>]
+ [24 <./figures//OGD.png>]
 
 Package nag Warning: \label in float, but not after \caption on input line 113.
 
@@ -2117,7 +2122,7 @@ Package nag Warning: \label in float, but not after \caption on input line 211.
 
 
 
-LaTeX Warning: Reference `fig:Coloring_conflict' on page 24 undefined on input 
+LaTeX Warning: Reference `fig:Coloring_conflict' on page 25 undefined on input 
 line 216.
 
 
@@ -2125,22 +2130,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 216--218
 
  []
 
-[24] [25]
+[25] [26]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
 put line 264.
- [26] [27] [28]) (chapters/04_main_work.tex [29] [30]
-chapter 4.
-
-Underfull \hbox (badness 10000) in paragraph at lines 4--8
+ [27]
+Underfull \hbox (badness 10000) in paragraph at lines 267--268
 
  []
 
-) (chapters/05_experimental_evaluation.tex [31
+[28]
+<./figures//ortho_mux_21.png, id=455, 443.85825pt x 517.935pt>
+File: ./figures//ortho_mux_21.png Graphic file (type png)
+<use ./figures//ortho_mux_21.png>
+Package pdftex.def Info: ./figures//ortho_mux_21.png  used on input line 271.
+(pdftex.def)             Requested size: 221.92857pt x 258.96686pt.
+ [29 <./figures//ortho_mux_21.png>]) (chapters/04_main_work.tex [30]
+[31]
+chapter 4.
+[32
 
 
-]
+] [33] [34]) (chapters/05_experimental_evaluation.tex [35]
 chapter 5.
-) [32
+) [36
 
 
 ]
@@ -2150,7 +2162,7 @@ Package tocbasic Info: character protrusion at lof deactivated on input line 51
 \tf@lof=\write7
 \openout7 = `main.lof'.
 
- [33
+ [37
 
 
 ]
@@ -2160,12 +2172,12 @@ Package tocbasic Info: character protrusion at lot deactivated on input line 52
 \tf@lot=\write8
 \openout8 = `main.lot'.
 
- [34
+ [38
 
 
 ]
 chapter without number
-[35
+[39
 
 
 ]
@@ -2181,17 +2193,17 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [36]
+ [40]
 Overfull \hbox (42.1764pt too wide) in paragraph at lines 54--54
 \T1/pplx/m/n/10.95 (-20) Cir-cuits. In: \T1/pplx/m/it/10.95 (-20) PREPRINT (Ve
 r-sion 1) avail-able at Re-search Square [https://doi.org/10.21203/rs.3.rs-
  []
 
-[37]
+[41]
 
 Package nag Warning: 36 complaints in total.
 
-[38] (main.aux)
+[42] (main.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -2202,13 +2214,13 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 68730 strings out of 478927
- 1654788 string characters out of 2862391
- 2948087 words of memory out of 3000000
- 84830 multiletter control sequences out of 15000+600000
- 484076 words of font info for 519 fonts, out of 8000000 for 9000
+ 68826 strings out of 478927
+ 1656353 string characters out of 2862391
+ 2942417 words of memory out of 3000000
+ 84913 multiletter control sequences out of 15000+600000
+ 484476 words of font info for 525 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 115i,12n,111p,10601b,2970s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 115i,14n,111p,10601b,2970s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\benja\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt
 1095.pk>{C:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Program Files/
 MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts
@@ -2220,9 +2232,9 @@ iKTeX/fonts/type1/public/mathpazo/fplmri.pfb><C:/Program Files/MiKTeX/fonts/typ
 e1/public/fpl/fplrc8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/upl
 b8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Progra
 m Files/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (45 pages, 468631 bytes).
+Output written on main.pdf (49 pages, 551339 bytes).
 PDF statistics:
- 763 PDF objects out of 1000 (max. 8388607)
- 185 named destinations out of 1000 (max. 500000)
- 100198 words of extra memory for PDF output out of 106986 (max. 10000000)
+ 788 PDF objects out of 1000 (max. 8388607)
+ 190 named destinations out of 1000 (max. 500000)
+ 100203 words of extra memory for PDF output out of 106986 (max. 10000000)
 
