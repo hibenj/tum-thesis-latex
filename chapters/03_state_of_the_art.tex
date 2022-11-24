@@ -264,7 +264,7 @@ In the following the pseudo code of ortho, derived from \cite{ortho} and depicte
 	\caption{Ortho algorithm}\label{alg:ortho}
 \end{algorithm}
 
-The example depicted in figure !! shows the $(p, r, c)$ of a 2:1 mux. Starting with a layout of size $1, 0$ the PI $v_1$, the layout is extended by one column to $(1, 1)$ and is placed to $(0, h-1) = (0, 0)$. Because the outgoing edge of the PI is labeled $south$, the wiring has to be resolved by extending $L$ to $(2, 1)$ and wiring the PI to $(w-1, h-1)=(1, 0)$. For the other PIs $v_2, v_3$ it follows the placement to $(0, 1)$ and $(0, 2)$ and an increase of one column per PI since they have both outgoing edges labeled south. The resolving wiring leads to $(2, 1)$ and $(3, 2)$. Now the remaining nodes can be placed following the $east, south$ scheme. The size of the layout after the input network is $(4, 3)$. With $v_4$ a fanout node is placed south of the third input, which has coordinates $(3, 2)$. After extending $L$ by one row, the y-coordinate is evaluated to be $w-1 = 3$ and the x-coordinate $3$ is adopted from its only predecessor. Therefore the node is placed on $(3, 3)$ and $L=(4, 4)$. In the same fashion the parent node of the fanout $v_5$, representing an inverter is placed east of it. So the coordinates of the inverter are $(4, 3)$ and $L = (5, 4)$. Looking at the next node $v_6$, which is the first node with two children and which is labeled south now the x-coordinate is determined by the eastern predecessor, so $v_5 = (4, 3)$. The y-coordinate is again adapted form the size of the layout, after it was increased in y-direction once, resulting in a placement on $(4, 4)$ and $L = (5. 5)$, The same way the AND-node $v_7 = (3, 5)$ ($L = (5, 6)$) and the OR-node $v_8 = (4, 6)$ ($L = (5, 7)$) are placed. Since all nodes are placed now the primary output has to be placed from $v_8$. For this the layout is increased by one column again ($L = (6, 7)$) and the PO is placed to the eastern border.\\
+The example depicted in figure \ref{fig:ortho_mux_21} shows the $(p, r, c)$ of a 2:1 mux. Starting with a layout of size $1, 0$ the PI $v_1$, the layout is extended by one column to $(1, 1)$ and is placed to $(0, h-1) = (0, 0)$. Because the outgoing edge of the PI is labeled $south$, the wiring has to be resolved by extending $L$ to $(2, 1)$ and wiring the PI to $(w-1, h-1)=(1, 0)$. For the other PIs $v_2, v_3$ it follows the placement to $(0, 1)$ and $(0, 2)$ and an increase of one column per PI since they have both outgoing edges labeled south. The resolving wiring leads to $(2, 1)$ and $(3, 2)$. Now the remaining nodes can be placed following the $east, south$ scheme. The size of the layout after the input network is $(4, 3)$. With $v_4$ a fanout node is placed south of the third input, which has coordinates $(3, 2)$. After extending $L$ by one row, the y-coordinate is evaluated to be $w-1 = 3$ and the x-coordinate $3$ is adopted from its only predecessor. Therefore the node is placed on $(3, 3)$ and $L=(4, 4)$. In the same fashion the parent node of the fanout $v_5$, representing an inverter is placed east of it. So the coordinates of the inverter are $(4, 3)$ and $L = (5, 4)$. Looking at the next node $v_6$, which is the first node with two children and which is labeled south now the x-coordinate is determined by the eastern predecessor, so $v_5 = (4, 3)$. The y-coordinate is again adapted form the size of the layout, after it was increased in y-direction once, resulting in a placement on $(4, 4)$ and $L = (5. 5)$, The same way the AND-node $v_7 = (3, 5)$ ($L = (5, 6)$) and the OR-node $v_8 = (4, 6)$ ($L = (5, 7)$) are placed. Since all nodes are placed now the primary output has to be placed from $v_8$. For this the layout is increased by one column again ($L = (6, 7)$) and the PO is placed to the eastern border.\\
 
 \begin{figure}
 	\centering
@@ -277,4 +277,277 @@ With a deep understanding of the ortho algorithm with its constraints following 
 Another paper, which tries to implement majority gates for QCA is \textit{migortho}, which is based on the ortho algorithm provided in fiction. The difference is the use of the underlying gate-library. While this work uses the same as ortho, migortho utilizes the QCA-ONE library. From the preliminaries, it is already known that again the use of rotated majority gates and therefore the use of double wires is allowed. This means that this algorithm relying on the same argumentation is prone to cross.talk once more. But the algorithm shows that with the use of a different library ortho is already powerful enough to overcome some restrictions. This fact has motivated this work to implement some different ideas to enable ortho to be more area efficient, place "+"-majority gates and even implement a strategy for the automated placement and routing of sequential circuits.
 
 \section{Sequential P\&R Algorithms}
-In order to discuss the implementation of sequential placement and routing, here some works are presented and analyzed. It also has to be mentioned that the sequential territory has not been researched deeply yet an is still in its infancy. Basically most algorithms for implementing sequential circuits are based on the ideas presented for the USE clocking \cite{USE}. The most important message that can be derived is the necessity for backloops inside the layout. This can be done either by a custom clocking or the use of a clocking scheme like USE. Works like \cite{sequential_cell_one, sequential_cell_two} use custom clocking, but rely on cell-based clocking which has to be found insufficient. For USE clocked sequential design in \cite{sequential_tile_CMOS_one} an algorithm is proposed, which is able to place and route sequential storage elements like SR-FF or D-FF. Although it has to be mentioned that these implementations are translated from CMOS one-by-one. Also the algorithm again relies on custom gates, increasing the risk for cross-talk. Even a reversible design for sequential circuits has been proposed \cite{sequential_reversible}. The idea of reversibility is that no energy gets lost inside the circuit. This can be easily explained if we look at an AND-gate. Due to its nature the gate converts two inputs to only one output, which means that the energy of one strand gets lost and is converted into heat. To avoid this the authors provide the idea of implementing garbage outputs to match the size of the fan-out to the size of the fa-in of a gate. The reason-ability of these garbage-outputs although is questionable, because if they are not used trough that they only carry arbitrary information, the heat gets lost still in the layout. Also again only CMOS storage elements are implemented one-by-one. This point seems to be the main focus, which has to be rethought for the QCA domain. In subsection \ref{subsec:latchesandregisters} already the main differences for the implementation of storage elements between QCA and CMOS have been discussed. While the tasks they have to fulfill still stay the same, the implementation is highly different. In this work the ideas of storage elements from subsection \ref{subsec:latchesandregisters} are used and implemented within the ortho algorithm, providing the first real sequential automated creation of sequential QCA circuits.
+In this section the state of the art for sequential circuit design in QCA is discussed. Compared to the algorithms existent for the placement and routing for combinational logic, this area is still in its infancy. Several attempts \cite{sequential_cell_one, sequential_cell_two, dual_edge_triggered_FF_cell, sequential_reversible_cell} have been made to implement latches and FFs in order to obtain storage elements and enable sequentiallity for QCA circuits. The basic idea for these works is to translate the Boolean CMOS equations into majority representations and then implement this representation with QCA gates. Thus, the received circuit is on the one hand based on the 4-phase clocking of the QCA circuit and on the other hand demands an external 2-phase clocking signal adopted from the CMOS domain \cite{sequential_cell_one}. The authors of \cite{sequential_cell_two} even state that a latching can be accomplished using the QCA clocking, but that this restricts the circuit and therefore the external clocking signal has to be applied. According to the theory provided in the subsections about clocking \ref{subsec:clocking} and storage elements \ref{subsec:latchesandregisters} this doesn't hold true. The rethinking of these elements in the QCA domain even suggests the use of the already provided 4-phase clocking to accomplish sequential functionalities. This observation seems to be clear, considering that the clock used for synchronization in the storage elements should also drive signal propagation. Since in QCA the 4-phase clock is responsible for this, the use of an external clocking signal is questionable and invalid for this work. Although this state of the art already provided the proposal of far developed sequential circuits, e.g. dual edge triggered D-FFs \cite{dual_edge_triggered_FF_cell} and reversible latches \cite{sequential_reversible_cell} it also is found that these works all use cell based clocking, which was already found to be insufficient in \ref{subsec:clocking}. The evolution to sequential tile based placement and routing was proposed through the USE clocking scheme \cite{USE}, supporting back-looping. The paper shows as ideas the layout of a SR-latch and a full adder. Unfortunately the SR-latch is also implemented in the way as described above and the implementation of combinational logic was found to be worse for most benchmark problems than for 2DD-Wave \cite{Walter}. The works \cite{sequential_reversible_tile} and \cite{sequential_tile_CMOS_alg} propose implementations of different latches and even an algorithm of implementing sequential elements based on the USE scheme. Still these approaches all share the shortcoming of translating sequential logic directly from the CMOS domain.\\
+Another section of papers focus on the implementation RAM cells in QCA technology \cite{crosstalk, RAM_cell}. Even though this paper focuses on a placement and routing algorithm for sequential logic, also the implementation of QCA storage could be adapted. An overview \cite{RAM_overview} over different RAM implementations shows that the state of the art is stuck at exactly this point. Without regards to the architecture of a QCA memory structure here a RAM cell according to the storage elements proposed in \ref{subsec:latchesandregisters} is introduced. Figure \ref{fig:QCA_RAM} shows a RAM cell, with its respective wordline, bitline(s) and latch. The core of the cell is a latch, which is simply propagating the data in a circle and therefore producing a stable output once in every clock cycle. The input mechanism works via two AND gates. The first AND gate is connected to the write-wordline, deciding if information from the bitline should be passed to the RAM cell. When the bit is passed the new state of the cell is computed by conjunction of the current bit and the newly inserted bit. Similarly for the read operation an AND gate representing the read-wordline needs input "1" in order to pass the data of the RAM cell to the outgoing bitline.
+
+\begin{figure}
+	\centering
+\begin{tikzpicture}
+\begin{scope}[shift={(0, 0)}]
+	\begin{scope}[rotate=270]
+		\draw[rounded corners] (-0.05, -0.1 - 0.85) rectangle (2.3-0.05, 2.3-0.1 - 0.85){};
+		
+		\foreach \x/\y in {0.9/0.9, 0.9/0.45, 0.9/0, 0.9/-0.45, 0.9/-0.9, 0/0, 0.45/0, 1.35/0}
+		{
+			\draw[rounded corners = 0.3mm, fill=lightgray] (\x, 0 + \y) rectangle (1.2/3 + \x, 1.2/3 + \y){};
+			\draw (0.3/3+ \x,0.3/3 + \y) circle (0.65mm);
+			\draw (0.9/3+ \x,0.3/3+ \y) circle (0.65mm);
+			\draw (0.3/3+ \x,0.9/3 + \y) circle (0.65mm);
+			\draw (0.9/3+ \x,0.9/3 + \y) circle (0.65mm);
+		}
+		\foreach \x/\y in {1.8/0}
+		{
+			\draw[rounded corners = 0.3mm, fill=black] (\x, 0 + \y) rectangle 	(1.2/3 + \x, 1.2/3 + \y){};
+			\draw [fill=white](0.3/3+ \x,0.3/3 + \y) circle (0.65mm);
+			\draw (0.9/3+ \x,0.3/3+ \y) circle (0.65mm);
+			\draw (0.3/3+ \x,0.9/3 + \y) circle (0.65mm);
+			\draw [fill=white](0.9/3+ \x,0.9/3 + \y) circle (0.65mm);
+		}
+		\node[text=black] (A1) at (1.1+0.85,1.1) {$1$};
+		\node[text=black] (A2) at (1.15,-1.4) {${BL}_{in}$};
+		\node[text=black] (A3) at (-0.3,0.3) {${WL}_{in}$};
+	\end{scope}
+\end{scope}
+
+\begin{scope}[xshift=2.7cm, yshift=-2.2cm, rotate=90]
+	\draw[rounded corners] (-0.05, -0.1 - 0.85) rectangle (2.3-0.05, 2.3-0.1 - 0.85){};
+	
+	\foreach \x/\y in {0.9/0.9, 0.9/0.45, 0.9/0, 0/0, 0.45/0}
+	{
+		\draw[rounded corners = 0.3mm, fill=lightgray] (\x, 0 + \y) rectangle (1.2/3 + \x, 1.2/3 + \y){};
+		\draw (0.3/3+ \x,0.3/3 + \y) circle (0.65mm);
+		\draw (0.9/3+ \x,0.3/3+ \y) circle (0.65mm);
+		\draw (0.3/3+ \x,0.9/3 + \y) circle (0.65mm);
+		\draw (0.9/3+ \x,0.9/3 + \y) circle (0.65mm);
+	}
+	\node[text=black] (A1) at (0.25,-0.7) {$2$};
+\end{scope}
+
+\begin{scope}[xshift=4.6cm, rotate = 270]
+	\draw[rounded corners] (-0.05, -0.1 - 0.85) rectangle (2.3-0.05, 2.3-0.1 - 0.85){};
+	\node[text=black] (A1) at (1.1+0.85,1.1) {$3$};
+\end{scope}
+
+\begin{scope}[xshift=1.3cm, yshift=-3.2cm, rotate=180]
+	\draw[rounded corners] (-0.05, -0.1 - 0.85) rectangle (2.3-0.05, 2.3-0.1 - 0.85){};
+	
+	\foreach \x/\y in {0.9/0.9, 0.9/0.45, 0.9/0, 0/0, 0.45/0}
+	{
+		\draw[rounded corners = 0.3mm, fill=lightgray] (\x, 0 + \y) rectangle (1.2/3 + \x, 1.2/3 + \y){};
+		\draw (0.3/3+ \x,0.3/3 + \y) circle (0.65mm);
+		\draw (0.9/3+ \x,0.3/3+ \y) circle (0.65mm);
+		\draw (0.3/3+ \x,0.9/3 + \y) circle (0.65mm);
+		\draw (0.9/3+ \x,0.9/3 + \y) circle (0.65mm);
+	}
+	\node[text=black] (four) at (0.25 ,1.05) {$2$};
+\end{scope}
+\begin{scope}[xshift=1.4cm, yshift=-3.6cm, rotate=0]
+	\draw[rounded corners] (-0.05, -0.1 - 0.85) rectangle (2.3-0.05, 2.3-0.1 - 0.85){};
+	
+	\foreach \x/\y in {0.9/0.9, 0.9/0.45, 0.9/0, 0.9/-0.45, 0.9/-0.9, 0/0, 0.45/0, 1.35/0}
+	{
+		\draw[rounded corners = 0.3mm, fill=lightgray] (\x, 0 + \y) rectangle (1.2/3 + \x, 1.2/3 + \y){};
+		\draw (0.3/3+ \x,0.3/3 + \y) circle (0.65mm);
+		\draw (0.9/3+ \x,0.3/3+ \y) circle (0.65mm);
+		\draw (0.3/3+ \x,0.9/3 + \y) circle (0.65mm);
+		\draw (0.9/3+ \x,0.9/3 + \y) circle (0.65mm);
+	}
+	\foreach \x/\y in {1.8/0}
+	{
+		\draw[rounded corners = 0.3mm, fill=black] (\x, 0 + \y) rectangle 	(1.2/3 + \x, 1.2/3 + \y){};
+		\draw (0.3/3+ \x,0.3/3 + \y) circle (0.65mm);
+		\draw [fill=white](0.9/3+ \x,0.3/3+ \y) circle (0.65mm);
+		\draw [fill=white](0.3/3+ \x,0.9/3 + \y) circle (0.65mm);
+		\draw (0.9/3+ \x,0.9/3 + \y) circle (0.65mm);
+	}
+	\node[text=black] (four) at (1.95 ,-0.65) {$3$};
+\end{scope}
+\begin{scope}[xshift=4.6cm, yshift=-2.3cm, rotate=270]
+	\draw[rounded corners] (-0.05, -0.1 - 0.85) rectangle (2.3-0.05, 2.3-0.1 - 0.85){};
+	\node[text=black] (A1) at (1.1+0.85,1.1) {$4$};
+\end{scope}
+
+\begin{scope}[xshift=0cm, yshift=-4.6cm, rotate=270]
+	\draw[rounded corners] (-0.05, -0.1 - 0.85) rectangle (2.3-0.05, 2.3-0.1 - 0.85){};
+	
+	\foreach \x/\y in {0.9/0.9, 0.9/0.45, 0.9/0, 0/0, 0.45/0}
+	{
+		\draw[rounded corners = 0.3mm, fill=lightgray] (\x, 0 + \y) rectangle (1.2/3 + \x, 1.2/3 + \y){};
+		\draw (0.3/3+ \x,0.3/3 + \y) circle (0.65mm);
+		\draw (0.9/3+ \x,0.3/3+ \y) circle (0.65mm);
+		\draw (0.3/3+ \x,0.9/3 + \y) circle (0.65mm);
+		\draw (0.9/3+ \x,0.9/3 + \y) circle (0.65mm);
+	}
+	\node[text=black] (A1) at (1.1+0.85,1.1) {$3$};
+\end{scope}
+\begin{scope}[xshift=2.3cm, yshift=-4.6cm, rotate=270]
+	\draw[rounded corners] (-0.05, -0.1 - 0.85) rectangle (2.3-0.05, 2.3-0.1 - 0.85){};
+	
+	\foreach \x/\y in {0.9/0.9, 0.9/0.45, 0.9/0, 0.9/-0.45, 0.9/-0.9, 0/0, 0.45/0}
+	{
+		\draw[rounded corners = 0.3mm, fill=lightgray] (\x, 0 + \y) rectangle (1.2/3 + \x, 1.2/3 + \y){};
+		\draw (0.3/3+ \x,0.3/3 + \y) circle (0.65mm);
+		\draw (0.9/3+ \x,0.3/3+ \y) circle (0.65mm);
+		\draw (0.3/3+ \x,0.9/3 + \y) circle (0.65mm);
+		\draw (0.9/3+ \x,0.9/3 + \y) circle (0.65mm);
+	}
+	\node[text=black] (A1) at (1.1+0.85,1.1) {$4$};
+\end{scope}
+\begin{scope}[xshift=5cm, yshift=-6.8cm, rotate=90]
+	\draw[rounded corners] (-0.05, -0.1 - 0.85) rectangle (2.3-0.05, 2.3-0.1 - 0.85){};
+	
+	\foreach \x/\y in {0.9/0.9, 0.9/0.45, 0.9/0, 0.9/-0.45, 0.9/-0.9, 0/0, 0.45/0, 1.35/0}
+	{
+		\draw[rounded corners = 0.3mm, fill=lightgray] (\x, 0 + \y) rectangle (1.2/3 + \x, 1.2/3 + \y){};
+		\draw (0.3/3+ \x,0.3/3 + \y) circle (0.65mm);
+		\draw (0.9/3+ \x,0.3/3+ \y) circle (0.65mm);
+		\draw (0.3/3+ \x,0.9/3 + \y) circle (0.65mm);
+		\draw (0.9/3+ \x,0.9/3 + \y) circle (0.65mm);
+	}
+	\foreach \x/\y in {1.8/0}
+	{
+		\draw[rounded corners = 0.3mm, fill=black] (\x, 0 + \y) rectangle 	(1.2/3 + \x, 1.2/3 + \y){};
+		\draw [fill=white](0.3/3+ \x,0.3/3 + \y) circle (0.65mm);
+		\draw (0.9/3+ \x,0.3/3+ \y) circle (0.65mm);
+		\draw (0.3/3+ \x,0.9/3 + \y) circle (0.65mm);
+		\draw [fill=white](0.9/3+ \x,0.9/3 + \y) circle (0.65mm);
+	}
+	\node[text=black] (A1) at (0.25,-0.7) {$1$};
+	\node[text=black] (A2) at (1.05,-1.5) {$BL_{out}$};
+	\node[text=black] (A3) at (-0.4,0.1) {$WL_{out}$};
+\end{scope}
+\end{tikzpicture}
+\caption{QCA RAM cell using a delay latch}\label{fig:QCA_RAM}
+\end{figure}
+
+%\begin{figure}
+%	\centering
+%	%AND
+%\begin{tikzpicture}[rotate=270, scale=1.1, every node/.style={scale=1.2}]
+%	\draw[rounded corners] (-0.05, -0.1 - 0.85) rectangle (2.3-0.05, 2.3-0.1 - 0.85){};
+%	
+%	\foreach \x/\y in {0.9/0.9, 0.9/0.45, 0.9/0, 0.9/-0.45, 0.9/-0.9, 0/0, 0.45/0, 1.35/0}
+%	{
+	%		\draw[rounded corners = 0.3mm, fill=lightgray] (\x, 0 + \y) rectangle (1.2/3 + \x, 1.2/3 + \y){};
+	%		\draw (0.3/3+ \x,0.3/3 + \y) circle (0.65mm);
+	%		\draw (0.9/3+ \x,0.3/3+ \y) circle (0.65mm);
+	%		\draw (0.3/3+ \x,0.9/3 + \y) circle (0.65mm);
+	%		\draw (0.9/3+ \x,0.9/3 + \y) circle (0.65mm);
+	%	}
+%	\foreach \x/\y in {1.8/0}
+%	{
+	%		\draw[rounded corners = 0.3mm, fill=black] (\x, 0 + \y) rectangle 	(1.2/3 + \x, 1.2/3 + \y){};
+	%		\draw [fill=white](0.3/3+ \x,0.3/3 + \y) circle (0.65mm);
+	%		\draw (0.9/3+ \x,0.3/3+ \y) circle (0.65mm);
+	%		\draw (0.3/3+ \x,0.9/3 + \y) circle (0.65mm);
+	%		\draw [fill=white](0.9/3+ \x,0.9/3 + \y) circle (0.65mm);
+	%	}
+%\node[text=black] (A1) at (1.1+0.85,1.1) {$1$};
+%\end{tikzpicture}%
+%\begin{tikzpicture}[rotate=90, scale=1.1, every node/.style={scale=1.2}]
+%	\draw[rounded corners] (-0.05, -0.1 - 0.85) rectangle (2.3-0.05, 2.3-0.1 - 0.85){};
+%	
+%	\foreach \x/\y in {0.9/0.9, 0.9/0.45, 0.9/0, 0/0, 0.45/0}
+%	{
+	%		\draw[rounded corners = 0.3mm, fill=lightgray] (\x, 0 + \y) rectangle (1.2/3 + \x, 1.2/3 + \y){};
+	%		\draw (0.3/3+ \x,0.3/3 + \y) circle (0.65mm);
+	%		\draw (0.9/3+ \x,0.3/3+ \y) circle (0.65mm);
+	%		\draw (0.3/3+ \x,0.9/3 + \y) circle (0.65mm);
+	%		\draw (0.9/3+ \x,0.9/3 + \y) circle (0.65mm);
+	%	}
+%	\node[text=black] (A1) at (0.25,-0.7) {$2$};
+%\end{tikzpicture}%
+%\begin{tikzpicture}[rotate=0, scale=1.1, every node/.style={scale=1.2}]
+%	\draw[rounded corners] (-0.05, -0.1 - 0.85) rectangle (2.3-0.05, 2.3-0.1 - 0.85){};
+%	\node[text=black] (four) at (1.95 ,-0.65) {$3$};
+%\end{tikzpicture}%
+%
+%\begin{tikzpicture}[rotate=180, scale=1.1, every node/.style={scale=1.2}]
+%	\draw[rounded corners] (-0.05, -0.1 - 0.85) rectangle (2.3-0.05, 2.3-0.1 - 0.85){};
+%	
+%	\foreach \x/\y in {0.9/0.9, 0.9/0.45, 0.9/0, 0/0, 0.45/0}
+%	{
+	%		\draw[rounded corners = 0.3mm, fill=lightgray] (\x, 0 + \y) rectangle (1.2/3 + \x, 1.2/3 + \y){};
+	%		\draw (0.3/3+ \x,0.3/3 + \y) circle (0.65mm);
+	%		\draw (0.9/3+ \x,0.3/3+ \y) circle (0.65mm);
+	%		\draw (0.3/3+ \x,0.9/3 + \y) circle (0.65mm);
+	%		\draw (0.9/3+ \x,0.9/3 + \y) circle (0.65mm);
+	%	}
+%	\node[text=black] (four) at (0.25 ,1.05) {$2$};
+%\end{tikzpicture}%
+%\begin{tikzpicture}[rotate=0, scale=1.1, every node/.style={scale=1.2}]
+%	\draw[rounded corners] (-0.05, -0.1 - 0.85) rectangle (2.3-0.05, 2.3-0.1 - 0.85){};
+%	
+%	\foreach \x/\y in {0.9/0.9, 0.9/0.45, 0.9/0, 0.9/-0.45, 0.9/-0.9, 0/0, 0.45/0, 1.35/0}
+%	{
+	%		\draw[rounded corners = 0.3mm, fill=lightgray] (\x, 0 + \y) rectangle (1.2/3 + \x, 1.2/3 + \y){};
+	%		\draw (0.3/3+ \x,0.3/3 + \y) circle (0.65mm);
+	%		\draw (0.9/3+ \x,0.3/3+ \y) circle (0.65mm);
+	%		\draw (0.3/3+ \x,0.9/3 + \y) circle (0.65mm);
+	%		\draw (0.9/3+ \x,0.9/3 + \y) circle (0.65mm);
+	%	}
+%	\foreach \x/\y in {1.8/0}
+%	{
+	%		\draw[rounded corners = 0.3mm, fill=black] (\x, 0 + \y) rectangle 	(1.2/3 + \x, 1.2/3 + \y){};
+	%		\draw (0.3/3+ \x,0.3/3 + \y) circle (0.65mm);
+	%		\draw [fill=white](0.9/3+ \x,0.3/3+ \y) circle (0.65mm);
+	%		\draw [fill=white](0.3/3+ \x,0.9/3 + \y) circle (0.65mm);
+	%		\draw (0.9/3+ \x,0.9/3 + \y) circle (0.65mm);
+	%	}
+%	\node[text=black] (four) at (1.95 ,-0.65) {$3$};
+%\end{tikzpicture}%
+%\begin{tikzpicture}[rotate=0, scale=1.1, every node/.style={scale=1.2}]
+%	\draw[rounded corners] (-0.05, -0.1 - 0.85) rectangle (2.3-0.05, 2.3-0.1 - 0.85){};
+%	\node[text=black] (four) at (1.95 ,-0.65) {$4$};
+%\end{tikzpicture}%
+%
+%\begin{tikzpicture}[rotate=270, scale=1.1, every node/.style={scale=1.2}]
+%	\draw[rounded corners] (-0.05, -0.1 - 0.85) rectangle (2.3-0.05, 2.3-0.1 - 0.85){};
+%	
+%	\foreach \x/\y in {0.9/0.9, 0.9/0.45, 0.9/0, 0/0, 0.45/0}
+%	{
+	%		\draw[rounded corners = 0.3mm, fill=lightgray] (\x, 0 + \y) rectangle (1.2/3 + \x, 1.2/3 + \y){};
+	%		\draw (0.3/3+ \x,0.3/3 + \y) circle (0.65mm);
+	%		\draw (0.9/3+ \x,0.3/3+ \y) circle (0.65mm);
+	%		\draw (0.3/3+ \x,0.9/3 + \y) circle (0.65mm);
+	%		\draw (0.9/3+ \x,0.9/3 + \y) circle (0.65mm);
+	%	}
+%	\node[text=black] (A1) at (1.1+0.85,1.1) {$3$};
+%\end{tikzpicture}%
+%\begin{tikzpicture}[rotate=270, scale=1.1, every node/.style={scale=1.2}]
+%	\draw[rounded corners] (-0.05, -0.1 - 0.85) rectangle (2.3-0.05, 2.3-0.1 - 0.85){};
+%	
+%	\foreach \x/\y in {0.9/0.9, 0.9/0.45, 0.9/0, 0.9/-0.45, 0.9/-0.9, 0/0, 0.45/0}
+%	{
+	%		\draw[rounded corners = 0.3mm, fill=lightgray] (\x, 0 + \y) rectangle (1.2/3 + \x, 1.2/3 + \y){};
+	%		\draw (0.3/3+ \x,0.3/3 + \y) circle (0.65mm);
+	%		\draw (0.9/3+ \x,0.3/3+ \y) circle (0.65mm);
+	%		\draw (0.3/3+ \x,0.9/3 + \y) circle (0.65mm);
+	%		\draw (0.9/3+ \x,0.9/3 + \y) circle (0.65mm);
+	%	}
+%	\node[text=black] (A1) at (1.1+0.85,1.1) {$4$};
+%\end{tikzpicture}%
+%\begin{tikzpicture}[rotate=90, scale=1.1, every node/.style={scale=1.2}]
+%	\draw[rounded corners] (-0.05, -0.1 - 0.85) rectangle (2.3-0.05, 2.3-0.1 - 0.85){};
+%	
+%	\foreach \x/\y in {0.9/0.9, 0.9/0.45, 0.9/0, 0.9/-0.45, 0.9/-0.9, 0/0, 0.45/0, 1.35/0}
+%	{
+	%		\draw[rounded corners = 0.3mm, fill=lightgray] (\x, 0 + \y) rectangle (1.2/3 + \x, 1.2/3 + \y){};
+	%		\draw (0.3/3+ \x,0.3/3 + \y) circle (0.65mm);
+	%		\draw (0.9/3+ \x,0.3/3+ \y) circle (0.65mm);
+	%		\draw (0.3/3+ \x,0.9/3 + \y) circle (0.65mm);
+	%		\draw (0.9/3+ \x,0.9/3 + \y) circle (0.65mm);
+	%	}
+%	\foreach \x/\y in {1.8/0}
+%	{
+	%		\draw[rounded corners = 0.3mm, fill=black] (\x, 0 + \y) rectangle 	(1.2/3 + \x, 1.2/3 + \y){};
+	%		\draw [fill=white](0.3/3+ \x,0.3/3 + \y) circle (0.65mm);
+	%		\draw (0.9/3+ \x,0.3/3+ \y) circle (0.65mm);
+	%		\draw (0.3/3+ \x,0.9/3 + \y) circle (0.65mm);
+	%		\draw [fill=white](0.9/3+ \x,0.9/3 + \y) circle (0.65mm);
+	%	}
+%	\node[text=black] (A1) at (0.25,-0.7) {$1$};
+%\end{tikzpicture}
+%
+%	\caption{QCA RAM cell using a delay latch}\label{fig:QCA_RAM}
+%\end{figure}

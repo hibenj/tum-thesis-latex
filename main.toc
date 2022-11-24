@@ -27,7 +27,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.3}Gates}{13}{subsection.2.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\nonumberline Latches and Registers}{16}{subsubsection*.17}%
+\contentsline {subsubsection}{\nonumberline Latches and Flip-Flops}{16}{subsubsection*.17}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.3}P\&R problem}{21}{section.2.3}%
 \defcounter {refsection}{0}\relax 
@@ -37,24 +37,24 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.2}Sequential P\&R Algorithms}{33}{section.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Methodology}{34}{chapter.4}%
+\contentsline {chapter}{\numberline {4}Methodology}{35}{chapter.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Input Network}{34}{section.4.1}%
+\contentsline {section}{\numberline {4.1}Input Network}{35}{section.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Majority Gates Placement Network}{38}{section.4.2}%
+\contentsline {section}{\numberline {4.2}Majority Gates Placement Network}{39}{section.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Sequential Circuits Placement}{38}{section.4.3}%
+\contentsline {section}{\numberline {4.3}Sequential Circuits Placement}{39}{section.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Experimental Evaluation}{39}{chapter.5}%
+\contentsline {chapter}{\numberline {5}Experimental Evaluation}{40}{chapter.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Benchmarks}{39}{section.5.1}%
+\contentsline {section}{\numberline {5.1}Benchmarks}{40}{section.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Results}{39}{section.5.2}%
+\contentsline {section}{\numberline {5.2}Results}{40}{section.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline List of Figures}{40}{chapter*.29}%
+\contentsline {chapter}{\nonumberline List of Figures}{41}{chapter*.30}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline List of Tables}{41}{chapter*.30}%
+\contentsline {chapter}{\nonumberline List of Tables}{42}{chapter*.31}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Bibliography}{42}{chapter*.31}%
+\contentsline {chapter}{\nonumberline Bibliography}{43}{chapter*.32}%
 \defcounter {refsection}{0}\relax 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

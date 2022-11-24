@@ -86,7 +86,7 @@
     \field{year}{2001}
   \endentry
 
-  \entry{sequential_tile_CMOS_one}{article}{}
+  \entry{sequential_tile_CMOS_alg}{article}{}
     \name{author}{7}{}{%
       {{hash=BD}{%
          family={Bhowmik},
@@ -293,6 +293,34 @@
     \field{journaltitle}{IEEE Transactions on computer-aided design of
   integrated circuits and systems}
     \field{year}{2015}
+  \endentry
+
+  \entry{RAM_overview}{article}{}
+    \name{author}{2}{}{%
+      {{hash=CJ}{%
+         family={Chaharlang},
+         familyi={C\bibinitperiod},
+         given={Javad},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=MM}{%
+         family={Mosleh},
+         familyi={M\bibinitperiod},
+         given={Mohammad},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CJMM1}
+    \strng{fullhash}{CJMM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{number}{2}
+    \field{title}{An overview on RAM memories in QCA technology}
+    \field{volume}{11}
+    \field{journaltitle}{Majlesi Journal of Electrical Engineering}
+    \field{year}{2017}
   \endentry
 
   \entry{node_duplication}{article}{}
@@ -901,7 +929,7 @@
     \field{year}{2016}
   \endentry
 
-  \entry{sequential_reversible}{article}{}
+  \entry{sequential_reversible_tile}{article}{}
     \name{author}{1}{}{%
       {{hash=MARSeaGE}{%
          family={Mohammed\bibnamedelima Alharbi},
@@ -1142,6 +1170,65 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{dual_edge_triggered_FF_cell}{article}{}
+    \name{author}{2}{}{%
+      {{hash=SR}{%
+         family={Singh},
+         familyi={S\bibinitperiod},
+         given={Rupali},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=PMK}{%
+         family={Pandey},
+         familyi={P\bibinitperiod},
+         given={Manoj\bibnamedelima Kumar},
+         giveni={M\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SRPMK1}
+    \strng{fullhash}{SRPMK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{number}{1}
+    \field{pages}{147\bibrangedash 159}
+    \field{title}{Analysis and implementation of reversible dual edge triggered
+  d flip flop using quantum dot cellular automata}
+    \field{volume}{14}
+    \field{journaltitle}{Int. J. Innov. Comput. Inf. Control}
+    \field{year}{2018}
+  \endentry
+
+  \entry{RAM_cell}{article}{}
+    \name{author}{2}{}{%
+      {{hash=SR}{%
+         family={Singh},
+         familyi={S\bibinitperiod},
+         given={Rupali},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=SDK}{%
+         family={Sharma},
+         familyi={S\bibinitperiod},
+         given={Devendra\bibnamedelima Kumar},
+         giveni={D\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Emerald Publishing Limited}%
+    }
+    \strng{namehash}{SRSDK1}
+    \strng{fullhash}{SRSDK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{title}{Design of efficient multilayer RAM cell in QCA framework}
+    \field{journaltitle}{Circuit World}
+    \field{year}{2020}
+  \endentry
+
   \entry{taucer2015consequences}{article}{}
     \name{author}{4}{}{%
       {{hash=TM}{%
@@ -1216,6 +1303,39 @@
     \field{title}{QCA-LG: A tool for the automatic layout generation of QCA
   combinational circuits}
     \field{year}{2007}
+  \endentry
+
+  \entry{sequential_reversible_cell}{article}{}
+    \name{author}{2}{}{%
+      {{hash=TH}{%
+         family={Thapliyal},
+         familyi={T\bibinitperiod},
+         given={Himanshu},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=RN}{%
+         family={Ranganathan},
+         familyi={R\bibinitperiod},
+         given={Nagarajan},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{THRN1}
+    \strng{fullhash}{THRN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{number}{1}
+    \field{pages}{62\bibrangedash 69}
+    \field{title}{Reversible logic-based concurrently testable latches for
+  molecular QCA}
+    \field{volume}{9}
+    \field{journaltitle}{IEEE transactions on nanotechnology}
+    \field{year}{2009}
   \endentry
 
   \entry{trindade2016placement}{inproceedings}{}

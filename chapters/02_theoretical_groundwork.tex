@@ -1221,7 +1221,7 @@ The last special case of wires are crossing cases. By rotating the cells of one 
 	\caption{QCA Standard Library}\label{fig:StandardCellLibrary}
 \end{figure}
 
-\subsubsection{Latches and Registers}\label{subsec:latchesandregisters}
+\subsubsection{Latches and Flip-Flops}\label{subsec:latchesandregisters}
 Looking at a sequential circuit, it is the marriage of a combinational logic part and registers. When treating the combinational logic as blackbox, the outputs of it are storing the newly computed information into the registers and in the next cycle this information can be reused by connecting the registers again to the inputs of the combinational logic. This introduces a back-loop property, describing a signal propagating through combinational logic before getting stored and stabilized by a register and being reused again. This back-looping represents the key property of sequential circuits.
 Assuming that cominational logic can be implemented in QCA, registers or rather storage elements in general leave to be discussed. As already mentioned their task is to stabilize and store information which is then looped back via wires. To get a better understanding of how they can be implemented in QCA, first their main characteristics have to be derived from the well-known CMOS technology. Due to the already shown basic differences in signal propagation and clocking between the two technology domains, it will become clear that the implementation of latches and registers also has to be rethought from scratch.
 

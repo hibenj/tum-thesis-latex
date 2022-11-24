@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.12)  22 NOV 2022 17:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.12)  24 NOV 2022 14:32
 entering extended mode
 **./main.tex
 (main.tex
@@ -2159,28 +2159,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 267--268
  []
 
 [30]
-<./figures//ortho_mux_21.png, id=470, 443.85825pt x 517.935pt>
+<./figures//ortho_mux_21.png, id=472, 443.85825pt x 517.935pt>
 File: ./figures//ortho_mux_21.png Graphic file (type png)
 <use ./figures//ortho_mux_21.png>
 Package pdftex.def Info: ./figures//ortho_mux_21.png  used on input line 271.
 (pdftex.def)             Requested size: 221.92857pt x 258.96686pt.
- [31 <./figures//ortho_mux_21.png>]) (chapters/04_main_work.tex [32]
-[33]
+ [31 <./figures//ortho_mux_21.png>] [32] [33]) (chapters/04_main_work.tex
+[34]
 chapter 4.
-[34
+[35
 
 
-] [35] [36]
-<./figures//input_network_mux_21.png, id=518, 509.5035pt x 508.90125pt>
+] [36] [37]
+<./figures//input_network_mux_21.png, id=541, 509.5035pt x 508.90125pt>
 File: ./figures//input_network_mux_21.png Graphic file (type png)
 <use ./figures//input_network_mux_21.png>
 Package pdftex.def Info: ./figures//input_network_mux_21.png  used on input lin
 e 43.
 (pdftex.def)             Requested size: 254.75111pt x 254.45pt.
- [37 <./figures//input_network_mux_21.png>])
-(chapters/05_experimental_evaluation.tex [38]
+ [38 <./figures//input_network_mux_21.png>])
+(chapters/05_experimental_evaluation.tex [39]
 chapter 5.
-) [39
+) [40
 
 
 ]
@@ -2190,7 +2190,7 @@ Package tocbasic Info: character protrusion at lof deactivated on input line 51
 \tf@lof=\write7
 \openout7 = `main.lof'.
 
- [40
+ [41
 
 
 ]
@@ -2200,12 +2200,12 @@ Package tocbasic Info: character protrusion at lot deactivated on input line 52
 \tf@lot=\write8
 \openout8 = `main.lot'.
 
- [41
+ [42
 
 
 ]
 chapter without number
-[42
+[43
 
 
 ]
@@ -2221,17 +2221,17 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [43]
+ [44]
 Overfull \hbox (42.1764pt too wide) in paragraph at lines 54--54
 \T1/pplx/m/n/10.95 (-20) Cir-cuits. In: \T1/pplx/m/it/10.95 (-20) PREPRINT (Ve
 r-sion 1) avail-able at Re-search Square [https://doi.org/10.21203/rs.3.rs-
  []
 
-[44]
+[45]
 
 Package nag Warning: 36 complaints in total.
 
-[45] (main.aux)
+[46] (main.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -2242,10 +2242,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 68882 strings out of 478927
- 1657508 string characters out of 2862391
- 2942719 words of memory out of 3000000
- 84975 multiletter control sequences out of 15000+600000
+ 68922 strings out of 478927
+ 1658562 string characters out of 2862391
+ 2945038 words of memory out of 3000000
+ 85009 multiletter control sequences out of 15000+600000
  483876 words of font info for 516 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  115i,13n,111p,10601b,2970s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2260,9 +2260,9 @@ iKTeX/fonts/type1/public/mathpazo/fplmri.pfb><C:/Program Files/MiKTeX/fonts/typ
 e1/public/fpl/fplrc8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/upl
 b8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Progra
 m Files/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (52 pages, 622380 bytes).
+Output written on main.pdf (53 pages, 646623 bytes).
 PDF statistics:
- 815 PDF objects out of 1000 (max. 8388607)
- 196 named destinations out of 1000 (max. 500000)
+ 840 PDF objects out of 1000 (max. 8388607)
+ 202 named destinations out of 1000 (max. 500000)
  100208 words of extra memory for PDF output out of 106986 (max. 10000000)
 
