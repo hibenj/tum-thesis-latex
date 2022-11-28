@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.12)  28 NOV 2022 14:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.12)  28 NOV 2022 17:36
 entering extended mode
 **./main.tex
 (main.tex
@@ -2094,10 +2094,10 @@ chapter 3.
 <./figures//SMT_solving.png, id=395, 274.626pt x 211.992pt>
 File: ./figures//SMT_solving.png Graphic file (type png)
 <use ./figures//SMT_solving.png>
-Package pdftex.def Info: ./figures//SMT_solving.png  used on input line 10.
+Package pdftex.def Info: ./figures//SMT_solving.png  used on input line 9.
 (pdftex.def)             Requested size: 219.70108pt x 169.59381pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 14--19
+Underfull \hbox (badness 10000) in paragraph at lines 13--18
 
  []
 
@@ -2105,55 +2105,56 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--19
 <./figures//OGD.png, id=424, 241.65282pt x 240.9pt>
 File: ./figures//OGD.png Graphic file (type png)
 <use ./figures//OGD.png>
-Package pdftex.def Info: ./figures//OGD.png  used on input line 31.
+Package pdftex.def Info: ./figures//OGD.png  used on input line 30.
 (pdftex.def)             Requested size: 169.1558pt x 168.62883pt.
  [26 <./figures//OGD.png>]
 
-Package nag Warning: \label in float, but not after \caption on input line 113.
+Package nag Warning: \label in float, but not after \caption on input line 112.
 
 
 
-Package nag Warning: \label in float, but not after \caption on input line 113.
+Package nag Warning: \label in float, but not after \caption on input line 112.
 
 
 
-Package nag Warning: \label in float, but not after \caption on input line 169.
+Package nag Warning: \label in float, but not after \caption on input line 168.
 
 
 
-Package nag Warning: \label in float, but not after \caption on input line 169.
+Package nag Warning: \label in float, but not after \caption on input line 168.
+
+
+[27]
+
+Package nag Warning: \label in float, but not after \caption on input line 195.
 
 
 
-Package nag Warning: \label in float, but not after \caption on input line 196.
+Package nag Warning: \label in float, but not after \caption on input line 195.
 
 
 
-Package nag Warning: \label in float, but not after \caption on input line 196.
+Package nag Warning: \label in float, but not after \caption on input line 210.
 
 
 
-Package nag Warning: \label in float, but not after \caption on input line 211.
+Package nag Warning: \label in float, but not after \caption on input line 210.
 
 
 
-Package nag Warning: \label in float, but not after \caption on input line 211.
+LaTeX Warning: Reference `fig:Coloring_conflict' on page 28 undefined on input 
+line 215.
 
 
-
-LaTeX Warning: Reference `fig:Coloring_conflict' on page 27 undefined on input 
-line 216.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 216--218
+Underfull \hbox (badness 10000) in paragraph at lines 215--217
 
  []
 
-[27] [28]
+[28]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 264.
+put line 263.
  [29]
-Underfull \hbox (badness 10000) in paragraph at lines 267--268
+Underfull \hbox (badness 10000) in paragraph at lines 266--267
 
  []
 
@@ -2161,7 +2162,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 267--268
 <./figures//ortho_mux_21.png, id=478, 443.85825pt x 517.935pt>
 File: ./figures//ortho_mux_21.png Graphic file (type png)
 <use ./figures//ortho_mux_21.png>
-Package pdftex.def Info: ./figures//ortho_mux_21.png  used on input line 271.
+Package pdftex.def Info: ./figures//ortho_mux_21.png  used on input line 270.
 (pdftex.def)             Requested size: 221.92857pt x 258.96686pt.
  [31 <./figures//ortho_mux_21.png>] [32] [33]) (chapters/04_main_work.tex
 [34]
@@ -2177,12 +2178,12 @@ Package pdftex.def Info: ./figures//input_network_mux_21.png  used on input lin
 e 41.
 (pdftex.def)             Requested size: 254.75111pt x 254.45pt.
  [36] [37] [38 <./figures//input_network_mux_21.png>] [39]
-<./figures//Maj_nw.png, id=561, 207.77625pt x 293.29575pt>
+<./figures//Maj_nw.png, id=562, 207.77625pt x 293.29575pt>
 File: ./figures//Maj_nw.png Graphic file (type png)
 <use ./figures//Maj_nw.png>
 Package pdftex.def Info: ./figures//Maj_nw.png  used on input line 55.
 (pdftex.def)             Requested size: 166.2212pt x 234.6369pt.
- [40 <./figures//Maj_nw.png>] [41] [42]
+ [40] [41 <./figures//Maj_nw.png>] [42]
 <./figures//majority_with_buf.png, id=583, 813.0375pt x 422.17725pt>
 File: ./figures//majority_with_buf.png Graphic file (type png)
 <use ./figures//majority_with_buf.png>
@@ -2254,11 +2255,11 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 68973 strings out of 478927
- 1659470 string characters out of 2862391
+ 68977 strings out of 478927
+ 1659505 string characters out of 2862391
  2945383 words of memory out of 3000000
  85037 multiletter control sequences out of 15000+600000
- 484486 words of font info for 525 fonts, out of 8000000 for 9000
+ 484617 words of font info for 528 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  115i,13n,111p,10601b,2970s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\benja\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt
@@ -2272,9 +2273,9 @@ iKTeX/fonts/type1/public/mathpazo/fplmri.pfb><C:/Program Files/MiKTeX/fonts/typ
 e1/public/fpl/fplrc8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/upl
 b8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Progra
 m Files/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (58 pages, 718261 bytes).
+Output written on main.pdf (58 pages, 719362 bytes).
 PDF statistics:
- 895 PDF objects out of 1000 (max. 8388607)
+ 896 PDF objects out of 1000 (max. 8388607)
  213 named destinations out of 1000 (max. 500000)
  100242 words of extra memory for PDF output out of 106986 (max. 10000000)
 

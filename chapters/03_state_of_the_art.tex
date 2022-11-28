@@ -1,9 +1,8 @@
 \chapter{State of the Art}\label{chapter:SotA}
-In this chapter various approaches trying to solve the placement and routing problem for QCA are reviewed. In the first part algorithms, which are able to work only with combinational circuits, are investigated under the theoretical groundwork done in chapter \ref{chapter:Preliminaries}. First the use both algorithms determining \textit{optimal} and those who determine \textit{scalable} solutions are explained. In the second part ideas and challenges of sequential placement and routing algorithms are investigated.
+In this chapter various approaches trying to solve the placement and routing problem for QCA are reviewed. In the first part algorithms, which are able to work only with combinational circuits are investigated under the theoretical groundwork done in chapter \ref{chapter:Preliminaries}. First the use of both algorithms determining \textit{optimal} and those who determine \textit{scalable} solutions are explained. In the second part ideas and challenges of sequential placement and routing algorithms are investigated.
 
 \section{Combinational P\&R Algorithms}
-In order to understand optimal solutions for placement and routing, it has to be reviewed from section \ref{sec:PR} that this problem is $\mathcal{NP}$-hard. Here the complexity class $\mathcal{NP}$ (nondeterministic polynomial time) describes a set of decision problems, where problem instances with a formula, that can be evaluated to true, have a proof, that can be verified in polynomial time by a deterministic Turing machine. The existence of these problems lead to several ideas on solving them, one of these being \textit{Satisfiability Modulo Theories} (SMT). The \textit{satisfiability problem} can be formulated as the question if there exists a model evaluating the first-order formula over some theories to true. The consequent solving instance for propositional logic is a \textit{Boolean Satisfiability Solver} (SAT), with proposition being Boolean equations, that have to be proven true. With this basic instance two different solving strategies were proposed. The first strategy is called \textit{Eager SMT-solving} and is used for uninterpreted functions or bit-vectors, which can be derived to propositional logic. Therefore the first step implies the transformation of theory constraints into \textit{equisatisfiable} propositional logic. These problem insances are then passed to SAT solvers, checking for satisfiability. Due to the equisatisfiability, a solution for the original problem can be derived from the solution of the propositional logic. The second approach \textit{lazy SMT-solving} refers to the assisting use of \textit{theory solvers} and is depicted in figure \ref{fig:SMT_solving}. In the first step the first-order problem with formula $\varphi$ is transformed to a \textit{Boolean abstraction} $\varphi'$ mapping the concrete problem to an abstract problem under a set of finite Boolean predicates \cite{boolean_abstraction}. The abstraction is then passed to the SAT-solver, which again computes solutions and gives them to a set of theory solvers. They again check if the Boolean predicates hold true thus if they are consistent in the provided solution. If so the abstraction is satisfiability and the theory solver instance returns SAT. Otherwise UNSAT with an explanation is passed back to the SAT-solver so that the abstraction can be improved. If the abstraction is found to be unsatisfied the problem is said to be unsatisfiable.
-\cite{SMT}
+In order to understand optimal solutions for placement and routing, it has to be reviewed from section \ref{sec:PR} that this problem is $\mathcal{NP}$-hard. Here the complexity class $\mathcal{NP}$ (nondeterministic polynomial time) describes a set of decision problems, where problem instances with a formula, that can be evaluated to true, have a proof, that can be verified in polynomial time by a deterministic Turing machine. The existence of these problems lead to several ideas on solving them, one of these being \textit{Satisfiability Modulo Theories} (SMT). The \textit{satisfiability problem} can be formulated as the question if there exists a model evaluating the first-order formula over some theories to true. The consequent solving instance for propositional logic is a \textit{Boolean Satisfiability Solver} (SAT), with its proposition being Boolean equations, that have to be proven true. With this basic instance two different solving strategies were proposed. The first strategy is called \textit{Eager SMT-solving} and is used for uninterpreted functions or bit-vectors, which can be derived to propositional logic. Therefore the first step implies the transformation of theory constraints into \textit{equisatisfiable} propositional logic. These problem insances are then passed to SAT solvers, checking for satisfiability. Due to the equisatisfiability of the problems, a solution for the original problem can be derived from the solution of the propositional logic. The second approach called \textit{lazy SMT-solving} refers to the assisting use of \textit{theory solvers} and its process is depicted in figure \ref{fig:SMT_solving}. In the first step the first-order problem with formula $\varphi$ is transformed to a \textit{Boolean abstraction} $\varphi'$ mapping the concrete problem to an abstract problem under a set of finite Boolean predicates \cite{boolean_abstraction}. The abstraction is then passed to the SAT-solver, which again computes solutions and gives them to a set of theory solvers. They in turn check if the Boolean predicates hold true or rather if they are consistent in the provided solution. If so, the abstraction is satisfiable and the theory solver instance returns SAT. Otherwise UNSAT with an explanation is passed back to the SAT-solver aiding the improvement of the abstraction. If the abstraction is finally found to be unsatisfied the problem is said to be unsatisfiable \cite{SMT}.
 
 \begin{figure}
 	\centering
@@ -11,14 +10,14 @@ In order to understand optimal solutions for placement and routing, it has to be
 	\caption{Lazy SMT-solving  process \cite{SMT}}\label{fig:SMT_solving}
 \end{figure}
 
-With this knowledge optimal placement and routing algorithms can be discussed. Two approaches from \cite{Walter} are reviewed for this. The first algorithm "Exact Placement and Routing" finds a valid placement, routing and clocking, also described as $(p, r, c)$, given an empty layout $L$ and a logic network $N$. In order to find an optimal solution, the minimum layout size $w \times h$
-has to be determined for which the constraints of $(p, c, r)$ hold true. Therefore all possible sizes of layouts are encoded and passed to a SAT-solver iteratively and the first layout for which the solver returns true is the minimum or rather optimal solution. The experimental results show that the determined layouts of the algorithm are many times smaller than the compared state of the art CITE. But due to the complexity of the algorithm utilizing satisfiability solvers, the algorithm times out for quite small circuits already, making it insufficient for the manufacturing of commercial QCA circuits.\\
-In the book \cite{Walter} another exact P\&R algorithm is proposed. The idea is to create a \textit{one-pass synthesis}, which combines logic synthesis and physical design in a single run. Therefore this algorithm has to tackle two $\mathcal{NP}$-hard problems relying again on the power of satisfiability solvers. This particular algorithm uses eager SMT-solving. The idea is to eliminate some shortcomings of the two-step synthesis derived from CMOS. This includes treating wires as gates since the costs are equal in QCA and including data synchronization, which is dependent on the tiles passed. In this manner a SAT problem can be formed and passed to a SAT-solver. The instances are now created only passing a empty layout $L$ of size $w \times h$. Even though this algorithm is able to find \textit{truly minimal} solution since the non-optimal logic networks are eliminated, the experimental results show the same problems as in the exact P\&R approach. This means that the high complexity of the satisfiability solver leads to a time-out of the algorithms for circuits with a gate size $|N| \geq 30$.\\
-These results lead to the usage of scalable placement and routing algorithms. These approaches trade optimality of the circuit, like layout size for computing time. This makes them scalable in the time domain and therefore applicable for the manufacturing of commercial QCA circuits. All algorithms reviewed in the following are based on the original VLIS process, meaning they treat logic synthesis and physical design as their own problem.\\
-Starting at the logic synthesis many works present a preprocessing of logic networks to make them suitable to translate them into gate level representations. There are several steps which are widely used to modify logic networks. The first of them is the node duplication or rather dummy node insertion. The idea of this process is to minimize wire-crossings, which we have analyzed to be very costly in QCA. Also the fanouts of the nodes are reduced, leading to a reduction of the place and rout complexity. One simple algorithm for this is to visit every node iteratively from the primary outputs to the primary inputs. If the current node hasn't been visited its marked as visited and if a already marked node is visited it is duplicated. But this means that not only one node is duplicated but also all the nodes included in te sub tree rooted by it \cite{QCA-LG}. From this simple example we can already suggest that the insertion of dummy nodes can lead to uncontrollable growth of the logic network. Other algorithms which are not that dedicated, don't have such a high overhead in dummy nodes but therefore can't eliminate all wire crossings making it necessary to include nodes for crossings, so called \textit{crossing edge insertions} \cite{node_duplication}. Another preprocessing steps including the insertion of so called \textit{buffer nodes} is the synchronization- Since the global timing constraint requires two paths leading to the same node to pass the same amount of tiles, this step makes sure that every two paths leading to a node include the same amount of gates. A buffer node therefore indicates that wires in QCA have to be viewed as gates as well. Also due to the insertion of buffers different partitions of a logic network can be generated \cite{dummy_and_buffer_nodes}. Some approaches lead to even higher insertion of nodes indicating wasted area. This arises from the idea of a complete ternary logic network representation of a QCA circuit, since the gates are based on majority functions GRAPH . When extra area is produced due to the insertion of nodes, also wire lengths can be increased. For gates with two or three inputs, this means that if the longest wire has to be split into more than one clock zone, also the shortest wire has to be split into the same amount of clock zones in order to preserve the signal synchronization \cite{QCA-LG}. Another big problem of these algorithms is the requirement of cell-based clocking, which we have already showed to be insufficient. Even though there also exist algorithms using tile-based clocking they are limited by the general drawbacks of preprocessing \cite{trindade2016placement} leading to exploding logic networks and even use greedy placement and routing algorithms limiting the approach to small and simple reconvergent patterns \cite{greedy_tile}.\\
+With this knowledge optimal placement and routing algorithms can be discussed by reviewing two approaches proposed in \cite{Walter}. The first algorithm "Exact Placement and Routing" finds a valid placement, routing and clocking, also described as tuple $(p, r, c)$, given an empty layout $L$ and a logic network $N$. In order to find an optimal solution, the minimum layout size $w \times h$
+has to be determined for which the constraints of $(p, c, r)$ hold true. Therefore all possible sizes of layouts are encoded and passed to a SAT-solver iteratively and the first layout for which the solver returns true is the minimum or rather the optimal solution. The experimental results show that the determined layouts of the algorithm are many times smaller than the compared state of the art CITE. But due to the complexity of the algorithm utilizing satisfiability solvers, the algorithm times out for quite small circuits already, making it insufficient for the manufacturing of commercial QCA circuits.\\
+The other exact P\&R algorithm proposed in \cite{Walter} creates a \textit{one-pass synthesis}, which combines logic synthesis and physical design in a single run with the idea to adapt the whole design-process to the needs of the QCA design rules. Therefore this algorithm has to tackle two $\mathcal{NP}$-hard problems relying again on the power of satisfiability solvers. This particular algorithm uses eager SMT-solving. The idea is to eliminate some shortcomings of the two-step synthesis derived from CMOS. This includes treating wires as gates since the costs are equal in QCA and including data synchronization, which is dependent on the tiles passed. In this manner a SAT problem can be formed and passed to a SAT-solver. The instances are now created only passing a empty layout $L$ of size $w \times h$. Even though this algorithm is able to find \textit{truly minimal} solution since the non-optimal logic networks are eliminated, the experimental results show the same problems as in the exact P\&R approach. This means that the high complexity of the satisfiability solver leads to a time-out of the algorithms for circuits with a gate size $|N| \geq 30$.\\
+These shortcomings lead to the usage of \textit{scalable} placement and routing algorithms. This approach trades optimality of the circuit for computing time, yielding larger, more expensive layouts, but in short time. This makes them scalable in the time domain and therefore applicable for the manufacturing of commercial QCA circuits. All algorithms reviewed in the following are based on the original VLIS process, meaning they treat logic synthesis and physical design as their own problem and not as one-pass synthesis.\\
+Starting at the logic synthesis, many works present a preprocessing of logic networks enabling them to be translated directly into gate level representations. There are several steps which are widely used to modify logic networks. The first of them is the node duplication or rather dummy node insertion. The idea of this process is to minimize wire-crossings, which we have analyzed to be very costly in QCA and reduce the number of fan-outs at the nodes, leading to a reduction of the place and rout complexity. One simple algorithm for this is to visit every node in a breadth-first search from each primary output to the primary inputs. If the current node hasn't been visited its marked as visited and if a already marked node is visited it is duplicated. This process is quite problematic, because not only the visited node is duplicated, but also all the nodes included in the sub tree rooted by it \cite{QCA-LG}. From this simple example we can already suggest that the insertion of dummy nodes can lead to uncontrollable growth of the logic network and also layout size. More dedicated algorithms don't have such a high overhead in dummy nodes but for that they can't eliminate all wire crossings, making it necessary to include nodes for crossings called \textit{crossing edge insertions} \cite{node_duplication}. Another preprocessing steps including the insertion of so called \textit{buffer nodes} is aiming for the synchronization of signals in order to meet the global timing constraint. Since this constraint requires two paths leading to the same node to pass the same amount of tiles, a valid layout can be easily deduced from the logic network, if every path has the same amount of nodes. Also the insertion of buffers allows the generation of different partitions of a logic network \cite{dummy_and_buffer_nodes}. Some approaches insert even a higher number of nodes in order to obtain a complete ternary logic network representation of a QCA circuit. This idea is based on the majority function representation of gates GRAPH. When extra nodes are included in the logic network, also extra area is produced and this in turn leads to an increase in wire lengths. Because these approaches are based on cell-based clocking, this implies that if the longest wire has to be split into more than one clock zone also the shortest wire has to be split into the same amount of clock zones in order to preserve the signal synchronization for gates with two or three inputs \cite{QCA-LG}. Another big problem of these algorithms is the requirement of cell-based clocking itself, which we have already showed to be insufficient. Even though there also exist algorithms using tile-based clocking they are limited by the general drawbacks of preprocessing \cite{trindade2016placement} leading to exploding logic networks and even use greedy placement and routing algorithms limiting the approach to small and simple reconvergent patterns \cite{greedy_tile}.\\
 
-All these reasons lead to the proposal of \textit{ortho}, an algorithm implementing a scalable placement, routing and clocking without preprocessing steps \cite{ortho}. Since this algorithms forms the base of this work, the algorithm is explained detailed in the following.\\
-First of all, a proper representation of the logic network is needed. Therefore in some works already the idea of an orthogonal embedding, have been proposed \cite{dummy_and_buffer_nodes}. This means that the logic network is mapped onto a two-dimensional grid, so it can be seen as an assignment of the tuple $(p, r)$. For ortho this is done by \text{orthogonal graph drawing} (OGD), which is described in \cite{OGD}.
+All these reasons lead to the proposal of \textit{ortho}, an algorithm implementing a scalable placement, routing and clocking without preprocessing steps proposed in \cite{ortho}. Since this algorithms forms the base of this work, the algorithm is explained detailed in the following.\\
+First of all, a proper representation of the logic network is needed. Therefore in some works already the idea of an orthogonal embedding, had been proposed \cite{dummy_and_buffer_nodes}. Orthogonal embedding is the mapping if a logic network onto a two-dimensional grid, so it can be seen as an assignment of the tuple $(p, r)$. For ortho this is done by \text{orthogonal graph drawing} (OGD), which is described in \cite{OGD}.
 
 \begin{definition}[Orthogonal Graph Drawing]
 	An OGD maps a graph $G = (V, E)$ onto a plane grid with size $w \times h$. The mapping assigns vertices $v \in V$ with coordinates $(x, y)$ to grid points, with $1 \leq x < w$ and $1 \leq y < h$. Edges $e \in E$ are assigned to paths in the grid, so they consist only from horizontal and vertical segments. The paths are non-overlapping, meaning that they are not allowed to cross any vertices.
@@ -32,7 +31,7 @@ Figure \ref{fig:OGD_example} shows an example OGD. The dots in the graph represe
 	\caption{Example OGD drawing}\label{fig:OGD_example}
 \end{figure}
 
-Nonetheless an OGD also only respects the placement and routing, leaving the clocking to be addressed. The problem of insufficient clocking out of an OGD representation can be showed from the example in \cite{Walter}. Figure \ref{fig:OGD_timing} shows, that for a given OGD (\ref{subfig:OGD_sync_b}) there has to be no clocking which can resolve the timing constraints (\ref{subfig:OGD_sync_c}). It stands out that for the down right corner no clocking zone can be found that is satisfies the local synchronization constraint but also the global synchronization constraint is violated. Since the clocking or rather signal synchronization was a main task of the preprocessing now some other solution has to be found.
+Nonetheless an OGD only respects the placement and routing, leaving the clocking to be addressed. The problem of insufficient clocking in a valid OGD representation can be shown from the example in figure \ref{fig:OGD_timing}. For the given OGD in subfigure \ref{subfig:OGD_sync_b} there has to be no clocking which can resolve the timing constraints. In subfigure \ref{subfig:OGD_sync_c} it stands out that for the down right corner no clocking zone can be found so that either the local synchronization constraint but also the global synchronization constraint are satisfied. Since the clocking or rather signal synchronization was a main task of the preprocessing, which is not used here, some other solution has to be found.
 
 \begin{figure}
 	\newcommand*{\xMin}{0}%
@@ -171,7 +170,7 @@ Nonetheless an OGD also only respects the placement and routing, leaving the clo
 	\caption{Insufficient timing constraints of a OGD representation \cite{Walter}}\label{fig:OGD_timing}
 \end{figure}
 
-The idea used for the ortho algorithm comes from an extension to OGDs , which allows to determine a special OGD from a logic network in polynomial time being the constraint needed for a scalable approach. The base used here is formed by Therese Biedl \cite{biedl1998better}, who proposes a OGD with an additional edge coloring. Although the effectiveness and complexity bounds in her work were proven on the restriction of \textit{undirected 3-graphs} and as we already examined from the precious chapter a logic network is neither containing only nodes of most degree 3 nor undirected. To overcome the fist restriction, a custom logic network can be created by assigning own nodes for fanouts and inverters. This way the maximum node degree gets decreased to three, while the expressiveness of the logic network representation is maintained. The second restriction can be overcome by a custom coloring built on the original approach, which also serves as direction assignment. Given a logic network converted to a 3-graph, the coloring in form of edge directions $d : \Delta \rightarrow \{east, south\}$ is assigned. The coloring can be understood as relative position arrangement. If an edge $(v_i, v_j)$ is colored $east$, means that the vertex $v_j$ is positioned east of $v_i$, so that $x_j > x_i$. The color $south$ for an edge $(v_i, v_j)$ assigns $v_j$ a relative position of $v_i$, so that $v_j$ is south of $v_i$ or $y_j > y_i$. In order to color a graph with only these two colors the following \textit{assignment constraints} must hold true:
+The idea used for the ortho algorithm comes from an extension to OGDs, which allows to determine a special OGD from a logic network in polynomial time being the constraint needed for a scalable approach. The base used in \cite{ortho} is formed by Therese Biedl \cite{biedl1998better}, who proposes a OGD with an additional edge coloring. Although the effectiveness and complexity bounds in her work were proven on the restriction of \textit{undirected 3-graphs} and as we already examined from the precious chapter a logic network is neither containing only nodes of most degree 3 nor undirected. To overcome the fist restriction, a custom logic network can be created by assigning own nodes for fanouts and inverters. This way the maximum node degree gets decreased to three, while the expressiveness of the logic network representation is maintained. The second restriction can be overcome by a custom coloring built on the original approach, which also serves as direction assignment. Given a logic network converted to a 3-graph, the coloring in form of edge directions $d : \Delta \rightarrow \{east, south\}$ is assigned. The coloring can be understood as relative position arrangement. If an edge $(v_i, v_j)$ is colored $east$, means that the vertex $v_j$ is positioned east of $v_i$, so that $x_j > x_i$. The color $south$ for an edge $(v_i, v_j)$ assigns $v_j$ a relative position of $v_i$, so that $v_j$ is south of $v_i$ or $y_j > y_i$. In order to color a graph with only these two colors the following \textit{assignment constraints} must hold true:
 \begin{enumerate}
 	\item All \textbf{incoming} edge of a vertex has to be painted with the \textbf{same} color.
 	\item All \textbf{outgoing} edges of a vertex have to be painted with \textbf{opposite} colors.
@@ -213,8 +212,8 @@ The idea used for the ortho algorithm comes from an extension to OGDs , which al
 	\caption{Relative positions of an OGD graph with correct color assinment}\label{fig:OGD_color}
 \end{figure}
 
-The relative position assignment under the proposed constraints can be seen at an arbitrary example in figure \ref{fig:OGD_color}. In the example for outgoing edges (figure \ref{subfig:OGD_color_out}), it is clear that the assignment constraint makes sure that two outgoing edges of the same vertex are routed without conflict. Due to the definition of the colors, the layout is increased in x-direction for an east-coloring and analogously extended in the y-Direction for a south-coloring. Figure \ref{subfig:OGD_color_in} depicts the assignment constraint for the incoming edges of one vertex. Since this implies only one color, also the layout only is extended in one direction, here in x-direction due to the east-coloring. The clocking used in the example is 2DD-Wave, because it also supports only signal flow in the directions $east$ and $south$. This means that the local synchronization constraint is always true if we use this scheme. But due to its uniformity the scheme also maintains the global synchronization constraint for vertices placed after the proposed direction assignment. This is why ortho utilizes the 2DD-Wave scheme. However, there exist logic networks for which no coloring holding the constraints can be found. Figure \ref{fig:Coloring_conflict} shows such a coloring conflict. For the edge with a "$X$", no direction can be assigned for which the formulated constraints hold true. So an auxiliary node is introduced resolving the conflict.\\
-In the following the pseudo code of ortho, derived from \cite{ortho} and depicted as algorithm \ref{alg:ortho}, is described in own words, before its evaluated on an example and its main characteristics are described. Following the VLSI design process the ortho algorithm has as input a Logic network $N$ and a clocking scheme or rather a clock number $clk$ for every tile in order to fulfill the timing constraints. As already mentioned $N$ has to be converted into a 3-graph by substitution so a valid coloring can be assigned. Then an empty Layout $L$ with a 2DD-Wave clocking scheme is created and the coloring is calculated for $N$. Also the nodes need to be topologically ordered starting with the lowest number at the inputs and the highest numbers at the outputs. Therefore the algorithm is starting with the lowest numbered vertices representing primary inputs. In order to connect the inputs to external signals they are placed at the borders of the layout. In ortho the first column of the layout is therefore reserved for placing the inputs under each other. This again leads to a problem because inputs cannot wire to the south, so they need to be resolved by rewiring them each on a new column. With this input network the placing of the other vertices starts. For this two parameters need to be evaluated in each step. First the coloring of the node and second the updated parameter $(w, h)$, saving the current dimensions of $L$. So if a node is colored $east$, the layout is extended by one column and the node is placed at $(w-1, h_p)$, where $w$ is the current width of $L$ and $h_p$ is the maximum vertical position of its childs. According to this scheme for nodes colored $south$ the layout is extended by one row and the node is placed to $(w_p, h-1,)$, where $w_p$ is the maximum horizontal position of the nodes childs and $h$ is the current height of the layout. After placing the nodes the node is wired to its predecessors. In case of $east$ the wiring first goes east and the northern segment is then wired south. If the node is colored $south$ the wiring goes south first and for the eastern child the segment then is colored east in order to connect to the placed node. After all nodes were placed in this fashion the primary outputs are also connected to the borders either to the east or the south and the finished layout $L$ is returned by the algorithm.\\
+The relative position assignment under the proposed constraints can be seen at an arbitrary example in figure \ref{fig:OGD_color}. In the example for outgoing edges (figure \ref{subfig:OGD_color_out}), it is clear that the assignment constraint makes sure that two outgoing edges of the same vertex are routed without conflict. Equivalent to the definition of the colors, the layout is increased in x-direction for an east-coloring and analogously extended in the y-Direction for a south-coloring. Figure \ref{subfig:OGD_color_in} depicts the assignment constraint for the incoming edges of one vertex. Since this assignment only implies one color, also the layout only is extended in one direction, here in x-direction due to the east-coloring. The clocking used for ortho is 2DD-Wave, because it also supports signal distribution only in the directions $east$ and $south$, making it to an ideal base for this method. The usage of the 2DDWave scheme already gives a solution for the local synchronization constraint and due to its uniformity and simplicity the scheme also maintains the global synchronization constraint for vertices placed after the proposed direction assignment. However, there exist logic networks for which no coloring in regards to the constraints can be found. Figure !! shows such a coloring conflict. For the edge with a "$X$", no direction can be assigned for which the formulated constraints hold true. So an auxiliary node is introduced resolving the conflict.\\
+In the following the pseudo code of ortho, derived from \cite{ortho} is depicted as algorithm \ref{alg:ortho} and described in own words, before its evaluated on an example and its main characteristics are described. Following the VLSI design process the ortho algorithm has as input a Logic network $N$ and a clocking scheme or rather a clock number $clk$ for every tile in order to fulfill the timing constraints. As already mentioned $N$ has to be converted into a 3-graph by substitution so a valid coloring can be assigned. Then an empty Layout $L$ with a 2DD-Wave clocking scheme is created and the coloring is calculated for $N$. Also the nodes need to be topologically ordered starting with the lowest number at the inputs and the highest numbers at the outputs. Therefore the algorithm is starting with the lowest numbered vertices representing primary inputs. In order to connect the inputs to external signals they are placed at the borders of the layout. In ortho the first column of the layout is therefore reserved for placing the inputs under each other. This again leads to a problem because inputs cannot wire to the south, so they need to be resolved by rewiring them each on a new column. With this input network the placing of the other vertices starts. For this two parameters need to be evaluated in each step. First the coloring of the node and second the updated parameter $(w, h)$, saving the current dimensions of $L$. So if a node is colored $east$, the layout is extended by one column and the node is placed at $(w-1, h_p)$, where $w$ is the current width of $L$ and $h_p$ is the maximum vertical position of its childs. According to this scheme for nodes colored $south$ the layout is extended by one row and the node is placed to $(w_p, h-1,)$, where $w_p$ is the maximum horizontal position of the nodes childs and $h$ is the current height of the layout. After placing the nodes the node is wired to its predecessors. In case of $east$ the wiring first goes east and the northern segment is then wired south. If the node is colored $south$ the wiring goes south first and for the eastern child the segment then is colored east in order to connect to the placed node. After all nodes were placed in this fashion the primary outputs are also connected to the borders either to the east or the south and the finished layout $L$ is returned by the algorithm.\\
 
 
 %\begin{figure}
@@ -419,135 +418,3 @@ Another section of papers focus on the implementation RAM cells in QCA technolog
 \end{tikzpicture}
 \caption{QCA RAM cell using a delay latch}\label{fig:QCA_RAM}
 \end{figure}
-
-%\begin{figure}
-%	\centering
-%	%AND
-%\begin{tikzpicture}[rotate=270, scale=1.1, every node/.style={scale=1.2}]
-%	\draw[rounded corners] (-0.05, -0.1 - 0.85) rectangle (2.3-0.05, 2.3-0.1 - 0.85){};
-%	
-%	\foreach \x/\y in {0.9/0.9, 0.9/0.45, 0.9/0, 0.9/-0.45, 0.9/-0.9, 0/0, 0.45/0, 1.35/0}
-%	{
-	%		\draw[rounded corners = 0.3mm, fill=lightgray] (\x, 0 + \y) rectangle (1.2/3 + \x, 1.2/3 + \y){};
-	%		\draw (0.3/3+ \x,0.3/3 + \y) circle (0.65mm);
-	%		\draw (0.9/3+ \x,0.3/3+ \y) circle (0.65mm);
-	%		\draw (0.3/3+ \x,0.9/3 + \y) circle (0.65mm);
-	%		\draw (0.9/3+ \x,0.9/3 + \y) circle (0.65mm);
-	%	}
-%	\foreach \x/\y in {1.8/0}
-%	{
-	%		\draw[rounded corners = 0.3mm, fill=black] (\x, 0 + \y) rectangle 	(1.2/3 + \x, 1.2/3 + \y){};
-	%		\draw [fill=white](0.3/3+ \x,0.3/3 + \y) circle (0.65mm);
-	%		\draw (0.9/3+ \x,0.3/3+ \y) circle (0.65mm);
-	%		\draw (0.3/3+ \x,0.9/3 + \y) circle (0.65mm);
-	%		\draw [fill=white](0.9/3+ \x,0.9/3 + \y) circle (0.65mm);
-	%	}
-%\node[text=black] (A1) at (1.1+0.85,1.1) {$1$};
-%\end{tikzpicture}%
-%\begin{tikzpicture}[rotate=90, scale=1.1, every node/.style={scale=1.2}]
-%	\draw[rounded corners] (-0.05, -0.1 - 0.85) rectangle (2.3-0.05, 2.3-0.1 - 0.85){};
-%	
-%	\foreach \x/\y in {0.9/0.9, 0.9/0.45, 0.9/0, 0/0, 0.45/0}
-%	{
-	%		\draw[rounded corners = 0.3mm, fill=lightgray] (\x, 0 + \y) rectangle (1.2/3 + \x, 1.2/3 + \y){};
-	%		\draw (0.3/3+ \x,0.3/3 + \y) circle (0.65mm);
-	%		\draw (0.9/3+ \x,0.3/3+ \y) circle (0.65mm);
-	%		\draw (0.3/3+ \x,0.9/3 + \y) circle (0.65mm);
-	%		\draw (0.9/3+ \x,0.9/3 + \y) circle (0.65mm);
-	%	}
-%	\node[text=black] (A1) at (0.25,-0.7) {$2$};
-%\end{tikzpicture}%
-%\begin{tikzpicture}[rotate=0, scale=1.1, every node/.style={scale=1.2}]
-%	\draw[rounded corners] (-0.05, -0.1 - 0.85) rectangle (2.3-0.05, 2.3-0.1 - 0.85){};
-%	\node[text=black] (four) at (1.95 ,-0.65) {$3$};
-%\end{tikzpicture}%
-%
-%\begin{tikzpicture}[rotate=180, scale=1.1, every node/.style={scale=1.2}]
-%	\draw[rounded corners] (-0.05, -0.1 - 0.85) rectangle (2.3-0.05, 2.3-0.1 - 0.85){};
-%	
-%	\foreach \x/\y in {0.9/0.9, 0.9/0.45, 0.9/0, 0/0, 0.45/0}
-%	{
-	%		\draw[rounded corners = 0.3mm, fill=lightgray] (\x, 0 + \y) rectangle (1.2/3 + \x, 1.2/3 + \y){};
-	%		\draw (0.3/3+ \x,0.3/3 + \y) circle (0.65mm);
-	%		\draw (0.9/3+ \x,0.3/3+ \y) circle (0.65mm);
-	%		\draw (0.3/3+ \x,0.9/3 + \y) circle (0.65mm);
-	%		\draw (0.9/3+ \x,0.9/3 + \y) circle (0.65mm);
-	%	}
-%	\node[text=black] (four) at (0.25 ,1.05) {$2$};
-%\end{tikzpicture}%
-%\begin{tikzpicture}[rotate=0, scale=1.1, every node/.style={scale=1.2}]
-%	\draw[rounded corners] (-0.05, -0.1 - 0.85) rectangle (2.3-0.05, 2.3-0.1 - 0.85){};
-%	
-%	\foreach \x/\y in {0.9/0.9, 0.9/0.45, 0.9/0, 0.9/-0.45, 0.9/-0.9, 0/0, 0.45/0, 1.35/0}
-%	{
-	%		\draw[rounded corners = 0.3mm, fill=lightgray] (\x, 0 + \y) rectangle (1.2/3 + \x, 1.2/3 + \y){};
-	%		\draw (0.3/3+ \x,0.3/3 + \y) circle (0.65mm);
-	%		\draw (0.9/3+ \x,0.3/3+ \y) circle (0.65mm);
-	%		\draw (0.3/3+ \x,0.9/3 + \y) circle (0.65mm);
-	%		\draw (0.9/3+ \x,0.9/3 + \y) circle (0.65mm);
-	%	}
-%	\foreach \x/\y in {1.8/0}
-%	{
-	%		\draw[rounded corners = 0.3mm, fill=black] (\x, 0 + \y) rectangle 	(1.2/3 + \x, 1.2/3 + \y){};
-	%		\draw (0.3/3+ \x,0.3/3 + \y) circle (0.65mm);
-	%		\draw [fill=white](0.9/3+ \x,0.3/3+ \y) circle (0.65mm);
-	%		\draw [fill=white](0.3/3+ \x,0.9/3 + \y) circle (0.65mm);
-	%		\draw (0.9/3+ \x,0.9/3 + \y) circle (0.65mm);
-	%	}
-%	\node[text=black] (four) at (1.95 ,-0.65) {$3$};
-%\end{tikzpicture}%
-%\begin{tikzpicture}[rotate=0, scale=1.1, every node/.style={scale=1.2}]
-%	\draw[rounded corners] (-0.05, -0.1 - 0.85) rectangle (2.3-0.05, 2.3-0.1 - 0.85){};
-%	\node[text=black] (four) at (1.95 ,-0.65) {$4$};
-%\end{tikzpicture}%
-%
-%\begin{tikzpicture}[rotate=270, scale=1.1, every node/.style={scale=1.2}]
-%	\draw[rounded corners] (-0.05, -0.1 - 0.85) rectangle (2.3-0.05, 2.3-0.1 - 0.85){};
-%	
-%	\foreach \x/\y in {0.9/0.9, 0.9/0.45, 0.9/0, 0/0, 0.45/0}
-%	{
-	%		\draw[rounded corners = 0.3mm, fill=lightgray] (\x, 0 + \y) rectangle (1.2/3 + \x, 1.2/3 + \y){};
-	%		\draw (0.3/3+ \x,0.3/3 + \y) circle (0.65mm);
-	%		\draw (0.9/3+ \x,0.3/3+ \y) circle (0.65mm);
-	%		\draw (0.3/3+ \x,0.9/3 + \y) circle (0.65mm);
-	%		\draw (0.9/3+ \x,0.9/3 + \y) circle (0.65mm);
-	%	}
-%	\node[text=black] (A1) at (1.1+0.85,1.1) {$3$};
-%\end{tikzpicture}%
-%\begin{tikzpicture}[rotate=270, scale=1.1, every node/.style={scale=1.2}]
-%	\draw[rounded corners] (-0.05, -0.1 - 0.85) rectangle (2.3-0.05, 2.3-0.1 - 0.85){};
-%	
-%	\foreach \x/\y in {0.9/0.9, 0.9/0.45, 0.9/0, 0.9/-0.45, 0.9/-0.9, 0/0, 0.45/0}
-%	{
-	%		\draw[rounded corners = 0.3mm, fill=lightgray] (\x, 0 + \y) rectangle (1.2/3 + \x, 1.2/3 + \y){};
-	%		\draw (0.3/3+ \x,0.3/3 + \y) circle (0.65mm);
-	%		\draw (0.9/3+ \x,0.3/3+ \y) circle (0.65mm);
-	%		\draw (0.3/3+ \x,0.9/3 + \y) circle (0.65mm);
-	%		\draw (0.9/3+ \x,0.9/3 + \y) circle (0.65mm);
-	%	}
-%	\node[text=black] (A1) at (1.1+0.85,1.1) {$4$};
-%\end{tikzpicture}%
-%\begin{tikzpicture}[rotate=90, scale=1.1, every node/.style={scale=1.2}]
-%	\draw[rounded corners] (-0.05, -0.1 - 0.85) rectangle (2.3-0.05, 2.3-0.1 - 0.85){};
-%	
-%	\foreach \x/\y in {0.9/0.9, 0.9/0.45, 0.9/0, 0.9/-0.45, 0.9/-0.9, 0/0, 0.45/0, 1.35/0}
-%	{
-	%		\draw[rounded corners = 0.3mm, fill=lightgray] (\x, 0 + \y) rectangle (1.2/3 + \x, 1.2/3 + \y){};
-	%		\draw (0.3/3+ \x,0.3/3 + \y) circle (0.65mm);
-	%		\draw (0.9/3+ \x,0.3/3+ \y) circle (0.65mm);
-	%		\draw (0.3/3+ \x,0.9/3 + \y) circle (0.65mm);
-	%		\draw (0.9/3+ \x,0.9/3 + \y) circle (0.65mm);
-	%	}
-%	\foreach \x/\y in {1.8/0}
-%	{
-	%		\draw[rounded corners = 0.3mm, fill=black] (\x, 0 + \y) rectangle 	(1.2/3 + \x, 1.2/3 + \y){};
-	%		\draw [fill=white](0.3/3+ \x,0.3/3 + \y) circle (0.65mm);
-	%		\draw (0.9/3+ \x,0.3/3+ \y) circle (0.65mm);
-	%		\draw (0.3/3+ \x,0.9/3 + \y) circle (0.65mm);
-	%		\draw [fill=white](0.9/3+ \x,0.9/3 + \y) circle (0.65mm);
-	%	}
-%	\node[text=black] (A1) at (0.25,-0.7) {$1$};
-%\end{tikzpicture}
-%
-%	\caption{QCA RAM cell using a delay latch}\label{fig:QCA_RAM}
-%\end{figure}
