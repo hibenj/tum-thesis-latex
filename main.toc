@@ -35,26 +35,32 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.1}Combinational P\&R Algorithms}{23}{section.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Sequential P\&R Algorithms}{33}{section.3.2}%
+\contentsline {section}{\numberline {3.2}Design of Sequential QCA circuits}{33}{section.3.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {4}Methodology}{35}{chapter.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Input Network}{35}{section.4.1}%
+\contentsline {section}{\numberline {4.1}Ordering Distribution Network}{35}{section.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Majority Gates Placement Network}{39}{section.4.2}%
+\contentsline {section}{\numberline {4.2}Majority Gate Distribution Network}{39}{section.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Sequential Circuits Placement}{39}{section.4.3}%
+\contentsline {subsection}{\numberline {4.2.1}The proposed signal distribution Network}{39}{subsection.4.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Experimental Evaluation}{40}{chapter.5}%
+\contentsline {subsection}{\numberline {4.2.2}Placement and routing}{41}{subsection.4.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Benchmarks}{40}{section.5.1}%
+\contentsline {subsection}{\numberline {4.2.3}Signal synchronization and buffer insertion}{42}{subsection.4.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Results}{40}{section.5.2}%
+\contentsline {section}{\numberline {4.3}Sequential Distribution Network}{43}{section.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline List of Figures}{41}{chapter*.30}%
+\contentsline {chapter}{\numberline {5}Experimental Evaluation}{45}{chapter.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline List of Tables}{42}{chapter*.31}%
+\contentsline {section}{\numberline {5.1}Benchmarks}{45}{section.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Bibliography}{43}{chapter*.32}%
+\contentsline {section}{\numberline {5.2}Results}{45}{section.5.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline List of Figures}{46}{chapter*.33}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline List of Tables}{47}{chapter*.34}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline Bibliography}{48}{chapter*.35}%
 \defcounter {refsection}{0}\relax 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

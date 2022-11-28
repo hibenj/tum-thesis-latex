@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.12)  24 NOV 2022 14:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.12)  28 NOV 2022 14:32
 entering extended mode
 **./main.tex
 (main.tex
@@ -1820,16 +1820,15 @@ chapter without number
 ]
 Package tocbasic Info: character protrusion at toc deactivated on input line 36
 .
- (main.toc)
+ (main.toc [5
+
+
+
+
+])
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
- [5
-
-
-
-
-]
 LaTeX Font Info:    Font shape `T1/pplx/m/sl' in size <10.95> not available
 (Font)              Font shape `T1/pplx/m/it' tried instead on input line 39.
  [6] (chapters/01_introduction.tex
@@ -1903,12 +1902,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 290--292
 
  []
 
-<./figures//QCA_array.png, id=215, 354.57469pt x 135.50626pt>
+<./figures//QCA_array.png, id=221, 354.57469pt x 135.50626pt>
 File: ./figures//QCA_array.png Graphic file (type png)
 <use ./figures//QCA_array.png>
 Package pdftex.def Info: ./figures//QCA_array.png  used on input line 295.
 (pdftex.def)             Requested size: 212.74644pt x 81.30437pt.
-<./figures//information_passing.png, id=219, 475.02469pt x 222.8325pt>
+<./figures//information_passing.png, id=225, 475.02469pt x 222.8325pt>
 File: ./figures//information_passing.png Graphic file (type png)
 <use ./figures//information_passing.png>
 Package pdftex.def Info: ./figures//information_passing.png  used on input line
@@ -2013,7 +2012,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1057--1057
 []\T1/pplx/m/n/9 (+20) (a) Copla-nar wire
  []
 
-<./figures//wire_crossing.png, id=292, 708.84825pt x 413.1435pt>
+<./figures//wire_crossing.png, id=298, 708.84825pt x 413.1435pt>
 File: ./figures//wire_crossing.png Graphic file (type png)
 <use ./figures//wire_crossing.png>
 Package pdftex.def Info: ./figures//wire_crossing.png  used on input line 1063.
@@ -2092,7 +2091,7 @@ chapter 3.
 
 
 ]
-<./figures//SMT_solving.png, id=389, 274.626pt x 211.992pt>
+<./figures//SMT_solving.png, id=395, 274.626pt x 211.992pt>
 File: ./figures//SMT_solving.png Graphic file (type png)
 <use ./figures//SMT_solving.png>
 Package pdftex.def Info: ./figures//SMT_solving.png  used on input line 10.
@@ -2103,7 +2102,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--19
  []
 
 [24 <./figures//SMT_solving.png>] [25]
-<./figures//OGD.png, id=418, 241.65282pt x 240.9pt>
+<./figures//OGD.png, id=424, 241.65282pt x 240.9pt>
 File: ./figures//OGD.png Graphic file (type png)
 <use ./figures//OGD.png>
 Package pdftex.def Info: ./figures//OGD.png  used on input line 31.
@@ -2159,7 +2158,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 267--268
  []
 
 [30]
-<./figures//ortho_mux_21.png, id=472, 443.85825pt x 517.935pt>
+<./figures//ortho_mux_21.png, id=478, 443.85825pt x 517.935pt>
 File: ./figures//ortho_mux_21.png Graphic file (type png)
 <use ./figures//ortho_mux_21.png>
 Package pdftex.def Info: ./figures//ortho_mux_21.png  used on input line 271.
@@ -2170,17 +2169,30 @@ chapter 4.
 [35
 
 
-] [36] [37]
-<./figures//input_network_mux_21.png, id=541, 509.5035pt x 508.90125pt>
+]
+<./figures//input_network_mux_21.png, id=538, 509.5035pt x 508.90125pt>
 File: ./figures//input_network_mux_21.png Graphic file (type png)
 <use ./figures//input_network_mux_21.png>
 Package pdftex.def Info: ./figures//input_network_mux_21.png  used on input lin
-e 43.
+e 41.
 (pdftex.def)             Requested size: 254.75111pt x 254.45pt.
- [38 <./figures//input_network_mux_21.png>])
-(chapters/05_experimental_evaluation.tex [39]
+ [36] [37] [38 <./figures//input_network_mux_21.png>] [39]
+<./figures//Maj_nw.png, id=561, 207.77625pt x 293.29575pt>
+File: ./figures//Maj_nw.png Graphic file (type png)
+<use ./figures//Maj_nw.png>
+Package pdftex.def Info: ./figures//Maj_nw.png  used on input line 55.
+(pdftex.def)             Requested size: 166.2212pt x 234.6369pt.
+ [40 <./figures//Maj_nw.png>] [41] [42]
+<./figures//majority_with_buf.png, id=583, 813.0375pt x 422.17725pt>
+File: ./figures//majority_with_buf.png Graphic file (type png)
+<use ./figures//majority_with_buf.png>
+Package pdftex.def Info: ./figures//majority_with_buf.png  used on input line 2
+02.
+(pdftex.def)             Requested size: 406.51776pt x 211.0881pt.
+) (chapters/05_experimental_evaluation.tex [43] [44 <./figures//majority_with_b
+uf.png>]
 chapter 5.
-) [40
+) [45
 
 
 ]
@@ -2190,7 +2202,7 @@ Package tocbasic Info: character protrusion at lof deactivated on input line 51
 \tf@lof=\write7
 \openout7 = `main.lof'.
 
- [41
+ [46
 
 
 ]
@@ -2200,12 +2212,12 @@ Package tocbasic Info: character protrusion at lot deactivated on input line 52
 \tf@lot=\write8
 \openout8 = `main.lot'.
 
- [42
+ [47
 
 
 ]
 chapter without number
-[43
+[48
 
 
 ]
@@ -2221,17 +2233,17 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [44]
+ [49]
 Overfull \hbox (42.1764pt too wide) in paragraph at lines 54--54
 \T1/pplx/m/n/10.95 (-20) Cir-cuits. In: \T1/pplx/m/it/10.95 (-20) PREPRINT (Ve
 r-sion 1) avail-able at Re-search Square [https://doi.org/10.21203/rs.3.rs-
  []
 
-[45]
+[50]
 
 Package nag Warning: 36 complaints in total.
 
-[46] (main.aux)
+[51] (main.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -2242,11 +2254,11 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 68922 strings out of 478927
- 1658562 string characters out of 2862391
- 2945038 words of memory out of 3000000
- 85009 multiletter control sequences out of 15000+600000
- 483876 words of font info for 516 fonts, out of 8000000 for 9000
+ 68973 strings out of 478927
+ 1659470 string characters out of 2862391
+ 2945383 words of memory out of 3000000
+ 85037 multiletter control sequences out of 15000+600000
+ 484486 words of font info for 525 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  115i,13n,111p,10601b,2970s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\benja\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt
@@ -2260,9 +2272,9 @@ iKTeX/fonts/type1/public/mathpazo/fplmri.pfb><C:/Program Files/MiKTeX/fonts/typ
 e1/public/fpl/fplrc8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/upl
 b8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Progra
 m Files/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (53 pages, 646623 bytes).
+Output written on main.pdf (58 pages, 718261 bytes).
 PDF statistics:
- 840 PDF objects out of 1000 (max. 8388607)
- 202 named destinations out of 1000 (max. 500000)
- 100208 words of extra memory for PDF output out of 106986 (max. 10000000)
+ 895 PDF objects out of 1000 (max. 8388607)
+ 213 named destinations out of 1000 (max. 500000)
+ 100242 words of extra memory for PDF output out of 106986 (max. 10000000)
 
