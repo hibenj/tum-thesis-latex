@@ -75,13 +75,13 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.15}{\ignorespaces Clocking of a basic latch in QCA\relax }}{20}{figure.caption.21}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.16}{\ignorespaces Scheme of a simple sequential circuit layout after placement and routing\relax }}{21}{figure.caption.22}%
+\contentsline {figure}{\numberline {2.16}{\ignorespaces Scheme of a sequential circuit layout after placement and routing\relax }}{21}{figure.caption.22}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Lazy SMT-solving process \cite {SMT}\relax }}{24}{figure.caption.23}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Example OGD drawing\relax }}{26}{figure.caption.24}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Example OGD drawing\relax }}{27}{figure.caption.24}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Insufficient timing constraints of a OGD representation \cite {Walter}\relax }}{27}{figure.caption.25}%
 \defcounter {refsection}{0}\relax 
@@ -97,19 +97,19 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Color assignment of outgoing signals}}}{28}{figure.caption.26}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Placement and routing of a 2:1 mux network using the ortho algorithm\relax }}{31}{figure.caption.27}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Placement and routing of a 2:1 mux network using the ortho algorithm\relax }}{32}{figure.caption.27}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {3.6}{\ignorespaces QCA RAM cell using a delay latch\relax }}{34}{figure.caption.28}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Placement and routing of a 2:1 mux network using the ortho algorithm with the ordering distribution network\relax }}{38}{figure.caption.29}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Placement and routing of a 2:1 mux network using the ortho algorithm with the ordering distribution network\relax }}{39}{figure.caption.29}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Proposed majority gate distribution network\relax }}{41}{figure.caption.30}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Proposed majority gate distribution network\relax }}{42}{figure.caption.30}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Buffer in $east$ direction with resolve column and respective clocking\relax }}{43}{figure.caption.31}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Buffer in $east$ direction with resolve column and respective clocking\relax }}{45}{figure.caption.31}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Placement and routing of a majority distribution network in conjunction with two primary inputs\relax }}{44}{figure.caption.32}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Placement and routing of a majority distribution network in conjunction with two primary inputs\relax }}{45}{figure.caption.32}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

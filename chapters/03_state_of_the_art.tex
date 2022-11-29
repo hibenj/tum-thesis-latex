@@ -212,8 +212,10 @@ The idea used for the ortho algorithm comes from an extension to OGDs, which all
 	\caption{Relative positions of an OGD graph with correct color assinment}\label{fig:OGD_color}
 \end{figure}
 
-The relative position assignment under the proposed constraints can be seen at an arbitrary example in figure \ref{fig:OGD_color}. In the example for outgoing edges (figure \ref{subfig:OGD_color_out}), it is clear that the assignment constraint makes sure that two outgoing edges of the same vertex are routed without conflict. Equivalent to the definition of the colors, the layout is increased in x-direction for an east-coloring and analogously extended in the y-Direction for a south-coloring. Figure \ref{subfig:OGD_color_in} depicts the assignment constraint for the incoming edges of one vertex. Since this assignment only implies one color, also the layout only is extended in one direction, here in x-direction due to the east-coloring. The clocking used for ortho is 2DD-Wave, because it also supports signal distribution only in the directions $east$ and $south$, making it to an ideal base for this method. The usage of the 2DDWave scheme already gives a solution for the local synchronization constraint and due to its uniformity and simplicity the scheme also maintains the global synchronization constraint for vertices placed after the proposed direction assignment. However, there exist logic networks for which no coloring in regards to the constraints can be found. Figure !! shows such a coloring conflict. For the edge with a "$X$", no direction can be assigned for which the formulated constraints hold true. So an auxiliary node is introduced resolving the conflict.\\
-In the following the pseudo code of ortho, derived from \cite{ortho} is depicted as algorithm \ref{alg:ortho} and described in own words, before its evaluated on an example and its main characteristics are described. Following the VLSI design process the ortho algorithm has as input a Logic network $N$ and a clocking scheme or rather a clock number $clk$ for every tile in order to fulfill the timing constraints. As already mentioned $N$ has to be converted into a 3-graph by substitution so a valid coloring can be assigned. Then an empty Layout $L$ with a 2DD-Wave clocking scheme is created and the coloring is calculated for $N$. Also the nodes need to be topologically ordered starting with the lowest number at the inputs and the highest numbers at the outputs. Therefore the algorithm is starting with the lowest numbered vertices representing primary inputs. In order to connect the inputs to external signals they are placed at the borders of the layout. In ortho the first column of the layout is therefore reserved for placing the inputs under each other. This again leads to a problem because inputs cannot wire to the south, so they need to be resolved by rewiring them each on a new column. With this input network the placing of the other vertices starts. For this two parameters need to be evaluated in each step. First the coloring of the node and second the updated parameter $(w, h)$, saving the current dimensions of $L$. So if a node is colored $east$, the layout is extended by one column and the node is placed at $(w-1, h_p)$, where $w$ is the current width of $L$ and $h_p$ is the maximum vertical position of its childs. According to this scheme for nodes colored $south$ the layout is extended by one row and the node is placed to $(w_p, h-1,)$, where $w_p$ is the maximum horizontal position of the nodes childs and $h$ is the current height of the layout. After placing the nodes the node is wired to its predecessors. In case of $east$ the wiring first goes east and the northern segment is then wired south. If the node is colored $south$ the wiring goes south first and for the eastern child the segment then is colored east in order to connect to the placed node. After all nodes were placed in this fashion the primary outputs are also connected to the borders either to the east or the south and the finished layout $L$ is returned by the algorithm.\\
+The relative position assignment under the proposed constraints can be seen at an arbitrary example in figure \ref{fig:OGD_color}. In the example for outgoing edges (figure \ref{subfig:OGD_color_out}), the assignment constraint makes sure that two outgoing edges of the same vertex are routed in different directions to avoid a conflict. Equivalent to the definition of the colors, the layout is increased in x-direction for an east-coloring and analogously extended in the y-Direction for a south-coloring. Figure \ref{subfig:OGD_color_in} depicts the assignment constraint for the incoming edges of one vertex. This assignment has to use one color and the node can be set non-conflicting for both incoming nodes in the layout by extending it in x-direction based on the east-coloring. However, there exist logic networks for which no coloring in regards to the constraints can be found. Figure !! shows such a coloring conflict. For the edge with a "$X$", no direction can be assigned for which the formulated constraints hold true. So an auxiliary node is introduced resolving the conflict.
+In order to allow data to propagate, ortho needs to map a valid clocking onto the layout. 
+Because ortho uses OGDs with exactly two directions $east$ and $south$, the 2DDWave scheme, which also supports the data flow in exactly two directions, is perfectly suited for the algorithm. Also the usage of a predefined clocking scheme already gives a solution for the local synchronization constraint and due to the uniformity and simplicity of the 2DDWave scheme also the global synchronization constraint for nodes placed and routed after the proposed direction assignment is maintained.\\
+In the following the pseudo code of ortho, derived from \cite{ortho} is depicted as algorithm \ref{alg:ortho} and described in own words, before its evaluated on an example and its main characteristics are described. Following the VLSI design process the ortho algorithm has as input a Logic network $N$ and a clocking scheme or rather a clock number $clk$ for every tile in order to fulfill the timing constraints. As already mentioned $N$ has to be converted into a 3-graph by substitution so a valid coloring can be assigned. Then an empty Layout $L$ with a 2DD-Wave clocking scheme is created and the coloring is calculated for $N$. Also the nodes need to be topologically ordered starting with the lowest number at the inputs and the highest numbers at the outputs. Therefore the algorithm is starting with the lowest numbered vertices representing primary inputs. In order to connect the inputs to external signals they are placed at the borders of the layout. In ortho the first column of the layout is therefore reserved for placing the inputs under each other, but his leads to a conflict, when inputs are colored south, because the algorithm would then also wire their outgoing edges into y-direction and therefore over other primary inputs, which is forbidden in OGD and for QCA layouts. For this reason the primary inputs colored $south$ need to be resolved by first rewiring them each on a new column before placing the nodes connected to their outgoing edges. For the placement and routing of all nodes in the logic network, the two parameters coloring and the updated parameter $(w, h)$, saving the current dimensions of $L$, need to be evaluated in each step. So if a node is colored $east$, the layout is extended by one column and the node is placed at $(w-1, h_p)$, where $w$ is the current width of $L$ and $h_p$ is the maximum vertical position of its childs. According to this scheme for nodes colored $south$ the layout is extended by one row and the node is placed to $(w_p, h-1,)$, where $w_p$ is the maximum horizontal position of the nodes childs and $h$ is the current height of the layout. After placing the node, it is wired to its predecessors, while the placement into a new row or column makes sure the wiring doesn't pass over another gate. If only one predecessor exists the wiring also goes only $south$ or $east$. But when two predecessors exist, in case of $east$ the predecessor giving $h_p$ is also only wired in x-Direction, while the other predecessor has to be wired with two wire segments, the first also going into x-Direction and the second one connecting in y-Direction. If the node is colored $south$ the two segment wiring goes south first and then east. After all nodes were placed in this fashion the primary outputs are also connected to the borders either to the east or the south and the finished layout $L$ is returned by the algorithm.\\
 
 
 %\begin{figure}
@@ -271,150 +273,131 @@ The example depicted in figure \ref{fig:ortho_mux_21} shows the $(p, r, c)$ of a
 	\caption{Placement and routing of a 2:1 mux network using the ortho algorithm}\label{fig:ortho_mux_21}
 \end{figure}
 
-From the returned layout we can see that the signal flow is straight forward in south-eastern direction due to the 2DD-Wave clocking scheme the algorithm is bound to. And as already discussed in the section about clocking \ref{subsec:clocking}, this limits ortho in many ways. First of all due to the selection of the "+"-majority gate as standard gate, they cannot be placed on the 2DD-Wave scheme. Also back-loops are not allowed in the clocking, prohibiting the placement and routing of sequential circuits. Though the ortho algorithm provides an efficient tool for the placement and routing of purely combinational circuits , because as paper CITE has shown, the 2DD-Wave scheme is the most area efficient clocking scheme when it comes to combinational circuits, beating both the USE and RES scheme.\\
-With a deep understanding of the ortho algorithm with its constraints following some drawbacks and advantages, now other ideas with comparable approaches or based on the ortho algorithm can be discussed. \textit{Ropper}, a placement and routing framework \cite{ropper} proposes an algorithm, which is based on \cite{trindade2016placement}. As already discussed in the part about preprocessing, this algorithm brings some disadvantages, because dummy nodes are inserted as part of logic synthesis, what leads to an increase of the logic network. In ortho this step is unnecessary. Nevertheless the authors of Ropper point out that they have overcome some restrictions of ortho, one of them being able to place majority gates and also a more area efficient placement and routing. But these improvements come at a price. First of all the framework only chieves the placement and routing of ortho not because of a clocking scheme providing three input tiles to a given tile, but supporting the use of rotated majority gates, which had been discussed to be very prone to crosstalk. Also custom gates and wiring is used, so that some segments only have a distance of one tile and not like \cite{crosstalk} suggests a minimum distance of two QCA cells. The use of these custom gates is because the algorithm used doesn't use the same constraints as ortho. The Ropper framework even routes wires above gates and doesn't use border inputs and outputs. On the basis of the argumentation used in this work, the Ropper framework violates to many design rules, which have been analyzed to be necessary for a sufficient placement and routing algorithm.\\
-Another paper, which tries to implement majority gates for QCA is \textit{migortho}, which is based on the ortho algorithm provided in fiction. The difference is the use of the underlying gate-library. While this work uses the same as ortho, migortho utilizes the QCA-ONE library. From the preliminaries, it is already known that again the use of rotated majority gates and therefore the use of double wires is allowed. This means that this algorithm relying on the same argumentation is prone to cross.talk once more. But the algorithm shows that with the use of a different library ortho is already powerful enough to overcome some restrictions. This fact has motivated this work to implement some different ideas to enable ortho to be more area efficient, place "+"-majority gates and even implement a strategy for the automated placement and routing of sequential circuits.
+From the returned layout we can see that the signal flow is straight forward in south-eastern direction due to the 2DD-Wave clocking scheme the algorithm is bound to and as already discussed in the section about clocking \ref{subsec:clocking}, this limits ortho in many ways. First of all due to the selection of the "+"-majority gate as standard gate, they cannot be placed on the 2DD-Wave scheme, because the clocking only allows two-input logic gates. Also back-loops are not allowed in the clocking, prohibiting the placement and routing of sequential circuits. Though, ortho provides an efficient tool for the placement and routing of purely combinational circuits. As shown in paper CITE, the 2DD-Wave scheme provides the most area efficient clocking when it comes to combinational circuits, beating both the USE and RES scheme.\\
+With a deep understanding of the ortho algorithm with its constraints following some drawbacks and advantages, now other ideas with comparable approaches or based on the ortho algorithm can be discussed. \textit{Ropper}, a placement and routing framework \cite{ropper} proposes an algorithm, which is based on \cite{trindade2016placement}. As already discussed in the part about preprocessing, this algorithm brings some disadvantages, because dummy nodes are inserted as part of logic synthesis, leading to an increased size of the logic network. In ortho this step is unnecessary. Nevertheless the authors of Ropper point out that they have overcome some restrictions of ortho, one of them being able to place majority gates and also a more area efficient placement and routing. But these improvements come at a price. First of all the framework only achieves the placement and routing of ortho not because of a clocking scheme providing three input tiles to a given tile, but supporting the use of rotated majority gates, which had been discussed to be very prone to crosstalk. Also custom gates and double wiring is used, so that many tiles have QCA cells placed only with a distance of one cell and not like \cite{crosstalk} suggests a minimum distance of two QCA cells. The use of these custom gates is necessary in this algorithm, because the design used doesn't rely on the same strict constraints as ortho. The Ropper framework even routes wires above gates (solved with custom tiles) and doesn't use border inputs and outputs making it challenging to input and read data from the circuit. Based on the argumentation used in this work, the Ropper framework violates to many design rules, which have been analyzed to be necessary for a sufficient placement and routing algorithm.\\
+Another paper trying to implement majority gates for QCA is \textit{migortho}, which is based on the ortho algorithm provided in fiction. The difference of the algorithms is the use of the underlying gate-library. While this work uses the same as ortho, migortho utilizes the QCA-ONE library. From the preliminaries, it is already known that again the use of rotated majority gates and therefore the use of double wires is allowed. This means that circuits designed by migortho are also being considered to be prone to crosstalk, following the argumentation from above. But the algorithm shows that with the use of a different library ortho is already powerful enough to overcome some restrictions. This fact has motivated this work to implement some different ideas to enable ortho to be more area efficient, place "+"-majority gates and even implement a strategy for the automated placement and routing of sequential circuits.
 
 \section{Design of Sequential QCA circuits}
 In this section the state of the art for sequential circuit design in QCA is discussed. Compared to the algorithms existent for the placement and routing for combinational logic, this area is still in its infancy. Several attempts \cite{sequential_cell_one, sequential_cell_two, dual_edge_triggered_FF_cell, sequential_reversible_cell} have been made to implement latches and FFs in order to obtain storage elements and enable sequentiallity for QCA circuits. The basic idea for these works is to translate the Boolean CMOS equations into majority representations and then implement this representation with QCA gates. Thus, the received circuit is on the one hand based on the 4-phase clocking of the QCA circuit and on the other hand demands an external 2-phase clocking signal adopted from the CMOS domain \cite{sequential_cell_one}. The authors of \cite{sequential_cell_two} even state that a latching can be accomplished using the QCA clocking, but that this restricts the circuit and therefore the external clocking signal has to be applied. According to the theory provided in the subsections about clocking \ref{subsec:clocking} and storage elements \ref{subsec:latchesandregisters} this doesn't hold true. The rethinking of these elements in the QCA domain even suggests the use of the already provided 4-phase clocking to accomplish sequential functionalities. This observation seems to be clear, considering that the clock used for synchronization in the storage elements should also drive signal propagation. Since in QCA the 4-phase clock is responsible for this, the use of an external clocking signal is questionable and invalid for this work. Although this state of the art already provided the proposal of far developed sequential circuits, e.g. dual edge triggered D-FFs \cite{dual_edge_triggered_FF_cell} and reversible latches \cite{sequential_reversible_cell} it also is found that these works all use cell based clocking, which was already found to be insufficient in \ref{subsec:clocking}. The evolution to sequential tile based placement and routing was proposed through the USE clocking scheme \cite{USE}, supporting back-looping. The paper shows as ideas the layout of a SR-latch and a full adder. Unfortunately the SR-latch is also implemented in the way as described above and the implementation of combinational logic was found to be worse for most benchmark problems than for 2DD-Wave \cite{Walter}. The works \cite{sequential_reversible_tile} and \cite{sequential_tile_CMOS_alg} propose implementations of different latches and even an algorithm of implementing sequential elements based on the USE scheme. Still these approaches all share the shortcoming of translating sequential logic directly from the CMOS domain.\\
-Another section of papers focus on the implementation RAM cells in QCA technology \cite{crosstalk, RAM_cell}. Even though this paper focuses on a placement and routing algorithm for sequential logic, also the implementation of QCA storage could be adapted. An overview \cite{RAM_overview} over different RAM implementations shows that the state of the art is stuck at exactly this point. Without regards to the architecture of a QCA memory structure here a RAM cell according to the storage elements proposed in \ref{subsec:latchesandregisters} is introduced. Figure \ref{fig:QCA_RAM} shows a RAM cell, with its respective wordline, bitline(s) and latch. The core of the cell is a latch, which is simply propagating the data in a circle and therefore producing a stable output once in every clock cycle. The input mechanism works via two AND gates. The first AND gate is connected to the write-wordline, deciding if information from the bitline should be passed to the RAM cell. When the bit is passed the new state of the cell is computed by conjunction of the current bit and the newly inserted bit. Similarly for the read operation an AND gate representing the read-wordline needs input "1" in order to pass the data of the RAM cell to the outgoing bitline.
-
 \begin{figure}
 	\centering
-\begin{tikzpicture}
-\begin{scope}[shift={(0, 0)}]
-	\begin{scope}[rotate=270]
-		\draw[rounded corners] (-0.05, -0.1 - 0.85) rectangle (2.3-0.05, 2.3-0.1 - 0.85){};
+	\begin{tikzpicture}
+		\begin{scope}[shift={(0, 0)}]
+			\begin{scope}[rotate=270]
+				\draw[rounded corners] (-0.05, -0.1 - 0.85) rectangle (2.3-0.05, 2.3-0.1 - 0.85){};
+				
+				\node[text=black] (A1) at (1.1+0.85,1.1) {$1$};
+				%		\node[text=black] (A2) at (1.15,-1.4) {${BL}_{in}$};
+				%		\node[text=black] (A3) at (-0.3,0.3) {${WL}_{in}$};
+			\end{scope}
+		\end{scope}
 		
-		\foreach \x/\y in {0.9/0.9, 0.9/0.45, 0.9/0, 0.9/-0.45, 0.9/-0.9, 0/0, 0.45/0, 1.35/0}
-		{
-			\draw[rounded corners = 0.3mm, fill=lightgray] (\x, 0 + \y) rectangle (1.2/3 + \x, 1.2/3 + \y){};
-			\draw (0.3/3+ \x,0.3/3 + \y) circle (0.65mm);
-			\draw (0.9/3+ \x,0.3/3+ \y) circle (0.65mm);
-			\draw (0.3/3+ \x,0.9/3 + \y) circle (0.65mm);
-			\draw (0.9/3+ \x,0.9/3 + \y) circle (0.65mm);
-		}
-		\foreach \x/\y in {1.8/0}
-		{
-			\draw[rounded corners = 0.3mm, fill=black] (\x, 0 + \y) rectangle 	(1.2/3 + \x, 1.2/3 + \y){};
-			\draw [fill=white](0.3/3+ \x,0.3/3 + \y) circle (0.65mm);
-			\draw (0.9/3+ \x,0.3/3+ \y) circle (0.65mm);
-			\draw (0.3/3+ \x,0.9/3 + \y) circle (0.65mm);
-			\draw [fill=white](0.9/3+ \x,0.9/3 + \y) circle (0.65mm);
-		}
-		\node[text=black] (A1) at (1.1+0.85,1.1) {$1$};
-		\node[text=black] (A2) at (1.15,-1.4) {${BL}_{in}$};
-		\node[text=black] (A3) at (-0.3,0.3) {${WL}_{in}$};
-	\end{scope}
-\end{scope}
-
-\begin{scope}[xshift=2.7cm, yshift=-2.2cm, rotate=90]
-	\draw[rounded corners] (-0.05, -0.1 - 0.85) rectangle (2.3-0.05, 2.3-0.1 - 0.85){};
-	
-	\foreach \x/\y in {0.9/0.9, 0.9/0.45, 0.9/0, 0/0, 0.45/0}
-	{
-		\draw[rounded corners = 0.3mm, fill=lightgray] (\x, 0 + \y) rectangle (1.2/3 + \x, 1.2/3 + \y){};
-		\draw (0.3/3+ \x,0.3/3 + \y) circle (0.65mm);
-		\draw (0.9/3+ \x,0.3/3+ \y) circle (0.65mm);
-		\draw (0.3/3+ \x,0.9/3 + \y) circle (0.65mm);
-		\draw (0.9/3+ \x,0.9/3 + \y) circle (0.65mm);
-	}
-	\node[text=black] (A1) at (0.25,-0.7) {$2$};
-\end{scope}
-
-\begin{scope}[xshift=4.6cm, rotate = 270]
-	\draw[rounded corners] (-0.05, -0.1 - 0.85) rectangle (2.3-0.05, 2.3-0.1 - 0.85){};
-	\node[text=black] (A1) at (1.1+0.85,1.1) {$3$};
-\end{scope}
-
-\begin{scope}[xshift=1.3cm, yshift=-3.2cm, rotate=180]
-	\draw[rounded corners] (-0.05, -0.1 - 0.85) rectangle (2.3-0.05, 2.3-0.1 - 0.85){};
-	
-	\foreach \x/\y in {0.9/0.9, 0.9/0.45, 0.9/0, 0/0, 0.45/0}
-	{
-		\draw[rounded corners = 0.3mm, fill=lightgray] (\x, 0 + \y) rectangle (1.2/3 + \x, 1.2/3 + \y){};
-		\draw (0.3/3+ \x,0.3/3 + \y) circle (0.65mm);
-		\draw (0.9/3+ \x,0.3/3+ \y) circle (0.65mm);
-		\draw (0.3/3+ \x,0.9/3 + \y) circle (0.65mm);
-		\draw (0.9/3+ \x,0.9/3 + \y) circle (0.65mm);
-	}
-	\node[text=black] (four) at (0.25 ,1.05) {$2$};
-\end{scope}
-\begin{scope}[xshift=1.4cm, yshift=-3.6cm, rotate=0]
-	\draw[rounded corners] (-0.05, -0.1 - 0.85) rectangle (2.3-0.05, 2.3-0.1 - 0.85){};
-	
-	\foreach \x/\y in {0.9/0.9, 0.9/0.45, 0.9/0, 0.9/-0.45, 0.9/-0.9, 0/0, 0.45/0, 1.35/0}
-	{
-		\draw[rounded corners = 0.3mm, fill=lightgray] (\x, 0 + \y) rectangle (1.2/3 + \x, 1.2/3 + \y){};
-		\draw (0.3/3+ \x,0.3/3 + \y) circle (0.65mm);
-		\draw (0.9/3+ \x,0.3/3+ \y) circle (0.65mm);
-		\draw (0.3/3+ \x,0.9/3 + \y) circle (0.65mm);
-		\draw (0.9/3+ \x,0.9/3 + \y) circle (0.65mm);
-	}
-	\foreach \x/\y in {1.8/0}
-	{
-		\draw[rounded corners = 0.3mm, fill=black] (\x, 0 + \y) rectangle 	(1.2/3 + \x, 1.2/3 + \y){};
-		\draw (0.3/3+ \x,0.3/3 + \y) circle (0.65mm);
-		\draw [fill=white](0.9/3+ \x,0.3/3+ \y) circle (0.65mm);
-		\draw [fill=white](0.3/3+ \x,0.9/3 + \y) circle (0.65mm);
-		\draw (0.9/3+ \x,0.9/3 + \y) circle (0.65mm);
-	}
-	\node[text=black] (four) at (1.95 ,-0.65) {$3$};
-\end{scope}
-\begin{scope}[xshift=4.6cm, yshift=-2.3cm, rotate=270]
-	\draw[rounded corners] (-0.05, -0.1 - 0.85) rectangle (2.3-0.05, 2.3-0.1 - 0.85){};
-	\node[text=black] (A1) at (1.1+0.85,1.1) {$4$};
-\end{scope}
-
-\begin{scope}[xshift=0cm, yshift=-4.6cm, rotate=270]
-	\draw[rounded corners] (-0.05, -0.1 - 0.85) rectangle (2.3-0.05, 2.3-0.1 - 0.85){};
-	
-	\foreach \x/\y in {0.9/0.9, 0.9/0.45, 0.9/0, 0/0, 0.45/0}
-	{
-		\draw[rounded corners = 0.3mm, fill=lightgray] (\x, 0 + \y) rectangle (1.2/3 + \x, 1.2/3 + \y){};
-		\draw (0.3/3+ \x,0.3/3 + \y) circle (0.65mm);
-		\draw (0.9/3+ \x,0.3/3+ \y) circle (0.65mm);
-		\draw (0.3/3+ \x,0.9/3 + \y) circle (0.65mm);
-		\draw (0.9/3+ \x,0.9/3 + \y) circle (0.65mm);
-	}
-	\node[text=black] (A1) at (1.1+0.85,1.1) {$3$};
-\end{scope}
-\begin{scope}[xshift=2.3cm, yshift=-4.6cm, rotate=270]
-	\draw[rounded corners] (-0.05, -0.1 - 0.85) rectangle (2.3-0.05, 2.3-0.1 - 0.85){};
-	
-	\foreach \x/\y in {0.9/0.9, 0.9/0.45, 0.9/0, 0.9/-0.45, 0.9/-0.9, 0/0, 0.45/0}
-	{
-		\draw[rounded corners = 0.3mm, fill=lightgray] (\x, 0 + \y) rectangle (1.2/3 + \x, 1.2/3 + \y){};
-		\draw (0.3/3+ \x,0.3/3 + \y) circle (0.65mm);
-		\draw (0.9/3+ \x,0.3/3+ \y) circle (0.65mm);
-		\draw (0.3/3+ \x,0.9/3 + \y) circle (0.65mm);
-		\draw (0.9/3+ \x,0.9/3 + \y) circle (0.65mm);
-	}
-	\node[text=black] (A1) at (1.1+0.85,1.1) {$4$};
-\end{scope}
-\begin{scope}[xshift=5cm, yshift=-6.8cm, rotate=90]
-	\draw[rounded corners] (-0.05, -0.1 - 0.85) rectangle (2.3-0.05, 2.3-0.1 - 0.85){};
-	
-	\foreach \x/\y in {0.9/0.9, 0.9/0.45, 0.9/0, 0.9/-0.45, 0.9/-0.9, 0/0, 0.45/0, 1.35/0}
-	{
-		\draw[rounded corners = 0.3mm, fill=lightgray] (\x, 0 + \y) rectangle (1.2/3 + \x, 1.2/3 + \y){};
-		\draw (0.3/3+ \x,0.3/3 + \y) circle (0.65mm);
-		\draw (0.9/3+ \x,0.3/3+ \y) circle (0.65mm);
-		\draw (0.3/3+ \x,0.9/3 + \y) circle (0.65mm);
-		\draw (0.9/3+ \x,0.9/3 + \y) circle (0.65mm);
-	}
-	\foreach \x/\y in {1.8/0}
-	{
-		\draw[rounded corners = 0.3mm, fill=black] (\x, 0 + \y) rectangle 	(1.2/3 + \x, 1.2/3 + \y){};
-		\draw [fill=white](0.3/3+ \x,0.3/3 + \y) circle (0.65mm);
-		\draw (0.9/3+ \x,0.3/3+ \y) circle (0.65mm);
-		\draw (0.3/3+ \x,0.9/3 + \y) circle (0.65mm);
-		\draw [fill=white](0.9/3+ \x,0.9/3 + \y) circle (0.65mm);
-	}
-	\node[text=black] (A1) at (0.25,-0.7) {$1$};
-	\node[text=black] (A2) at (1.05,-1.5) {$BL_{out}$};
-	\node[text=black] (A3) at (-0.4,0.1) {$WL_{out}$};
-\end{scope}
-\end{tikzpicture}
-\caption{QCA RAM cell using a delay latch}\label{fig:QCA_RAM}
+		\begin{scope}[xshift=2.7cm, yshift=-2.2cm, rotate=90]
+			\draw[rounded corners] (-0.05, -0.1 - 0.85) rectangle (2.3-0.05, 2.3-0.1 - 0.85){};
+			
+			\draw[rounded corners] (-0.05, -0.1 - 0.85) rectangle (2.3-0.05, 2.3-0.1 - 0.85){};
+			
+			\foreach \x/\y in {0.9/0.9, 0.9/0.45, 0.9/0, 0.9/-0.45, 0.9/-0.9, 0/0, 0.45/0, 1.35/0, 1.8/0}
+			{
+				\draw[rounded corners = 0.3mm, fill=lightgray] (\x, 0 + \y) rectangle (1.2/3 + \x, 1.2/3 + \y){};
+				\draw (0.3/3+ \x,0.3/3 + \y) circle (0.65mm);
+				\draw (0.9/3+ \x,0.3/3+ \y) circle (0.65mm);
+				\draw (0.3/3+ \x,0.9/3 + \y) circle (0.65mm);
+				\draw (0.9/3+ \x,0.9/3 + \y) circle (0.65mm);
+			}
+			\node[text=black] (A2) at (1.05, 2) {$WL_{in1}$};
+			\node[text=black] (A3) at (1.05,-1.6) {$WL_{in2}$};
+			\node[text=black] (A4) at (2.5,0.1) {$BL_{in}$};
+			\node[text=black] (A1) at (0.25,-0.7) {$2$};
+		\end{scope}
+		
+		\begin{scope}[xshift=4.6cm, rotate = 270]
+			\draw[rounded corners] (-0.05, -0.1 - 0.85) rectangle (2.3-0.05, 2.3-0.1 - 0.85){};
+			\node[text=black] (A1) at (1.1+0.85,1.1) {$1$};
+		\end{scope}
+		
+		\begin{scope}[xshift=1.3cm, yshift=-3.2cm, rotate=180]
+			\draw[rounded corners] (-0.05, -0.1 - 0.85) rectangle (2.3-0.05, 2.3-0.1 - 0.85){};
+			
+			\foreach \x/\y in {0.9/0.9, 0.9/0.45, 0.9/0, 0/0, 0.45/0}
+			{
+				\draw[rounded corners = 0.3mm, fill=lightgray] (\x, 0 + \y) rectangle (1.2/3 + \x, 1.2/3 + \y){};
+				\draw (0.3/3+ \x,0.3/3 + \y) circle (0.65mm);
+				\draw (0.9/3+ \x,0.3/3+ \y) circle (0.65mm);
+				\draw (0.3/3+ \x,0.9/3 + \y) circle (0.65mm);
+				\draw (0.9/3+ \x,0.9/3 + \y) circle (0.65mm);
+			}
+			\node[text=black] (four) at (0.25 ,1.05) {$2$};
+		\end{scope}
+		\begin{scope}[xshift=1.4cm, yshift=-3.6cm, rotate=0]
+			\draw[rounded corners] (-0.05, -0.1 - 0.85) rectangle (2.3-0.05, 2.3-0.1 - 0.85){};
+			
+			\foreach \x/\y in {0.9/0.9, 0.9/0.45, 0.9/0, 0.9/-0.45, 0.9/-0.9, 0/0, 0.45/0, 1.35/0}
+			{
+				\draw[rounded corners = 0.3mm, fill=lightgray] (\x, 0 + \y) rectangle (1.2/3 + \x, 1.2/3 + \y){};
+				\draw (0.3/3+ \x,0.3/3 + \y) circle (0.65mm);
+				\draw (0.9/3+ \x,0.3/3+ \y) circle (0.65mm);
+				\draw (0.3/3+ \x,0.9/3 + \y) circle (0.65mm);
+				\draw (0.9/3+ \x,0.9/3 + \y) circle (0.65mm);
+			}
+			\foreach \x/\y in {1.8/0}
+			{
+				\draw[rounded corners = 0.3mm, fill=black] (\x, 0 + \y) rectangle 	(1.2/3 + \x, 1.2/3 + \y){};
+				\draw (0.3/3+ \x,0.3/3 + \y) circle (0.65mm);
+				\draw [fill=white](0.9/3+ \x,0.3/3+ \y) circle (0.65mm);
+				\draw [fill=white](0.3/3+ \x,0.9/3 + \y) circle (0.65mm);
+				\draw (0.9/3+ \x,0.9/3 + \y) circle (0.65mm);
+			}
+			\node[text=black] (four) at (1.95 ,-0.65) {$3$};
+		\end{scope}
+		\begin{scope}[xshift=4.6cm, yshift=-2.3cm, rotate=270]
+			\draw[rounded corners] (-0.05, -0.1 - 0.85) rectangle (2.3-0.05, 2.3-0.1 - 0.85){};
+			\node[text=black] (A1) at (1.1+0.85,1.1) {$4$};
+		\end{scope}
+		
+		\begin{scope}[xshift=0cm, yshift=-4.6cm, rotate=270]
+			\draw[rounded corners] (-0.05, -0.1 - 0.85) rectangle (2.3-0.05, 2.3-0.1 - 0.85){};
+			
+			\foreach \x/\y in {0.9/0.9, 0.9/0.45, 0.9/0, 0/0, 0.45/0}
+			{
+				\draw[rounded corners = 0.3mm, fill=lightgray] (\x, 0 + \y) rectangle (1.2/3 + \x, 1.2/3 + \y){};
+				\draw (0.3/3+ \x,0.3/3 + \y) circle (0.65mm);
+				\draw (0.9/3+ \x,0.3/3+ \y) circle (0.65mm);
+				\draw (0.3/3+ \x,0.9/3 + \y) circle (0.65mm);
+				\draw (0.9/3+ \x,0.9/3 + \y) circle (0.65mm);
+			}
+			\node[text=black] (A1) at (1.1+0.85,1.1) {$3$};
+		\end{scope}
+		\begin{scope}[xshift=2.3cm, yshift=-4.6cm, rotate=270]
+			\draw[rounded corners] (-0.05, -0.1 - 0.85) rectangle (2.3-0.05, 2.3-0.1 - 0.85){};
+			
+			\foreach \x/\y in {0.9/0.9, 0.9/0.45, 0.9/0, 0.9/-0.45, 0.9/-0.9, 0/0, 0.45/0}
+			{
+				\draw[rounded corners = 0.3mm, fill=lightgray] (\x, 0 + \y) rectangle (1.2/3 + \x, 1.2/3 + \y){};
+				\draw (0.3/3+ \x,0.3/3 + \y) circle (0.65mm);
+				\draw (0.9/3+ \x,0.3/3+ \y) circle (0.65mm);
+				\draw (0.3/3+ \x,0.9/3 + \y) circle (0.65mm);
+				\draw (0.9/3+ \x,0.9/3 + \y) circle (0.65mm);
+			}
+			\node[text=black] (A1) at (1.1+0.85,1.1) {$4$};
+		\end{scope}
+		\begin{scope}[xshift=5cm, yshift=-6.8cm, rotate=90]
+			\draw[rounded corners] (-0.05, -0.1 - 0.85) rectangle (2.3-0.05, 2.3-0.1 - 0.85){};
+			
+			\foreach \x/\y in {0.9/0.9, 0.9/0.45, 0.9/0, 0.9/-0.45, 0.9/-0.9, 0/0, 0.45/0, 1.35/0, 1.8/0}
+			{
+				\draw[rounded corners = 0.3mm, fill=lightgray] (\x, 0 + \y) rectangle (1.2/3 + \x, 1.2/3 + \y){};
+				\draw (0.3/3+ \x,0.3/3 + \y) circle (0.65mm);
+				\draw (0.9/3+ \x,0.3/3+ \y) circle (0.65mm);
+				\draw (0.3/3+ \x,0.9/3 + \y) circle (0.65mm);
+				\draw (0.9/3+ \x,0.9/3 + \y) circle (0.65mm);
+			}
+			\node[text=black] (A1) at (0.25,-0.7) {$1$};
+			\node[text=black] (A2) at (1.05,-1.5) {$BL_{out}$};
+			\node[text=black] (A3) at (2.5,0.1) {$WL_{out1}$};
+			\node[text=black] (A3) at (-0.4,0.1) {$WL_{out2}$};
+		\end{scope}
+	\end{tikzpicture}
+	\caption{QCA RAM cell using a delay latch}\label{fig:QCA_RAM}
 \end{figure}
+Another section of papers focus on the implementation RAM cells in QCA technology \cite{crosstalk, RAM_cell}. Even though this paper focuses on a placement and routing algorithm for sequential logic, also the implementation of QCA storage could be adapted. An overview \cite{RAM_overview} over different RAM implementations shows that the state of the art is stuck at exactly this point. Without regards to the architecture of a QCA memory structure here a RAM cell according to the storage elements proposed in \ref{subsec:latchesandregisters} is introduced. Figure \ref{fig:QCA_RAM} shows a RAM cell, with its respective wordline(s), bitline(s) and latch. The core of the cell is a latch, which is simply propagating the data in a circle and therefore producing a stable output once in every clock cycle. The input mechanism works via a majority gate and an AND gate. If both wordlines on the majority gate are set to "1" the AND gate of the RAM cell computes "1" if the current value is "1" and "0" otherwise, therfore holding the current data stable. When one wordline is set to "0" the majority gate propagates the input from the bitline into the RAM cell and the new state gets computed. Similarly for the read operation the majority gate needs the wordlines to be inverted in order to read the RAM cell. Otherwise they represent a set-rest functionality for the output. If the set-reset functionality isn't desired, the output could also just be represented by a wire.

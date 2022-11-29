@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.12)  28 NOV 2022 17:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.12)  29 NOV 2022 15:12
 entering extended mode
 **./main.tex
 (main.tex
@@ -2107,7 +2107,7 @@ File: ./figures//OGD.png Graphic file (type png)
 <use ./figures//OGD.png>
 Package pdftex.def Info: ./figures//OGD.png  used on input line 30.
 (pdftex.def)             Requested size: 169.1558pt x 168.62883pt.
- [26 <./figures//OGD.png>]
+
 
 Package nag Warning: \label in float, but not after \caption on input line 112.
 
@@ -2124,7 +2124,7 @@ Package nag Warning: \label in float, but not after \caption on input line 168.
 Package nag Warning: \label in float, but not after \caption on input line 168.
 
 
-[27]
+[26] [27 <./figures//OGD.png>]
 
 Package nag Warning: \label in float, but not after \caption on input line 195.
 
@@ -2142,19 +2142,15 @@ Package nag Warning: \label in float, but not after \caption on input line 210.
 
 
 
-LaTeX Warning: Reference `fig:Coloring_conflict' on page 28 undefined on input 
-line 215.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 215--217
+Underfull \hbox (badness 10000) in paragraph at lines 215--219
 
  []
 
-[28]
+[28] [29]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 263.
- [29]
-Underfull \hbox (badness 10000) in paragraph at lines 266--267
+put line 265.
+
+Underfull \hbox (badness 10000) in paragraph at lines 268--269
 
  []
 
@@ -2162,38 +2158,43 @@ Underfull \hbox (badness 10000) in paragraph at lines 266--267
 <./figures//ortho_mux_21.png, id=478, 443.85825pt x 517.935pt>
 File: ./figures//ortho_mux_21.png Graphic file (type png)
 <use ./figures//ortho_mux_21.png>
-Package pdftex.def Info: ./figures//ortho_mux_21.png  used on input line 270.
+Package pdftex.def Info: ./figures//ortho_mux_21.png  used on input line 272.
 (pdftex.def)             Requested size: 221.92857pt x 258.96686pt.
- [31 <./figures//ortho_mux_21.png>] [32] [33]) (chapters/04_main_work.tex
-[34]
+ [31] [32 <./figures//ortho_mux_21.png>]) (chapters/04_main_work.tex
+[33] [34] [35]
 chapter 4.
-[35
+[36
 
 
 ]
-<./figures//input_network_mux_21.png, id=538, 509.5035pt x 508.90125pt>
+<./figures//input_network_mux_21.png, id=543, 509.5035pt x 508.90125pt>
 File: ./figures//input_network_mux_21.png Graphic file (type png)
 <use ./figures//input_network_mux_21.png>
 Package pdftex.def Info: ./figures//input_network_mux_21.png  used on input lin
 e 41.
 (pdftex.def)             Requested size: 254.75111pt x 254.45pt.
- [36] [37] [38 <./figures//input_network_mux_21.png>] [39]
-<./figures//Maj_nw.png, id=562, 207.77625pt x 293.29575pt>
+ [37] [38] [39 <./figures//input_network_mux_21.png>] [40]
+<./figures//Maj_nw.png, id=566, 207.77625pt x 293.29575pt>
 File: ./figures//Maj_nw.png Graphic file (type png)
 <use ./figures//Maj_nw.png>
-Package pdftex.def Info: ./figures//Maj_nw.png  used on input line 55.
+Package pdftex.def Info: ./figures//Maj_nw.png  used on input line 56.
 (pdftex.def)             Requested size: 166.2212pt x 234.6369pt.
- [40] [41 <./figures//Maj_nw.png>] [42]
-<./figures//majority_with_buf.png, id=583, 813.0375pt x 422.17725pt>
+ [41] [42 <./figures//Maj_nw.png>] [43]
+<./figures//majority_with_buf.png, id=586, 813.0375pt x 422.17725pt>
 File: ./figures//majority_with_buf.png Graphic file (type png)
 <use ./figures//majority_with_buf.png>
 Package pdftex.def Info: ./figures//majority_with_buf.png  used on input line 2
-02.
+03.
 (pdftex.def)             Requested size: 406.51776pt x 211.0881pt.
-) (chapters/05_experimental_evaluation.tex [43] [44 <./figures//majority_with_b
-uf.png>]
+ [44] [45 <./figures//majority_with_buf.png>] [46])
+(chapters/05_experimental_evaluation.tex [47]
 chapter 5.
-) [45
+
+Overfull \hbox (8.53438pt too wide) in paragraph at lines 12--34
+ [][] 
+ []
+
+) [48
 
 
 ]
@@ -2203,7 +2204,7 @@ Package tocbasic Info: character protrusion at lof deactivated on input line 51
 \tf@lof=\write7
 \openout7 = `main.lof'.
 
- [46
+ [49
 
 
 ]
@@ -2213,12 +2214,12 @@ Package tocbasic Info: character protrusion at lot deactivated on input line 52
 \tf@lot=\write8
 \openout8 = `main.lot'.
 
- [47
+ [50
 
 
 ]
 chapter without number
-[48
+[51
 
 
 ]
@@ -2234,20 +2235,17 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [49]
+ [52]
 Overfull \hbox (42.1764pt too wide) in paragraph at lines 54--54
 \T1/pplx/m/n/10.95 (-20) Cir-cuits. In: \T1/pplx/m/it/10.95 (-20) PREPRINT (Ve
 r-sion 1) avail-able at Re-search Square [https://doi.org/10.21203/rs.3.rs-
  []
 
-[50]
+[53]
 
 Package nag Warning: 36 complaints in total.
 
-[51] (main.aux)
-
-LaTeX Warning: There were undefined references.
-
+[54] (main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package logreq Info: Writing requests to 'main.run.xml'.
@@ -2255,11 +2253,11 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 68977 strings out of 478927
- 1659505 string characters out of 2862391
- 2945383 words of memory out of 3000000
- 85037 multiletter control sequences out of 15000+600000
- 484617 words of font info for 528 fonts, out of 8000000 for 9000
+ 68983 strings out of 478927
+ 1659615 string characters out of 2862391
+ 2945432 words of memory out of 3000000
+ 85047 multiletter control sequences out of 15000+600000
+ 484207 words of font info for 522 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  115i,13n,111p,10601b,2970s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\benja\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt
@@ -2273,9 +2271,9 @@ iKTeX/fonts/type1/public/mathpazo/fplmri.pfb><C:/Program Files/MiKTeX/fonts/typ
 e1/public/fpl/fplrc8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/upl
 b8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Progra
 m Files/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (58 pages, 719362 bytes).
+Output written on main.pdf (61 pages, 728008 bytes).
 PDF statistics:
- 896 PDF objects out of 1000 (max. 8388607)
- 213 named destinations out of 1000 (max. 500000)
+ 917 PDF objects out of 1000 (max. 8388607)
+ 217 named destinations out of 1000 (max. 500000)
  100242 words of extra memory for PDF output out of 106986 (max. 10000000)
 
