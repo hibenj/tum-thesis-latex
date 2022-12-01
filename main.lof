@@ -11,9 +11,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.2}{\ignorespaces QCA-Cell sates\relax }}{8}{figure.caption.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Adjacent QCA-cells forming a wire segment\relax }}{8}{figure.caption.7}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Adjacent QCA-cells forming a wire segment\relax }}{9}{figure.caption.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Schematic of a combined QCA and CMOS sytem \cite {lent1994quantum}.\relax }}{9}{figure.caption.8}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Schematic of a combined QCA and CMOS sytem \cite {lent1994quantum}.\relax }}{10}{figure.caption.8}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.5}{\ignorespaces Schematic representation of a metastable state. Instead of relaxing correctly to the new ground state, a system may be delayed in an excited state due to an inability to tunnel through a kinetic barrier \cite {lent1997device}.\relax }}{10}{figure.caption.9}%
 \defcounter {refsection}{0}\relax 
@@ -99,17 +99,17 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Placement and routing of a 2:1 mux network using the ortho algorithm\relax }}{32}{figure.caption.27}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.6}{\ignorespaces QCA RAM cell using a delay latch\relax }}{34}{figure.caption.28}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces QCA RAM cell using a delay latch\relax }}{35}{figure.caption.28}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Placement and routing of a 2:1 mux network using the ortho algorithm with the ordering distribution network\relax }}{39}{figure.caption.29}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Placement and routing of a 2:1 mux network using the ortho algorithm with the ordering distribution network\relax }}{40}{figure.caption.30}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Proposed majority gate distribution network\relax }}{42}{figure.caption.30}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Proposed majority gate distribution network\relax }}{42}{figure.caption.31}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Buffer in $east$ direction with resolve column and respective clocking\relax }}{45}{figure.caption.31}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Buffer in $east$ direction with resolve column and respective clocking\relax }}{45}{figure.caption.32}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Placement and routing of a majority distribution network in conjunction with two primary inputs\relax }}{45}{figure.caption.32}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Placement and routing of a majority distribution network in conjunction with two primary inputs\relax }}{46}{figure.caption.33}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

@@ -1078,6 +1078,32 @@
     \field{year}{2020}
   \endentry
 
+  \entry{Moores_Law}{article}{}
+    \name{author}{1}{}{%
+      {{hash=SRR}{%
+         family={Schaller},
+         familyi={S\bibinitperiod},
+         given={Robert\bibnamedelima R},
+         giveni={R\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{SRR1}
+    \strng{fullhash}{SRR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{number}{6}
+    \field{pages}{52\bibrangedash 59}
+    \field{title}{Moore's law: past, present and future}
+    \field{volume}{34}
+    \field{journaltitle}{IEEE spectrum}
+    \field{year}{1997}
+  \endentry
+
   \entry{muti_output_boolean_function}{book}{}
     \name{author}{2}{}{%
       {{hash=SC}{%
