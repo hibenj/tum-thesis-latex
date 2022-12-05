@@ -53,63 +53,61 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(h)}{\ignorespaces {Wire crossing}}}{13}{figure.caption.11}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Schematic representation of a metastable state. Instead of relaxing correctly to the new ground state, a system may be delayed in an excited state due to an inability to tunnel through a kinetic barrier \cite {lent1997device}.\relax }}{14}{figure.caption.12}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Schematic of a combined QCA and CMOS system \cite {lent1994quantum}.\relax }}{14}{figure.caption.12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Schematic of a combined QCA and CMOS system \cite {lent1994quantum}.\relax }}{15}{figure.caption.13}%
+\contentsline {figure}{\numberline {2.9}{\ignorespaces QCA clocking pipeline\relax }}{15}{figure.caption.13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.10}{\ignorespaces QCA clocking pipeline\relax }}{16}{figure.caption.14}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Different clocking Schemes in QCA\relax }}{17}{figure.caption.14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.11}{\ignorespaces Different clocking Schemes in QCA\relax }}{18}{figure.caption.15}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {2DDWave}}}{17}{figure.caption.14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {2DDWave}}}{18}{figure.caption.15}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {USE}}}{17}{figure.caption.14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {USE}}}{18}{figure.caption.15}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {RES}}}{17}{figure.caption.14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {RES}}}{18}{figure.caption.15}%
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Eccles-Jordan-Flip-Flop\relax }}{19}{figure.caption.15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.12}{\ignorespaces Eccles-Jordan-Flip-Flop\relax }}{20}{figure.caption.16}%
+\contentsline {figure}{\numberline {2.12}{\ignorespaces SR-Latch\relax }}{20}{figure.caption.16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.13}{\ignorespaces SR-Latch\relax }}{21}{figure.caption.17}%
+\contentsline {figure}{\numberline {2.13}{\ignorespaces D-Latch\relax }}{21}{figure.caption.17}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.14}{\ignorespaces D-Latch\relax }}{22}{figure.caption.18}%
+\contentsline {figure}{\numberline {2.14}{\ignorespaces Clocking of a basic latch in QCA\relax }}{22}{figure.caption.18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.15}{\ignorespaces Clocking of a basic latch in QCA\relax }}{22}{figure.caption.19}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.16}{\ignorespaces Scheme of a sequential circuit layout after placement and routing\relax }}{23}{figure.caption.20}%
+\contentsline {figure}{\numberline {2.15}{\ignorespaces Scheme of a sequential circuit layout after placement and routing\relax }}{23}{figure.caption.19}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Lazy SMT-solving process \cite {SMT}\relax }}{25}{figure.caption.21}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Lazy SMT-solving process \cite {SMT}\relax }}{25}{figure.caption.20}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Example OGD drawing\relax }}{28}{figure.caption.22}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Example OGD drawing\relax }}{28}{figure.caption.21}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Insufficient timing constraints of a OGD representation \cite {Walter}\relax }}{28}{figure.caption.23}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Insufficient timing constraints of a OGD representation \cite {Walter}\relax }}{28}{figure.caption.22}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Partial representation of a logic network}}}{28}{figure.caption.23}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Partial representation of a logic network}}}{28}{figure.caption.22}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {OGD representation of the logic network}}}{28}{figure.caption.23}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {OGD representation of the logic network}}}{28}{figure.caption.22}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {No sufficient clocking for this OGD can be examined}}}{28}{figure.caption.23}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {No sufficient clocking for this OGD can be examined}}}{28}{figure.caption.22}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Relative positions of an OGD graph with correct color assinment\relax }}{29}{figure.caption.24}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Relative positions of an OGD graph with correct color assinment\relax }}{29}{figure.caption.23}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Color assignment of incoming signals}}}{29}{figure.caption.24}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Color assignment of incoming signals}}}{29}{figure.caption.23}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Color assignment of outgoing signals}}}{29}{figure.caption.24}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Color assignment of outgoing signals}}}{29}{figure.caption.23}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Placement and routing of a 2:1 mux network using the ortho algorithm\relax }}{33}{figure.caption.25}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Placement and routing of a 2:1 mux network using the ortho algorithm\relax }}{33}{figure.caption.24}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.6}{\ignorespaces QCA RAM cell using a delay latch\relax }}{36}{figure.caption.26}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces QCA RAM cell using a delay latch\relax }}{36}{figure.caption.25}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Placement and routing of a 2:1 mux network using the ortho algorithm with the ordering distribution network\relax }}{41}{figure.caption.28}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Placement and routing of a 2:1 mux network using the ortho algorithm with the ordering distribution network\relax }}{41}{figure.caption.27}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Proposed majority gate distribution network\relax }}{43}{figure.caption.29}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Proposed majority gate distribution network\relax }}{43}{figure.caption.28}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Buffer in $east$ direction with resolve column and respective clocking\relax }}{46}{figure.caption.30}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Buffer in $east$ direction with resolve column and respective clocking\relax }}{46}{figure.caption.29}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Placement and routing of a majority distribution network in conjunction with two primary inputs\relax }}{47}{figure.caption.31}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Placement and routing of a majority distribution network in conjunction with two primary inputs\relax }}{47}{figure.caption.30}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
