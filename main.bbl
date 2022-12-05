@@ -48,6 +48,32 @@
     \field{year}{2017}
   \endentry
 
+  \entry{ahmad2018optimal}{article}{}
+    \name{author}{1}{}{%
+      {{hash=AF}{%
+         family={Ahmad},
+         familyi={A\bibinitperiod},
+         given={Firdous},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{AF1}
+    \strng{fullhash}{AF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{pages}{64\bibrangedash 75}
+    \field{title}{An optimal design of QCA based 2n: 1/1: 2n
+  multiplexer/demultiplexer and its efficient digital logic realization}
+    \field{volume}{56}
+    \field{journaltitle}{Microprocessors and Microsystems}
+    \field{year}{2018}
+  \endentry
+
   \entry{boolean_abstraction}{inproceedings}{}
     \name{author}{3}{}{%
       {{hash=BT}{%
@@ -84,6 +110,39 @@
     \field{title}{Boolean and Cartesian abstraction for model checking C
   programs}
     \field{year}{2001}
+  \endentry
+
+  \entry{QCA_technology}{article}{}
+    \name{author}{2}{}{%
+      {{hash=BZ}{%
+         family={Beiki},
+         familyi={B\bibinitperiod},
+         given={Zohre},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=SA}{%
+         family={Shahidinejad},
+         familyi={S\bibinitperiod},
+         given={Ali},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BZSA1}
+    \strng{fullhash}{BZSA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \verb{doi}
+    \verb 10.1166/rits.2014.1028
+    \endverb
+    \field{pages}{334\bibrangedash 342}
+    \field{title}{An Introduction to Quantum Cellular Automata Technology and
+  Its Defects}
+    \field{volume}{2}
+    \field{journaltitle}{Reviews in Theoretical Science}
+    \field{month}{12}
+    \field{year}{2014}
   \endentry
 
   \entry{sequential_tile_CMOS_alg}{article}{}
@@ -891,6 +950,41 @@
     \field{year}{2009}
   \endentry
 
+  \entry{majeed2019quantum}{article}{}
+    \name{author}{3}{}{%
+      {{hash=MAH}{%
+         family={Majeed},
+         familyi={M\bibinitperiod},
+         given={Ali\bibnamedelima Hussien},
+         giveni={A\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=ZMS}{%
+         family={Zainal},
+         familyi={Z\bibinitperiod},
+         given={Mohd\bibnamedelima Shamian},
+         giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=AE}{%
+         family={Alkaldy},
+         familyi={A\bibinitperiod},
+         given={Esam},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MAHZMSAE1}
+    \strng{fullhash}{MAHZMSAE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{number}{8}
+    \field{pages}{143\bibrangedash 158}
+    \field{title}{Quantum-dot Cellular Automata}
+    \field{volume}{11}
+    \field{journaltitle}{International Journal of Integrated Engineering}
+    \field{year}{2019}
+  \endentry
+
   \entry{mohammadi2016efficient}{article}{}
     \name{author}{3}{}{%
       {{hash=MM}{%
@@ -956,6 +1050,52 @@
     \field{journaltitle}{PREPRINT (Version 1) available at Research Square
   [https://doi.org/10.21203/rs.3.rs-2145478/v1]}
     \field{year}{2022}
+  \endentry
+
+  \entry{peng2020spars}{article}{}
+    \name{author}{4}{}{%
+      {{hash=PF}{%
+         family={Peng},
+         familyi={P\bibinitperiod},
+         given={Fei},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=ZY}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Yongqiang},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=KR}{%
+         family={Kuang},
+         familyi={K\bibinitperiod},
+         given={Rui},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=XG}{%
+         family={Xie},
+         familyi={X\bibinitperiod},
+         given={Guangjun},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{PFZYKRXG1}
+    \strng{fullhash}{PFZYKRXG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{number}{4}
+    \field{pages}{1233\bibrangedash 1237}
+    \field{title}{Spars: A Full Flow Quantum-Dot Cellular Automata Circuit
+  Design Tool}
+    \field{volume}{68}
+    \field{journaltitle}{IEEE Transactions on Circuits and Systems II: Express
+  Briefs}
+    \field{year}{2020}
   \endentry
 
   \entry{QCA_scl}{inproceedings}{}

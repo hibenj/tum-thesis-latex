@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.12)  1 DEC 2022 13:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.12)  5 DEC 2022 14:47
 entering extended mode
 **./main.tex
 (main.tex
@@ -571,7 +571,7 @@ File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 (C:\Program Files\MiKTeX\tex/latex/listings\listings.cfg
 File: listings.cfg 2020/03/24 1.8d listings configuration
 ))
-Package scrhack Info: loading listings hack on input line 24.
+Package scrhack Info: loading listings hack on input line 25.
 
 (C:\Program Files\MiKTeX\tex/latex/koma-script\listings.hak
 File: listings.hak 2021/06/25 v3.34 KOMA-Script scrhack part (hacking package l
@@ -1042,7 +1042,7 @@ Package caption Info: subfigure package is loaded.
 )
 Package scrhack Info: hyperref hack deactivated because of
 (scrhack)             detection of KOMA-Script class, that doesn't
-(scrhack)             need that hack, on input line 32.
+(scrhack)             need that hack, on input line 33.
 
 (C:\Program Files\MiKTeX\tex/latex/hyperref\hyperref.sty
 Package: hyperref 2021-06-07 v7.00m Hypertext links for LaTeX
@@ -1159,7 +1159,7 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks41
 \@floatcapt=\box70
 )
-Package scrhack Info: loading float hack on input line 35.
+Package scrhack Info: loading float hack on input line 36.
 
 (C:\Program Files\MiKTeX\tex/latex/koma-script\float.hak
 File: float.hak 2021/06/25 v3.34 KOMA-Script scrhack part (hacking package floa
@@ -1566,20 +1566,28 @@ Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
 \multirow@dima=\skip130
 \bigstrutjot=\dimen331
 )
+(C:\Program Files\MiKTeX\tex/latex/graphics\rotating.sty
+Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
+\c@r@tfl@t=\count527
+\rotFPtop=\skip131
+\rotFPbot=\skip132
+\rot@float@box=\box134
+\rot@mess@toks=\toks50
+)
 (C:\Program Files\MiKTeX\tex/latex/amscls\amsthm.sty
 Package: amsthm 2020/05/29 v2.20.6
-\thm@style=\toks50
-\thm@bodyfont=\toks51
-\thm@headfont=\toks52
-\thm@notefont=\toks53
-\thm@headpunct=\toks54
-\thm@preskip=\skip131
-\thm@postskip=\skip132
-\thm@headsep=\skip133
-\dth@everypar=\toks55
+\thm@style=\toks51
+\thm@bodyfont=\toks52
+\thm@headfont=\toks53
+\thm@notefont=\toks54
+\thm@headpunct=\toks55
+\thm@preskip=\skip133
+\thm@postskip=\skip134
+\thm@headsep=\skip135
+\dth@everypar=\toks56
 )
 Class scrbook Info: amsthm's \deferred@thm@head patched.
-\c@definition=\count527
+\c@definition=\count528
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
@@ -1686,17 +1694,17 @@ Package biblatex Info: Reference section=0 on input line 22.
 Package biblatex Info: Reference segment=0 on input line 22.
  (C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count528
+\scratchcounter=\count529
 \scratchdimen=\dimen332
-\scratchbox=\box134
-\nofMPsegments=\count529
-\nofMParguments=\count530
-\everyMPshowfont=\toks56
-\MPscratchCnt=\count531
+\scratchbox=\box135
+\nofMPsegments=\count530
+\nofMParguments=\count531
+\everyMPshowfont=\toks57
+\MPscratchCnt=\count532
 \MPscratchDim=\dimen333
-\MPnumerator=\count532
-\makeMPintoPDFobject=\count533
-\everyMPtoPDFconversion=\toks57
+\MPnumerator=\count533
+\makeMPintoPDFobject=\count534
+\everyMPtoPDFconversion=\toks58
 ) (C:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -1705,7 +1713,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 (C:\Program Files\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-\c@lstlisting=\count534
+\c@lstlisting=\count535
 Package scrhack Info: undefining \float@addtolists on input line 22.
 
 Package pgfplots notification 'compat/show suggested version=true': document ha
@@ -1728,6 +1736,7 @@ File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
+Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
 Package hyperref Info: Link coloring OFF on input line 22.
 
@@ -1740,7 +1749,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (C:\Program Files\MiKTeX\tex/generic/gettitlestring\gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count535
+\c@section@level=\count536
 )
 LaTeX Info: Redefining \ref on input line 22.
 LaTeX Info: Redefining \pageref on input line 22.
@@ -1763,7 +1772,7 @@ Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
 
 (C:\Program Files\MiKTeX\tex/latex/bookmark\bkm-pdftex.def
 File: bkm-pdftex.def 2020-11-06 v1.29 bookmark driver for pdfTeX (HO)
-\BKM@id=\count536
+\BKM@id=\count537
 ))
 Package nag Info: Command \hc@caption not defined, skipping amendment on input 
 line 22.
@@ -1902,206 +1911,212 @@ Underfull \hbox (badness 10000) in paragraph at lines 162--164
 
  []
 
-[7] [8]
-Underfull \hbox (badness 10000) in paragraph at lines 279--280
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 175--178
 
  []
 
+[8]
 
-Underfull \hbox (badness 10000) in paragraph at lines 292--294
+Package nag Warning: \label in float, but not after \caption on input line 331.
 
- []
 
-<./figures//QCA_array.png, id=221, 354.57469pt x 135.50626pt>
-File: ./figures//QCA_array.png Graphic file (type png)
-<use ./figures//QCA_array.png>
-Package pdftex.def Info: ./figures//QCA_array.png  used on input line 297.
-(pdftex.def)             Requested size: 212.74644pt x 81.30437pt.
+
+Package nag Warning: \label in float, but not after \caption on input line 331.
+
+
+
+Package nag Warning: \label in float, but not after \caption on input line 404.
+
+
+
+Package nag Warning: \label in float, but not after \caption on input line 404.
+
+
 [9]
-<./figures//information_passing.png, id=233, 475.02469pt x 222.8325pt>
-File: ./figures//information_passing.png Graphic file (type png)
-<use ./figures//information_passing.png>
-Package pdftex.def Info: ./figures//information_passing.png  used on input line
- 304.
-(pdftex.def)             Requested size: 285.017pt x 133.70053pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 312--313
-
- []
-
-[10 <./figures//QCA_array.png> <./figures//information_passing.png>] [11]
-
-Package nag Warning: \label in float, but not after \caption on input line 490.
+Package nag Warning: \label in float, but not after \caption on input line 468.
 
 
 
-Package nag Warning: \label in float, but not after \caption on input line 490.
+Package nag Warning: \label in float, but not after \caption on input line 468.
 
 
 
-Package nag Warning: \label in float, but not after \caption on input line 542.
+Package nag Warning: \label in float, but not after \caption on input line 525.
 
 
 
-Package nag Warning: \label in float, but not after \caption on input line 542.
+Package nag Warning: \label in float, but not after \caption on input line 525.
 
 
 
-Package nag Warning: \label in float, but not after \caption on input line 595.
+Package nag Warning: \label in float, but not after \caption on input line 581.
 
 
 
-Package nag Warning: \label in float, but not after \caption on input line 595.
-
-
-[12]
-
-Package nag Warning: \label in float, but not after \caption on input line 655.
+Package nag Warning: \label in float, but not after \caption on input line 581.
 
 
 
-Package nag Warning: \label in float, but not after \caption on input line 655.
+Package nag Warning: \label in float, but not after \caption on input line 638.
 
 
 
-Package nag Warning: \label in float, but not after \caption on input line 728.
+Package nag Warning: \label in float, but not after \caption on input line 638.
 
 
 
-Package nag Warning: \label in float, but not after \caption on input line 728.
-
-
-
-Package nag Warning: \label in float, but not after \caption on input line 791.
-
-
-
-Package nag Warning: \label in float, but not after \caption on input line 791.
-
-
-
-Package nag Warning: \label in float, but not after \caption on input line 848.
-
-
-
-Package nag Warning: \label in float, but not after \caption on input line 848.
-
-
-
-Package nag Warning: \label in float, but not after \caption on input line 904.
-
-
-
-Package nag Warning: \label in float, but not after \caption on input line 904.
-
-
-
-Package nag Warning: \label in float, but not after \caption on input line 961.
-
-
-
-Package nag Warning: \label in float, but not after \caption on input line 961.
-
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 604--966
+Underfull \hbox (badness 10000) in paragraph at lines 642--644
 
  []
 
-[13]
+[10]
 
-Package nag Warning: \label in float, but not after \caption on input line 1058
-.
-
-
-Package nag Warning: \label in float, but not after \caption on input line 1058
-.
+Package nag Warning: \label in float, but not after \caption on input line 736.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1058--1058
+
+Package nag Warning: \label in float, but not after \caption on input line 736.
+
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 736--736
 []\T1/pplx/m/n/9 (+20) (a) Copla-nar wire
  []
 
-<./figures//wire_crossing.png, id=299, 708.84825pt x 413.1435pt>
+<./figures//wire_crossing.png, id=277, 708.84825pt x 413.1435pt>
 File: ./figures//wire_crossing.png Graphic file (type png)
 <use ./figures//wire_crossing.png>
-Package pdftex.def Info: ./figures//wire_crossing.png  used on input line 1064.
-
+Package pdftex.def Info: ./figures//wire_crossing.png  used on input line 742.
 (pdftex.def)             Requested size: 177.21162pt x 103.28561pt.
 
-Package nag Warning: \label in float, but not after \caption on input line 1064
-.
+Package nag Warning: \label in float, but not after \caption on input line 742.
 
 
-Package nag Warning: \label in float, but not after \caption on input line 1064
-.
+
+Package nag Warning: \label in float, but not after \caption on input line 742.
 
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 1068.
+[11]
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 747.
 
 LaTeX Font Info:    Trying to load font information for TS1+pplx on input line 
-1068.
+747.
 (C:\Program Files\MiKTeX\tex/latex/psnfss\ts1pplx.fd
 File: ts1pplx.fd 2004/09/06 font definitions for TS1/pplx.
 )
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 1068.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 747.
 
 Missing character: There is no ° in font pplr9t!
-[14] [15]
 
-Package nag Warning: \label in float, but not after \caption on input line 1178
+Package nag Warning: \label in float, but not after \caption on input line 857.
+
+
+
+Package nag Warning: \label in float, but not after \caption on input line 857.
+
+
+
+Package nag Warning: \label in float, but not after \caption on input line 873.
+
+
+
+Package nag Warning: \label in float, but not after \caption on input line 873.
+
+
+[12 <./figures//wire_crossing.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 908--909
+
+ []
+
+[13]
+<./figures//information_passing.png, id=316, 475.02469pt x 222.8325pt>
+File: ./figures//information_passing.png Graphic file (type png)
+<use ./figures//information_passing.png>
+Package pdftex.def Info: ./figures//information_passing.png  used on input line
+ 912.
+(pdftex.def)             Requested size: 285.017pt x 133.70053pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 931--933
+
+ []
+
+<./figures//QCA_array.png, id=321, 354.57469pt x 135.50626pt>
+File: ./figures//QCA_array.png Graphic file (type png)
+<use ./figures//QCA_array.png>
+Package pdftex.def Info: ./figures//QCA_array.png  used on input line 938.
+(pdftex.def)             Requested size: 212.74644pt x 81.30437pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 943--944
+
+ []
+
+[14 <./figures//information_passing.png>] [15 <./figures//QCA_array.png>]
+[16]
+
+Package nag Warning: \label in float, but not after \caption on input line 1121
 .
 
 
-Package nag Warning: \label in float, but not after \caption on input line 1178
+Package nag Warning: \label in float, but not after \caption on input line 1121
 .
 
 
-Package nag Warning: \label in float, but not after \caption on input line 1194
+Package nag Warning: \label in float, but not after \caption on input line 1173
 .
 
 
-Package nag Warning: \label in float, but not after \caption on input line 1194
+Package nag Warning: \label in float, but not after \caption on input line 1173
 .
 
-[16 <./figures//wire_crossing.png>] [17]
-Overfull \hbox (18.3794pt too wide) in paragraph at lines 1276--1289
+
+Package nag Warning: \label in float, but not after \caption on input line 1226
+.
+
+
+Package nag Warning: \label in float, but not after \caption on input line 1226
+.
+
+[17]
+Underfull \hbox (badness 10000) in paragraph at lines 1242--1244
+
+ []
+
+[18] [19]
+Overfull \hbox (18.3794pt too wide) in paragraph at lines 1300--1313
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1293--1295
+Underfull \hbox (badness 10000) in paragraph at lines 1317--1319
 
  []
 
-[18]
-Underfull \hbox (badness 10000) in paragraph at lines 1359--1361
+[20]
+Underfull \hbox (badness 10000) in paragraph at lines 1383--1385
 
  []
 
-
-Overfull \hbox (21.74596pt too wide) in paragraph at lines 1385--1412
+[21]
+Overfull \hbox (21.74596pt too wide) in paragraph at lines 1409--1436
 [][]
  []
 
 
-Overfull \hbox (21.74596pt too wide) in paragraph at lines 1385--1412
+Overfull \hbox (21.74596pt too wide) in paragraph at lines 1409--1436
 [] 
  []
 
-[19] [20]
-Underfull \hbox (badness 10000) in paragraph at lines 1454--1456
-
- []
-
-[21]) (chapters/03_state_of_the_art.tex [22]
+[22]) (chapters/03_state_of_the_art.tex [23]
 chapter 3.
-[23
+[24
 
 
 ]
-<./figures//SMT_solving.png, id=395, 274.626pt x 211.992pt>
+<./figures//SMT_solving.png, id=426, 274.626pt x 211.992pt>
 File: ./figures//SMT_solving.png Graphic file (type png)
 <use ./figures//SMT_solving.png>
 Package pdftex.def Info: ./figures//SMT_solving.png  used on input line 9.
@@ -2111,8 +2126,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--18
 
  []
 
-[24 <./figures//SMT_solving.png>] [25]
-<./figures//OGD.png, id=424, 241.65282pt x 240.9pt>
+[25 <./figures//SMT_solving.png>] [26]
+<./figures//OGD.png, id=454, 241.65282pt x 240.9pt>
 File: ./figures//OGD.png Graphic file (type png)
 <use ./figures//OGD.png>
 Package pdftex.def Info: ./figures//OGD.png  used on input line 30.
@@ -2134,7 +2149,7 @@ Package nag Warning: \label in float, but not after \caption on input line 168.
 Package nag Warning: \label in float, but not after \caption on input line 168.
 
 
-[26] [27 <./figures//OGD.png>]
+[27] [28 <./figures//OGD.png>]
 
 Package nag Warning: \label in float, but not after \caption on input line 195.
 
@@ -2156,7 +2171,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 215--219
 
  []
 
-[28] [29]
+[29] [30]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
 put line 265.
 
@@ -2164,47 +2179,55 @@ Underfull \hbox (badness 10000) in paragraph at lines 268--269
 
  []
 
-[30]
-<./figures//ortho_mux_21.png, id=478, 443.85825pt x 517.935pt>
+[31]
+<./figures//ortho_mux_21.png, id=506, 443.85825pt x 517.935pt>
 File: ./figures//ortho_mux_21.png Graphic file (type png)
 <use ./figures//ortho_mux_21.png>
 Package pdftex.def Info: ./figures//ortho_mux_21.png  used on input line 272.
 (pdftex.def)             Requested size: 221.92857pt x 258.96686pt.
- [31] [32 <./figures//ortho_mux_21.png>] [33]) (chapters/04_main_work.tex
-[34] [35]
+ [32] [33 <./figures//ortho_mux_21.png>] [34]) (chapters/04_main_work.tex
+[35] [36]
 chapter 4.
-[36
+[37
 
 
 ]
-<./figures//input_network_mux_21.png, id=544, 509.5035pt x 508.90125pt>
+<./figures//input_network_mux_21.png, id=571, 509.5035pt x 508.90125pt>
 File: ./figures//input_network_mux_21.png Graphic file (type png)
 <use ./figures//input_network_mux_21.png>
 Package pdftex.def Info: ./figures//input_network_mux_21.png  used on input lin
 e 43.
 (pdftex.def)             Requested size: 254.75111pt x 254.45pt.
- [37] [38] [39] [40 <./figures//input_network_mux_21.png>] [41]
-<./figures//Maj_nw.png, id=571, 207.77625pt x 293.29575pt>
-File: ./figures//Maj_nw.png Graphic file (type png)
-<use ./figures//Maj_nw.png>
-Package pdftex.def Info: ./figures//Maj_nw.png  used on input line 58.
-(pdftex.def)             Requested size: 166.2212pt x 234.6369pt.
- [42 <./figures//Maj_nw.png>] [43] [44]
-<./figures//majority_with_buf.png, id=591, 813.0375pt x 422.17725pt>
-File: ./figures//majority_with_buf.png Graphic file (type png)
-<use ./figures//majority_with_buf.png>
-Package pdftex.def Info: ./figures//majority_with_buf.png  used on input line 2
-05.
-(pdftex.def)             Requested size: 406.51776pt x 211.0881pt.
- [45] [46 <./figures//majority_with_buf.png>])
-(chapters/05_experimental_evaluation.tex [47]
+ [38] [39] [40] [41 <./figures//input_network_mux_21.png>] [42]
+<./figures//Majority_Distribution_network.pdf, id=599, 731.83661pt x 1013.1337p
+t>
+File: ./figures//Majority_Distribution_network.pdf Graphic file (type pdf)
+<use ./figures//Majority_Distribution_network.pdf>
+Package pdftex.def Info: ./figures//Majority_Distribution_network.pdf  used on 
+input line 58.
+(pdftex.def)             Requested size: 219.55267pt x 303.94246pt.
+ [43 <./figures//Majority_Distribution_network.pdf>] [44] [45]
+<./figures//TEST_maj_two_buf_cell_lvl_lyt_2.pdf, id=637, 1718.67094pt x 912.408
+75pt>
+File: ./figures//TEST_maj_two_buf_cell_lvl_lyt_2.pdf Graphic file (type pdf)
+<use ./figures//TEST_maj_two_buf_cell_lvl_lyt_2.pdf>
+Package pdftex.def Info: ./figures//TEST_maj_two_buf_cell_lvl_lyt_2.pdf  used o
+n input line 205.
+(pdftex.def)             Requested size: 567.16318pt x 301.09581pt.
+
+Overfull \hbox (12.16293pt too wide) in paragraph at lines 205--206
+ [][] 
+ []
+
+[46] [47 <./figures//TEST_maj_two_buf_cell_lvl_lyt_2.pdf>] [48])
+(chapters/05_experimental_evaluation.tex [49]
 chapter 5.
 
 Overfull \hbox (8.53438pt too wide) in paragraph at lines 12--34
  [][] 
  []
 
-) [48
+) [50
 
 
 ]
@@ -2214,7 +2237,7 @@ Package tocbasic Info: character protrusion at lof deactivated on input line 51
 \tf@lof=\write7
 \openout7 = `main.lof'.
 
- [49
+ [51
 
 
 ]
@@ -2224,38 +2247,37 @@ Package tocbasic Info: character protrusion at lot deactivated on input line 52
 \tf@lot=\write8
 \openout8 = `main.lot'.
 
- [50
+ [52
 
 
 ]
 chapter without number
-[51
-
-
-]
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/pplx/m/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 5
 4.
- (C:\Program Files\MiKTeX\tex/latex/base\t1cmtt.fd
+(C:\Program Files\MiKTeX\tex/latex/base\t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [52]
+ [53
+
+
+] [54]
 Overfull \hbox (42.1764pt too wide) in paragraph at lines 54--54
 \T1/pplx/m/n/10.95 (-20) Cir-cuits. In: \T1/pplx/m/it/10.95 (-20) PREPRINT (Ve
 r-sion 1) avail-able at Re-search Square [https://doi.org/10.21203/rs.3.rs-
  []
 
-[53]
+[55]
 
 Package nag Warning: 36 complaints in total.
 
-[54] (main.aux)
+[56] (main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package logreq Info: Writing requests to 'main.run.xml'.
@@ -2263,11 +2285,11 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 69038 strings out of 478927
- 1660597 string characters out of 2862391
- 2955915 words of memory out of 3000000
- 85104 multiletter control sequences out of 15000+600000
- 483777 words of font info for 516 fonts, out of 8000000 for 9000
+ 69121 strings out of 478927
+ 1662194 string characters out of 2862391
+ 2937000 words of memory out of 3000000
+ 85171 multiletter control sequences out of 15000+600000
+ 484177 words of font info for 522 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  115i,13n,111p,10601b,2970s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\benja\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt
@@ -2281,9 +2303,9 @@ iKTeX/fonts/type1/public/mathpazo/fplmri.pfb><C:/Program Files/MiKTeX/fonts/typ
 e1/public/fpl/fplrc8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/upl
 b8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Progra
 m Files/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (61 pages, 735336 bytes).
+Output written on main.pdf (63 pages, 906146 bytes).
 PDF statistics:
- 920 PDF objects out of 1000 (max. 8388607)
- 219 named destinations out of 1000 (max. 500000)
- 100242 words of extra memory for PDF output out of 106986 (max. 10000000)
+ 981 PDF objects out of 1000 (max. 8388607)
+ 224 named destinations out of 1000 (max. 500000)
+ 100250 words of extra memory for PDF output out of 106986 (max. 10000000)
 
