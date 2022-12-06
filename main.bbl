@@ -548,6 +548,44 @@
     \field{year}{2019}
   \endentry
 
+  \entry{multi_lyer_wire_crossing}{article}{}
+    \name{author}{3}{}{%
+      {{hash=GA}{%
+         family={Gin},
+         familyi={G\bibinitperiod},
+         given={Aaron},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=TPD}{%
+         family={Tougaw},
+         familyi={T\bibinitperiod},
+         given={P\bibnamedelima Douglas},
+         giveni={P\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=WS}{%
+         family={Williams},
+         familyi={W\bibinitperiod},
+         given={Sara},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Institute of Physics}%
+    }
+    \strng{namehash}{GATPDWS1}
+    \strng{fullhash}{GATPDWS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{number}{12}
+    \field{pages}{8281\bibrangedash 8286}
+    \field{title}{An alternative geometry for quantum-dot cellular automata}
+    \field{volume}{85}
+    \field{journaltitle}{Journal of Applied Physics}
+    \field{year}{1999}
+  \endentry
+
   \entry{RES}{article}{}
     \name{author}{5}{}{%
       {{hash=GM}{%
@@ -720,6 +758,62 @@
     \field{year}{1932}
   \endentry
 
+  \entry{DeMorgans_laws}{article}{}
+    \name{author}{1}{}{%
+      {{hash=JPT}{%
+         family={Johnstone},
+         familyi={J\bibinitperiod},
+         given={Peter\bibnamedelima T},
+         giveni={P\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{JPT1}
+    \strng{fullhash}{JPT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{J}
+    \field{sortinithash}{J}
+    \field{pages}{479\bibrangedash 491}
+    \field{title}{Conditions related to De Morgan's law}
+    \field{journaltitle}{Applications of sheaves}
+    \field{year}{1979}
+  \endentry
+
+  \entry{keyes1970minimal}{article}{}
+    \name{author}{2}{}{%
+      {{hash=KRW}{%
+         family={Keyes},
+         familyi={K\bibinitperiod},
+         given={Robert\bibnamedelima W},
+         giveni={R\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=LR}{%
+         family={Landauer},
+         familyi={L\bibinitperiod},
+         given={Rolf},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IBM}%
+    }
+    \strng{namehash}{KRWLR1}
+    \strng{fullhash}{KRWLR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{number}{2}
+    \field{pages}{152\bibrangedash 157}
+    \field{title}{Minimal energy dissipation in logic}
+    \field{volume}{14}
+    \field{journaltitle}{IBM Journal of Research and Development}
+    \field{year}{1970}
+  \endentry
+
   \entry{majorityrotated}{article}{}
     \name{author}{2}{}{%
       {{hash=KD}{%
@@ -751,6 +845,32 @@
     \field{journaltitle}{Analog Integrated Circuits and Signal Processing}
     \field{month}{03}
     \field{year}{2019}
+  \endentry
+
+  \entry{landauer1961irreversibility}{article}{}
+    \name{author}{1}{}{%
+      {{hash=LR}{%
+         family={Landauer},
+         familyi={L\bibinitperiod},
+         given={Rolf},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Ibm}%
+    }
+    \strng{namehash}{LR1}
+    \strng{fullhash}{LR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{number}{3}
+    \field{pages}{183\bibrangedash 191}
+    \field{title}{Irreversibility and heat generation in the computing process}
+    \field{volume}{5}
+    \field{journaltitle}{IBM journal of research and development}
+    \field{year}{1961}
   \endentry
 
   \entry{lent2006bennett}{article}{}
@@ -862,6 +982,50 @@
     \field{year}{1994}
   \endentry
 
+  \entry{challenges_1}{article}{}
+    \name{author}{4}{}{%
+      {{hash=LCS}{%
+         family={Lent},
+         familyi={L\bibinitperiod},
+         given={Craig\bibnamedelima S},
+         giveni={C\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=TPD}{%
+         family={Tougaw},
+         familyi={T\bibinitperiod},
+         given={P\bibnamedelima Douglas},
+         giveni={P\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=PW}{%
+         family={Porod},
+         familyi={P\bibinitperiod},
+         given={Wolfgang},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=BGH}{%
+         family={Bernstein},
+         familyi={B\bibinitperiod},
+         given={Gary\bibnamedelima H},
+         giveni={G\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IOP Publishing}%
+    }
+    \strng{namehash}{LCSTPDPWBGH1}
+    \strng{fullhash}{LCSTPDPWBGH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{number}{1}
+    \field{pages}{49}
+    \field{title}{Quantum cellular automata}
+    \field{volume}{4}
+    \field{journaltitle}{Nanotechnology}
+    \field{year}{1993}
+  \endentry
+
   \entry{sequential_cell_one}{inproceedings}{}
     \name{author}{4}{}{%
       {{hash=LLA}{%
@@ -948,6 +1112,54 @@
     \field{pages}{63\bibrangedash 66}
     \field{title}{Single Electron Fault in QCA Inverter Gate}
     \field{year}{2009}
+  \endentry
+
+  \entry{majeed2019optimal}{article}{}
+    \name{author}{5}{}{%
+      {{hash=MAH}{%
+         family={Majeed},
+         familyi={M\bibinitperiod},
+         given={Ali\bibnamedelima H},
+         giveni={A\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=AE}{%
+         family={Alkaldy},
+         familyi={A\bibinitperiod},
+         given={Esam},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=ZMS}{%
+         family={Zainal},
+         familyi={Z\bibinitperiod},
+         given={Mohd\bibnamedelima Shamian},
+         giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=NK}{%
+         family={Navi},
+         familyi={N\bibinitperiod},
+         given={Keivan},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=ND}{%
+         family={Nor},
+         familyi={N\bibinitperiod},
+         given={Danial},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Emerald Publishing Limited}%
+    }
+    \strng{namehash}{MAHAEZMS+1}
+    \strng{fullhash}{MAHAEZMSNKND1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{title}{Optimal design of RAM cell using novel 2: 1 multiplexer in
+  QCA technology}
+    \field{journaltitle}{Circuit world}
+    \field{year}{2019}
   \endentry
 
   \entry{Bennet_waveform}{article}{}
@@ -1244,6 +1456,51 @@
     \field{year}{1997}
   \endentry
 
+  \entry{Quantum_dots}{article}{}
+    \name{author}{4}{}{%
+      {{hash=SG}{%
+         family={Schedelbeck},
+         familyi={S\bibinitperiod},
+         given={Gert},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=WW}{%
+         family={Wegscheider},
+         familyi={W\bibinitperiod},
+         given={Werner},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=BM}{%
+         family={Bichler},
+         familyi={B\bibinitperiod},
+         given={Max},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=AG}{%
+         family={Abstreiter},
+         familyi={A\bibinitperiod},
+         given={Gerhard},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Association for the Advancement of Science}%
+    }
+    \strng{namehash}{SGWWBMAG1}
+    \strng{fullhash}{SGWWBMAG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{number}{5344}
+    \field{pages}{1792\bibrangedash 1795}
+    \field{title}{Coupled quantum dots fabricated by cleaved edge overgrowth:
+  From artificial atoms to molecules}
+    \field{volume}{278}
+    \field{journaltitle}{Science}
+    \field{year}{1997}
+  \endentry
+
   \entry{muti_output_boolean_function}{book}{}
     \name{author}{2}{}{%
       {{hash=SC}{%
@@ -1502,6 +1759,88 @@
     \field{volume}{9}
     \field{journaltitle}{IEEE transactions on nanotechnology}
     \field{year}{2009}
+  \endentry
+
+  \entry{torres2018synchronization}{inproceedings}{}
+    \name{author}{5}{}{%
+      {{hash=TFS}{%
+         family={Torres},
+         familyi={T\bibinitperiod},
+         given={Frank\bibnamedelima Sill},
+         giveni={F\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=WM}{%
+         family={Walter},
+         familyi={W\bibinitperiod},
+         given={Marcel},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=WR}{%
+         family={Wille},
+         familyi={W\bibinitperiod},
+         given={Robert},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=GD}{%
+         family={Gro{\ss}e},
+         familyi={G\bibinitperiod},
+         given={Daniel},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=DR}{%
+         family={Drechsler},
+         familyi={D\bibinitperiod},
+         given={Rolf},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{TFSWMWR+1}
+    \strng{fullhash}{TFSWMWRGDDR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{booktitle}{2018 IEEE 18th International Conference on Nanotechnology
+  (IEEE-NANO)}
+    \field{pages}{1\bibrangedash 5}
+    \field{title}{Synchronization of clocked field-coupled circuits}
+    \field{year}{2018}
+  \endentry
+
+  \entry{challenges_2}{article}{}
+    \name{author}{2}{}{%
+      {{hash=TG}{%
+         family={Toth},
+         familyi={T\bibinitperiod},
+         given={Geza},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=LCS}{%
+         family={Lent},
+         familyi={L\bibinitperiod},
+         given={Craig\bibnamedelima S},
+         giveni={C\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Institute of Physics}%
+    }
+    \strng{namehash}{TGLCS1}
+    \strng{fullhash}{TGLCS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{number}{5}
+    \field{pages}{2977\bibrangedash 2984}
+    \field{title}{Quasiadiabatic switching for metal-island quantum-dot
+  cellular automata}
+    \field{volume}{85}
+    \field{journaltitle}{Journal of Applied Physics}
+    \field{year}{1999}
   \endentry
 
   \entry{trindade2016placement}{inproceedings}{}
@@ -1790,6 +2129,52 @@
     \field{title}{RAM design using quantum-dot cellular automata}
     \field{volume}{2}
     \field{year}{2003}
+  \endentry
+
+  \entry{challenges_3}{article}{}
+    \name{author}{5}{}{%
+      {{hash=WM}{%
+         family={Wilson},
+         familyi={W\bibinitperiod},
+         given={Mick},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=KK}{%
+         family={Kannangara},
+         familyi={K\bibinitperiod},
+         given={Kamali},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=SG}{%
+         family={Smith},
+         familyi={S\bibinitperiod},
+         given={Geoff},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Simmons},
+         familyi={S\bibinitperiod},
+         given={Michelle},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=RB}{%
+         family={Raguse},
+         familyi={R\bibinitperiod},
+         given={Burkhard},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {CRC press}%
+    }
+    \strng{namehash}{WMKKSG+1}
+    \strng{fullhash}{WMKKSGSMRB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{title}{Nanotechnology: basic science and emerging technologies}
+    \field{year}{2002}
   \endentry
 
   \entry{CNF}{inproceedings}{}

@@ -55,7 +55,7 @@ The 2DDWave clocked ortho algorithm only supports the placement and routing of 2
 
 \begin{figure}
 	\centering
-	\includegraphics[scale=0.3]{Majority_Distribution_network}
+	\includegraphics[scale=0.5]{Majority_Distribution_network}
 	\caption{Proposed majority gate distribution network}\label{fig:QCA_Maj_nw}
 \end{figure}
 
@@ -67,7 +67,41 @@ In the following the design constraints used to design the signal distribution n
 The placement and routing of the proposed signal distribution network is again bound to some constraints. First of all the coloring of majority gates has to be reviewed, since the logic network now includes three input nodes. However, the coloring algorithm can include helping nodes to resolve coloring conflicts of edges and therefore dividing every edge with a helping node shows, that a trivial coloring can be found also including three input nodes into the logic network. Another aspect regarding coloring is the need for a new direction in order to connect a third signal to the majority gate, but since the only occasion such a wiring happens is inside the fixed distribution network, which again can be placed and routed in the usual south-eastern manner, no additional directions need to be included. Further, the irregular clocking inside the signal distribution network has to be reviewed. These irregularities don't allow the algorithm to wire connections over the network, demanding a special treatment for the placement of the majority gates. From the algorithms perspective therefore a majority gate cannot be placed just south or east of another gate because these gates could need a wiring through the majority gate distribution network. Instead the algorithm is forced to assign the majority gate distribution network always south \textbf{and} east direction to prevent routing conflicts. This can be done by dividing the incoming edges with auxiliary nodes, also allowing a valid coloring. This also allows the coloring to be included into the input ordering distribution network, so that all inputs connected to a majority gate need to be colored $east$. The major drawback of this is, that again the area is not used optimally and the layout is extended in two directions compromising the beneficial use of the "+"-majority gate.
 
 \subsection{Signal synchronization and buffer insertion}
-The placement and routing using the proposed distribution network results in a delay of one clock cycles of signals passing through a majority gates. Since the tile-based clocking doesn't support a speedup of a signal, every other signal which comes into contact with a delayed signal also has to be delayed. Therefore a function is introduced in order to compute the delay of signals and allowing signals which are connected together to be synchronized by buffer insertion. For the delay computation, the algorithms views every incoming edge from every node starting at the primary output. If an incoming edge is connected to a majority gate every other incoming edge of the same node gets a delay of one assigned, if this edge again is not connected to a majority gate. In the latter case all incoming edges of a node would be delayed, resulting again in a synchronous behavior. Hence the delay on one node can be maximum one clock cycle. After computing the delayed edges they are realized by inserting wire buffers. Figure \ref{fig:QCA_buf} depicts a buffer in east direction, which can be used also in southern direction by just rotating it by 90 degrees. The snake-like structure delays a signal by exactly one clock cycle and is also used in the custom placement and routing resulting from the QCA ONE library \cite{QCA_scl}. As in the majority gate distribution network, the buffers support irregular clocking, creating zones the algorithm cannot wire through. In the case of buffers only one column or row is made impassable, allowing to track them and introducing a rewiring for conflicts. Figure \ref{fig:majority_with_buf} shows the placement of a majority gate inside the input distribution network and two and gates which have to be delayed in order to be connected with the delayed signal comming out of the majority gate distribution network. The insertion of the first buffer blocks the eastern direction of the second input. For this case a resolve column is introduced where the signal can be assigned to a new row and be wired without conflict. From this layout it can already be seen that the implementation of the majority gate distribution network brings several complications with it, all resulting in area overhead, which stands in contrast to the area which should be saved by introducing majority gates in the first place.
+The placement and routing using the proposed distribution network results in a delay of one clock cycles of signals passing through a majority gates. Since the tile-based clocking doesn't support a speedup of a signal, every other signal which comes into contact with a delayed signal also has to be delayed. Therefore a function is introduced to compute the delay of signals and allowing signals which are connected together to be synchronized by buffer insertion. For the delay computation, the algorithms views every incoming edge from every node starting at the primary output. If an incoming edge is connected to a majority gate, every other incoming edge of the same node gets a delay of one assigned, if this edge again is not connected to a majority gate. In the latter case all incoming edges of a node would be delayed, resulting again in a synchronous behavior. Hence the delay on one node can be maximum one clock cycle. After computing the delayed edges, they are realized by inserting wire buffers. Figure \ref{fig:QCA_buf} depicts a buffer in the east direction, which can also be used in the south direction by just rotating it 90 degrees. The snake-shaped structure delays a signal by exactly one clock cycle and is also used in custom placement and routing resulting from the QCA ONE library \cite{QCA_scl}. As in the majority gate distribution network, the buffers support irregular clocking, creating zones through which the algorithm cannot wire. In the case of buffers only one column or row is made impassable, allowing one to track them and introducing a rewiring for conflicts. Algorithm \ref{alg:majority_network} shows the code snippets which are changed and added to ortho in order to allow the placement and routing of majority gates distribution networks and the corresponding majority buffers. Figure \ref{fig:majority_with_buf} shows the placement of a majority gate inside the input distribution network and two and gates that have to be delayed to be connected to the delayed signal coming out of the majority gate distribution network. The insertion of the first buffer blocks the eastern direction of the second input. For this case, a resolve column is introduced where the signal can be assigned to a new row and be wired without conflict. From this layout, it can already be seen that the implementation of the majority gate distribution network brings several complications with it, all resulting in area overhead, which stands in contrast to the area which should be saved by introducing majority gates in the first place.
+
+\begin{algorithm}[H]
+	\vdots
+	
+	\begin{algorithmic}
+		\State Convert $N$ to a 3-graph by substitution and balance inverters at fan-out nodes, except for majority gates
+		\State Compute the delay as majority buffer insertion $buf_{maj}$ for every node and assign it to the incoming signals $\sigma$
+		\State Order primary input nodes
+		\State Create vectors with from the majority buffers blocked columns $bl_c$ and rows $bl_r$
+		\State \vdots
+		\ForAll {vertex $v_1, ..., v_i \in N $ with at most three incoming signals $\sigma_1, \sigma_2, \sigma_3$}
+		\State Rewire incoming signals which are wired on $bl_c$ or $bl_r$
+		\State \vdots
+		\If{vertex $v$ has fanin of three (is a majority gate)}
+		\If{$d(\sigma_1) = d(\sigma_2) = d(\sigma_3) = south$}
+		\State{Extend $L$ by one row and wire the incoming signal to $(w_p, h-1)$ for every incoming signal}
+		\EndIf
+		\State Insert majority buffers according to the delay computed in $buf_{maj}$ and safe blocked columns $bl_c$ and rows $bl_r$
+		\State Extend the layout by number of rows $(7)$ and columns $(5)$ of the majority gate distribution network and place the distribution network at $(w-5, h-7)$
+		\State Connect incoming signals west to the inputs of the distribution network
+		\ElsIf{$d(\sigma_1) = d(\sigma_2) = east$}
+		\State Insert majority buffers according to the delay computed in $buf_{maj}$ and safe blocked rows $bl_r$
+		\State \vdots
+		\ElsIf { signals are labeled $south$}
+		\State Insert majority buffers according to the delay computed in $buf_{maj}$ and safe blocked columns $bl_c$
+		\State \vdots
+		\EndIf
+		
+		\EndFor
+%		\State \vdots \\
+%		\Return $L$
+	\end{algorithmic}
+	\caption{Ortho changes with majority gate distribution network}\label{alg:majority_network}
+\end{algorithm}
 
 \begin{figure}
 	\centering
