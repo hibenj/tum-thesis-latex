@@ -457,7 +457,7 @@
     \field{year}{2001}
   \endentry
 
-  \entry{greedy_tile}{inproceedings}{}
+  \entry{fontes}{inproceedings}{}
     \name{author}{5}{}{%
       {{hash=FG}{%
          family={Fontes},
@@ -1308,6 +1308,43 @@
     \field{journaltitle}{IEEE Transactions on Circuits and Systems II: Express
   Briefs}
     \field{year}{2020}
+  \endentry
+
+  \entry{canonical}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=PF}{%
+         family={Pigorsch},
+         familyi={P\bibinitperiod},
+         given={Florian},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=SC}{%
+         family={Scholl},
+         familyi={S\bibinitperiod},
+         given={Christoph},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=DS}{%
+         family={Disch},
+         familyi={D\bibinitperiod},
+         given={Stefan},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{PFSCDS1}
+    \strng{fullhash}{PFSCDS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{booktitle}{2006 Formal Methods in Computer Aided Design}
+    \field{pages}{89\bibrangedash 96}
+    \field{title}{Advanced unbounded model checking based on AIGs, BDD
+  sweeping, and quantifier scheduling}
+    \field{year}{2006}
   \endentry
 
   \entry{QCA_scl}{inproceedings}{}

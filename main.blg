@@ -20,50 +20,52 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'field_info' (item size: 4) to 13120 items.
+Reallocating 'field_info' (item size: 4) to 13400 items.
 Database file #1: main-blx.bib
 Database file #2: bibliography.bib
+Warning--I didn't find a database entry for "greedy_tile"
 Biblatex version: 3.16
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-You've used 58 entries,
+You've used 59 entries,
             6393 wiz_defined-function locations,
-            1577 strings with 22586 characters,
-and the built_in function-call counts, 444459 in all, are:
-= -- 32857
-> -- 8386
-< -- 2428
-+ -- 10502
-- -- 3421
-* -- 35653
-:= -- 47622
+            1583 strings with 22796 characters,
+and the built_in function-call counts, 451104 in all, are:
+= -- 33304
+> -- 8531
+< -- 2466
++ -- 10681
+- -- 3483
+* -- 36170
+:= -- 48348
 add.period$ -- 0
-call.type$ -- 58
-change.case$ -- 1156
+call.type$ -- 59
+change.case$ -- 1170
 chr.to.int$ -- 64
-cite$ -- 114
-duplicate$ -- 42251
-empty$ -- 39374
-format.name$ -- 4840
-if$ -- 92119
+cite$ -- 116
+duplicate$ -- 42979
+empty$ -- 39941
+format.name$ -- 4928
+if$ -- 93468
 int.to.chr$ -- 0
-int.to.str$ -- 160
+int.to.str$ -- 163
 missing$ -- 0
-newline$ -- 2121
-num.names$ -- 3040
-pop$ -- 20315
+newline$ -- 2157
+num.names$ -- 3088
+pop$ -- 20674
 preamble$ -- 1
-purify$ -- 1581
+purify$ -- 1603
 quote$ -- 0
-skip$ -- 12798
+skip$ -- 13007
 stack$ -- 0
-substring$ -- 61642
-swap$ -- 10024
-text.length$ -- 1987
-text.prefix$ -- 59
+substring$ -- 62372
+swap$ -- 10190
+text.length$ -- 2023
+text.prefix$ -- 60
 top$ -- 1
-type$ -- 1960
+type$ -- 1994
 warning$ -- 0
-while$ -- 5861
+while$ -- 5964
 width$ -- 0
-write$ -- 2064
+write$ -- 2099
+(There was 1 warning)
