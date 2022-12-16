@@ -113,19 +113,23 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {3.6}{\ignorespaces Placement and routing of a 2:1 mux network using the ortho algorithm\relax }}{32}{figure.caption.28}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.7}{\ignorespaces QCA RAM cell using a delay latch\relax }}{35}{figure.caption.29}%
-\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Placement and routing of a 2:1 mux network using the ortho algorithm with the ordering distribution network\relax }}{41}{figure.caption.31}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Placement and routing of a 2:1 mux network using the ortho algorithm with the ordering distribution network\relax }}{40}{figure.caption.29}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Proposed majority gate distribution network\relax }}{44}{figure.caption.32}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Proposed majority gate distribution network\relax }}{43}{figure.caption.30}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Buffer in $east$ direction with resolve column and respective clocking\relax }}{46}{figure.caption.33}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Buffer in $east$ direction with resolve column and respective clocking\relax }}{45}{figure.caption.31}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Placement and routing of a majority distribution network in conjunction with two primary inputs\relax }}{49}{figure.caption.34}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Placement and routing of a majority distribution network in conjunction with two primary inputs\relax }}{48}{figure.caption.32}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Scheme of a sequential circuit layout after placement and routing\relax }}{51}{figure.caption.35}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Scheme of a sequential circuit layout after placement and routing\relax }}{50}{figure.caption.33}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.6}{\ignorespaces QCA RAM cell using wire delay\relax }}{52}{figure.caption.34}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {QCA implementation}}}{52}{figure.caption.34}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Truth table}}}{52}{figure.caption.34}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

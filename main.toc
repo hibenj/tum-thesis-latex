@@ -45,19 +45,23 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2.2}QCA storage cells (QCA RAM)}{35}{subsection.3.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Methodology}{37}{chapter.4}%
+\contentsline {chapter}{\numberline {4}Methodology}{36}{chapter.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Ordering Distribution Network}{37}{section.4.1}%
+\contentsline {section}{\numberline {4.1}Ordering Distribution Network}{36}{section.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Majority Gate Distribution Network}{42}{section.4.2}%
+\contentsline {section}{\numberline {4.2}Majority Gate Distribution Network}{41}{section.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.1}The proposed signal distribution Network}{42}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.1}The proposed signal distribution Network}{41}{subsection.4.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.2}Placement and routing}{45}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.2}Placement and routing}{44}{subsection.4.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.3}Signal synchronization and buffer insertion}{46}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.3}Signal synchronization and buffer insertion}{45}{subsection.4.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Sequential Distribution Network}{50}{section.4.3}%
+\contentsline {section}{\numberline {4.3}Sequential Distribution Network}{49}{section.4.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3.1}Placement and Routing}{49}{subsection.4.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3.2}RAM cell}{51}{subsection.4.3.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {5}Experimental Evaluation}{53}{chapter.5}%
 \defcounter {refsection}{0}\relax 
@@ -65,10 +69,10 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5.2}Results}{53}{section.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline List of Figures}{54}{chapter*.37}%
+\contentsline {chapter}{\nonumberline List of Figures}{54}{chapter*.36}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline List of Tables}{56}{chapter*.38}%
+\contentsline {chapter}{\nonumberline List of Tables}{56}{chapter*.37}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Bibliography}{57}{chapter*.39}%
+\contentsline {chapter}{\nonumberline Bibliography}{57}{chapter*.38}%
 \defcounter {refsection}{0}\relax 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

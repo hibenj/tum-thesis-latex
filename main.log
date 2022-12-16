@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.12)  9 DEC 2022 13:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.12)  16 DEC 2022 12:51
 entering extended mode
 **./main.tex
 (main.tex
@@ -1998,7 +1998,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 920--920
 []\T1/pplx/m/n/9 (+20) (a) Copla-nar wire
  []
 
-<./figures//wire_crossing.png, id=288, 708.84825pt x 413.1435pt>
+<./figures//wire_crossing.png, id=292, 708.84825pt x 413.1435pt>
 File: ./figures//wire_crossing.png Graphic file (type png)
 <use ./figures//wire_crossing.png>
 Package pdftex.def Info: ./figures//wire_crossing.png  used on input line 926.
@@ -2041,18 +2041,18 @@ Package nag Warning: \label in float, but not after \caption on input line 1056
 .
 
 [12]
-<./figures//QCA_array.png, id=335, 354.57469pt x 135.50626pt>
+<./figures//QCA_array.png, id=339, 354.57469pt x 135.50626pt>
 File: ./figures//QCA_array.png Graphic file (type png)
 <use ./figures//QCA_array.png>
 Package pdftex.def Info: ./figures//QCA_array.png  used on input line 1093.
 (pdftex.def)             Requested size: 212.74644pt x 81.30437pt.
-<./figures//clocked_wire.pdf, id=340, 720.32425pt x 151.04167pt>
+<./figures//clocked_wire.pdf, id=344, 720.32425pt x 151.04167pt>
 File: ./figures//clocked_wire.pdf Graphic file (type pdf)
 <use ./figures//clocked_wire.pdf>
 Package pdftex.def Info: ./figures//clocked_wire.pdf  used on input line 1101.
 (pdftex.def)             Requested size: 295.33485pt x 61.92747pt.
  [13 <./figures//QCA_array.png>]
-<./figures//Landauer_clocking.pdf, id=350, 488.99966pt x 489.79395pt>
+<./figures//Landauer_clocking.pdf, id=354, 488.99966pt x 489.79395pt>
 File: ./figures//Landauer_clocking.pdf Graphic file (type pdf)
 <use ./figures//Landauer_clocking.pdf>
 Package pdftex.def Info: ./figures//Landauer_clocking.pdf  used on input line 1
@@ -2067,7 +2067,7 @@ Package nag Warning: \label in float, but not after \caption on input line 1110
 Package nag Warning: \label in float, but not after \caption on input line 1110
 .
 
-<./figures//Bennet_clocking.pdf, id=351, 485.04515pt x 492.94398pt>
+<./figures//Bennet_clocking.pdf, id=355, 485.04515pt x 492.94398pt>
 File: ./figures//Bennet_clocking.pdf Graphic file (type pdf)
 <use ./figures//Bennet_clocking.pdf>
 Package pdftex.def Info: ./figures//Bennet_clocking.pdf  used on input line 111
@@ -2081,7 +2081,7 @@ Package nag Warning: \label in float, but not after \caption on input line 1111
 Package nag Warning: \label in float, but not after \caption on input line 1111
 .
 
-<./figures//cell_based_mux.png, id=357, 176.45924pt x 163.812pt>
+<./figures//cell_based_mux.png, id=361, 176.45924pt x 163.812pt>
 File: ./figures//cell_based_mux.png Graphic file (type png)
 <use ./figures//cell_based_mux.png>
 Package pdftex.def Info: ./figures//cell_based_mux.png  used on input line 1119
@@ -2158,13 +2158,13 @@ chapter 3.
 
 
 ]
-<./figures//SMT_solving.png, id=482, 274.626pt x 211.992pt>
+<./figures//SMT_solving.png, id=486, 274.626pt x 211.992pt>
 File: ./figures//SMT_solving.png Graphic file (type png)
 <use ./figures//SMT_solving.png>
 Package pdftex.def Info: ./figures//SMT_solving.png  used on input line 9.
 (pdftex.def)             Requested size: 219.70108pt x 169.59381pt.
  [24 <./figures//SMT_solving.png>] [25]
-<./figures//Gate_placement_wasted_area.png, id=510, 462.528pt x 250.536pt>
+<./figures//Gate_placement_wasted_area.png, id=514, 462.528pt x 250.536pt>
 File: ./figures//Gate_placement_wasted_area.png Graphic file (type png)
 <use ./figures//Gate_placement_wasted_area.png>
 Package pdftex.def Info: ./figures//Gate_placement_wasted_area.png  used on inp
@@ -2175,7 +2175,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--25
 
  []
 
-<./figures//OGD.png, id=519, 241.65282pt x 240.9pt>
+<./figures//OGD.png, id=523, 241.65282pt x 240.9pt>
 File: ./figures//OGD.png Graphic file (type png)
 <use ./figures//OGD.png>
 Package pdftex.def Info: ./figures//OGD.png  used on input line 37.
@@ -2228,25 +2228,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 275--276
  []
 
 [31]
-<./figures//ortho_mux_21.png, id=575, 443.85825pt x 517.935pt>
+<./figures//ortho_mux_21.png, id=579, 443.85825pt x 517.935pt>
 File: ./figures//ortho_mux_21.png Graphic file (type png)
 <use ./figures//ortho_mux_21.png>
 Package pdftex.def Info: ./figures//ortho_mux_21.png  used on input line 279.
 (pdftex.def)             Requested size: 221.92857pt x 258.96686pt.
- [32 <./figures//ortho_mux_21.png>] [33] [34] [35])
-(chapters/04_main_work.tex [36]
+ [32 <./figures//ortho_mux_21.png>] [33]
+Underfull \hbox (badness 10000) in paragraph at lines 291--292
+
+ []
+
+[34]) (chapters/04_main_work.tex [35]
 chapter 4.
-[37
+[36
 
 
 ]
-<./figures//input_network_mux_21.png, id=640, 509.5035pt x 508.90125pt>
+<./figures//input_network_mux_21.png, id=641, 509.5035pt x 508.90125pt>
 File: ./figures//input_network_mux_21.png Graphic file (type png)
 <use ./figures//input_network_mux_21.png>
 Package pdftex.def Info: ./figures//input_network_mux_21.png  used on input lin
 e 43.
 (pdftex.def)             Requested size: 254.75111pt x 254.45pt.
- [38] [39] [40] [41 <./figures//input_network_mux_21.png>] [42]
+ [37] [38] [39] [40 <./figures//input_network_mux_21.png>] [41]
 <./figures//Majority_Distribution_network.pdf, id=668, 719.79161pt x 1007.11119
 pt>
 File: ./figures//Majority_Distribution_network.pdf Graphic file (type pdf)
@@ -2254,9 +2258,9 @@ File: ./figures//Majority_Distribution_network.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./figures//Majority_Distribution_network.pdf  used on 
 input line 58.
 (pdftex.def)             Requested size: 359.89493pt x 503.55437pt.
- [43]
-[44 <./figures//Majority_Distribution_network.pdf>] [45] [46] [47]
-<./figures//TEST_maj_two_buf_cell_lvl_lyt_2.pdf, id=718, 1718.67094pt x 912.408
+ [42]
+[43 <./figures//Majority_Distribution_network.pdf>] [44] [45] [46]
+<./figures//TEST_maj_two_buf_cell_lvl_lyt_2.pdf, id=719, 1718.67094pt x 912.408
 75pt>
 File: ./figures//TEST_maj_two_buf_cell_lvl_lyt_2.pdf Graphic file (type pdf)
 <use ./figures//TEST_maj_two_buf_cell_lvl_lyt_2.pdf>
@@ -2268,8 +2272,22 @@ Overfull \hbox (12.16293pt too wide) in paragraph at lines 241--242
  [][] 
  []
 
-[48] [49 <./figures//TEST_maj_two_buf_cell_lvl_lyt_2.pdf>])
-(chapters/05_experimental_evaluation.tex [50] [51] [52]
+[47] [48 <./figures//TEST_maj_two_buf_cell_lvl_lyt_2.pdf>] [49] [50]
+<./figures//RAM_cell.pdf, id=752, 431.44151pt x 639.04047pt>
+File: ./figures//RAM_cell.pdf Graphic file (type pdf)
+<use ./figures//RAM_cell.pdf>
+Package pdftex.def Info: ./figures//RAM_cell.pdf  used on input line 291.
+(pdftex.def)             Requested size: 172.57353pt x 255.61165pt.
+
+
+Package nag Warning: \label in float, but not after \caption on input line 304.
+
+
+
+Package nag Warning: \label in float, but not after \caption on input line 304.
+
+
+) (chapters/05_experimental_evaluation.tex [51] [52 <./figures//RAM_cell.pdf>]
 chapter 5.
 
 Overfull \hbox (8.53438pt too wide) in paragraph at lines 12--34
@@ -2324,7 +2342,7 @@ r-sion 1) avail-able at Re-search Square [https://doi.org/10.21203/rs.3.rs-
 
 [59] [60]
 
-Package nag Warning: 47 complaints in total.
+Package nag Warning: 49 complaints in total.
 
 [61] (main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
@@ -2335,9 +2353,9 @@ Package logreq Info: Writing requests to 'main.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
  69233 strings out of 478927
- 1665774 string characters out of 2862391
- 2938174 words of memory out of 3000000
- 85257 multiletter control sequences out of 15000+600000
+ 1665918 string characters out of 2862391
+ 2922076 words of memory out of 3000000
+ 85254 multiletter control sequences out of 15000+600000
  484515 words of font info for 525 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  115i,13n,111p,10601b,2970s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2352,9 +2370,9 @@ iKTeX/fonts/type1/public/mathpazo/fplmri.pfb><C:/Program Files/MiKTeX/fonts/typ
 e1/public/fpl/fplrc8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/upl
 b8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Progra
 m Files/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (68 pages, 1073342 bytes).
+Output written on main.pdf (68 pages, 1082147 bytes).
 PDF statistics:
- 1092 PDF objects out of 1200 (max. 8388607)
- 246 named destinations out of 1000 (max. 500000)
- 100302 words of extra memory for PDF output out of 106986 (max. 10000000)
+ 1118 PDF objects out of 1200 (max. 8388607)
+ 249 named destinations out of 1000 (max. 500000)
+ 100323 words of extra memory for PDF output out of 106986 (max. 10000000)
 
