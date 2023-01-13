@@ -74,6 +74,40 @@
     \field{year}{2018}
   \endentry
 
+  \entry{epfl}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=AL}{%
+         family={Amar{\'u}},
+         familyi={A\bibinitperiod},
+         given={Luca},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=GPE}{%
+         family={Gaillardon},
+         familyi={G\bibinitperiod},
+         given={Pierre-Emmanuel},
+         giveni={P\bibinithyphendelim E\bibinitperiod},
+      }}%
+      {{hash=DMG}{%
+         family={De\bibnamedelima Micheli},
+         familyi={D\bibinitperiod\bibinitdelim M\bibinitperiod},
+         given={Giovanni},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ALGPEDMG1}
+    \strng{fullhash}{ALGPEDMG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{booktitle}{Proceedings of the 24th International Workshop on Logic
+  \& Synthesis (IWLS)}
+    \field{number}{CONF}
+    \field{title}{The EPFL combinational benchmark suite}
+    \field{year}{2015}
+  \endentry
+
   \entry{boolean_abstraction}{inproceedings}{}
     \name{author}{3}{}{%
       {{hash=BT}{%
@@ -237,6 +271,33 @@
     \field{volume}{9}
     \field{journaltitle}{Computational Geometry}
     \field{year}{1998}
+  \endentry
+
+  \entry{iscas}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=BF}{%
+         family={Brglez},
+         familyi={B\bibinitperiod},
+         given={Franc},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=FH}{%
+         family={Fujiwara},
+         familyi={F\bibinitperiod},
+         given={Hideo},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BFFH1}
+    \strng{fullhash}{BFFH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{booktitle}{Fortran. ISCAS'85}
+    \field{title}{A neutral netlist of 10 combinational benchmark circuits and
+  a target translator}
+    \field{year}{1985}
   \endentry
 
   \entry{LogicNetwork}{article}{}
@@ -1796,6 +1857,34 @@
     \field{volume}{9}
     \field{journaltitle}{IEEE transactions on nanotechnology}
     \field{year}{2009}
+  \endentry
+
+  \entry{itc_poli}{online}{}
+    \name{author}{1}{}{%
+      {{hash=aPdTCG}{%
+         prefix={at\bibnamedelima Politecnico\bibnamedelima di},
+         prefixi={a\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim
+  d\bibinitperiod},
+         family={Torino},
+         familyi={T\bibinitperiod},
+         given={CAD\bibnamedelima Group},
+         giveni={C\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{TCGaPd1}
+    \strng{fullhash}{TCGaPd1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{title}{PoliTo ITC99}
+    \verb{url}
+    \verb https://github.com/squillero/itc99-poli
+    \endverb
+    \field{year}{1999}
+    \field{urlday}{26}
+    \field{urlmonth}{06}
+    \field{urlyear}{2018}
   \endentry
 
   \entry{torres2018synchronization}{inproceedings}{}

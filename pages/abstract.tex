@@ -1,12 +1,10 @@
 \chapter{\abstractname}
 
-New technologies to compete with CMOS, one of them QCA \\
-Placement and Routing as key to producibility. \\
-Challenges of Placement and Routing in previous algorithms. \\
-Goals of this work: \\I minimizing area/tiles, \\II making it possible to place majority-gates (which is a promising aspect of QCA), \\III making it possible to P\&R sequential circuits \\
-This is done by introducing several signal distribution networks \\
-Results are compared with already existing algorithms...
+In this thesis, a new approach for placement and routing in Quantum-dot Cellular Automata (QCA) is presented by introducing Distribution Networks. These networks enhance the functionalities of an already existing scaling placement and routing algorithm. The first Distribution Network, called Ordering Distribution Network, reduces wire crossings and layout area by reorganizing primary inputs. The second Distribution Network, called Majority Gates Distribution Network, allows for the placement of majority gates while adhering to timing constraints, resulting in an increase in layout area, even though less gates have to be placed for logic networks containing majority gates. Lastly, the third Distribution Network, called Sequential Distribution Network, is the first to enable the placement and routing of sequential logic in QCA. The proposed method is evaluated through extensive simulation and experimentation and shows different trade-offs in terms of design metrics like performance, layout area or number of wire crossings.
 
+%Quantum-dot cellular automata (QCA) is a promising nanoscale technology, which overcomes well-known restrictions in the state of the art CMOS technology e.g. power dissipation or cost of lithography. In order to design QCA circuits the logic needs to placed and routed, requiring algorithms for a high number of gates. In this work the state of the art placement and routing algorithm \textit{ortho} is extended by three Signal Distribution Networks. A Ordering Network, which reduces the average layout area by $17\%$ and the average wire crossings by $13\%$. Also Majority Gate Network is introduced, allowing the placement of majority gates, resulting in an average area increase by a factor of over $8.5$. The third Distribution Network allows the placement and routing algorithm to place sequential circuits in QCA technology with rethought theory based on the timing constraints present in QCA.
+
+%short channel effect, impurity variations, high cost of lithography and more importantly, the heat
 %TODO: Abstract
 
 
