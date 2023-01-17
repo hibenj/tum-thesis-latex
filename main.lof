@@ -11,7 +11,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.2}{\ignorespaces QCA-Cell sates\relax }}{9}{figure.caption.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Adjacent QCA-cells forming a wire segment\relax }}{9}{figure.caption.8}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Adjacent QCA-cells forming a wire segment\relax }}{10}{figure.caption.8}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Different QCA Inverter representations\relax }}{10}{figure.caption.9}%
 \defcounter {refsection}{0}\relax 
@@ -37,33 +37,33 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Fan-out wire}}}{12}{figure.caption.11}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Different QCA wire crossing implementations\relax }}{12}{figure.caption.12}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Different QCA wire crossing implementations\relax }}{13}{figure.caption.12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Coplanar wire crossing}}}{12}{figure.caption.12}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Coplanar wire crossing}}}{13}{figure.caption.12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Multi-layer wire crossing \cite {Inverter_displacements}}}}{12}{figure.caption.12}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Multi-layer wire crossing \cite {Inverter_displacements}}}}{13}{figure.caption.12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.8}{\ignorespaces QCA Standard Library\relax }}{13}{figure.caption.13}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces QCA Standard Library\relax }}{14}{figure.caption.13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {INV}}}{13}{figure.caption.13}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {INV}}}{14}{figure.caption.13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {MAJ}}}{13}{figure.caption.13}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {MAJ}}}{14}{figure.caption.13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {AND}}}{13}{figure.caption.13}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {AND}}}{14}{figure.caption.13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {OR}}}{13}{figure.caption.13}%
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {OR}}}{14}{figure.caption.13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Wire}}}{13}{figure.caption.13}%
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Wire}}}{14}{figure.caption.13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {Bent wire}}}{13}{figure.caption.13}%
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {Bent wire}}}{14}{figure.caption.13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(g)}{\ignorespaces {Fanout}}}{13}{figure.caption.13}%
+\contentsline {subfigure}{\numberline {(g)}{\ignorespaces {Fanout}}}{14}{figure.caption.13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(h)}{\ignorespaces {Wire crossing}}}{13}{figure.caption.13}%
+\contentsline {subfigure}{\numberline {(h)}{\ignorespaces {Wire crossing}}}{14}{figure.caption.13}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.9}{\ignorespaces Schematic of a combined QCA and CMOS system \cite {lent1994quantum}.\relax }}{14}{figure.caption.14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.10}{\ignorespaces QCA wire devised into the four clock zones according to Bennet clocking\relax }}{15}{figure.caption.15}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces QCA wire divided into the four clock zones according to Bennet clocking\relax }}{15}{figure.caption.15}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.11}{\ignorespaces QCA clocking pipeline\relax }}{16}{figure.caption.16}%
 \defcounter {refsection}{0}\relax 
@@ -73,13 +73,13 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.12}{\ignorespaces Cell based layout of a 2:1 mux \cite {majeed2019optimal}\relax }}{17}{figure.caption.17}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.13}{\ignorespaces Different clocking Schemes in QCA\relax }}{17}{figure.caption.18}%
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Different clocking Schemes in QCA\relax }}{18}{figure.caption.18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {2DDWave}}}{17}{figure.caption.18}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {2DDWave}}}{18}{figure.caption.18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {USE}}}{17}{figure.caption.18}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {USE}}}{18}{figure.caption.18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {RES}}}{17}{figure.caption.18}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {RES}}}{18}{figure.caption.18}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.14}{\ignorespaces Eccles-Jordan-Flip-Flop\relax }}{20}{figure.caption.19}%
 \defcounter {refsection}{0}\relax 
@@ -87,7 +87,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.16}{\ignorespaces D-Latch\relax }}{22}{figure.caption.21}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.17}{\ignorespaces Clocking of a basic latch in QCA\relax }}{22}{figure.caption.22}%
+\contentsline {figure}{\numberline {2.17}{\ignorespaces Clocking of a basic latch in QCA\relax }}{23}{figure.caption.22}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
@@ -127,15 +127,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4.6}{\ignorespaces Buffer in $east$ direction with resolve column and respective clocking\relax }}{47}{figure.caption.34}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Placement and routing of a majority distribution network in conjunction with two primary inputs\relax }}{50}{figure.caption.35}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Placement and routing of a majority gate in conjunction with a delayed primary input\relax }}{50}{figure.caption.35}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4.8}{\ignorespaces Scheme of a sequential circuit layout after placement and routing\relax }}{52}{figure.caption.36}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.9}{\ignorespaces QCA RAM cell using wire delay\relax }}{54}{figure.caption.37}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {QCA implementation}}}{54}{figure.caption.37}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Truth table}}}{54}{figure.caption.37}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces QCA RAM cell designed as 2:1 mux with a sequential distribution network\relax }}{55}{figure.caption.37}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

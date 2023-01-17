@@ -2171,6 +2171,48 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{walter2022exact}{incollection}{}
+    \name{author}{4}{}{%
+      {{hash=WM}{%
+         family={Walter},
+         familyi={W\bibinitperiod},
+         given={Marcel},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=WR}{%
+         family={Wille},
+         familyi={W\bibinitperiod},
+         given={Robert},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=STF}{%
+         family={Sill\bibnamedelima Torres},
+         familyi={S\bibinitperiod\bibinitdelim T\bibinitperiod},
+         given={Frank},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=DR}{%
+         family={Drechsler},
+         familyi={D\bibinitperiod},
+         given={Rolf},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{WMWRSTFDR1}
+    \strng{fullhash}{WMWRSTFDR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{booktitle}{Design Automation for Field-coupled Nanotechnologies}
+    \field{pages}{47\bibrangedash 78}
+    \field{title}{Exact Placement and Routing}
+    \field{year}{2022}
+  \endentry
+
   \entry{ortho}{inproceedings}{}
     \name{author}{5}{}{%
       {{hash=WM}{%
