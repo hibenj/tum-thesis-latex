@@ -53,9 +53,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.2.1}The proposed signal distribution Network}{42}{subsection.4.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.2}Placement and routing}{46}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.2}Placement and basic routing}{46}{subsection.4.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.3}Signal synchronization and buffer insertion}{47}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.3}Routing with signal synchronization and buffer insertion}{47}{subsection.4.2.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.3}Sequential Distribution Network}{51}{section.4.3}%
 \defcounter {refsection}{0}\relax 
@@ -77,10 +77,10 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {6}Conclusion}{64}{chapter.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline List of Figures}{65}{chapter*.42}%
+\contentsline {chapter}{\nonumberline List of Figures}{65}{chapter*.43}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline List of Tables}{67}{chapter*.43}%
+\contentsline {chapter}{\nonumberline List of Tables}{67}{chapter*.44}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Bibliography}{68}{chapter*.44}%
+\contentsline {chapter}{\nonumberline Bibliography}{68}{chapter*.45}%
 \defcounter {refsection}{0}\relax 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

@@ -724,6 +724,34 @@
     \field{year}{2015}
   \endentry
 
+  \entry{halmos2009introduction}{book}{}
+    \name{author}{2}{}{%
+      {{hash=HP}{%
+         family={Halmos},
+         familyi={H\bibinitperiod},
+         given={Paul},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=GS}{%
+         family={Givant},
+         familyi={G\bibinitperiod},
+         given={Steven},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{HPGS1}
+    \strng{fullhash}{HPGS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{title}{Introduction to Boolean algebras}
+    \field{year}{2009}
+  \endentry
+
   \entry{hawkins2012cmos}{book}{}
     \name{author}{3}{}{%
       {{hash=HC}{%
@@ -841,6 +869,47 @@
     \field{title}{Conditions related to De Morgan's law}
     \field{journaltitle}{Applications of sheaves}
     \field{year}{1979}
+  \endentry
+
+  \entry{kahng2011vlsi}{book}{}
+    \name{author}{4}{}{%
+      {{hash=KAB}{%
+         family={Kahng},
+         familyi={K\bibinitperiod},
+         given={Andrew\bibnamedelima B},
+         giveni={A\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+      {{hash=LJ}{%
+         family={Lienig},
+         familyi={L\bibinitperiod},
+         given={Jens},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=MIL}{%
+         family={Markov},
+         familyi={M\bibinitperiod},
+         given={Igor\bibnamedelima L},
+         giveni={I\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=HJ}{%
+         family={Hu},
+         familyi={H\bibinitperiod},
+         given={Jin},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer Science \& Business Media}%
+    }
+    \strng{namehash}{KABLJMILHJ1}
+    \strng{fullhash}{KABLJMILHJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{title}{VLSI physical design: from graph partitioning to timing
+  closure}
+    \field{year}{2011}
   \endentry
 
   \entry{keyes1970minimal}{article}{}
@@ -1371,6 +1440,39 @@
     \field{year}{2020}
   \endentry
 
+  \entry{perri2012new}{article}{}
+    \name{author}{2}{}{%
+      {{hash=PS}{%
+         family={Perri},
+         familyi={P\bibinitperiod},
+         given={Stefania},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=CP}{%
+         family={Corsonello},
+         familyi={C\bibinitperiod},
+         given={Pasquale},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{PSCP1}
+    \strng{fullhash}{PSCP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{number}{6}
+    \field{pages}{1192\bibrangedash 1200}
+    \field{title}{New methodology for the design of efficient binary addition
+  circuits in QCA}
+    \field{volume}{11}
+    \field{journaltitle}{IEEE transactions on nanotechnology}
+    \field{year}{2012}
+  \endentry
+
   \entry{canonical}{inproceedings}{}
     \name{author}{3}{}{%
       {{hash=PF}{%
@@ -1493,6 +1595,38 @@
     \field{title}{Sequential circuit design using quantum dot cellular automata
   (QCA)}
     \field{year}{2015}
+  \endentry
+
+  \entry{safoev2020design}{article}{}
+    \name{author}{2}{}{%
+      {{hash=SN}{%
+         family={Safoev},
+         familyi={S\bibinitperiod},
+         given={Nuriddin},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=JJC}{%
+         family={Jeon},
+         familyi={J\bibinitperiod},
+         given={Jun-Cheol},
+         giveni={J\bibinithyphendelim C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{SNJJC1}
+    \strng{fullhash}{SNJJC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{pages}{102927}
+    \field{title}{Design of high-performance QCA incrementer/decrementer
+  circuit based on adder/subtractor methodology}
+    \field{volume}{72}
+    \field{journaltitle}{Microprocessors and Microsystems}
+    \field{year}{2020}
   \endentry
 
   \entry{Sasamal2020QuantumDotCA}{inproceedings}{}
@@ -1689,6 +1823,50 @@
     \field{journaltitle}{J. Emerg. Technol. Comput. Syst.}
     \field{year}{2007}
     \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{sen2015towards}{article}{}
+    \name{author}{4}{}{%
+      {{hash=SB}{%
+         family={Sen},
+         familyi={S\bibinitperiod},
+         given={Bibhash},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=NA}{%
+         family={Nag},
+         familyi={N\bibinitperiod},
+         given={Anirban},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=DA}{%
+         family={De},
+         familyi={D\bibinitperiod},
+         given={Asmit},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SBK}{%
+         family={Sikdar},
+         familyi={S\bibinitperiod},
+         given={Biplab\bibnamedelima K},
+         giveni={B\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{SBNADASBK1}
+    \strng{fullhash}{SBNADASBK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{pages}{233\bibrangedash 244}
+    \field{title}{Towards the hierarchical design of multilayer QCA logic
+  circuit}
+    \field{volume}{11}
+    \field{journaltitle}{Journal of Computational Science}
+    \field{year}{2015}
   \endentry
 
   \entry{dual_edge_triggered_FF_cell}{article}{}
@@ -2090,6 +2268,56 @@
     \field{year}{2020}
   \endentry
 
+  \entry{walter2018exact}{inproceedings}{}
+    \name{author}{5}{}{%
+      {{hash=WM}{%
+         family={Walter},
+         familyi={W\bibinitperiod},
+         given={Marcel},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=WR}{%
+         family={Wille},
+         familyi={W\bibinitperiod},
+         given={Robert},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=GD}{%
+         family={Gro{\ss}e},
+         familyi={G\bibinitperiod},
+         given={Daniel},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=TFS}{%
+         family={Torres},
+         familyi={T\bibinitperiod},
+         given={Frank\bibnamedelima Sill},
+         giveni={F\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=DR}{%
+         family={Drechsler},
+         familyi={D\bibinitperiod},
+         given={Rolf},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{WMWRGD+1}
+    \strng{fullhash}{WMWRGDTFSDR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{booktitle}{2018 Design, Automation \& Test in Europe Conference \&
+  Exhibition (DATE)}
+    \field{pages}{503\bibrangedash 508}
+    \field{title}{An exact method for design exploration of quantum-dot
+  cellular automata}
+    \field{year}{2018}
+  \endentry
+
   \entry{NP-hard}{article}{}
     \name{author}{5}{}{%
       {{hash=WM}{%
@@ -2128,8 +2356,8 @@
     }
     \keyw{Emerging technology, placement, routing, NP-complete, field-coupled
   nanocomputing}
-    \strng{namehash}{WMWRGD+1}
-    \strng{fullhash}{WMWRGDTFSDR1}
+    \strng{namehash}{WMWRGD+2}
+    \strng{fullhash}{WMWRGDTFSDR2}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{W}
@@ -2169,48 +2397,6 @@
     \field{journaltitle}{J. Emerg. Technol. Comput. Syst.}
     \field{year}{2019}
     \warn{\item Invalid format of field 'month'}
-  \endentry
-
-  \entry{walter2022exact}{incollection}{}
-    \name{author}{4}{}{%
-      {{hash=WM}{%
-         family={Walter},
-         familyi={W\bibinitperiod},
-         given={Marcel},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=WR}{%
-         family={Wille},
-         familyi={W\bibinitperiod},
-         given={Robert},
-         giveni={R\bibinitperiod},
-      }}%
-      {{hash=STF}{%
-         family={Sill\bibnamedelima Torres},
-         familyi={S\bibinitperiod\bibinitdelim T\bibinitperiod},
-         given={Frank},
-         giveni={F\bibinitperiod},
-      }}%
-      {{hash=DR}{%
-         family={Drechsler},
-         familyi={D\bibinitperiod},
-         given={Rolf},
-         giveni={R\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Springer}%
-    }
-    \strng{namehash}{WMWRSTFDR1}
-    \strng{fullhash}{WMWRSTFDR1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{W}
-    \field{sortinithash}{W}
-    \field{booktitle}{Design Automation for Field-coupled Nanotechnologies}
-    \field{pages}{47\bibrangedash 78}
-    \field{title}{Exact Placement and Routing}
-    \field{year}{2022}
   \endentry
 
   \entry{ortho}{inproceedings}{}

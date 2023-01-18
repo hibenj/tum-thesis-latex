@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.12)  17 JAN 2023 13:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.12)  18 JAN 2023 10:01
 entering extended mode
 **./main.tex
 (main.tex
@@ -1875,12 +1875,7 @@ LaTeX Font Info:    Trying to load font information for U+fplmbb on input line
 34.
 (C:\Program Files\MiKTeX\tex/latex/psnfss\ufplmbb.fd
 File: ufplmbb.fd 2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
-)
-Underfull \hbox (badness 10000) in paragraph at lines 33--35
-
- []
-
-[3
+) [3
 
 
 ]
@@ -1902,192 +1897,181 @@ Underfull \hbox (badness 10000) in paragraph at lines 86--91
 
  []
 
-[5] [6]
-Underfull \hbox (badness 10000) in paragraph at lines 176--181
+[5] [6] [7] [8] [9]
 
- []
+Package nag Warning: \label in float, but not after \caption on input line 349.
 
-[7] [8]
 
-Package nag Warning: \label in float, but not after \caption on input line 347.
 
+Package nag Warning: \label in float, but not after \caption on input line 349.
 
 
-Package nag Warning: \label in float, but not after \caption on input line 347.
 
+Package nag Warning: \label in float, but not after \caption on input line 422.
 
 
-Package nag Warning: \label in float, but not after \caption on input line 420.
 
+Package nag Warning: \label in float, but not after \caption on input line 422.
 
 
-Package nag Warning: \label in float, but not after \caption on input line 420.
 
+Package nag Warning: \label in float, but not after \caption on input line 486.
 
-[9]
 
-Package nag Warning: \label in float, but not after \caption on input line 484.
 
+Package nag Warning: \label in float, but not after \caption on input line 486.
 
 
-Package nag Warning: \label in float, but not after \caption on input line 484.
 
+Package nag Warning: \label in float, but not after \caption on input line 543.
 
 
-Package nag Warning: \label in float, but not after \caption on input line 541.
 
+Package nag Warning: \label in float, but not after \caption on input line 543.
 
 
-Package nag Warning: \label in float, but not after \caption on input line 541.
 
+Package nag Warning: \label in float, but not after \caption on input line 599.
 
 
-Package nag Warning: \label in float, but not after \caption on input line 597.
 
+Package nag Warning: \label in float, but not after \caption on input line 599.
 
 
-Package nag Warning: \label in float, but not after \caption on input line 597.
 
+Package nag Warning: \label in float, but not after \caption on input line 656.
 
 
-Package nag Warning: \label in float, but not after \caption on input line 654.
 
+Package nag Warning: \label in float, but not after \caption on input line 656.
 
 
-Package nag Warning: \label in float, but not after \caption on input line 654.
+[10] [11]
 
+Package nag Warning: \label in float, but not after \caption on input line 722.
 
-[10]
-Underfull \hbox (badness 10000) in paragraph at lines 658--660
 
- []
 
-[11]
+Package nag Warning: \label in float, but not after \caption on input line 722.
 
-Package nag Warning: \label in float, but not after \caption on input line 719.
 
 
+Package nag Warning: \label in float, but not after \caption on input line 771.
 
-Package nag Warning: \label in float, but not after \caption on input line 719.
 
 
+Package nag Warning: \label in float, but not after \caption on input line 771.
 
-Package nag Warning: \label in float, but not after \caption on input line 768.
 
 
+Package nag Warning: \label in float, but not after \caption on input line 828.
 
-Package nag Warning: \label in float, but not after \caption on input line 768.
 
 
+Package nag Warning: \label in float, but not after \caption on input line 828.
 
-Package nag Warning: \label in float, but not after \caption on input line 825.
 
 
+Package nag Warning: \label in float, but not after \caption on input line 924.
 
-Package nag Warning: \label in float, but not after \caption on input line 825.
 
 
+Package nag Warning: \label in float, but not after \caption on input line 924.
 
-Package nag Warning: \label in float, but not after \caption on input line 921.
 
 
-
-Package nag Warning: \label in float, but not after \caption on input line 921.
-
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 921--921
+Underfull \hbox (badness 10000) in paragraph at lines 924--924
 []\T1/pplx/m/n/9 (+20) (a) Copla-nar wire
  []
 
-<./figures//wire_crossing.png, id=315, 708.84825pt x 413.1435pt>
+<./figures//wire_crossing.png, id=331, 708.84825pt x 413.1435pt>
 File: ./figures//wire_crossing.png Graphic file (type png)
 <use ./figures//wire_crossing.png>
-Package pdftex.def Info: ./figures//wire_crossing.png  used on input line 927.
+Package pdftex.def Info: ./figures//wire_crossing.png  used on input line 930.
 (pdftex.def)             Requested size: 177.21162pt x 103.28561pt.
 
-Package nag Warning: \label in float, but not after \caption on input line 927.
+Package nag Warning: \label in float, but not after \caption on input line 930.
 
 
 
-Package nag Warning: \label in float, but not after \caption on input line 927.
+Package nag Warning: \label in float, but not after \caption on input line 930.
 
 
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 932.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 935.
 
 LaTeX Font Info:    Trying to load font information for TS1+pplx on input line 
-932.
+935.
 (C:\Program Files\MiKTeX\tex/latex/psnfss\ts1pplx.fd
 File: ts1pplx.fd 2004/09/06 font definitions for TS1/pplx.
 )
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 932.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 935.
 
 Missing character: There is no ° in font pplr9t!
 [12]
 
-Package nag Warning: \label in float, but not after \caption on input line 1042
+Package nag Warning: \label in float, but not after \caption on input line 1045
 .
 
 
-Package nag Warning: \label in float, but not after \caption on input line 1042
+Package nag Warning: \label in float, but not after \caption on input line 1045
 .
 
 
-Package nag Warning: \label in float, but not after \caption on input line 1058
+Package nag Warning: \label in float, but not after \caption on input line 1061
 .
 
 
-Package nag Warning: \label in float, but not after \caption on input line 1058
+Package nag Warning: \label in float, but not after \caption on input line 1061
 .
 
 [13 <./figures//wire_crossing.png>]
-<./figures//QCA_array.png, id=344, 354.57469pt x 135.50626pt>
+<./figures//QCA_array.png, id=360, 354.57469pt x 135.50626pt>
 File: ./figures//QCA_array.png Graphic file (type png)
 <use ./figures//QCA_array.png>
-Package pdftex.def Info: ./figures//QCA_array.png  used on input line 1095.
+Package pdftex.def Info: ./figures//QCA_array.png  used on input line 1098.
 (pdftex.def)             Requested size: 212.74644pt x 81.30437pt.
-<./figures//clocked_wire.pdf, id=349, 720.32425pt x 151.04167pt>
+ [14 <./figures//QCA_array.png>]
+<./figures//clocked_wire.pdf, id=379, 720.32425pt x 151.04167pt>
 File: ./figures//clocked_wire.pdf Graphic file (type pdf)
 <use ./figures//clocked_wire.pdf>
-Package pdftex.def Info: ./figures//clocked_wire.pdf  used on input line 1103.
+Package pdftex.def Info: ./figures//clocked_wire.pdf  used on input line 1107.
 (pdftex.def)             Requested size: 295.33485pt x 61.92747pt.
- [14 <./figures//QCA_array.png>]
-<./figures//Landauer_clocking.pdf, id=367, 488.99966pt x 489.79395pt>
+<./figures//Landauer_clocking.pdf, id=383, 488.99966pt x 489.79395pt>
 File: ./figures//Landauer_clocking.pdf Graphic file (type pdf)
 <use ./figures//Landauer_clocking.pdf>
 Package pdftex.def Info: ./figures//Landauer_clocking.pdf  used on input line 1
-112.
+117.
 (pdftex.def)             Requested size: 200.49115pt x 200.8168pt.
 
 
-Package nag Warning: \label in float, but not after \caption on input line 1112
+Package nag Warning: \label in float, but not after \caption on input line 1117
 .
 
 
-Package nag Warning: \label in float, but not after \caption on input line 1112
+Package nag Warning: \label in float, but not after \caption on input line 1117
 .
 
-<./figures//Bennet_clocking.pdf, id=368, 485.04515pt x 492.94398pt>
+<./figures//Bennet_clocking.pdf, id=384, 485.04515pt x 492.94398pt>
 File: ./figures//Bennet_clocking.pdf Graphic file (type pdf)
 <use ./figures//Bennet_clocking.pdf>
 Package pdftex.def Info: ./figures//Bennet_clocking.pdf  used on input line 111
-3.
+8.
 (pdftex.def)             Requested size: 198.8698pt x 202.10834pt.
 
-Package nag Warning: \label in float, but not after \caption on input line 1113
+Package nag Warning: \label in float, but not after \caption on input line 1118
 .
 
 
-Package nag Warning: \label in float, but not after \caption on input line 1113
+Package nag Warning: \label in float, but not after \caption on input line 1118
 .
 
 [15 <./figures//clocked_wire.pdf>]
-<./figures//cell_based_mux.png, id=388, 176.45924pt x 163.812pt>
+<./figures//cell_based_mux.png, id=405, 176.45924pt x 163.812pt>
 File: ./figures//cell_based_mux.png Graphic file (type png)
 <use ./figures//cell_based_mux.png>
-Package pdftex.def Info: ./figures//cell_based_mux.png  used on input line 1122
+Package pdftex.def Info: ./figures//cell_based_mux.png  used on input line 1127
 .
 (pdftex.def)             Requested size: 158.81184pt x 147.42941pt.
  [16 <./figures//Landauer_clocking.pdf> <./figures//Bennet_clocking.pdf
@@ -2096,46 +2080,46 @@ pdfTeX warning: pdflatex.exe (file ./figures//Bennet_clocking.pdf): PDF inclusi
 on: multiple pdfs with page group included in a single page
 >]
 
-Package nag Warning: \label in float, but not after \caption on input line 1191
+Package nag Warning: \label in float, but not after \caption on input line 1196
 .
 
 
-Package nag Warning: \label in float, but not after \caption on input line 1191
+Package nag Warning: \label in float, but not after \caption on input line 1196
 .
 
 
-Package nag Warning: \label in float, but not after \caption on input line 1243
+Package nag Warning: \label in float, but not after \caption on input line 1248
 .
 
 
-Package nag Warning: \label in float, but not after \caption on input line 1243
+Package nag Warning: \label in float, but not after \caption on input line 1248
 .
 
 
-Package nag Warning: \label in float, but not after \caption on input line 1296
+Package nag Warning: \label in float, but not after \caption on input line 1301
 .
 
 
-Package nag Warning: \label in float, but not after \caption on input line 1296
+Package nag Warning: \label in float, but not after \caption on input line 1301
 .
 
 [17 <./figures//cell_based_mux.png>] [18] [19] [20]
-Overfull \hbox (18.3794pt too wide) in paragraph at lines 1374--1387
+Overfull \hbox (18.3794pt too wide) in paragraph at lines 1379--1392
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1391--1392
+Underfull \hbox (badness 10000) in paragraph at lines 1396--1397
 
  []
 
 [21] [22]
-Overfull \hbox (21.74596pt too wide) in paragraph at lines 1486--1513
+Overfull \hbox (21.74596pt too wide) in paragraph at lines 1491--1518
 [][]
  []
 
 
-Overfull \hbox (21.74596pt too wide) in paragraph at lines 1486--1513
+Overfull \hbox (21.74596pt too wide) in paragraph at lines 1491--1518
 [] 
  []
 
@@ -2145,20 +2129,20 @@ chapter 3.
 
 
 ]
-<./figures//SMT_solving.png, id=502, 274.626pt x 211.992pt>
+<./figures//SMT_solving.png, id=518, 274.626pt x 211.992pt>
 File: ./figures//SMT_solving.png Graphic file (type png)
 <use ./figures//SMT_solving.png>
 Package pdftex.def Info: ./figures//SMT_solving.png  used on input line 9.
 (pdftex.def)             Requested size: 219.70108pt x 169.59381pt.
  [25 <./figures//SMT_solving.png>] [26]
-<./figures//Gate_placement_wasted_area.png, id=529, 462.528pt x 250.536pt>
+<./figures//Gate_placement_wasted_area.png, id=545, 462.528pt x 250.536pt>
 File: ./figures//Gate_placement_wasted_area.png Graphic file (type png)
 <use ./figures//Gate_placement_wasted_area.png>
 Package pdftex.def Info: ./figures//Gate_placement_wasted_area.png  used on inp
 ut line 22.
 (pdftex.def)             Requested size: 323.76738pt x 175.374pt.
  [27 <./figures//Gate_placement_wasted_area.png>]
-<./figures//OGD.png, id=545, 241.65282pt x 240.9pt>
+<./figures//OGD.png, id=561, 241.65282pt x 240.9pt>
 File: ./figures//OGD.png Graphic file (type png)
 <use ./figures//OGD.png>
 Package pdftex.def Info: ./figures//OGD.png  used on input line 40.
@@ -2205,12 +2189,12 @@ Package nag Warning: \label in float, but not after \caption on input line 222.
 
 [29] [30]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 275.
+put line 309.
  [31] [32]
-<./figures//ortho_mux_21.png, id=595, 443.85825pt x 517.935pt>
+<./figures//ortho_mux_21.png, id=614, 443.85825pt x 517.935pt>
 File: ./figures//ortho_mux_21.png Graphic file (type png)
 <use ./figures//ortho_mux_21.png>
-Package pdftex.def Info: ./figures//ortho_mux_21.png  used on input line 282.
+Package pdftex.def Info: ./figures//ortho_mux_21.png  used on input line 316.
 (pdftex.def)             Requested size: 221.92857pt x 258.96686pt.
  [33 <./figures//ortho_mux_21.png>] [34] [35])
 (chapters/04_main_work.tex [36]
@@ -2219,21 +2203,21 @@ chapter 4.
 
 
 ] [38] [39] [40]
-<./figures//input_network_mux_21.png, id=674, 509.5035pt x 508.90125pt>
+<./figures//input_network_mux_21.png, id=692, 509.5035pt x 508.90125pt>
 File: ./figures//input_network_mux_21.png Graphic file (type png)
 <use ./figures//input_network_mux_21.png>
 Package pdftex.def Info: ./figures//input_network_mux_21.png  used on input lin
 e 77.
 (pdftex.def)             Requested size: 254.75111pt x 254.45pt.
  [41 <./figures//input_network_mux_21.png>]
-<./figures//Timing_failure_RES.pdf, id=684, 235.799pt x 460.5578pt>
+<./figures//Timing_failure_RES.pdf, id=702, 235.799pt x 460.5578pt>
 File: ./figures//Timing_failure_RES.pdf Graphic file (type pdf)
 <use ./figures//Timing_failure_RES.pdf>
 Package pdftex.def Info: ./figures//Timing_failure_RES.pdf  used on input line 
 94.
 (pdftex.def)             Requested size: 117.8992pt x 230.27834pt.
  [42] [43 <./figures//Timing_failure_RES.pdf>]
-<./figures//Majority_Distribution_network.pdf, id=705, 719.79161pt x 1007.11119
+<./figures//Majority_Distribution_network.pdf, id=723, 719.79161pt x 1007.11119
 pt>
 File: ./figures//Majority_Distribution_network.pdf Graphic file (type pdf)
 <use ./figures//Majority_Distribution_network.pdf>
@@ -2241,20 +2225,19 @@ Package pdftex.def Info: ./figures//Majority_Distribution_network.pdf  used on
 input line 105.
 (pdftex.def)             Requested size: 215.93915pt x 302.13568pt.
  [44 <./figures//Majority_Distribution_network.pdf>] [45] [46] [47] [48]
-<./figures//maj_example.png, id=758, 450.18187pt x 696.35156pt>
+<./figures//maj_example.png, id=776, 450.18187pt x 696.35156pt>
 File: ./figures//maj_example.png Graphic file (type png)
 <use ./figures//maj_example.png>
 Package pdftex.def Info: ./figures//maj_example.png  used on input line 313.
 (pdftex.def)             Requested size: 292.61475pt x 452.62315pt.
  [49] [50 <./figures//maj_example.png>] [51] [52]
 [53]
-<./figures//mux21_seq.png, id=788, 621.07031pt x 620.3175pt>
-File: ./figures//mux21_seq.png Graphic file (type png)
-<use ./figures//mux21_seq.png>
-Package pdftex.def Info: ./figures//mux21_seq.png  used on input line 395.
-(pdftex.def)             Requested size: 248.42372pt x 248.1226pt.
-) (chapters/05_experimental_evaluation.tex [54] [55 <./figures//mux21_seq.png>]
-
+<./figures//MUX_RAM.pdf, id=805, 635.34575pt x 593.84512pt>
+File: ./figures//MUX_RAM.pdf Graphic file (type pdf)
+<use ./figures//MUX_RAM.pdf>
+Package pdftex.def Info: ./figures//MUX_RAM.pdf  used on input line 395.
+(pdftex.def)             Requested size: 254.13379pt x 237.53383pt.
+) (chapters/05_experimental_evaluation.tex [54] [55 <./figures//MUX_RAM.pdf>]
 chapter 5.
 [56
 
@@ -2307,11 +2290,11 @@ Overfull \hbox (42.1764pt too wide) in paragraph at lines 55--55
 r-sion 1) avail-able at Re-search Square [https://doi.org/10.21203/rs.3.rs-
  []
 
-[70] [71]
+[70] [71] [72]
 
 Package nag Warning: 49 complaints in total.
 
-[72] (main.aux)
+[73] (main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package logreq Info: Writing requests to 'main.run.xml'.
@@ -2319,13 +2302,13 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 69439 strings out of 478927
- 1671139 string characters out of 2862391
- 2954473 words of memory out of 3000000
- 85415 multiletter control sequences out of 15000+600000
- 485125 words of font info for 534 fonts, out of 8000000 for 9000
+ 69479 strings out of 478927
+ 1672116 string characters out of 2862391
+ 2957584 words of memory out of 3000000
+ 85436 multiletter control sequences out of 15000+600000
+ 485715 words of font info for 543 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 130i,13n,125p,10601b,2970s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 130i,13n,125p,10601b,2968s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\benja\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt
 1095.pk>{C:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Program Files/
 MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts
@@ -2337,9 +2320,9 @@ iKTeX/fonts/type1/public/mathpazo/fplmri.pfb><C:/Program Files/MiKTeX/fonts/typ
 e1/public/fpl/fplrc8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/upl
 b8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Progra
 m Files/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (79 pages, 1204423 bytes).
+Output written on main.pdf (80 pages, 1141929 bytes).
 PDF statistics:
- 1241 PDF objects out of 1440 (max. 8388607)
- 273 named destinations out of 1000 (max. 500000)
+ 1272 PDF objects out of 1440 (max. 8388607)
+ 280 named destinations out of 1000 (max. 500000)
  100364 words of extra memory for PDF output out of 106986 (max. 10000000)
 

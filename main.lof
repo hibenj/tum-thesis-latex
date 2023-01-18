@@ -63,7 +63,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.9}{\ignorespaces Schematic of a combined QCA and CMOS system \cite {lent1994quantum}.\relax }}{14}{figure.caption.14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.10}{\ignorespaces QCA wire divided into the four clock zones according to Bennet clocking\relax }}{15}{figure.caption.15}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces QCA wire divided into the four clock zones according to Bennett clocking\relax }}{15}{figure.caption.15}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.11}{\ignorespaces QCA clocking pipeline\relax }}{16}{figure.caption.16}%
 \defcounter {refsection}{0}\relax 
@@ -73,13 +73,13 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.12}{\ignorespaces Cell based layout of a 2:1 mux \cite {majeed2019optimal}\relax }}{17}{figure.caption.17}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.13}{\ignorespaces Different clocking Schemes in QCA\relax }}{18}{figure.caption.18}%
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Different clocking Schemes in QCA\relax }}{17}{figure.caption.18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {2DDWave}}}{18}{figure.caption.18}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {2DDWave}}}{17}{figure.caption.18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {USE}}}{18}{figure.caption.18}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {USE}}}{17}{figure.caption.18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {RES}}}{18}{figure.caption.18}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {RES}}}{17}{figure.caption.18}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.14}{\ignorespaces Eccles-Jordan-Flip-Flop\relax }}{20}{figure.caption.19}%
 \defcounter {refsection}{0}\relax 
@@ -111,27 +111,29 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Color assignment of outgoing signals}}}{29}{figure.caption.27}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Placement and routing of a 2:1 mux network using the ortho algorithm\relax }}{33}{figure.caption.28}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Logic Network of a 2:1 MUX after fan-out substitution, inverter insertion and coloring\relax }}{30}{figure.caption.28}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Placement and routing of a 2:1 mux network using the ortho algorithm\relax }}{33}{figure.caption.29}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Scheme of area usage in the Ordering Distribution Network\relax }}{38}{figure.caption.29}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Scheme of area usage in the Ordering Distribution Network\relax }}{38}{figure.caption.30}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Placement and routing of a 2:1 mux network using the ortho algorithm with the ordering distribution network\relax }}{41}{figure.caption.30}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Placement and routing of a 2:1 mux network using the ortho algorithm with the ordering distribution network\relax }}{41}{figure.caption.31}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Global sychronization violation when connecting 2DD-Wave and RES clocked scheme\relax }}{43}{figure.caption.31}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Global sychronization violation when connecting 2DD-Wave and RES clocked scheme\relax }}{43}{figure.caption.32}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Proposed majority gate distribution network\relax }}{44}{figure.caption.32}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Proposed majority gate distribution network\relax }}{44}{figure.caption.33}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Scheme of the P\&R using the Majority Gate Distribution Network\relax }}{46}{figure.caption.33}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Scheme of the P\&R using the Majority Gate Distribution Network\relax }}{46}{figure.caption.34}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Buffer in $east$ direction with resolve column and respective clocking\relax }}{47}{figure.caption.34}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Buffer in $east$ direction with resolve column and respective clocking\relax }}{47}{figure.caption.35}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Placement and routing of a majority gate in conjunction with a delayed primary input\relax }}{50}{figure.caption.35}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Placement and routing of a majority gate in conjunction with a delayed primary input\relax }}{50}{figure.caption.36}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Scheme of a sequential circuit layout after placement and routing\relax }}{52}{figure.caption.36}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Scheme of a sequential circuit layout after placement and routing\relax }}{52}{figure.caption.37}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.9}{\ignorespaces QCA RAM cell designed as 2:1 mux with a sequential distribution network\relax }}{55}{figure.caption.37}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces QCA RAM cell designed as 2:1 mux with a sequential distribution network\relax }}{55}{figure.caption.38}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
