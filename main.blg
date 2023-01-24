@@ -20,50 +20,50 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'field_info' (item size: 4) to 14520 items.
+Reallocating 'field_info' (item size: 4) to 15500 items.
 Database file #1: main-blx.bib
 Database file #2: bibliography.bib
 Biblatex version: 3.16
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-You've used 68 entries,
+You've used 75 entries,
             6393 wiz_defined-function locations,
-            1624 strings with 24224 characters,
-and the built_in function-call counts, 517213 in all, are:
-= -- 37981
-> -- 10068
-< -- 2833
-+ -- 12485
-- -- 4234
-* -- 41290
-:= -- 55552
+            1664 strings with 25847 characters,
+and the built_in function-call counts, 580565 in all, are:
+= -- 42724
+> -- 11285
+< -- 3176
++ -- 14262
+- -- 4772
+* -- 46382
+:= -- 62732
 add.period$ -- 0
-call.type$ -- 68
-change.case$ -- 1324
-chr.to.int$ -- 88
-cite$ -- 134
-duplicate$ -- 49438
-empty$ -- 45697
-format.name$ -- 5680
-if$ -- 106938
+call.type$ -- 75
+change.case$ -- 1483
+chr.to.int$ -- 87
+cite$ -- 148
+duplicate$ -- 55960
+empty$ -- 50914
+format.name$ -- 6413
+if$ -- 119755
 int.to.chr$ -- 0
-int.to.str$ -- 189
+int.to.str$ -- 210
 missing$ -- 0
-newline$ -- 2465
-num.names$ -- 3545
-pop$ -- 23885
+newline$ -- 2777
+num.names$ -- 3937
+pop$ -- 26513
 preamble$ -- 1
-purify$ -- 1821
+purify$ -- 2051
 quote$ -- 0
-skip$ -- 14950
+skip$ -- 16667
 stack$ -- 0
-substring$ -- 70908
-swap$ -- 11678
-text.length$ -- 2337
-text.prefix$ -- 69
+substring$ -- 79375
+swap$ -- 13090
+text.length$ -- 2625
+text.prefix$ -- 82
 top$ -- 1
-type$ -- 2300
+type$ -- 2538
 warning$ -- 0
-while$ -- 6856
+while$ -- 7827
 width$ -- 0
-write$ -- 2398
+write$ -- 2703

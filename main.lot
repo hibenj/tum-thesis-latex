@@ -13,11 +13,11 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5.1}{\ignorespaces I/O number of primary inputs/outputs, |G| number of logic network nodes (gates + fan-outs), w $\times $ h aspect ratio given in tiles, |WC| number wire crossings, |W| number of wires, w $\times $ h aspect ratio given in tiles, w $\times $ h aspect ratio given in tiles,t in s runtime in seconds, OOM maximum RAM reached, —no data available\relax }}{59}{table.caption.40}%
+\contentsline {table}{\numberline {5.1}{\ignorespaces I/O number of primary inputs/outputs, $|G|$ number of logic network nodes (gates + fan-outs), $w \times h$ aspect ratio given in tiles, $|WC|$ number wire crossings, $|W|$ number of wires, $t$ in s runtime in seconds, OOM maximum RAM reached, ---no data available\relax }}{58}{table.caption.47}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5.2}{\ignorespaces I/O number of primary inputs/outputs, |M| number of majority gates, |G| number of logic network nodes (gates + fan-outs), w $\times $ h aspect ratio given in tiles, |WC| number wire crossings, |W| number of wires, w $\times $ h aspect ratio given in tiles, w $\times $ h aspect ratio given in tiles,t in s runtime in seconds, OOM maximum RAM reached, —no data available\relax }}{61}{table.caption.41}%
+\contentsline {table}{\numberline {5.2}{\ignorespaces I/O number of primary inputs/outputs, $|N|$ number of gates before preprocessing, $|M|$ number of majority gates, $|G|$ number of logic network nodes (gates + fan-outs), $w \times h$ aspect ratio given in tiles, $|WC|$ number wire crossings, $|W|$ number of wires, $t$ in s runtime in seconds, OOM maximum RAM reached, ---no data available\relax }}{60}{table.caption.48}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5.3}{\ignorespaces I/O number of primary inputs/outputs, |R| number of registers (D-flipflops), |G| number of logic network nodes (gates + fan-outs), w $\times $ h aspect ratio given in tiles, t in s runtime in seconds, OOM maximum RAM reached, —no data available\relax }}{63}{table.caption.42}%
+\contentsline {table}{\numberline {5.3}{\ignorespaces I/O number of primary inputs/outputs, $|R|$ number of registers (D-flipflops), $|G|$ number of logic network nodes (gates + fan-outs), $w \times h$ aspect ratio given in tiles, $t$ in s runtime in seconds, OOM maximum RAM reached, ---no data available\relax }}{62}{table.caption.49}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

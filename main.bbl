@@ -146,6 +146,51 @@
     \field{year}{2001}
   \endentry
 
+  \entry{bandyopadhyay2019design}{article}{}
+    \name{author}{4}{}{%
+      {{hash=BC}{%
+         family={Bandyopadhyay},
+         familyi={B\bibinitperiod},
+         given={Chandan},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=DR}{%
+         family={Das},
+         familyi={D\bibinitperiod},
+         given={Rakesh},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=CA}{%
+         family={Chattopadhyay},
+         familyi={C\bibinitperiod},
+         given={Anupam},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=RH}{%
+         family={Rahaman},
+         familyi={R\bibinitperiod},
+         given={Hafizur},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley Online Library}%
+    }
+    \strng{namehash}{BCDRCARH1}
+    \strng{fullhash}{BCDRCARH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{number}{1}
+    \field{pages}{38\bibrangedash 48}
+    \field{title}{Design and synthesis of improved reversible circuits using
+  AIG-and MIG-based graph data structures}
+    \field{volume}{13}
+    \field{journaltitle}{IET Computers \& Digital Techniques}
+    \field{year}{2019}
+  \endentry
+
   \entry{QCA_technology}{article}{}
     \name{author}{2}{}{%
       {{hash=BZ}{%
@@ -271,6 +316,39 @@
     \field{volume}{9}
     \field{journaltitle}{Computational Geometry}
     \field{year}{1998}
+  \endentry
+
+  \entry{blair2003architecture}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=BE}{%
+         family={Blair},
+         familyi={B\bibinitperiod},
+         given={EP},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=LC}{%
+         family={Lent},
+         familyi={L\bibinitperiod},
+         given={CS},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{BELC1}
+    \strng{fullhash}{BELC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{booktitle}{2003 Third IEEE Conference on Nanotechnology, 2003.
+  IEEE-NANO 2003.}
+    \field{pages}{402\bibrangedash 405}
+    \field{title}{An architecture for molecular computing using quantum-dot
+  cellular automata}
+    \field{volume}{1}
+    \field{year}{2003}
   \endentry
 
   \entry{iscas}{inproceedings}{}
@@ -871,6 +949,49 @@
     \field{year}{1979}
   \endentry
 
+  \entry{migortho}{article}{}
+    \name{author}{3}{}{%
+      {{hash=JJSD}{%
+         family={J{\'u}nior},
+         familyi={J\bibinitperiod},
+         given={Julio Sara{\c{c}}ol\bibnamedelima Domingues},
+         giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim
+  D\bibinitperiod},
+      }}%
+      {{hash=dRJLS}{%
+         prefix={da},
+         prefixi={d\bibinitperiod},
+         family={Rosa\bibnamedelima J{\'u}nior},
+         familyi={R\bibinitperiod\bibinitdelim J\bibinitperiod},
+         given={Leomar\bibnamedelima Soares},
+         giveni={L\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=dSMF}{%
+         prefix={de},
+         prefixi={d\bibinitperiod},
+         family={Souza\bibnamedelima Marques},
+         familyi={S\bibinitperiod\bibinitdelim M\bibinitperiod},
+         given={Felipe},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{JJSDRJLSdSMFd1}
+    \strng{fullhash}{JJSDRJLSdSMFd1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{J}
+    \field{sortinithash}{J}
+    \field{number}{2}
+    \field{pages}{23\bibrangedash 30}
+    \field{title}{Migortho: A Design Automation Flow for QCA Circuits}
+    \field{volume}{39}
+    \field{journaltitle}{IEEE Design \& Test}
+    \field{year}{2021}
+  \endentry
+
   \entry{kahng2011vlsi}{book}{}
     \name{author}{4}{}{%
       {{hash=KAB}{%
@@ -1394,6 +1515,63 @@
     \field{year}{2022}
   \endentry
 
+  \entry{orlov2008magnetic}{article}{}
+    \name{author}{6}{}{%
+      {{hash=OA}{%
+         family={Orlov},
+         familyi={O\bibinitperiod},
+         given={A},
+         giveni={A},
+      }}%
+      {{hash=IA}{%
+         family={Imre},
+         familyi={I\bibinitperiod},
+         given={A},
+         giveni={A},
+      }}%
+      {{hash=CG}{%
+         family={Csaba},
+         familyi={C\bibinitperiod},
+         given={G},
+         giveni={G},
+      }}%
+      {{hash=JL}{%
+         family={Ji},
+         familyi={J\bibinitperiod},
+         given={L},
+         giveni={L},
+      }}%
+      {{hash=PW}{%
+         family={Porod},
+         familyi={P\bibinitperiod},
+         given={W},
+         giveni={W},
+      }}%
+      {{hash=BG}{%
+         family={Bernstein},
+         familyi={B\bibinitperiod},
+         given={GH},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Scientific Publishers}%
+    }
+    \strng{namehash}{OAIACG+1}
+    \strng{fullhash}{OAIACGJLPWBG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{O}
+    \field{sortinithash}{O}
+    \field{number}{1}
+    \field{pages}{55\bibrangedash 68}
+    \field{title}{Magnetic quantum-dot cellular automata: Recent developments
+  and prospects}
+    \field{volume}{3}
+    \field{journaltitle}{Journal of Nanoelectronics and Optoelectronics}
+    \field{year}{2008}
+  \endentry
+
   \entry{peng2020spars}{article}{}
     \name{author}{4}{}{%
       {{hash=PF}{%
@@ -1595,6 +1773,39 @@
     \field{title}{Sequential circuit design using quantum dot cellular automata
   (QCA)}
     \field{year}{2015}
+  \endentry
+
+  \entry{retallick2020population}{article}{}
+    \name{author}{2}{}{%
+      {{hash=RJ}{%
+         family={Retallick},
+         familyi={R\bibinitperiod},
+         given={Jacob},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=WK}{%
+         family={Walus},
+         familyi={W\bibinitperiod},
+         given={Konrad},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {AIP Publishing LLC}%
+    }
+    \strng{namehash}{RJWK1}
+    \strng{fullhash}{RJWK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{number}{24}
+    \field{pages}{244301}
+    \field{title}{Population congestion in 3-state quantum-dot cellular
+  automata}
+    \field{volume}{127}
+    \field{journaltitle}{Journal of Applied Physics}
+    \field{year}{2020}
   \endentry
 
   \entry{safoev2020design}{article}{}
@@ -1822,7 +2033,6 @@
     }
     \field{journaltitle}{J. Emerg. Technol. Comput. Syst.}
     \field{year}{2007}
-    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{sen2015towards}{article}{}
@@ -2199,6 +2409,67 @@
     \field{year}{2016}
   \endentry
 
+  \entry{turvani2014physical}{inproceedings}{}
+    \name{author}{7}{}{%
+      {{hash=TG}{%
+         family={Turvani},
+         familyi={T\bibinitperiod},
+         given={Giovanna},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=TA}{%
+         family={Tohti},
+         familyi={T\bibinitperiod},
+         given={A},
+         giveni={A},
+      }}%
+      {{hash=BM}{%
+         family={Bollo},
+         familyi={B\bibinitperiod},
+         given={Matteo},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=RF}{%
+         family={Riente},
+         familyi={R\bibinitperiod},
+         given={Fabrizio},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=VM}{%
+         family={Vacca},
+         familyi={V\bibinitperiod},
+         given={Marco},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=GM}{%
+         family={Graziano},
+         familyi={G\bibinitperiod},
+         given={Mariagrazia},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=ZM}{%
+         family={Zamboni},
+         familyi={Z\bibinitperiod},
+         given={Maurizio},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{TGTABM+1}
+    \strng{fullhash}{TGTABMRFVMGMZM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{booktitle}{2014 9th IEEE International Conference on Design \&
+  Technology of Integrated Systems in Nanoscale Era (DTIS)}
+    \field{pages}{1\bibrangedash 6}
+    \field{title}{Physical design and testing of nano magnetic architectures}
+    \field{year}{2014}
+  \endentry
+
   \entry{2DD}{article}{}
     \name{author}{3}{}{%
       {{hash=VV}{%
@@ -2266,6 +2537,56 @@
     \field{title}{Design Automation for Field-Coupled Nanotechnologies}
     \field{month}{07}
     \field{year}{2020}
+  \endentry
+
+  \entry{walter2021one}{inproceedings}{}
+    \name{author}{5}{}{%
+      {{hash=WM}{%
+         family={Walter},
+         familyi={W\bibinitperiod},
+         given={Marcel},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=HW}{%
+         family={Haaswijk},
+         familyi={H\bibinitperiod},
+         given={Winston},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=WR}{%
+         family={Wille},
+         familyi={W\bibinitperiod},
+         given={Robert},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=TFS}{%
+         family={Torres},
+         familyi={T\bibinitperiod},
+         given={Frank\bibnamedelima Sill},
+         giveni={F\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=DR}{%
+         family={Drechsler},
+         familyi={D\bibinitperiod},
+         given={Rolf},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{WMHWWR+1}
+    \strng{fullhash}{WMHWWRTFSDR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{booktitle}{2021 26th Asia and South Pacific Design Automation
+  Conference (ASP-DAC)}
+    \field{pages}{574\bibrangedash 580}
+    \field{title}{One-pass synthesis for field-coupled nanocomputing
+  technologies}
+    \field{year}{2021}
   \endentry
 
   \entry{walter2018exact}{inproceedings}{}
