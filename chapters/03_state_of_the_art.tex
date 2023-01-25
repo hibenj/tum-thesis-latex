@@ -236,10 +236,11 @@ In order to allow data to propagate, ortho needs to map a valid clocking onto th
 Because ortho uses OGD with exactly two directions $east$ and $south$, the 2DDWave scheme, which also supports the data flow in exactly two directions, is perfectly suited for the algorithm. Also the usage of a predefined clocking scheme already gives a solution for the local synchronization constraint and due to the uniformity and simplicity of the 2DDWave scheme also the global synchronization constraint for nodes placed and routed after the proposed direction assignment is maintained.
 
 \begin{figure}
+	\centering
 	\begin{tikzpicture}[node distance={2cm and 2cm}, thick, scale=1, main/.style = {draw, circle}] 
 		\node[main] (3) at (0,0) [label=west:$v_3$]{$I_3$}; 
-		\node[main] (1) at (0,-2)[label=west:$v_1$] {$I_1$};
-		\node[main] (2) at (0,-4)[label=west:$v_2$] {$I_2$};
+		\node[main] (1) at (0,-2)[label=west:$v_2$] {$I_2$};
+		\node[main] (2) at (0,-4)[label=west:$v_1$] {$I_1$};
 		
 		\node[main] (4) at (2,-2)[label=north:$v_4$]{$F$}; 
 		

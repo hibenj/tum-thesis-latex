@@ -55,42 +55,50 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2.2}QCA storage cells (QCA RAM)}{36}{subsection.3.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Methodology}{38}{chapter.4}%
+\contentsline {chapter}{\numberline {4}Distribution Networks for Scalable P\&R}{38}{chapter.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Ordering Distribution Network (ODN)}{38}{section.4.1}%
+\contentsline {section}{\numberline {4.1}Ordering Distribution Network (ODN)}{39}{section.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Majority Gate Distribution Network (MGDN)}{43}{section.4.2}%
+\contentsline {subsection}{\numberline {4.1.1}Ordering of PIs}{39}{subsection.4.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.1}The proposed signal Distribution Network}{43}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.1.2}Conditional Coloring}{42}{subsection.4.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.2}Placement and basic routing}{46}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.1.3}New P\&R rule}{43}{subsection.4.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.3}Routing with signal synchronization and buffer insertion}{47}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.1.4}Inverter Balancing}{44}{subsection.4.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Sequential Distribution Network (SDN)}{51}{section.4.3}%
+\contentsline {section}{\numberline {4.2}Majority Gate Distribution Network (MGDN)}{46}{section.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.1}Placement and Routing}{51}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.2.1}The proposed signal Distribution Network}{46}{subsection.4.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.2}RAM cell}{54}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.2.2}Placement and basic routing}{49}{subsection.4.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Experimental Evaluation}{55}{chapter.5}%
+\contentsline {subsection}{\numberline {4.2.3}Routing with signal synchronization and buffer insertion}{50}{subsection.4.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Benchmarks}{55}{section.5.1}%
+\contentsline {section}{\numberline {4.3}Sequential Distribution Network (SDN)}{54}{section.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Results}{55}{section.5.2}%
+\contentsline {subsection}{\numberline {4.3.1}Placement and Routing}{54}{subsection.4.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.1}Ordering Distribution Network}{56}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {4.3.2}RAM cell}{57}{subsection.4.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.2}Majority Gates Distribution Network}{59}{subsection.5.2.2}%
+\contentsline {chapter}{\numberline {5}Experimental Evaluation}{58}{chapter.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.3}Sequential Distribution Network}{61}{subsection.5.2.3}%
+\contentsline {section}{\numberline {5.1}Benchmarks}{58}{section.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Conclusion}{63}{chapter.6}%
+\contentsline {section}{\numberline {5.2}Results}{58}{section.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline List of Figures}{64}{chapter*.50}%
+\contentsline {subsection}{\numberline {5.2.1}Ordering Distribution Network}{59}{subsection.5.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline List of Tables}{66}{chapter*.51}%
+\contentsline {subsection}{\numberline {5.2.2}Majority Gates Distribution Network}{62}{subsection.5.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Bibliography}{67}{chapter*.52}%
+\contentsline {subsection}{\numberline {5.2.3}Sequential Distribution Network}{64}{subsection.5.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}Conclusion}{66}{chapter.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline List of Figures}{67}{chapter*.53}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline List of Tables}{69}{chapter*.54}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline Bibliography}{70}{chapter*.55}%
 \defcounter {refsection}{0}\relax 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

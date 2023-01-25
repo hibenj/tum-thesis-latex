@@ -5,11 +5,11 @@ The proposed Ordering Networks were implemented in C++17 on top of the open-sour
 The experimental results were created on a system with a AMD Ryzen 5 PRO 3500U CPU with 8 cores, 16GB RAM and Windows 11 OS.
 
 \section{Benchmarks}
-The selected benchmarks aim to compare the Distribution Networks with the state of the art, which is formed by ortho. Hence, the benchmarks \cite{fontes, trindade2016placement, epfl, iscas} ortho has been evaluated on in \cite{ortho} need to be considered. In case of the ODN all these benchmarks can be evaluated and therefore form a sufficient comparison to the state of the art.
+The selected benchmarks aim to compare the Distribution Networks with the state of the art, which is formed by ortho. Hence, the benchmarks~\cite{fontes, trindade2016placement, epfl, iscas} ortho has been evaluated on in~\cite{ortho} need to be considered. In case of the ODN all these benchmarks can be evaluated and therefore form a sufficient comparison to the state of the art.
 
 Since only a few of the selected benchmarks contain majority gates, they are not suited to evaluate the properties of MGDNs. Therefore the random network generator in \textit{fiction} is used to create MIGs with different sizes. To recreate these networks the network number is indicating the seed, while aso the number of inputs and the number of gates is given. The MIG benchmark can be placed and routed by the Majority Distribution Network and is converted into an AIG in order to enable ortho to place and route the same logic.
 
-Because the SDN is the first algorithm, which is able to place sequential QCA circuits, no comparison can be made. In this case the \textit{itc99-poli} \cite{itc_poli} benchmarks are selected for the evaluation.
+Because the SDN is the first algorithm, which is able to place sequential QCA circuits, no comparison can be made. In this case the \textit{itc99-poli}~\cite{itc_poli} benchmarks are selected for the evaluation.
 
 \section{Results}
 In this section, the evaluation results of the three Distribution Networks are presented and compared against the state-of-the-art with respect to their \textit{key metrics}. The key metrics are those that are expected to be influenced by the Distribution Network, and in addition, common metrics that have been previously investigated in the state-of-the-art are also provided for completeness.

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="49.593342mm"
+   height="49.534378mm"
+   viewBox="0 0 49.593342 49.534378"
+   version="1.1"
+   id="svg1351"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   sodipodi:docname="south_scheme.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1353"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="2.9540685"
+     inkscape:cx="127.95912"
+     inkscape:cy="61.27143"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1348" />
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-25.360146,-35.420989)">
+    <rect
+       style="fill:#cccccc;stroke:#000000;stroke-width:0.0989255;paint-order:markers fill stroke"
+       id="rect788-5"
+       width="49.494415"
+       height="49.43108"
+       x="25.409609"
+       y="35.470451"
+       rx="0.99289221"
+       ry="1.0445083" />
+    <rect
+       style="fill:#ff0606;fill-opacity:1;stroke:#000000;stroke-width:0.1;paint-order:markers fill stroke"
+       id="rect790-09"
+       width="4.6574187"
+       height="4.6574187"
+       x="30.410151"
+       y="75.470993"
+       rx="1.0030346"
+       ry="1.0565299" />
+    <rect
+       style="fill:#ff0606;fill-opacity:1;stroke:#000000;stroke-width:0.1;paint-order:markers fill stroke"
+       id="rect790-0-1"
+       width="4.6574187"
+       height="4.6574187"
+       x="55.410156"
+       y="50.470989"
+       rx="1.0030346"
+       ry="1.0565299" />
+    <rect
+       style="fill:#ff0606;fill-opacity:1;stroke:#000000;stroke-width:0.1;paint-order:markers fill stroke"
+       id="rect790-0-6-3"
+       width="4.6574187"
+       height="4.6574187"
+       x="55.357208"
+       y="80.167984"
+       rx="1.0030346"
+       ry="1.0565299" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.0994503;paint-order:markers fill stroke"
+       d="M 60.114941,52.635401 V 84.955367"
+       id="path1231-1" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.0993118;paint-order:markers fill stroke"
+       d="M 55.374271,52.698734 V 84.898829"
+       id="path1233-3" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.0994725;paint-order:markers fill stroke"
+       d="m 32.796221,75.466783 h 42.11164"
+       id="path1235-2" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.0995197;paint-order:markers fill stroke"
+       d="m 32.669561,80.121725 h 42.21432"
+       id="path1237-8" />
+    <text
+       xml:space="preserve"
+       style="font-size:1.90379px;font-family:sans-serif;-inkscape-font-specification:sans-serif;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.0033519;paint-order:markers fill stroke"
+       x="59.365891"
+       y="41.999897"
+       id="text985-7-1-2"
+       transform="scale(0.90497025,1.1050087)"><tspan
+         sodipodi:role="line"
+         style="fill:#000000;fill-opacity:1;stroke-width:0.0033519"
+         x="59.365891"
+         y="41.999897"
+         id="tspan1139-6-7-9">other</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#000000;fill-opacity:1;stroke-width:0.0033519"
+         x="59.365891"
+         y="44.379635"
+         id="tspan1175-3-0">predecessor</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:1.88911px;font-family:sans-serif;-inkscape-font-specification:sans-serif;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.00332604;paint-order:markers fill stroke"
+       x="31.084166"
+       y="68.507515"
+       id="text985-5-9"
+       transform="scale(0.95439709,1.0477819)"><tspan
+         sodipodi:role="line"
+         id="tspan983-7-7"
+         style="fill:#000000;fill-opacity:1;stroke-width:0.00332604"
+         x="31.084166"
+         y="68.507515">root node</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#000000;fill-opacity:1;stroke-width:0.00332604"
+         x="31.084166"
+         y="70.868904"
+         id="tspan1139-9-8">e.g. PI</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:1.80246px;font-family:sans-serif;-inkscape-font-specification:sans-serif;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.00295228;stroke-dasharray:none;paint-order:markers fill stroke"
+       x="69.077133"
+       y="72.54081"
+       id="text985-7-0-2-34"
+       transform="scale(0.8714158,1.1475578)"><tspan
+         sodipodi:role="line"
+         style="fill:#000000;fill-opacity:1;stroke-width:0.00295228;stroke-dasharray:none"
+         x="69.077133"
+         y="72.54081"
+         id="tspan1175-2-8-9">node palced south</tspan></text>
+  </g>
+</svg>

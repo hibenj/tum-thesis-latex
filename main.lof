@@ -61,7 +61,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(h)}{\ignorespaces {Wire crossing}}}{13}{figure.caption.13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Schematic of a combined QCA and CMOS system \cite {lent1994quantum}.\relax }}{14}{figure.caption.14}%
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Schematic of a combined QCA and CMOS system~\cite {lent1994quantum}.\relax }}{14}{figure.caption.14}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.10}{\ignorespaces QCA wire divided into the four clock zones according to Bennett clocking\relax }}{15}{figure.caption.15}%
 \defcounter {refsection}{0}\relax 
@@ -71,15 +71,15 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Bennet clocking}}}{16}{figure.caption.16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.12}{\ignorespaces Cell based layout of a 2:1 MUX \cite {majeed2019optimal}\relax }}{17}{figure.caption.17}%
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Cell based layout of a 2:1 MUX~\cite {majeed2019optimal}\relax }}{17}{figure.caption.17}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.13}{\ignorespaces Different clocking Schemes in QCA\relax }}{17}{figure.caption.18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {2DDWave \cite {2DD}}}}{17}{figure.caption.18}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {2DDWave~\cite {2DD}}}}{17}{figure.caption.18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {USE \cite {USE}}}}{17}{figure.caption.18}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {USE~\cite {USE}}}}{17}{figure.caption.18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {RES \cite {RES}}}}{17}{figure.caption.18}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {RES~\cite {RES}}}}{17}{figure.caption.18}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.14}{\ignorespaces Eccles-Jordan-Flip-Flop\relax }}{20}{figure.caption.19}%
 \defcounter {refsection}{0}\relax 
@@ -123,23 +123,37 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Scheme of area usage in the ODN\relax }}{39}{figure.caption.37}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Comparison of ortho and ortho including ODN\relax }}{40}{figure.caption.37}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Placement and routing of a 2:1 mux network using the ortho algorithm with the ODN\relax }}{42}{figure.caption.38}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Placement and routing of a 2:1 MUX network using the ortho algorithm}}}{40}{figure.caption.37}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Global sychronization violation when connecting 2DD-Wave and RES clocked scheme\relax }}{44}{figure.caption.39}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Placement and routing of a 2:1 MUX network using the ortho algorithm with the ODN}}}{40}{figure.caption.37}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Proposed MGDN\relax }}{45}{figure.caption.40}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Logic Network of a 2:1 MUX with gates viewed in the ODN\relax }}{41}{figure.caption.38}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Scheme of the P\&R using the MGDN\relax }}{47}{figure.caption.41}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Scheme of area usage in the layout using the ODN\relax }}{41}{figure.caption.39}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Buffer in $east$ direction with resolve column and respective clocking\relax }}{48}{figure.caption.42}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Logic Network of a 2:1 MUX with conditional coloring\relax }}{43}{figure.caption.40}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Placement and routing of a majority gate in conjunction with a delayed PI\relax }}{50}{figure.caption.43}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Schematic representation of rules when placing nodes colored $south$\relax }}{44}{figure.caption.41}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Scheme of a sequential circuit layout after placement and routing\relax }}{52}{figure.caption.44}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Placement rule of ortho}}}{44}{figure.caption.41}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.9}{\ignorespaces QCA RAM cell designed as 2:1 mux with a SDN\relax }}{54}{figure.caption.45}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Placement rule introduced with ODN}}}{44}{figure.caption.41}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Global sychronization violation when connecting 2DD-Wave and RES clocked scheme\relax }}{46}{figure.caption.42}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Proposed MGDN\relax }}{48}{figure.caption.43}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Scheme of the P\&R using the MGDN\relax }}{50}{figure.caption.44}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Buffer in $east$ direction with respective clocking\relax }}{51}{figure.caption.45}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Placement and routing of a majority gate in conjunction with a delayed PI\relax }}{53}{figure.caption.46}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Scheme of a sequential circuit layout after placement and routing\relax }}{55}{figure.caption.47}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.12}{\ignorespaces QCA RAM cell designed as 2:1 mux with a SDN\relax }}{57}{figure.caption.48}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

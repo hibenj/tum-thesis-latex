@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="82.873871mm"
-   height="161.86755mm"
-   viewBox="0 0 82.873869 161.86756"
+   width="113.65372mm"
+   height="162.34106mm"
+   viewBox="0 0 113.65372 162.34107"
    version="1.1"
    id="svg5"
    inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
@@ -24,17 +24,33 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="1.3808221"
-     inkscape:cx="190.10414"
-     inkscape:cy="159.32537"
+     inkscape:zoom="0.97638867"
+     inkscape:cx="493.65587"
+     inkscape:cy="226.34429"
      inkscape:window-width="1920"
-     inkscape:window-height="991"
-     inkscape:window-x="-9"
-     inkscape:window-y="-9"
+     inkscape:window-height="1009"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1" />
   <defs
      id="defs2">
+    <linearGradient
+       id="linearGradient18315"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop18313" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient16494"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop16492" />
+    </linearGradient>
     <inkscape:path-effect
        effect="fillet_chamfer"
        id="path-effect2901"
@@ -81,7 +97,7 @@
      inkscape:label="Ebene 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-18.426747,-18.96871)">
+     transform="translate(-19.362346,-19.233661)">
     <rect
        style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
        id="rect2957"
@@ -241,7 +257,7 @@
            id="tspan12235"
            style="stroke-width:0.43063"
            x="599.89484"
-           y="122.72849"></tspan></text>
+           y="122.72849" /></text>
     </g>
     <text
        xml:space="preserve"
@@ -3968,5 +3984,85 @@
            id="path8454-4" />
       </g>
     </g>
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#00af3e;stroke-width:1.003;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       id="rect16490"
+       width="79.90258"
+       height="80.477417"
+       x="19.95965"
+       y="19.735161"
+       rx="0.99288541"
+       ry="1.0445082" />
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#3806ff;stroke-width:1.003;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       id="rect16490-5"
+       width="79.90258"
+       height="80.477417"
+       x="19.863846"
+       y="100.5958"
+       rx="0.99288541"
+       ry="1.0445082" />
+    <text
+       xml:space="preserve"
+       style="font-size:6.19344px;font-family:sans-serif;-inkscape-font-specification:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.109372;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       x="105.08704"
+       y="57.217964"
+       id="text20058-3"
+       transform="scale(0.98256497,1.0177444)"><tspan
+         id="tspan20056-6"
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.109372"
+         x="105.08704"
+         y="57.217964"
+         sodipodi:role="line">2DDWave</tspan><tspan
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.109372"
+         x="105.08704"
+         y="64.959763"
+         sodipodi:role="line"
+         id="tspan20137">clocked</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:6.19344px;font-family:sans-serif;-inkscape-font-specification:sans-serif;fill:#f80505;fill-opacity:1;stroke:none;stroke-width:0.109372;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       x="103.04829"
+       y="111.80013"
+       id="text20058-3-7"
+       transform="scale(0.98256497,1.0177444)"><tspan
+         style="fill:#f80505;fill-opacity:1;stroke:none;stroke-width:0.109372"
+         x="103.04829"
+         y="111.80013"
+         sodipodi:role="line"
+         id="tspan20137-7">synchroni-</tspan><tspan
+         style="fill:#f80505;fill-opacity:1;stroke:none;stroke-width:0.109372"
+         x="103.04829"
+         y="119.54193"
+         sodipodi:role="line"
+         id="tspan23895">zation</tspan><tspan
+         style="fill:#f80505;fill-opacity:1;stroke:none;stroke-width:0.109372"
+         x="103.04829"
+         y="127.28373"
+         sodipodi:role="line"
+         id="tspan23893">failure</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:6.19344px;font-family:sans-serif;-inkscape-font-specification:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.109372;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       x="105.40556"
+       y="135.76918"
+       id="text20058-3-4"
+       transform="scale(0.98256497,1.0177444)"><tspan
+         id="tspan20056-6-0"
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.109372"
+         x="105.40556"
+         y="135.76918"
+         sodipodi:role="line">RES</tspan><tspan
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.109372"
+         x="105.40556"
+         y="143.51099"
+         sodipodi:role="line"
+         id="tspan20137-2">clocked</tspan></text>
+    <circle
+       style="fill:none;fill-opacity:1;stroke:#ff0606;stroke-width:1.003;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       id="path23339"
+       cy="120.98724"
+       cx="79.655746"
+       r="18.83322" />
   </g>
 </svg>
