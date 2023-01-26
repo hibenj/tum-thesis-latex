@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.12)  26 JAN 2023 15:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.12)  26 JAN 2023 15:56
 entering extended mode
 **./main.tex
 (main.tex
@@ -1581,20 +1581,43 @@ Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
 \rot@float@box=\box134
 \rot@mess@toks=\toks50
 )
+(C:\Program Files\MiKTeX\tex/latex/pdfpages\pdfpages.sty
+Package: pdfpages 2021/03/06 v0.5t Insert pages of external PDF documents (AM)
+
+(C:\Program Files\MiKTeX\tex/latex/eso-pic\eso-pic.sty
+Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
+\ESO@tempdima=\dimen332
+\ESO@tempdimb=\dimen333
+)
+\AM@pagewidth=\dimen334
+\AM@pageheight=\dimen335
+\AM@fboxrule=\dimen336
+
+(C:\Program Files\MiKTeX\tex/latex/pdfpages\pppdftex.def
+File: pppdftex.def 2021/03/06 v0.5t Pdfpages driver for pdfTeX (AM)
+)
+\pdfpages@includegraphics@status=\count528
+\AM@pagebox=\box135
+\AM@global@opts=\toks51
+\AM@pagecnt=\count529
+\AM@toc@title=\toks52
+\c@AM@survey=\count530
+\AM@templatesizebox=\box136
+)
 (C:\Program Files\MiKTeX\tex/latex/amscls\amsthm.sty
 Package: amsthm 2020/05/29 v2.20.6
-\thm@style=\toks51
-\thm@bodyfont=\toks52
-\thm@headfont=\toks53
-\thm@notefont=\toks54
-\thm@headpunct=\toks55
+\thm@style=\toks53
+\thm@bodyfont=\toks54
+\thm@headfont=\toks55
+\thm@notefont=\toks56
+\thm@headpunct=\toks57
 \thm@preskip=\skip133
 \thm@postskip=\skip134
 \thm@headsep=\skip135
-\dth@everypar=\toks56
+\dth@everypar=\toks58
 )
 Class scrbook Info: amsthm's \deferred@thm@head patched.
-\c@definition=\count528
+\c@definition=\count531
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
@@ -1696,17 +1719,17 @@ Package biblatex Info: Reference section=0 on input line 22.
 Package biblatex Info: Reference segment=0 on input line 22.
  (C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count529
-\scratchdimen=\dimen332
-\scratchbox=\box135
-\nofMPsegments=\count530
-\nofMParguments=\count531
-\everyMPshowfont=\toks57
-\MPscratchCnt=\count532
-\MPscratchDim=\dimen333
-\MPnumerator=\count533
-\makeMPintoPDFobject=\count534
-\everyMPtoPDFconversion=\toks58
+\scratchcounter=\count532
+\scratchdimen=\dimen337
+\scratchbox=\box137
+\nofMPsegments=\count533
+\nofMParguments=\count534
+\everyMPshowfont=\toks59
+\MPscratchCnt=\count535
+\MPscratchDim=\dimen338
+\MPnumerator=\count536
+\makeMPintoPDFobject=\count537
+\everyMPtoPDFconversion=\toks60
 ) (C:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -1715,7 +1738,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 (C:\Program Files\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-\c@lstlisting=\count535
+\c@lstlisting=\count538
 Package scrhack Info: undefining \float@addtolists on input line 22.
 
 Package pgfplots notification 'compat/show suggested version=true': document ha
@@ -1751,7 +1774,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (C:\Program Files\MiKTeX\tex/generic/gettitlestring\gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count536
+\c@section@level=\count539
 )
 LaTeX Info: Redefining \ref on input line 22.
 LaTeX Info: Redefining \pageref on input line 22.
@@ -1774,8 +1797,25 @@ Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
 
 (C:\Program Files\MiKTeX\tex/latex/bookmark\bkm-pdftex.def
 File: bkm-pdftex.def 2020-11-06 v1.29 bookmark driver for pdfTeX (HO)
-\BKM@id=\count537
+\BKM@id=\count540
 ))
+(C:\Program Files\MiKTeX\tex/latex/pdflscape\pdflscape.sty
+Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
+
+(C:\Program Files\MiKTeX\tex/latex/graphics\lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package scrhack Info: loading lscape hack on input line 77.
+
+(C:\Program Files\MiKTeX\tex/latex/koma-script\lscape.hak
+File: lscape.hak 2021/06/25 v3.34 KOMA-Script scrhack part (hacking package lsc
+ape)
+Package scrhack Info: \landscape patched to make \textheight change optional on
+ input line 90.
+\scrh@LT@textheight=\skip136
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+)
 Package nag Info: Command \hc@caption not defined, skipping amendment on input 
 line 22.
 Package nag Info: Command \topcaption not defined, skipping amendment on input 
@@ -1833,7 +1873,7 @@ chapter without number
 
 
 ]
-Package tocbasic Info: character protrusion at toc deactivated on input line 36
+Package tocbasic Info: character protrusion at toc deactivated on input line 37
 .
  (main.toc [4
 
@@ -1845,7 +1885,7 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 36
 \openout6 = `main.toc'.
 
 LaTeX Font Info:    Font shape `T1/pplx/m/sl' in size <10.95> not available
-(Font)              Font shape `T1/pplx/m/it' tried instead on input line 39.
+(Font)              Font shape `T1/pplx/m/it' tried instead on input line 40.
  [5] (chapters/01_introduction.tex
 chapter 1.
 [1
@@ -2277,13 +2317,13 @@ input line 218.
 File: ./figures//maj_example_marked.png Graphic file (type png)
 <use ./figures//maj_example_marked.png>
 Package pdftex.def Info: ./figures//maj_example_marked.png  used on input line 
-425.
+427.
 (pdftex.def)             Requested size: 292.61475pt x 452.62315pt.
  [52] [53 <./figures//maj_example_marked.png>] [54] [55] [56]
 <./figures//MUX_RAM.pdf, id=938, 635.34575pt x 593.84512pt>
 File: ./figures//MUX_RAM.pdf Graphic file (type pdf)
 <use ./figures//MUX_RAM.pdf>
-Package pdftex.def Info: ./figures//MUX_RAM.pdf  used on input line 510.
+Package pdftex.def Info: ./figures//MUX_RAM.pdf  used on input line 512.
 (pdftex.def)             Requested size: 254.13379pt x 237.53383pt.
 ) (chapters/05_experimental_evaluation.tex [57 <./figures//MUX_RAM.pdf>]
 chapter 5.
@@ -2296,7 +2336,7 @@ chapter 6.
 
 
 ]
-Package tocbasic Info: character protrusion at lof deactivated on input line 52
+Package tocbasic Info: character protrusion at lof deactivated on input line 53
 .
  (main.lof [67
 
@@ -2306,7 +2346,7 @@ Package tocbasic Info: character protrusion at lof deactivated on input line 52
 \openout7 = `main.lof'.
 
  [68]
-Package tocbasic Info: character protrusion at lot deactivated on input line 53
+Package tocbasic Info: character protrusion at lot deactivated on input line 54
 .
  (main.lot)
 \tf@lot=\write8
@@ -2322,7 +2362,7 @@ chapter without number
 
 ]
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 5
-5.
+6.
  (C:\Program Files\MiKTeX\tex/latex/base\t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
@@ -2346,10 +2386,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 69579 strings out of 478927
- 1675130 string characters out of 2862391
- 2956981 words of memory out of 3000000
- 85487 multiletter control sequences out of 15000+600000
+ 70253 strings out of 478927
+ 1686310 string characters out of 2862391
+ 2970123 words of memory out of 3000000
+ 86140 multiletter control sequences out of 15000+600000
  480264 words of font info for 543 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  130i,13n,125p,10601b,2968s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2364,7 +2404,7 @@ iKTeX/fonts/type1/public/mathpazo/fplmri.pfb><C:/Program Files/MiKTeX/fonts/typ
 e1/public/fpl/fplrc8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/upl
 b8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Progra
 m Files/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (81 pages, 1189314 bytes).
+Output written on main.pdf (81 pages, 1189328 bytes).
 PDF statistics:
  1406 PDF objects out of 1440 (max. 8388607)
  310 named destinations out of 1000 (max. 500000)
