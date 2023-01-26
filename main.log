@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.12)  26 JAN 2023 13:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.12)  26 JAN 2023 14:10
 entering extended mode
 **./main.tex
 (main.tex
@@ -2228,7 +2228,7 @@ LaTeX Warning: Float too large for page by 21.09166pt on input line 27.
 
 ] [39] [40 <./figures//ortho_mux_21_marked.png> <./figures//input_network_mux_2
 1_marked.png>] [41] [42]
-<./figures//south_scheme.pdf, id=800, 141.10674pt x 140.93896pt>
+<./figures//south_scheme.pdf, id=804, 141.10674pt x 140.93896pt>
 File: ./figures//south_scheme.pdf Graphic file (type pdf)
 <use ./figures//south_scheme.pdf>
 Package pdftex.def Info: ./figures//south_scheme.pdf  used on input line 147.
@@ -2242,7 +2242,7 @@ Package nag Warning: \label in float, but not after \caption on input line 147.
 Package nag Warning: \label in float, but not after \caption on input line 147.
 
 
-<./figures//new_south_scheme.pdf, id=801, 141.12485pt x 140.92651pt>
+<./figures//new_south_scheme.pdf, id=805, 141.12485pt x 140.92651pt>
 File: ./figures//new_south_scheme.pdf Graphic file (type pdf)
 <use ./figures//new_south_scheme.pdf>
 Package pdftex.def Info: ./figures//new_south_scheme.pdf  used on input line 15
@@ -2261,14 +2261,14 @@ Package nag Warning: \label in float, but not after \caption on input line 153.
 pdfTeX warning: pdflatex.exe (file ./figures//new_south_scheme.pdf): PDF inclus
 ion: multiple pdfs with page group included in a single page
 >] [45]
-<./figures//Timing_failure_RES.pdf, id=838, 323.37616pt x 461.90506pt>
+<./figures//Timing_failure_RES.pdf, id=842, 323.37616pt x 461.90506pt>
 File: ./figures//Timing_failure_RES.pdf Graphic file (type pdf)
 <use ./figures//Timing_failure_RES.pdf>
 Package pdftex.def Info: ./figures//Timing_failure_RES.pdf  used on input line 
 207.
 (pdftex.def)             Requested size: 161.68767pt x 230.95197pt.
  [46 <./figures//Timing_failure_RES.pdf>]
-<./figures//Majority_Distribution_network.pdf, id=854, 719.79161pt x 1007.11119
+<./figures//Majority_Distribution_network.pdf, id=858, 719.79161pt x 1007.11119
 pt>
 File: ./figures//Majority_Distribution_network.pdf Graphic file (type pdf)
 <use ./figures//Majority_Distribution_network.pdf>
@@ -2276,14 +2276,14 @@ Package pdftex.def Info: ./figures//Majority_Distribution_network.pdf  used on
 input line 218.
 (pdftex.def)             Requested size: 215.93915pt x 302.13568pt.
  [47] [48 <./figures//Majority_Distribution_network.pdf>] [49] [50] [51]
-<./figures//maj_example_marked.png, id=907, 450.18187pt x 696.35156pt>
+<./figures//maj_example_marked.png, id=911, 450.18187pt x 696.35156pt>
 File: ./figures//maj_example_marked.png Graphic file (type png)
 <use ./figures//maj_example_marked.png>
 Package pdftex.def Info: ./figures//maj_example_marked.png  used on input line 
 425.
 (pdftex.def)             Requested size: 292.61475pt x 452.62315pt.
  [52] [53 <./figures//maj_example_marked.png>] [54] [55] [56]
-<./figures//MUX_RAM.pdf, id=939, 635.34575pt x 593.84512pt>
+<./figures//MUX_RAM.pdf, id=943, 635.34575pt x 593.84512pt>
 File: ./figures//MUX_RAM.pdf Graphic file (type pdf)
 <use ./figures//MUX_RAM.pdf>
 Package pdftex.def Info: ./figures//MUX_RAM.pdf  used on input line 510.
@@ -2333,28 +2333,24 @@ Package tocbasic Info: character protrusion at lot deactivated on input line 53
 
 ]
 chapter without number
-Package microtype Info: Character `029' is missing
-(microtype)             in font `T1/pplx/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
+[70
+
+
+]
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 5
 5.
-(C:\Program Files\MiKTeX\tex/latex/base\t1cmtt.fd
+ (C:\Program Files\MiKTeX\tex/latex/base\t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [70
-
-
-] [71] [72]
-Overfull \hbox (42.1764pt too wide) in paragraph at lines 55--55
-\T1/pplx/m/n/10.95 (-20) Cir-cuits. In: \T1/pplx/m/it/10.95 (-20) PREPRINT (Ve
-r-sion 1) avail-able at Re-search Square [https://doi.org/10.21203/rs.3.rs-
- []
-
-[73] [74]
+ [71] [72] [73]
+Package microtype Info: Character `029' is missing
+(microtype)             in font `T1/pplx/m/sc/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+ [74]
 
 Package nag Warning: 61 complaints in total.
 
@@ -2366,15 +2362,15 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 69595 strings out of 478927
- 1675420 string characters out of 2862391
- 2957948 words of memory out of 3000000
- 85487 multiletter control sequences out of 15000+600000
- 480973 words of font info for 553 fonts, out of 8000000 for 9000
+ 69587 strings out of 478927
+ 1675369 string characters out of 2862391
+ 2957003 words of memory out of 3000000
+ 85491 multiletter control sequences out of 15000+600000
+ 480264 words of font info for 543 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  130i,13n,125p,10601b,2968s stack positions out of 5000i,500n,10000p,200000b,80000s
- <C:\Users\benja\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt
-1095.pk>{C:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Program Files/
+{C:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc} <C:\Users\benja\AppData
+\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk><C:/Program Files/
 MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts
 /type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/publi
 c/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm
@@ -2384,9 +2380,9 @@ iKTeX/fonts/type1/public/mathpazo/fplmri.pfb><C:/Program Files/MiKTeX/fonts/typ
 e1/public/fpl/fplrc8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/upl
 b8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Progra
 m Files/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (82 pages, 1199534 bytes).
+Output written on main.pdf (82 pages, 1190481 bytes).
 PDF statistics:
- 1432 PDF objects out of 1440 (max. 8388607)
+ 1414 PDF objects out of 1440 (max. 8388607)
  311 named destinations out of 1000 (max. 500000)
  100949 words of extra memory for PDF output out of 106986 (max. 10000000)
 

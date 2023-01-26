@@ -41,9 +41,8 @@
     \field{labeltitlesource}{title}
     \field{sortinit}{A}
     \field{sortinithash}{A}
-    \field{booktitle}{2017 19th International Symposium on Symbolic and Numeric
+    \field{booktitle}{International Symposium on Symbolic and Numeric
   Algorithms for Scientific Computing (SYNASC)}
-    \field{pages}{1\bibrangedash 8}
     \field{title}{Smt solving for arithmetic theories: Theory and tool support}
     \field{year}{2017}
   \endentry
@@ -66,9 +65,8 @@
     \field{labeltitlesource}{title}
     \field{sortinit}{A}
     \field{sortinithash}{A}
-    \field{pages}{64\bibrangedash 75}
-    \field{title}{An optimal design of QCA based 2n: 1/1: 2n
-  multiplexer/demultiplexer and its efficient digital logic realization}
+    \field{title}{An optimal design of QCA based multiplexer/demultiplexer and
+  its efficient digital logic realization}
     \field{volume}{56}
     \field{journaltitle}{Microprocessors and Microsystems}
     \field{year}{2018}
@@ -103,7 +101,6 @@
     \field{sortinithash}{A}
     \field{booktitle}{Proceedings of the 24th International Workshop on Logic
   \& Synthesis (IWLS)}
-    \field{number}{CONF}
     \field{title}{The EPFL combinational benchmark suite}
     \field{year}{2015}
   \endentry
@@ -140,7 +137,6 @@
     \field{sortinithash}{B}
     \field{booktitle}{International Conference on Tools and Algorithms for the
   Construction and Analysis of Systems}
-    \field{pages}{268\bibrangedash 283}
     \field{title}{Boolean and Cartesian abstraction for model checking C
   programs}
     \field{year}{2001}
@@ -183,7 +179,6 @@
     \field{sortinit}{B}
     \field{sortinithash}{B}
     \field{number}{1}
-    \field{pages}{38\bibrangedash 48}
     \field{title}{Design and synthesis of improved reversible circuits using
   AIG-and MIG-based graph data structures}
     \field{volume}{13}
@@ -212,10 +207,6 @@
     \field{labeltitlesource}{title}
     \field{sortinit}{B}
     \field{sortinithash}{B}
-    \verb{doi}
-    \verb 10.1166/rits.2014.1028
-    \endverb
-    \field{pages}{334\bibrangedash 342}
     \field{title}{An Introduction to Quantum Cellular Automata Technology and
   Its Defects}
     \field{volume}{2}
@@ -278,7 +269,6 @@
     \field{labeltitlesource}{title}
     \field{sortinit}{B}
     \field{sortinithash}{B}
-    \field{pages}{107668}
     \field{title}{Regular clocking-based Automated Cell Placement technique in
   QCA targeting sequential circuit}
     \field{volume}{98}
@@ -311,7 +301,6 @@
     \field{sortinit}{B}
     \field{sortinithash}{B}
     \field{number}{3}
-    \field{pages}{159\bibrangedash 180}
     \field{title}{A better heuristic for orthogonal graph drawings}
     \field{volume}{9}
     \field{journaltitle}{Computational Geometry}
@@ -342,9 +331,8 @@
     \field{labeltitlesource}{title}
     \field{sortinit}{B}
     \field{sortinithash}{B}
-    \field{booktitle}{2003 Third IEEE Conference on Nanotechnology, 2003.
-  IEEE-NANO 2003.}
-    \field{pages}{402\bibrangedash 405}
+    \field{booktitle}{Third IEEE Conference on Nanotechnology, 2003. IEEE-NANO
+  2003.}
     \field{title}{An architecture for molecular computing using quantum-dot
   cellular automata}
     \field{volume}{1}
@@ -397,7 +385,6 @@
     \field{sortinit}{B}
     \field{sortinithash}{B}
     \field{number}{8}
-    \field{pages}{677\bibrangedash 691}
     \field{title}{Graph-based algorithms for boolean function manipulation}
     \field{volume}{100}
     \field{journaltitle}{Computers, IEEE Transactions on}
@@ -439,7 +426,6 @@
     \field{sortinithash}{B}
     \field{booktitle}{Proceedings of the 18th ACM Great Lakes symposium on
   VLSI}
-    \field{pages}{243\bibrangedash 248}
     \field{title}{A layout-aware physical design method for constructing
   feasible QCA circuits}
     \field{year}{2008}
@@ -484,8 +470,7 @@
     \field{sortinit}{C}
     \field{sortinithash}{C}
     \field{number}{3}
-    \field{pages}{513\bibrangedash 517}
-    \field{title}{Use: a universal, scalable, and efficient clocking scheme for
+    \field{title}{USE: a universal, scalable, and efficient clocking scheme for
   QCA}
     \field{volume}{35}
     \field{journaltitle}{IEEE Transactions on computer-aided design of
@@ -552,7 +537,6 @@
     \field{sortinit}{C}
     \field{sortinithash}{C}
     \field{number}{5}
-    \field{pages}{497\bibrangedash 505}
     \field{title}{Node duplication and routing algorithms for quantum-dot
   cellular automata circuits}
     \field{volume}{153}
@@ -591,7 +575,6 @@
     \field{sortinit}{E}
     \field{sortinithash}{E}
     \field{booktitle}{Drawing Graphs}
-    \field{pages}{121\bibrangedash 171}
     \field{title}{Orthogonal graph drawing}
     \field{year}{2001}
   \endentry
@@ -641,9 +624,7 @@
     \field{labeltitlesource}{title}
     \field{sortinit}{F}
     \field{sortinithash}{F}
-    \field{booktitle}{2018 IEEE International Symposium on Circuits and Systems
-  (ISCAS)}
-    \field{pages}{1\bibrangedash 5}
+    \field{booktitle}{International Symposium on Circuits and Systems (ISCAS)}
     \field{title}{Placement and routing by overlapping and merging qca gates}
     \field{year}{2018}
   \endentry
@@ -679,9 +660,8 @@
     \field{labeltitlesource}{title}
     \field{sortinit}{F}
     \field{sortinithash}{F}
-    \field{booktitle}{2019 32nd Symposium on Integrated Circuits and Systems
-  Design (SBCCI)}
-    \field{pages}{1\bibrangedash 6}
+    \field{booktitle}{Symposium on Integrated Circuits and Systems Design
+  (SBCCI)}
     \field{title}{Ropper: A placement and routing framework for field-coupled
   nanotechnologies}
     \field{year}{2019}
@@ -718,7 +698,6 @@
     \field{sortinit}{G}
     \field{sortinithash}{G}
     \field{number}{12}
-    \field{pages}{8281\bibrangedash 8286}
     \field{title}{An alternative geometry for quantum-dot cellular automata}
     \field{volume}{85}
     \field{journaltitle}{Journal of Applied Physics}
@@ -768,7 +747,6 @@
     \field{sortinit}{G}
     \field{sortinithash}{G}
     \field{number}{1}
-    \field{pages}{83\bibrangedash 96}
     \field{title}{An efficient clocking scheme for quantum-dot cellular
   automata}
     \field{volume}{8}
@@ -795,7 +773,6 @@
     \field{sortinit}{G}
     \field{sortinithash}{G}
     \field{number}{3}
-    \field{pages}{211\bibrangedash 221}
     \field{title}{Mechanizing complemented lattices within Mizar type system}
     \field{volume}{55}
     \field{journaltitle}{Journal of Automated Reasoning}
@@ -861,7 +838,6 @@
     \field{labeltitlesource}{title}
     \field{sortinit}{H}
     \field{sortinithash}{H}
-    \field{isbn}{9781613530023}
     \field{series}{Materials, Circuits and Devices}
     \field{title}{CMOS Digital Integrated Circuits: A First Course}
     \verb{url}
@@ -885,7 +861,6 @@
     \field{labeltitlesource}{title}
     \field{sortinit}{H}
     \field{sortinithash}{H}
-    \field{pages}{557}
     \field{title}{Boolean Algebra. A Correction}
     \field{volume}{35}
     \field{journaltitle}{Transactions of the American Mathematical Society}
@@ -907,14 +882,10 @@
     \field{labeltitlesource}{title}
     \field{sortinit}{H}
     \field{sortinithash}{H}
-    \verb{doi}
-    \verb 10.1073/pnas.18.2.179
-    \endverb
     \verb{eprint}
     \verb https://www.pnas.org/doi/pdf/10.1073/pnas.18.2.179
     \endverb
     \field{number}{2}
-    \field{pages}{179\bibrangedash 180}
     \field{title}{A New Set of Independent Postulates for the Algebra of Logic
   with Special Reference to Whitehead and Russell's Principia Mathematica*}
     \verb{url}
@@ -943,7 +914,6 @@
     \field{labeltitlesource}{title}
     \field{sortinit}{J}
     \field{sortinithash}{J}
-    \field{pages}{479\bibrangedash 491}
     \field{title}{Conditions related to De Morgan's law}
     \field{journaltitle}{Applications of sheaves}
     \field{year}{1979}
@@ -985,7 +955,6 @@
     \field{sortinit}{J}
     \field{sortinithash}{J}
     \field{number}{2}
-    \field{pages}{23\bibrangedash 30}
     \field{title}{Migortho: A Design Automation Flow for QCA Circuits}
     \field{volume}{39}
     \field{journaltitle}{IEEE Design \& Test}
@@ -1058,7 +1027,6 @@
     \field{sortinit}{K}
     \field{sortinithash}{K}
     \field{number}{2}
-    \field{pages}{152\bibrangedash 157}
     \field{title}{Minimal energy dissipation in logic}
     \field{volume}{14}
     \field{journaltitle}{IBM Journal of Research and Development}
@@ -1086,10 +1054,6 @@
     \field{labeltitlesource}{title}
     \field{sortinit}{K}
     \field{sortinithash}{K}
-    \verb{doi}
-    \verb 10.1007/s10470-018-1270-x
-    \endverb
-    \field{pages}{1\bibrangedash 15}
     \field{title}{A systematic approach towards fault-tolerant design of QCA
   circuits}
     \field{volume}{98}
@@ -1117,7 +1081,6 @@
     \field{sortinit}{L}
     \field{sortinithash}{L}
     \field{number}{3}
-    \field{pages}{183\bibrangedash 191}
     \field{title}{Irreversibility and heat generation in the computing process}
     \field{volume}{5}
     \field{journaltitle}{IBM journal of research and development}
@@ -1155,7 +1118,6 @@
     \field{sortinit}{L}
     \field{sortinithash}{L}
     \field{number}{16}
-    \field{pages}{4240}
     \field{title}{Bennett clocking of quantum-dot cellular automata and the
   limits to binary logic scaling}
     \field{volume}{17}
@@ -1188,7 +1150,6 @@
     \field{sortinit}{L}
     \field{sortinithash}{L}
     \field{number}{4}
-    \field{pages}{541\bibrangedash 557}
     \field{title}{A device architecture for computing with quantum dots}
     \field{volume}{85}
     \field{journaltitle}{Proceedings of the IEEE}
@@ -1225,9 +1186,7 @@
     \field{labeltitlesource}{title}
     \field{sortinit}{L}
     \field{sortinithash}{L}
-    \field{booktitle}{Proceedings Workshop on Physics and Computation.
-  PhysComp'94}
-    \field{pages}{5\bibrangedash 13}
+    \field{booktitle}{Proceedings Workshop on Physics and Computation}
     \field{title}{Quantum cellular automata: the physics of computing with
   arrays of quantum dot molecules}
     \field{year}{1994}
@@ -1270,7 +1229,6 @@
     \field{sortinit}{L}
     \field{sortinithash}{L}
     \field{number}{1}
-    \field{pages}{49}
     \field{title}{Quantum cellular automata}
     \field{volume}{4}
     \field{journaltitle}{Nanotechnology}
@@ -1314,9 +1272,7 @@
     \field{labeltitlesource}{title}
     \field{sortinit}{L}
     \field{sortinithash}{L}
-    \field{booktitle}{2012 IEEE International Conference on Circuits and
-  Systems (ICCAS)}
-    \field{pages}{162\bibrangedash 167}
+    \field{booktitle}{International Conference on Circuits and Systems (ICCAS)}
     \field{title}{Sequential circuit design using Quantum-dot Cellular Automata
   (QCA)}
     \field{year}{2012}
@@ -1355,12 +1311,7 @@
     \field{labeltitlesource}{title}
     \field{sortinit}{M}
     \field{sortinithash}{M}
-    \field{booktitle}{2009 Fifth International Conference on MEMS NANO, and
-  Smart Systems}
-    \verb{doi}
-    \verb 10.1109/ICMENS.2009.23
-    \endverb
-    \field{pages}{63\bibrangedash 66}
+    \field{booktitle}{International Conference on MEMS NANO, and Smart Systems}
     \field{title}{Single Electron Fault in QCA Inverter Gate}
     \field{year}{2009}
   \endentry
@@ -1407,8 +1358,8 @@
     \field{labeltitlesource}{title}
     \field{sortinit}{M}
     \field{sortinithash}{M}
-    \field{title}{Optimal design of RAM cell using novel 2: 1 multiplexer in
-  QCA technology}
+    \field{title}{Optimal design of RAM cell using novel multiplexer in QCA
+  technology}
     \field{journaltitle}{Circuit world}
     \field{year}{2019}
   \endentry
@@ -1441,7 +1392,6 @@
     \field{sortinit}{M}
     \field{sortinithash}{M}
     \field{number}{8}
-    \field{pages}{143\bibrangedash 158}
     \field{title}{Quantum-dot Cellular Automata}
     \field{volume}{11}
     \field{journaltitle}{International Journal of Integrated Engineering}
@@ -1478,7 +1428,6 @@
     \field{labeltitlesource}{title}
     \field{sortinit}{M}
     \field{sortinithash}{M}
-    \field{pages}{35\bibrangedash 43}
     \field{title}{An efficient design of full adder in quantum-dot cellular
   automata (QCA) technology}
     \field{volume}{50}
@@ -1488,30 +1437,26 @@
 
   \entry{sequential_reversible_tile}{article}{}
     \name{author}{1}{}{%
-      {{hash=MARSeaGE}{%
+      {{hash=MARSGE}{%
          family={Mohammed\bibnamedelima Alharbi},
          familyi={M\bibinitperiod\bibinitdelim A\bibinitperiod},
          suffix={Gerard\bibnamedelima Edwards},
          suffixi={G\bibinitperiod\bibinitdelim E\bibinitperiod},
-         given={Richard Stocker et\bibnamedelima al.},
-         giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim
-  e\bibinitperiod\bibinitdelim a\bibinitperiod},
+         given={Richard\bibnamedelima Stocker},
+         giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod},
       }}%
     }
     \list{publisher}{1}{%
       {Research Square}%
     }
-    \strng{namehash}{MAGERSea1}
-    \strng{fullhash}{MAGERSea1}
+    \strng{namehash}{MAGERS1}
+    \strng{fullhash}{MAGERS1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{M}
     \field{sortinithash}{M}
     \field{title}{Novel Ultra-Energy-Efficient Reversible Designs of Sequential
   Logic Quantum-Dot Cellular Automata Flip-Flop Circuits}
-    \field{volume}{1}
-    \field{journaltitle}{PREPRINT (Version 1) available at Research Square
-  [https://doi.org/10.21203/rs.3.rs-2145478/v1]}
     \field{year}{2022}
   \endentry
 
@@ -1564,7 +1509,6 @@
     \field{sortinit}{O}
     \field{sortinithash}{O}
     \field{number}{1}
-    \field{pages}{55\bibrangedash 68}
     \field{title}{Magnetic quantum-dot cellular automata: Recent developments
   and prospects}
     \field{volume}{3}
@@ -1609,7 +1553,6 @@
     \field{sortinit}{P}
     \field{sortinithash}{P}
     \field{number}{4}
-    \field{pages}{1233\bibrangedash 1237}
     \field{title}{Spars: A Full Flow Quantum-Dot Cellular Automata Circuit
   Design Tool}
     \field{volume}{68}
@@ -1643,11 +1586,10 @@
     \field{sortinit}{P}
     \field{sortinithash}{P}
     \field{number}{6}
-    \field{pages}{1192\bibrangedash 1200}
     \field{title}{New methodology for the design of efficient binary addition
   circuits in QCA}
     \field{volume}{11}
-    \field{journaltitle}{IEEE transactions on nanotechnology}
+    \field{journaltitle}{IEEE Transactions on Nanotechnology}
     \field{year}{2012}
   \endentry
 
@@ -1681,8 +1623,7 @@
     \field{labeltitlesource}{title}
     \field{sortinit}{P}
     \field{sortinithash}{P}
-    \field{booktitle}{2006 Formal Methods in Computer Aided Design}
-    \field{pages}{89\bibrangedash 96}
+    \field{booktitle}{Formal Methods in Computer Aided Design}
     \field{title}{Advanced unbounded model checking based on AIGs, BDD
   sweeping, and quantifier scheduling}
     \field{year}{2006}
@@ -1732,10 +1673,6 @@
     \field{sortinithash}{R}
     \field{booktitle}{2016 IEEE International Symposium on Circuits and Systems
   (ISCAS)}
-    \verb{doi}
-    \verb 10.1109/ISCAS.2016.7538997
-    \endverb
-    \field{pages}{2114\bibrangedash 2117}
     \field{title}{A Methodology for Standard Cell Design for QCA}
     \field{year}{2016}
   \endentry
@@ -1767,9 +1704,8 @@
     \field{labeltitlesource}{title}
     \field{sortinit}{R}
     \field{sortinithash}{R}
-    \field{booktitle}{2015 Symposium on Computers, Communication and Electronic
+    \field{booktitle}{Symposium on Computers, Communication and Electronic
   Engineering}
-    \field{pages}{143\bibrangedash 148}
     \field{title}{Sequential circuit design using quantum dot cellular automata
   (QCA)}
     \field{year}{2015}
@@ -1800,7 +1736,6 @@
     \field{sortinit}{R}
     \field{sortinithash}{R}
     \field{number}{24}
-    \field{pages}{244301}
     \field{title}{Population congestion in 3-state quantum-dot cellular
   automata}
     \field{volume}{127}
@@ -1832,7 +1767,6 @@
     \field{labeltitlesource}{title}
     \field{sortinit}{S}
     \field{sortinithash}{S}
-    \field{pages}{102927}
     \field{title}{Design of high-performance QCA incrementer/decrementer
   circuit based on adder/subtractor methodology}
     \field{volume}{72}
@@ -1892,7 +1826,6 @@
     \field{sortinit}{S}
     \field{sortinithash}{S}
     \field{number}{6}
-    \field{pages}{52\bibrangedash 59}
     \field{title}{Moore's law: past, present and future}
     \field{volume}{34}
     \field{journaltitle}{IEEE spectrum}
@@ -1936,7 +1869,6 @@
     \field{sortinit}{S}
     \field{sortinithash}{S}
     \field{number}{5344}
-    \field{pages}{1792\bibrangedash 1795}
     \field{title}{Coupled quantum dots fabricated by cleaved edge overgrowth:
   From artificial atoms to molecules}
     \field{volume}{278}
@@ -2017,12 +1949,7 @@
   robust. We have found displacement tolerances to be a function of circuit
   layout and geometry rather than cell size.%
     }
-    \verb{doi}
-    \verb 10.1145/1229175.1229177
-    \endverb
-    \field{issn}{1550-4832}
     \field{number}{1}
-    \field{pages}{2–es}
     \field{title}{Simulation of Random Cell Displacements in QCA}
     \verb{url}
     \verb https://doi.org/10.1145/1229175.1229177
@@ -2071,7 +1998,6 @@
     \field{labeltitlesource}{title}
     \field{sortinit}{S}
     \field{sortinithash}{S}
-    \field{pages}{233\bibrangedash 244}
     \field{title}{Towards the hierarchical design of multilayer QCA logic
   circuit}
     \field{volume}{11}
@@ -2101,7 +2027,6 @@
     \field{sortinit}{S}
     \field{sortinithash}{S}
     \field{number}{1}
-    \field{pages}{147\bibrangedash 159}
     \field{title}{Analysis and implementation of reversible dual edge triggered
   d flip flop using quantum dot cellular automata}
     \field{volume}{14}
@@ -2175,7 +2100,6 @@
     \field{sortinit}{T}
     \field{sortinithash}{T}
     \field{number}{4}
-    \field{pages}{638\bibrangedash 647}
     \field{title}{Consequences of many-cell correlations in clocked quantum-dot
   cellular automata}
     \field{volume}{14}
@@ -2208,7 +2132,6 @@
     \field{sortinit}{T}
     \field{sortinithash}{T}
     \field{booktitle}{Norchip 2007}
-    \field{pages}{1\bibrangedash 5}
     \field{title}{QCA-LG: A tool for the automatic layout generation of QCA
   combinational circuits}
     \field{year}{2007}
@@ -2239,7 +2162,6 @@
     \field{sortinit}{T}
     \field{sortinithash}{T}
     \field{number}{1}
-    \field{pages}{62\bibrangedash 69}
     \field{title}{Reversible logic-based concurrently testable latches for
   molecular QCA}
     \field{volume}{9}
@@ -2317,9 +2239,7 @@
     \field{labeltitlesource}{title}
     \field{sortinit}{T}
     \field{sortinithash}{T}
-    \field{booktitle}{2018 IEEE 18th International Conference on Nanotechnology
-  (IEEE-NANO)}
-    \field{pages}{1\bibrangedash 5}
+    \field{booktitle}{International Conference on Nanotechnology (IEEE-NANO)}
     \field{title}{Synchronization of clocked field-coupled circuits}
     \field{year}{2018}
   \endentry
@@ -2349,7 +2269,6 @@
     \field{sortinit}{T}
     \field{sortinithash}{T}
     \field{number}{5}
-    \field{pages}{2977\bibrangedash 2984}
     \field{title}{Quasiadiabatic switching for metal-island quantum-dot
   cellular automata}
     \field{volume}{85}
@@ -2401,9 +2320,8 @@
     \field{labeltitlesource}{title}
     \field{sortinit}{T}
     \field{sortinithash}{T}
-    \field{booktitle}{2016 29th symposium on integrated circuits and systems
-  design (SBCCI)}
-    \field{pages}{1\bibrangedash 6}
+    \field{booktitle}{Symposium on integrated circuits and systems design
+  (SBCCI)}
     \field{title}{A placement and routing algorithm for quantum-dot cellular
   automata}
     \field{year}{2016}
@@ -2463,9 +2381,8 @@
     \field{labeltitlesource}{title}
     \field{sortinit}{T}
     \field{sortinithash}{T}
-    \field{booktitle}{2014 9th IEEE International Conference on Design \&
-  Technology of Integrated Systems in Nanoscale Era (DTIS)}
-    \field{pages}{1\bibrangedash 6}
+    \field{booktitle}{IEEE International Conference on Design \& Technology of
+  Integrated Systems in Nanoscale Era (DTIS)}
     \field{title}{Physical design and testing of nano magnetic architectures}
     \field{year}{2014}
   \endentry
@@ -2501,7 +2418,6 @@
     \field{sortinit}{V}
     \field{sortinithash}{V}
     \field{number}{1}
-    \field{pages}{34\bibrangedash 44}
     \field{title}{Two-dimensional schemes for clocking/timing of QCA circuits}
     \field{volume}{27}
     \field{journaltitle}{IEEE Transactions on Computer-Aided Design of
@@ -2530,10 +2446,6 @@
     \field{labeltitlesource}{title}
     \field{sortinit}{W}
     \field{sortinithash}{W}
-    \verb{doi}
-    \verb 10.1109/ISVLSI49217.2020.00040
-    \endverb
-    \field{pages}{176\bibrangedash 181}
     \field{title}{Design Automation for Field-Coupled Nanotechnologies}
     \field{month}{07}
     \field{year}{2020}
@@ -2581,9 +2493,8 @@
     \field{labeltitlesource}{title}
     \field{sortinit}{W}
     \field{sortinithash}{W}
-    \field{booktitle}{2021 26th Asia and South Pacific Design Automation
-  Conference (ASP-DAC)}
-    \field{pages}{574\bibrangedash 580}
+    \field{booktitle}{Asia and South Pacific Design Automation Conference
+  (ASP-DAC)}
     \field{title}{One-pass synthesis for field-coupled nanocomputing
   technologies}
     \field{year}{2021}
@@ -2633,7 +2544,6 @@
     \field{sortinithash}{W}
     \field{booktitle}{2018 Design, Automation \& Test in Europe Conference \&
   Exhibition (DATE)}
-    \field{pages}{503\bibrangedash 508}
     \field{title}{An exact method for design exploration of quantum-dot
   cellular automata}
     \field{year}{2018}
@@ -2701,10 +2611,6 @@
   NP-complete. By this, we provide a theoretical foundation for the further
   development of corresponding design methods.%
     }
-    \verb{doi}
-    \verb 10.1145/3312661
-    \endverb
-    \field{issn}{1550-4832}
     \field{number}{3}
     \field{title}{Placement and Routing for Tile-Based Field-Coupled
   Nanocomputing Circuits Is NP-Complete (Research Note)}
@@ -2759,9 +2665,7 @@
     \field{labeltitlesource}{title}
     \field{sortinit}{W}
     \field{sortinithash}{W}
-    \field{booktitle}{Proceedings of the 24th Asia and South Pacific Design
-  Automation Conference}
-    \field{pages}{197\bibrangedash 202}
+    \field{booktitle}{Asia and South Pacific Design Automation Conference}
     \field{title}{Scalable design for field-coupled nanocomputing circuits}
     \field{year}{2019}
   \endentry
@@ -2800,7 +2704,6 @@
     \field{sortinit}{W}
     \field{sortinithash}{W}
     \field{booktitle}{Nanotechnology conference}
-    \field{pages}{160\bibrangedash 163}
     \field{title}{RAM design using quantum-dot cellular automata}
     \field{volume}{2}
     \field{year}{2003}
@@ -2870,10 +2773,9 @@
     \field{labeltitlesource}{title}
     \field{sortinit}{Z}
     \field{sortinithash}{Z}
-    \field{booktitle}{PROCEEDINGS OF THE NATIONAL CONFERENCE ON ARTIFICIAL
-  INTELLIGENCE}
+    \field{booktitle}{Proceedings of the national conference on artificial
+  intelligence}
     \field{number}{1}
-    \field{pages}{143}
     \field{title}{Solving QBF with combined conjunctive and disjunctive normal
   form}
     \field{volume}{21}
