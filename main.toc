@@ -53,7 +53,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2.1}Sequential logic in QCA}{36}{subsection.3.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.2}QCA storage cells (QCA RAM)}{36}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.2}QCA storage cells (QCA RAM)}{37}{subsection.3.2.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {4}Distribution Networks for Scalable P\&R}{38}{chapter.4}%
 \defcounter {refsection}{0}\relax 

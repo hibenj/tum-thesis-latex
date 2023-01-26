@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.12)  25 JAN 2023 13:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.12)  26 JAN 2023 13:35
 entering extended mode
 **./main.tex
 (main.tex
@@ -2195,7 +2195,7 @@ Package pdftex.def Info: ./figures//ortho_mux_21.png  used on input line 324.
  [33] [34 <./figures//ortho_mux_21.png>] [35] [36])
 (chapters/04_main_work.tex [37]
 chapter 4.
-<./figures//ortho_mux_21_marked.png, id=760, 554.82281pt x 647.41875pt>
+<./figures//ortho_mux_21_marked.png, id=761, 554.82281pt x 647.41875pt>
 File: ./figures//ortho_mux_21_marked.png Graphic file (type png)
 <use ./figures//ortho_mux_21_marked.png>
 Package pdftex.def Info: ./figures//ortho_mux_21_marked.png  used on input line
@@ -2207,7 +2207,7 @@ Package nag Warning: \label in float, but not after \caption on input line 19.
 
 Package nag Warning: \label in float, but not after \caption on input line 19.
 
-<./figures//input_network_mux_21_marked.png, id=761, 636.87938pt x 636.12656pt>
+<./figures//input_network_mux_21_marked.png, id=762, 636.87938pt x 636.12656pt>
 
 File: ./figures//input_network_mux_21_marked.png Graphic file (type png)
 <use ./figures//input_network_mux_21_marked.png>
@@ -2228,7 +2228,7 @@ LaTeX Warning: Float too large for page by 21.09166pt on input line 27.
 
 ] [39] [40 <./figures//ortho_mux_21_marked.png> <./figures//input_network_mux_2
 1_marked.png>] [41] [42]
-<./figures//south_scheme.pdf, id=799, 141.10674pt x 140.93896pt>
+<./figures//south_scheme.pdf, id=800, 141.10674pt x 140.93896pt>
 File: ./figures//south_scheme.pdf Graphic file (type pdf)
 <use ./figures//south_scheme.pdf>
 Package pdftex.def Info: ./figures//south_scheme.pdf  used on input line 147.
@@ -2242,7 +2242,7 @@ Package nag Warning: \label in float, but not after \caption on input line 147.
 Package nag Warning: \label in float, but not after \caption on input line 147.
 
 
-<./figures//new_south_scheme.pdf, id=800, 141.12485pt x 140.92651pt>
+<./figures//new_south_scheme.pdf, id=801, 141.12485pt x 140.92651pt>
 File: ./figures//new_south_scheme.pdf Graphic file (type pdf)
 <use ./figures//new_south_scheme.pdf>
 Package pdftex.def Info: ./figures//new_south_scheme.pdf  used on input line 15
@@ -2261,14 +2261,14 @@ Package nag Warning: \label in float, but not after \caption on input line 153.
 pdfTeX warning: pdflatex.exe (file ./figures//new_south_scheme.pdf): PDF inclus
 ion: multiple pdfs with page group included in a single page
 >] [45]
-<./figures//Timing_failure_RES.pdf, id=837, 323.37616pt x 461.90506pt>
+<./figures//Timing_failure_RES.pdf, id=838, 323.37616pt x 461.90506pt>
 File: ./figures//Timing_failure_RES.pdf Graphic file (type pdf)
 <use ./figures//Timing_failure_RES.pdf>
 Package pdftex.def Info: ./figures//Timing_failure_RES.pdf  used on input line 
 207.
 (pdftex.def)             Requested size: 161.68767pt x 230.95197pt.
  [46 <./figures//Timing_failure_RES.pdf>]
-<./figures//Majority_Distribution_network.pdf, id=853, 719.79161pt x 1007.11119
+<./figures//Majority_Distribution_network.pdf, id=854, 719.79161pt x 1007.11119
 pt>
 File: ./figures//Majority_Distribution_network.pdf Graphic file (type pdf)
 <use ./figures//Majority_Distribution_network.pdf>
@@ -2276,28 +2276,37 @@ Package pdftex.def Info: ./figures//Majority_Distribution_network.pdf  used on
 input line 218.
 (pdftex.def)             Requested size: 215.93915pt x 302.13568pt.
  [47] [48 <./figures//Majority_Distribution_network.pdf>] [49] [50] [51]
-<./figures//maj_example.png, id=906, 450.18187pt x 696.35156pt>
-File: ./figures//maj_example.png Graphic file (type png)
-<use ./figures//maj_example.png>
-Package pdftex.def Info: ./figures//maj_example.png  used on input line 426.
+<./figures//maj_example_marked.png, id=907, 450.18187pt x 696.35156pt>
+File: ./figures//maj_example_marked.png Graphic file (type png)
+<use ./figures//maj_example_marked.png>
+Package pdftex.def Info: ./figures//maj_example_marked.png  used on input line 
+425.
 (pdftex.def)             Requested size: 292.61475pt x 452.62315pt.
- [52] [53 <./figures//maj_example.png>] [54] [55] [56]
-<./figures//MUX_RAM.pdf, id=937, 635.34575pt x 593.84512pt>
+ [52] [53 <./figures//maj_example_marked.png>] [54] [55] [56]
+<./figures//MUX_RAM.pdf, id=939, 635.34575pt x 593.84512pt>
 File: ./figures//MUX_RAM.pdf Graphic file (type pdf)
 <use ./figures//MUX_RAM.pdf>
-Package pdftex.def Info: ./figures//MUX_RAM.pdf  used on input line 509.
+Package pdftex.def Info: ./figures//MUX_RAM.pdf  used on input line 510.
 (pdftex.def)             Requested size: 254.13379pt x 237.53383pt.
 ) (chapters/05_experimental_evaluation.tex [57 <./figures//MUX_RAM.pdf>]
 chapter 5.
+
+Overfull \hbox (3.7102pt too wide) in paragraph at lines 3--4
+\T1/pplx/m/n/10.95 (-20) source frame-work \T1/pplx/m/it/10.95 (-20) fic-tion\T
+1/pplx/m/n/10.95 (-20) , which can be found at at https://github.com/marcelwa/f
+iction.
+ []
+
+
+Overfull \hbox (92.3709pt too wide) in paragraph at lines 3--4
+\T1/pplx/m/n/10.95 (-20) The forked source-code can be found on GitHub with the
+ fol-low-ing link: https://github.com/hibenj/fiction. 
+ []
+
 [58
 
 
-] [59] [60] [61]
-Overfull \hbox (19.4259pt too wide) in paragraph at lines 115--116
- [][] 
- []
-
-[62] [63]) (chapters/06_conclusion.tex [64] [65]
+] [59] [60] [61] [62] [63]) (chapters/06_conclusion.tex [64] [65]
 chapter 6.
 ) [66
 
@@ -2357,11 +2366,11 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 69564 strings out of 478927
- 1674986 string characters out of 2862391
- 2958852 words of memory out of 3000000
- 85481 multiletter control sequences out of 15000+600000
- 478744 words of font info for 537 fonts, out of 8000000 for 9000
+ 69595 strings out of 478927
+ 1675420 string characters out of 2862391
+ 2957948 words of memory out of 3000000
+ 85487 multiletter control sequences out of 15000+600000
+ 480973 words of font info for 553 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  130i,13n,125p,10601b,2968s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\benja\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt
@@ -2375,9 +2384,9 @@ iKTeX/fonts/type1/public/mathpazo/fplmri.pfb><C:/Program Files/MiKTeX/fonts/typ
 e1/public/fpl/fplrc8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/upl
 b8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Progra
 m Files/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (82 pages, 1197560 bytes).
+Output written on main.pdf (82 pages, 1199534 bytes).
 PDF statistics:
- 1424 PDF objects out of 1440 (max. 8388607)
+ 1432 PDF objects out of 1440 (max. 8388607)
  311 named destinations out of 1000 (max. 500000)
- 90709 words of extra memory for PDF output out of 106986 (max. 10000000)
+ 100949 words of extra memory for PDF output out of 106986 (max. 10000000)
 

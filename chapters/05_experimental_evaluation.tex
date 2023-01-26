@@ -1,13 +1,13 @@
 \chapter{Experimental Evaluation}\label{chapter:ExpEval}
 
-The proposed Ordering Networks were implemented in C++17 on top of the open-source framework \textit{fiction}. The forked source-code can be found on GitHub with the following link: https://github.com/hibenj/fiction. 
+The proposed Ordering Networks were implemented in C++17 on top of the open-source framework \textit{fiction}, which can be found at at https://github.com/marcelwa/fiction. The forked source-code can be found on GitHub with the following link: https://github.com/hibenj/fiction.
 
 The experimental results were created on a system with a AMD Ryzen 5 PRO 3500U CPU with 8 cores, 16GB RAM and Windows 11 OS.
 
 \section{Benchmarks}
 The selected benchmarks aim to compare the Distribution Networks with the state of the art, which is formed by ortho. Hence, the benchmarks~\cite{fontes, trindade2016placement, epfl, iscas} ortho has been evaluated on in~\cite{ortho} need to be considered. In case of the ODN all these benchmarks can be evaluated and therefore form a sufficient comparison to the state of the art.
 
-Since only a few of the selected benchmarks contain majority gates, they are not suited to evaluate the properties of MGDNs. Therefore the random network generator in \textit{fiction} is used to create MIGs with different sizes. To recreate these networks the network number is indicating the seed, while aso the number of inputs and the number of gates is given. The MIG benchmark can be placed and routed by the Majority Distribution Network and is converted into an AIG in order to enable ortho to place and route the same logic.
+Since only a few of the selected benchmarks contain majority gates, they are not suited to evaluate the properties of MGDNs. Therefore the random network generator in \textit{fiction} is used to create MIGs of different sizes. To recreate these networks the network number is indicating the seed, while aso the number of inputs and the number of gates is given. The MIG benchmark can be placed and routed by the Majority Distribution Network and is converted into an AIG in order to enable ortho to place and route the same logic.
 
 Because the SDN is the first algorithm, which is able to place sequential QCA circuits, no comparison can be made. In this case the \textit{itc99-poli}~\cite{itc_poli} benchmarks are selected for the evaluation.
 
@@ -15,140 +15,148 @@ Because the SDN is the first algorithm, which is able to place sequential QCA ci
 In this section, the evaluation results of the three Distribution Networks are presented and compared against the state-of-the-art with respect to their \textit{key metrics}. The key metrics are those that are expected to be influenced by the Distribution Network, and in addition, common metrics that have been previously investigated in the state-of-the-art are also provided for completeness.
 
 \subsection{Ordering Distribution Network}
-The data evaluated for the comparison between the ODN and ortho as state of the art is shown in Table~\ref{tab:ordering_exp}. The table is ordered as follows. The column section describes the benchmarks, with their source, name, number of PIs and POs and the number of gates, which are placed on the layout including inverter and fan-out nodes. The second section gives the evaluation results of ortho, including the layout size, represented by the tile number in horizontal (width) and vertical direction (height), the number of wire crossings, number of total wires and the running time. The same metrics are shown for the ODN for comparison.
-Since the ODN aims to reduce area and wire crossings by ordering the inputs and giving new placement and route rules, the layout area and number of wire crossings are together with the running time the most important metrics for comparison. Because these functionalities add complexity to the placement and routing algorithm it is expected a slight increase in running time, while the wire crossings and area are reduced. As already stated also an inverter balancing was introduced, which only brings a gate reduction for the \textit{par\_check} benchmark. Therefore, the gate number is given for both algorithms the same, for \textit{par\_check} it has to be considered that it is reduced by one gate. Looking first at the running time of both algorithms, the average is $4\%$ higher for the ODN. The highest running time difference, with plus $75\%$, is made at the benchmark $c5315$, which is one of the benchmarks with the highest number of gates analyzed. Though the ODN performs very well on this benchmark, reducing wire crossings by $21\%$ and the layout area by $11\%$. Overall the wire crossings could be reduced by $13\%$. In case of the \textit{parity} benchmark they could even be reduced by $56\%$, meaning that wire crossings are not only reduced within the newly utilized area east of the PIs, but also in the further placement and routing. A negative impact on wire crossings was shown only in four out of 34 cases ($12\%$). Further the layout area was reduced for all benchmarks with an average of $17\%$. For smaller benchmarks the area reduction has more percentage improvement, since the area utilization in the PI section has more impact compared to the total size of the layout. For bigger benchmarks this effect is reduced, but with the increase of gates, the area efficient placement and routing of gates being colored south can be applied more often. Hence, even for the $c7552$ benchmark with 5654 gates an area reduction of $11\%$ is reached.
+The data evaluated for the comparison between the ODN and ortho as state of the art is shown in Table~\ref{tab:ordering_exp}. The table is ordered as follows: The first column section describes the benchmarks, with their source, name, number of PIs and POs and the number of gates, which are placed on the layout including inverter and fan-out nodes. The second section gives the evaluation results of ortho, including the layout size, represented by the tile number in horizontal (width) and vertical direction (height), the number of wire crossings, number of total wires and the running time. The same metrics are shown for the ODN for comparison.
+Since the ODN aims to reduce area and wire crossings by ordering the inputs and giving new placement and routing rules, the layout area and number of wire crossings are together with the running time the most important metrics for comparison. Because these functionalities add complexity to the placement and routing algorithm it is expected a slight increase in running time, while the wire crossings and area are reduced. As already stated also an inverter balancing was introduced, which only brings a gate reduction for the \textit{par\_check} benchmark. Therefore, the gate number is the same for both algorithms, for \textit{par\_check} it has to be considered that it is reduced by one gate. Looking first at the running time of both algorithms, the average is $4\%$ higher for the ODN. The highest running time difference, with plus $75\%$, is made at the benchmark $c5315$, which is one of the benchmarks with the highest number of gates. Though, the ODN performs very well on this benchmark, reducing wire crossings by $21\%$ and the layout area by $11\%$. Overall the wire crossings could be reduced by $13\%$. In case of the \textit{parity} benchmark they could even be reduced by $56\%$, meaning that wire crossings are not only reduced within the newly utilized input area, but also in the further placement and routing. A negative impact on wire crossings was shown only in four out of 34 cases ($12\%$). Furthermore, the layout area was reduced for all benchmarks with an average of $17\%$. For smaller benchmarks the area reduction has more percentage improvement, since the area utilization in the PI section has more impact compared to the total size of the layout. For bigger benchmarks this effect is reduced, but with the increase of gates, the area efficient placement and routing of gates can be applied more often. Hence, even for the $c7552$ benchmark with 5654 gates an area reduction of $11\%$ is reached.
  
-%
+% Table generated by Excel2LaTeX from sheet 'Tabelle1'
 \begin{sidewaystable}[htbp]
 	\centering
 	\scalebox{0.78}{
-	\begin{tabular}{|r|l|l|l|r|r|r|r|r|r|r|r|r|r|}
+	\begin{tabular}{|r|l|r|r|r|r|r|r|r|r|r|r|r|r|}
 		\toprule
-		& \multicolumn{3}{c}{Benchmark} & \multicolumn{5}{c}{\cellcolor[rgb]{ .906,  .902,  .902}Ortho} & \multicolumn{5}{c|}{\cellcolor[rgb]{ .749,  .749,  .749}Ordering NW} \\
+		& \multicolumn{3}{c}{Benchmark} & \multicolumn{5}{c}{\cellcolor[rgb]{ .906,  .902,  .902}ortho} & \multicolumn{5}{c|}{\cellcolor[rgb]{ .749,  .749,  .749}ODN} \\
 		\midrule
-		& Name  & I/O   & |G|   & \multicolumn{1}{l|}{w } & \multicolumn{1}{l|}{ h } & \multicolumn{1}{l|}{|WC|} & \multicolumn{1}{l|}{|W|} & \multicolumn{1}{l|}{t in s} & \multicolumn{1}{l|}{w } & \multicolumn{1}{l|}{ h } & \multicolumn{1}{l|}{|WC|} & \multicolumn{1}{l|}{|W|} & \multicolumn{1}{l|}{t in s} \\
-		\cmidrule{2-14}    \multicolumn{1}{|l|}{trindade16} & mux21 & 3/1   & \multicolumn{1}{r|}{5} & 6     & 7     & 5     & 24    & \multicolumn{1}{l|}{<1} & 4     & 4     & 1     & 9     & \multicolumn{1}{l|}{<1} \\
-		& xor2  & 2/1   & 6     & 5     & 7     & 2     & 17    & \multicolumn{1}{l|}{<1} & 5     & 4     & 1     & 11    & \multicolumn{1}{l|}{<1} \\
-		& xnor2 & 2/1   & 8     & 6     & 8     & 2     & 20    & \multicolumn{1}{l|}{<1} & 6     & 6     & 3     & 18    & \multicolumn{1}{l|}{<1} \\
-		& par\_gen & 3/1   & 14    & 9     & 13    & 6     & 56    & \multicolumn{1}{l|}{<1} & 9     & 10    & 8     & 51    & \multicolumn{1}{l|}{<1} \\
-		& FA    & 3/2   & 21    & 14    & 16    & 14    & 110   & \multicolumn{1}{l|}{<1} & 13    & 13    & 13    & 99    & \multicolumn{1}{l|}{<1} \\
-		& par\_check & 4/1   & 21    & 12    & 19    & 22    & 107   & \multicolumn{1}{l|}{<1} & 11    & 14    & 10    & 154   & \multicolumn{1}{l|}{<1} \\
+		& Name  & I/O   & |G|   & w     &  h    & |WC|  & |W|   & t in s & w     &  h    & |WC|  & |W|   & t in s \\
+		\cmidrule{2-14}    \multicolumn{1}{|l|}{trindade16 \cite{trindade2016placement}} & mux21 & 3/1   & 5     & 6     & 7     & 5     & 24    & <1    & 4     & 4     & 1     & 9     & <1 \\
+		& xor2  & 2/1   & 6     & 5     & 7     & 2     & 17    & <1    & 5     & 4     & 1     & 11    & <1 \\
+		& xnor2 & 2/1   & 8     & 6     & 8     & 2     & 20    & <1    & 6     & 6     & 3     & 18    & <1 \\
+		& par\_gen & 3/1   & 14    & 9     & 13    & 6     & 56    & <1    & 9     & 10    & 8     & 51    & <1 \\
+		& FA    & 3/2   & 21    & 14    & 16    & 14    & 110   & <1    & 13    & 13    & 13    & 99    & <1 \\
+		& par\_check & 4/1   & 21    & 12    & 19    & 22    & 107   & <1    & 11    & 14    & 10    & 154   & <1 \\
 		\midrule
-		\multicolumn{1}{|l|}{fontes18} & majority & 5/1   & 21    & 9     & 24    & 22    & 132   & \multicolumn{1}{l|}{<1} & 12    & 16    & 19    & 112   & \multicolumn{1}{l|}{<1} \\
-		& b1\_r2 & 3/4   & 19    & 13    & 17    & 15    & 117   & \multicolumn{1}{l|}{<1} & 11    & 12    & 12    & 95    & \multicolumn{1}{l|}{<1} \\
-		& 1bitAdderAOIG & 3/2   & 21    & 12    & 18    & 14    & 93    & \multicolumn{1}{l|}{<1} & 11    & 15    & 12    & 79    & \multicolumn{1}{l|}{<1} \\
-		& 1bitAdderMaj & 3/1   & 36    & 13    & 32    & 28    & 181   & \multicolumn{1}{l|}{<1} & 13    & 29    & 27    & 178   & \multicolumn{1}{l|}{<1} \\
-		& 2bitAdderMaj & 5/2   & 59    & 23    & 53    & 62    & 418   & \multicolumn{1}{l|}{<1} & 22    & 51    & 53    & 413   & \multicolumn{1}{l|}{<1} \\
-		& cm82a & 5/3   & 56    & 22    & 48    & 68    & 475   & \multicolumn{1}{l|}{<1} & 20    & 42    & 54    & 438   & \multicolumn{1}{l|}{<1} \\
-		& parity & 16/1  & 133   & 48    & 119   & 164   & 1867  & \multicolumn{1}{l|}{<1} & 48    & 103   & 72    & 2212  & \multicolumn{1}{l|}{<1} \\
+		\multicolumn{1}{|l|}{fontes18 \cite{fontes}} & majority & 5/1   & 21    & 9     & 24    & 22    & 132   & <1    & 12    & 16    & 19    & 112   & <1 \\
+		& b1\_r2 & 3/4   & 19    & 13    & 17    & 15    & 117   & <1    & 11    & 12    & 12    & 95    & <1 \\
+		& 1bitAdderAOIG & 3/2   & 21    & 12    & 18    & 14    & 93    & <1    & 11    & 15    & 12    & 79    & <1 \\
+		& 1bitAdderMaj & 3/1   & 36    & 13    & 32    & 28    & 181   & <1    & 13    & 29    & 27    & 178   & <1 \\
+		& 2bitAdderMaj & 5/2   & 59    & 23    & 53    & 62    & 418   & <1    & 22    & 51    & 53    & 413   & <1 \\
+		& cm82a & 5/3   & 56    & 22    & 48    & 68    & 475   & <1    & 20    & 42    & 54    & 438   & <1 \\
+		& parity & 16/1  & 133   & 48    & 119   & 164   & 1867  & <1    & 48    & 103   & 72    & 2212  & <1 \\
 		\midrule
-		\multicolumn{1}{|l|}{ISCAS85} & c17   & 5/2   & 10    & 9     & 12    & 8     & 62    & \multicolumn{1}{l|}{<1} & 7     & 10    & 8     & 44    & \multicolumn{1}{l|}{<1} \\
-		& c432  & 36/7  & 537   & 187   & 432   & 4273  & 34911 & \multicolumn{1}{l|}{<1} & 193   & 419   & 4063  & 36732 & \multicolumn{1}{l|}{<1} \\
-		& c499  & 41/32 & 1089  & 359   & 841   & 9422  & 98988 & 2,02  & 328   & 734   & 9172  & 95451 & 2,02 \\
-		& c880  & 60/26 & 845   & 292   & 696   & 7918  & 65197 & 1,41  & 267   & 645   & 8166  & 65090 & 1,95 \\
-		& c1355 & 41/32 & 1329  & 431   & 1113  & 6318  & 103721 & 2,34  & 440   & 1110  & 5912  & 104694 & 3,49 \\
-		& c1908 & 33/25 & 1092  & 365   & 819   & 10300 & 101085 & 1,90  & 342   & 763   & 9319  & 99799 & 1,92 \\
-		& c2670 & 233/63 & 1840  & 664   & 1580  & 29792 & 308518 & 7,19  & 604   & 1497  & 25247 & 304793 & 6,42 \\
-		& c3540 & 50/22 & 2748  & 840   & 2028  & 41794 & 433132 & 9,71  & 1949  & 820   & 39534 & 440620 & 9,39 \\
-		& c5315 & 178/123 & 4615  & 1616  & 3436  & 122373 & 1551411 & 34,50 & 1509  & 3267  & 96594 & 1577735 & 60,48 \\
-		& c6288 & 32/32 & 6963  & 1361  & 5715  & 31535 & 629779 & 24,73 & 1330  & 5713  & 34994 & 705176 & 25,86 \\
-		& c7552 & 207/107 & 5654  & 1710  & 4318  & 200597 & 2312386 & 56,02 & 1599  & 4148  & 165626 & 2234848 & 47,98 \\
+		\multicolumn{1}{|l|}{ISCAS85 \cite{iscas}} & c17   & 5/2   & 10    & 9     & 12    & 8     & 62    & <1    & 7     & 10    & 8     & 44    & <1 \\
+		& c432  & 36/7  & 537   & 187   & 432   & 4273  & 34911 & <1    & 193   & 419   & 4063  & 36732 & <1 \\
+		& c499  & 41/32 & 1089  & 359   & 841   & 9422  & 98988 & 2.02 & 328   & 734   & 9172  & 95451 & 2.02 \\
+		& c880  & 60/26 & 845   & 292   & 696   & 7918  & 65197 & 1.41 & 267   & 645   & 8166  & 65090 & 1.95 \\
+		& c1355 & 41/32 & 1329  & 431   & 1113  & 6318  & 103721 & 2.34 & 440   & 1110  & 5912  & 104694 & 3.49 \\
+		& c1908 & 33/25 & 1092  & 365   & 819   & 10300 & 101085 & 1.90 & 342   & 763   & 9319  & 99799 & 1.92 \\
+		& c2670 & 233/63 & 1840  & 664   & 1580  & 29792 & 308518 & 7.19 & 604   & 1497  & 25247 & 304793 & 6.42 \\
+		& c3540 & 50/22 & 2748  & 840   & 2028  & 41794 & 433132 & 9.71 & 1949  & 820   & 39534 & 440620 & 9.39 \\
+		& c5315 & 178/123 & 4615  & 1616  & 3436  & 122373 & 1551411 & 34.50 & 1509  & 3267  & 96594 & 1577735 & 60.48 \\
+		& c6288 & 32/32 & 6963  & 1361  & 5715  & 31535 & 629779 & 24.73 & 1330  & 5713  & 34994 & 705176 & 25.86 \\
+		& c7552 & 207/107 & 5654  & 1710  & 4318  & 200597 & 2312386 & 56.02 & 1599  & 4148  & 165626 & 2234848 & 47.98 \\
 		\bottomrule
 	\end{tabular}}%
-
+	\label{tab:addlabel}%
 \end{sidewaystable}%
 
+
 %
+% Table generated by Excel2LaTeX from sheet 'Tabelle1'
 \begin{sidewaystable}[htbp]
 	\centering
 	\scalebox{0.78}{
-	\begin{tabular}{|r|l|l|r|r|r|r|r|r|r|r|r|r|r|}
+	\begin{tabular}{|r|l|r|r|r|r|r|r|r|r|r|r|r|r|}
 		\toprule
-		& \multicolumn{3}{c}{Benchmark} & \multicolumn{5}{c}{\cellcolor[rgb]{ .906,  .902,  .902}Ortho} & \multicolumn{5}{c|}{\cellcolor[rgb]{ .749,  .749,  .749}Ordering NW} \\
+		& \multicolumn{3}{c}{Benchmark} & \multicolumn{5}{c}{\cellcolor[rgb]{ .906,  .902,  .902}ortho} & \multicolumn{5}{c|}{\cellcolor[rgb]{ .749,  .749,  .749}ODN} \\
 		\midrule
-		& Name  & I/O   & \multicolumn{1}{l|}{|G|} & \multicolumn{1}{l|}{w } & \multicolumn{1}{l|}{ h } & \multicolumn{1}{l|}{|WC|} & \multicolumn{1}{l|}{|W|} & \multicolumn{1}{l|}{t in s} & \multicolumn{1}{l|}{w } & \multicolumn{1}{l|}{ h } & \multicolumn{1}{l|}{|WC|} & \multicolumn{1}{l|}{|W|} & \multicolumn{1}{l|}{t in s} \\
+		& Name  & I/O   & |G|   & w     &  h    & |WC|  & |W|   & t in s & w     &  h    & |WC|  & |W|   & t in s \\
 		\midrule
-		\multicolumn{1}{|l|}{EPFL} & ctrl  & 7/27  & \multicolumn{1}{l|}{498} & 185   & 252   & 2690  & 25240 & \multicolumn{1}{l|}{<1} & 161   & 344   & 2497  & 23703 & \multicolumn{1}{l|}{<1} \\
-		& int2float & 11/7  & \multicolumn{1}{l|}{693} & 228   & 495   & 5533  & 112860 & 1,67  & 222   & 480   & 5319  & 47421 & 1,05 \\
-		& router & 60/3  & \multicolumn{1}{l|}{659} & 234   & 549   & 7873  & 51370 & 1,30  & 240   & 502   & 5699  & 56821 & 1,16 \\
-		& dec   & 8/256 & \multicolumn{1}{l|}{864} & 665   & 472   & 7161  & 159743 & 3,73  & 410   & 471   & 7166  & 101910 & 3,04 \\
-		& cavlc & 10/11 & \multicolumn{1}{l|}{1973} & 578   & 1428  & 28690 & 284337 & 5,79  & 568   & 1393  & 28325 & 279467 & 5,61 \\
-		& adder & 256/129 & \multicolumn{1}{l|}{3055} & 1027  & 2670  & 83063 & 693203 & 15,23 & 899   & 2668  & 82809 & 859067 & 20,15 \\
-		& priority & 128/8 & \multicolumn{1}{l|}{2761} & 815   & 2211  & 60749 & 585776 & 12,17 & 813   & 1990  & 41365 & 593235 & 12,30 \\
-		& i2c   & 136/127 & \multicolumn{1}{l|}{3507} & 1329  & 2576  & 92862 & 998017 & 33,16 & 1221  & 2469  & 84432 & 1020260 & 27,53 \\
-		& bar   & 135/128 & \multicolumn{1}{l|}{8592} & 2565  & 6426  & 306390 & 3515968 & 83,12 & 2438  & 6189  & 283554 & 3484387 & 128,79 \\
-		& max   & 512/130 & \multicolumn{1}{l|}{7866} & 2606  & 6415  & 544606 & 5028437 & 136,49 & 2506  & 6158  & 360324 & 5289167 & 142,19 \\
-		& sin   & 24/25 & 14314 & 4206  & 10229 & 506767 & 7341605 & 272,7 & 4183  & 9776  & 507042 & 7139674 & 182,3 \\
+		\multicolumn{1}{|l|}{EPFL \cite{epfl}} & ctrl  & 7/27  & 498   & 185   & 252   & 2690  & 25240 & <1    & 161   & 344   & 2497  & 23703 & <1 \\
+		& int2float & 11/7  & 693   & 228   & 495   & 5533  & 112860 & 1.67 & 222   & 480   & 5319  & 47421 & 1.05 \\
+		& router & 60/3  & 659   & 234   & 549   & 7873  & 51370 & 1.30 & 240   & 502   & 5699  & 56821 & 1.16 \\
+		& dec   & 8/256 & 864   & 665   & 472   & 7161  & 159743 & 3.73 & 410   & 471   & 7166  & 101910 & 3.04 \\
+		& cavlc & 10/11 & 1973  & 578   & 1428  & 28690 & 284337 & 5.79 & 568   & 1393  & 28325 & 279467 & 5.61 \\
+		& adder & 256/129 & 3055  & 1027  & 2670  & 83063 & 693203 & 15.23 & 899   & 2668  & 82809 & 859067 & 20.15 \\
+		& priority & 128/8 & 2761  & 815   & 2211  & 60749 & 585776 & 12.17 & 813   & 1990  & 41365 & 593235 & 12.30 \\
+		& i2c   & 136/127 & 3507  & 1329  & 2576  & 92862 & 998017 & 33.16 & 1221  & 2469  & 84432 & 1020260 & 27.53 \\
+		& bar   & 135/128 & 8592  & 2565  & 6426  & 306390 & 3515968 & 83.12 & 2438  & 6189  & 283554 & 3484387 & 128.79 \\
+		& max   & 512/130 & 7866  & 2606  & 6415  & 544606 & 5028437 & 136.49 & 2506  & 6158  & 360324 & 5289167 & 142.19 \\
+		& sin   & 24/25 & 14314 & 4206  & 10229 & 506767 & 7341605 & 272.73 & 4183  & 9776  & 507042 & 7139674 & 182.28 \\
 		\bottomrule
 	\end{tabular}}%
-	\caption{I/O number of primary inputs/outputs, $|G|$ number of logic network nodes (gates + fan-outs), $w \times h$ aspect ratio given in tiles, $|WC|$ number wire crossings, $|W|$ number of wires, $t$ in s runtime in seconds, OOM maximum RAM reached, ---no data available}\label{tab:ordering_exp}%%
+	\caption{I/O number of primary inputs/outputs, $|G|$ number of logic network nodes (gates + fan-outs), $w \times h$ aspect ratio given in tiles, $|WC|$ number wire crossings, $|W|$ number of wires, $t$ in s runtime in seconds, OOM maximum RAM reached, ---no data available}\label{tab:ordering_exp}%
 \end{sidewaystable}%
 
 \newpage
 \subsection{Majority Gates Distribution Network}
-For the MGDN the evaluated data is given in Table~\ref{tab:maj_exp}. The collected results again divided in three column sections. The first section describing the benchmark with name, number of PIs and POs and also the number of majority gates in the network. The remaining two sections again include the metrics, number of gates, layout size, represented by the tile number in horizontal (width) and vertical direction (height), number of wire crossings, number of total wires and the running time. Since the benchmarks are given as MIGs, the number of gates differs for the logic network placed and routed with the MGDN and the AIG representation placed and routed with ortho. 
-Due to this property, the Distribution Network should always have to place fewer gates. But as discussed in Section~\ref{sec:majgatedisnet}, because of the placement and routing of the majority gate itself and the additionally required buffer insertion, the majority gates implementation in expected to scale very badly especially if buffers need to be inserted, which is more likely to happen for bigger circuits. On the other hand, since the Majority Distribution Network doesn't include any wire crossings, a decrease in wire crossings is expected. Even though the number of gates decreases, the complexity of the algorithm is increased dramatically, due to the buffer insertion, leaving the expectation of an increase in running time. Therefore, the key metrics examined for this Distribution Network are the number of placed gates, layout size, number of wire crossings and running time.
-Looking at the number of gates placed in these benchmarks, the MIG representation contains on average only $28\%$ number of gates compared to their AIG representation. Though an average area increase of $865\%$ and an average running time increase of $457\%$ can be evaluated in the MGDN, making it very costly, while also having bad performance. The only positive property is the decrease of wire crossings by an average of $40\%$. Depending on a cost metric, which can compare how much area and wires the reduction of one wire crossing is worth, the real impact of this Distribution Network can be evaluated. All the named effects scale with the size of the network. In the smallest network $r1$ all effects are damped, showing an area increase of $421\%$, wire crossing reduction of $24\%$, while the MIG contains only $31\%$ of the gates compared to the AIG network. For both algorithms the benchmark $r1$ finishes in under one second. Looking at the benchmark $r8$ with the most gates, the area and running time increase by $1012\%$ and $666\%$, while the wire crossings are decreased by $52\%$. Also the number of gates in the MIG is only $26\%$ from the number of gates in the AIG.
+For the MGDN the evaluated data is given in Table~\ref{tab:maj_exp}. The collected results are again divided in three column sections. The first section describing the benchmark with name, number of PIs and POs and also the number of majority gates in the network. The remaining two sections again include the metrics, number of gates, layout size, represented by the tile number in horizontal (width) and vertical direction (height), number of wire crossings, number of total wires and the running time. Since the benchmarks are given as MIGs, the number of gates differs for the logic network placed and routed with the MGDN and the AIG representation placed and routed with ortho. 
+Due to this property, the MGDN should always have to place fewer gates. As discussed in Section~\ref{sec:majgatedisnet}, because of the placement and routing of the majority gate itself and the additionally required buffer insertion, the majority gates implementation are expected to scale very badly, especially if buffers must be inserted, which is more likely to happen for bigger circuits. On the other hand, since the Majority Distribution Network does not include any wire crossings, a decrease in wire crossings is expected. Even though the number of gates decreases, the complexity of the algorithm is increased dramatically, due to the buffer insertion, leaving the expectation of an increase in running time. Therefore, the key metrics examined for this Distribution Network are the number of placed gates, layout size, number of wire crossings and running time.
 
-%
+Looking at the number of gates placed in these benchmarks, the MIG representation contains on average only $28\%$ of gates compared to their AIG representation. Though an average area increase of $865\%$ and an average running time increase of $457\%$ can be evaluated in the MGDN, making it very costly, while also having bad performance. The only positive property is the decrease of wire crossings by an average of $40\%$. Depending on a cost metric, which can compare how much area and wires the reduction of one wire crossing is worth, the real impact of this Distribution Network can be evaluated. All the named effects scale with the size of the network. In the smallest network $r1$ all effects are dampened, showing an area increase of $421\%$, wire crossing reduction of $24\%$, while the MIG contains only $31\%$ of the gates compared to the AIG network. For both algorithms the benchmark $r1$ finishes in under one second. Looking at the benchmark $r8$ with the most gates, the area and running time increase by $1012\%$ and $666\%$, while the wire crossings are decreased by $52\%$. Also the number of gates in the MIG is only $26\%$ the number of gates in the AIG.
+
+
+% Table generated by Excel2LaTeX from sheet 'Tabelle1'
 \begin{sidewaystable}[htbp]
 	\centering
-	\scalebox{0.9}{
-	\begin{tabular}{|l|l|r|r|r|r|r|r|r|r|r|r|r|r|r|r|}
+	\scalebox{0.85}{
+	\begin{tabular}{|l|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|}
 		\toprule
-		\multicolumn{4}{|c|}{Benchmark} & \multicolumn{6}{c|}{\cellcolor[rgb]{ .906,  .902,  .902}Ortho} & \multicolumn{6}{c|}{\cellcolor[rgb]{ .682,  .667,  .667}MAJ DNW} \\
+		\multicolumn{4}{|c|}{Benchmark} & \multicolumn{6}{c|}{\cellcolor[rgb]{ .906,  .902,  .902}ortho} & \multicolumn{6}{c|}{\cellcolor[rgb]{ .682,  .667,  .667}MGDN} \\
 		\midrule
-		Name  & I/O   & \multicolumn{1}{l|}{|N|} & \multicolumn{1}{l|}{|M|} & \multicolumn{1}{l|}{|G|} & \multicolumn{1}{l|}{w } & \multicolumn{1}{l|}{ h } & \multicolumn{1}{l|}{|WC|} & \multicolumn{1}{l|}{|W|} & \multicolumn{1}{l|}{t in s} & \multicolumn{1}{l|}{|G|} & \multicolumn{1}{l|}{w } & \multicolumn{1}{l|}{ h } & \multicolumn{1}{l|}{|WC|} & \multicolumn{1}{l|}{|W|} & \multicolumn{1}{l|}{t in s} \\
+		Name  & I/O   & |N|   & |M|   & |G|   & w     &  h    & |WC|  & |W|   & t in s & |G|   & w     &  h    & |WC|  & |W|   & t in s \\
 		\midrule
-		r1    & 3/2   & 10    & 5     & 84    & 29    & 64    & 92    & 709   & \multicolumn{1}{l|}{<1} & 26    & 107   & 73    & 70    & 1440  & \multicolumn{1}{l|}{<1} \\
-		r2    & 4/3   & 10    & 7     & 90    & 30    & 72    & 92    & 731   & \multicolumn{1}{l|}{<1} & 28    & 176   & 87    & 78    & 2377  & \multicolumn{1}{l|}{<1} \\
-		r3    & 6/10  & 40    & 30    & 432   & 138   & 318   & 1205  & 11838 & \multicolumn{1}{l|}{<1} & 132   & 904   & 385   & 831   & 34158 & 1,44 \\
-		r4    & 10/27 & 100   & 93    & 1321  & 390   & 980   & 8479  & 100222 & 2,42  & 350   & 3722  & 1000  & 4813  & 355351 & 12,91 \\
-		r5    & 10/50 & 200   & 190   & 2668  & 765   & 1975  & 31667 & 371272 & 14,68 & 712   & 8112  & 1978  & 16555 & 1431295 & 96,20 \\
-		r6    & 10/25 & 90    & 85    & 1204  & 361   & 890   & 6803  & 79105 & 2,01  & 310   & 2744  & 902   & 3915  & 235040 & 9,71 \\
-		r7    & 23/70 & 277   & 267   & 3799  & 1106  & 2811  & 63270 & 744287 & 22,72 & 971   & 11421 & 2801  & 32302 & 2791464 & 111,13 \\
-		r8    & 16/85 & 340   & 324   & 4638  & 1321  & 3436  & 86195 & 1050366 & 29,24 & 1189  & 13714 & 3349  & 41489 & 3943616 & 194,62 \\
-		r9    & 16/85 & 72    & 61    & 864   & 253   & 643   & 3907  & 40424 & 1,12  & 245   & 1815  & 665   & 2280  & 120456 & 6,82 \\
-		r10   & 8/21  & 88    & 83    & 1149  & 333   & 855   & 6861  & 74636 & 1,89  & 306   & 2706  & 854   & 3623  & 235136 & 9,74 \\
-		r11   & 12/46 & 149   & 140   & 2014  & 590   & 1496  & 19547 & 221230 & 5,96  & 520   & 6247  & 1544  & 9331  & 857118 & 43,59 \\
+		r1    & 3/2   & 10    & 5     & 84    & 29    & 64    & 92    & 709   & <1    & 26    & 107   & 73    & 70    & 1440  & <1 \\
+		r2    & 4/3   & 10    & 7     & 90    & 30    & 72    & 92    & 731   & <1    & 28    & 176   & 87    & 78    & 2377  & <1 \\
+		r3    & 6/10  & 40    & 30    & 432   & 138   & 318   & 1205  & 11838 & <1    & 132   & 904   & 385   & 831   & 34158 & 1.44 \\
+		r4    & 10/27 & 100   & 93    & 1321  & 390   & 980   & 8479  & 100222 & 2.42 & 350   & 3722  & 1000  & 4813  & 355351 & 12.91 \\
+		r5    & 10/50 & 200   & 190   & 2668  & 765   & 1975  & 31667 & 371272 & 14.68 & 712   & 8112  & 1978  & 16555 & 1431295 & 96.20 \\
+		r6    & 10/25 & 90    & 85    & 1204  & 361   & 890   & 6803  & 79105 & 2.01 & 310   & 2744  & 902   & 3915  & 235040 & 9.71 \\
+		r7    & 23/70 & 277   & 267   & 3799  & 1106  & 2811  & 63270 & 744287 & 22.72 & 971   & 11421 & 2801  & 32302 & 2791464 & 111.13 \\
+		r8    & 16/85 & 340   & 324   & 4638  & 1321  & 3436  & 86195 & 1050366 & 29.24 & 1189  & 13714 & 3349  & 41489 & 3943616 & 194.62 \\
+		r9    & 16/85 & 72    & 61    & 864   & 253   & 643   & 3907  & 40424 & 1.12 & 245   & 1815  & 665   & 2280  & 120456 & 6.82 \\
+		r10   & 8/21  & 88    & 83    & 1149  & 333   & 855   & 6861  & 74636 & 1.89 & 306   & 2706  & 854   & 3623  & 235136 & 9.74 \\
+		r11   & 12/46 & 149   & 140   & 2014  & 590   & 1496  & 19547 & 221230 & 5.96 & 520   & 6247  & 1544  & 9331  & 857118 & 43.59 \\
 		\bottomrule
 	\end{tabular}}%
 	\caption{I/O number of primary inputs/outputs, $|N|$ number of gates before preprocessing, $|M|$ number of majority gates, $|G|$ number of logic network nodes (gates + fan-outs), $w \times h$ aspect ratio given in tiles, $|WC|$ number wire crossings, $|W|$ number of wires, $t$ in s runtime in seconds, OOM maximum RAM reached, ---no data available}\label{tab:maj_exp}%
 \end{sidewaystable}%
 
-
 \newpage
 \subsection{Sequential Distribution Network}
 
-The SDN is the first algorithm, which is able to place sequential logic based on the theory provided in Chapter~\ref{chapter:Methodology}. This means, that in this chapter the first experiments with such an algorithm are made. Therefore, the data in Table~\ref{tab:seq_exp} only contains the evaluation results of the SDN. Again the rows hold the information for each benchmark problem, which are evaluated in the key metrics number of registers, number of gates, layout area, number of wire crossings, total number of wires and running time. As benchmarks the $itc99-poli$ library for sequential circuits is chosen. For benchmarks with more than $245$ registers the test system ran out of memory (OOM).
-The total number of wires is especially important since the implementation of registers is implemented using only wires. For combinational circuits the size of the layout and hence the number of total wires scales with the number of gates in a benchmark. For sequential circuits the number of wires also scales with the number of registers, also directly increasing the layout size and the number of wire crossings. Comparing e.g. benchmark $b04$ with $b05$, it can be seen that $b04$ has about $800$ gates less, but about $30$ registers more than $b05$, which already results in a higher wiring regarding number of wires and also wire crossings. Therefore the implementation of the SDN can be said to be really costly. The explosion in wiring costs and layout size based on the number of registers is the reason the systems gets an OOM issue.
-%
+The SDN is the first algorithm, which is able to place sequential logic based on the theory provided in Chapter~\ref{chapter:Methodology}. This means, that in this chapter the first experiments with such an algorithm are made. Therefore, the data in Table~\ref{tab:seq_exp} only contains the evaluation results of the SDN. Again, the rows hold the information for each benchmark problem, which are evaluated in the key metrics number of registers, number of gates, layout area, number of wire crossings, total number of wires and running time. As benchmarks the \textit{itc99-poli} \cite{itc_poli} library for sequential circuits is chosen. For benchmarks with more than $245$ registers the test system ran out of memory (OOM).
+The total number of wires is especially important since the implementation of registers is implemented using only wires. For combinational circuits the size of the layout and hence the number of total wires scales with the number of gates in a benchmark. For sequential circuits the number of wires also scales with the number of registers, also directly increasing the layout size and the number of wire crossings. Comparing e.g. benchmark $b04$ with $b05$, it can be seen that $b04$ has about $800$ fewer gates, but about $30$ registers more than $b05$, which already results in a higher wiring regarding the number of wires and also wire crossings. Therefore the implementation of the SDN can be said to be really costly. The explosion in wiring costs and layout size based on the number of registers is the reason the system gets an OOM issue.
+
+
+% Table generated by Excel2LaTeX from sheet 'Tabelle1'
 \begin{sidewaystable}[htbp]
 	\centering
-	\begin{tabular}{|r|l|l|r|r|r|r|r|r|l|}
+	\begin{tabular}{|r|l|r|r|r|r|r|r|r|r|}
 		\toprule
-		& Name  & I/O   & \multicolumn{1}{l|}{|R|} & \multicolumn{1}{l|}{|G|} & \multicolumn{1}{l|}{w } & \multicolumn{1}{l|}{ h } & \multicolumn{1}{l|}{|WC|} & \multicolumn{1}{l|}{|W|} & t in s \\
+		\multicolumn{1}{|r}{} & \multicolumn{1}{r}{} & \multicolumn{1}{r}{} &       & \multicolumn{1}{r}{} & \multicolumn{5}{c|}{SDN} \\
 		\midrule
-		\multicolumn{1}{|l|}{itc99-poli} & b01   & 2/2   & 5     & 127   & 72    & 107   & 226   & 2837  & <1 \\
+		& \multicolumn{1}{r|}{Name} & I/O   & |R|   & |G|   & w     &  h    & |WC|  & |W|   & t in s \\
+		\midrule
+		\multicolumn{1}{|l|}{itc99-poli \cite{itc_poli}} & b01   & 2/2   & 5     & 127   & 72    & 107   & 226   & 2837  & <1 \\
 		& b02   & 1/1   & 4     & 68    & 51    & 56    & 127   & 1214  & <1 \\
-		& b03   & 4/4   & 30    & 420   & 352   & 376   & 4421  & 47514 & \multicolumn{1}{r|}{1,01} \\
-		& b04   & 11/8  & 66    & 1866  & 1032  & 1469  & 28841 & 440650 & \multicolumn{1}{r|}{9,53} \\
-		& b05   & 1/36  & 34    & 2636  & 1004  & 1887  & 19518 & 366310 & \multicolumn{1}{r|}{15,28} \\
+		& b03   & 4/4   & 30    & 420   & 352   & 376   & 4421  & 47514 & 1.01365 \\
+		& b04   & 11/8  & 66    & 1866  & 1032  & 1469  & 28841 & 440650 & 9.527 \\
+		& b05   & 1/36  & 34    & 2636  & 1004  & 1887  & 19518 & 366310 & 15.2846 \\
 		& b06   & 2/6   & 9     & 143   & 102   & 125   & 425   & 4660  & <1 \\
-		& b07   & 1/8   & 49    & 1149  & 682   & 941   & 15163 & 196220 & \multicolumn{1}{r|}{4,67} \\
-		& b08   & 9/4   & 21    & 462   & 298   & 387   & 3428  & 39367 & \multicolumn{1}{r|}{1,34} \\
+		& b07   & 1/8   & 49    & 1149  & 682   & 941   & 15163 & 196220 & 4.66632 \\
+		& b08   & 9/4   & 21    & 462   & 298   & 387   & 3428  & 39367 & 1.34292 \\
 		& b09   & 1/1   & 28    & 426   & 341   & 365   & 4619  & 44597 & <1 \\
-		& b10   & 11/6  & 17    & 549   & 291   & 447   & 4546  & 47939 & \multicolumn{1}{r|}{1,24} \\
-		& b11   & 7/6   & 31    & 1718  & 683   & 1303  & 18781 & 261924 & \multicolumn{1}{r|}{6,28} \\
-		& b12   & 5/6   & 121   & 2854  & 1706  & 2313  & 74904 & 1195053 & \multicolumn{1}{r|}{42,36} \\
-		& b13   & 10/10 & 53    & 878   & 670   & 762   & 14746 & 174757 & \multicolumn{1}{r|}{10,04} \\
-		& b14   & 32/54 & 245   & 24900 & 8648  & 18087 & 876527 & 26976087 & \multicolumn{1}{r|}{890,07} \\
-		& b15   & 36/70 & 449   &       &       &       &       &       & OOM \\
-		& b17   & 37/97 & 1415  &       &       &       &       &       & OOM \\
+		& b10   & 11/6  & 17    & 549   & 291   & 447   & 4546  & 47939 & 1.23536 \\
+		& b11   & 7/6   & 31    & 1718  & 683   & 1303  & 18781 & 261924 & 6.27877 \\
+		& b12   & 5/6   & 121   & 2854  & 1706  & 2313  & 74904 & 1195053 & 42.3646 \\
+		& b13   & 10/10 & 53    & 878   & 670   & 762   & 14746 & 174757 & 10.0356 \\
+		& b14   & 32/54 & 245   & 24900 & 8648  & 18087 & 876527 & 26976087 & 890.069 \\
+		& b15   & 36/70 & 449   & -     & -     & -     & -     & -     & OOM \\
+		& b17   & 37/97 & 1415  & -     & -     & -     & -     & -     & OOM \\
 		\bottomrule
 	\end{tabular}%
-	\caption{I/O number of primary inputs/outputs, $|R|$ number of registers (D-flipflops), $|G|$ number of logic network nodes (gates + fan-outs), $w \times h$ aspect ratio given in tiles, $t$ in s runtime in seconds, OOM maximum RAM reached, ---no data available}\label{tab:seq_exp}%
+		\caption{I/O number of primary inputs/outputs, $|R|$ number of registers (D-flipflops), $|G|$ number of logic network nodes (gates + fan-outs), $w \times h$ aspect ratio given in tiles, $t$ in s runtime in seconds, OOM maximum RAM reached, ---no data available}\label{tab:seq_exp}%
 \end{sidewaystable}%
+
 
 
 

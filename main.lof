@@ -153,7 +153,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4.11}{\ignorespaces Scheme of a sequential circuit layout after placement and routing\relax }}{55}{figure.caption.47}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.12}{\ignorespaces QCA RAM cell designed as 2:1 mux with a SDN\relax }}{57}{figure.caption.48}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces QCA RAM cell designed using 2:1 MUX with a SDN\relax }}{57}{figure.caption.48}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

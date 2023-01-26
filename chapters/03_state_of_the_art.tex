@@ -280,7 +280,7 @@ In the following the pseudo code of ortho, derived from~\cite{ortho} is depicted
 
 \algnewcommand\algorithmicforeach{\textbf{for each}}
 \algdef{S}[FOR]{ForEach}[1]{\algorithmicforeach\ #1\ \algorithmicdo}
-\begin{algorithm}[H]
+\begin{algorithm}[t!]
 	\hspace*{\algorithmicindent} \textbf{Input:} Logic network $N$ \\
 	\hspace*{\algorithmicindent} \textbf{Input:} Clock number $clk$\\
 	\hspace*{\algorithmicindent} \textbf{Output:} Gate level layout $L$
@@ -342,7 +342,8 @@ In recent literature, several attempts have been made to implement latches and f
 
 While some works propose more advanced sequential circuits, such as dual edge-triggered D-FFs~\cite{dual_edge_triggered_FF_cell} and reversible latches~\cite{sequential_reversible_cell}, they still rely on cell-based clocking, which was found to be insufficient in Section~\ref{subsec:clocking}. The USE clocking scheme~\cite{USE} has been proposed as an evolution towards sequential tile-based placement and routing, but leads to worse layouts compared to 2DD-Wave for most combinational benchmark problems~\cite{walter2018exact}. Other works, such as~\cite{sequential_reversible_tile} and~\cite{sequential_tile_CMOS_alg}, proposed different latches and sequential element implementation algorithms using the USE scheme. However, these approaches all share the drawback of translating sequential logic directly from the CMOS domain.
 
-As previously discussed in this work, wire segments are proposed as storage elements as suggested in~\cite{Walter}. However, the authors do not present any circuits or placement and routing algorithms utilizing these elements. In this work, storage elements are examined in the context of placement and routing, and the natural delay arising from routing is utilized to construct storage elements. This approach eliminates the need for custom clocking, which is currently necessary to achieve sequentiality.
+As previously discussed in this work, wire segments are proposed as storage elements as suggested in~\cite{torres2018synchronization}. But, it has to be mentioned that in~\cite{torres2018synchronization} the D-FF is introduced as synchronization element (SE). The SE is used to build delays on certain positions or tiles of the layout in order to obey the synchronization constraints. In this work, storage elements should be used for implementing sequential circuits. Therefore, the basic idea of this approach can be used, but is modified. Also, storage elements are examined in the context of placement and routing, and the natural delay arising from routing is utilized to construct these storage elements. This approach eliminates the need for custom clocking, which is currently necessary to build storage elements.
+
 
 \subsection{QCA storage cells (QCA RAM)}\label{subsec:RAM_SoA}
 Another area of research in QCA technology focuses on the implementation of random access memory (RAM) cells. While this work primarily focuses on a placement and routing algorithm for sequential logic, the implementation of QCA storage can also be adapted. The current state of the art can be divided into two approaches for implementing RAM in QCA.

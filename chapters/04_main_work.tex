@@ -36,9 +36,9 @@ In this section, we discuss the ordering of PIs in our design. Considering an AN
 \begin{figure}
 	\centering
 	\begin{tikzpicture}[node distance={2cm and 2cm}, thick, scale=1, main/.style = {draw, circle}] 
-		\node[main, color=red] (3) at (0,0) [label=west:$v_3$]{$I_3$}; 
+		\node[main, color=red] (3) at (0,0) [label=west:$v_2$]{$I_2$}; 
 		\node[main, color=red] (1) at (0,-2)[label=west:$v_1$] {$I_1$};
-		\node[main, color=red] (2) at (0,-4)[label=west:$v_2$] {$I_2$};
+		\node[main, color=red] (2) at (0,-4)[label=west:$v_3$] {$I_3$};
 		
 		\node[main, color=red] (4) at (2,-2)[label=north:$v_4$]{$F$}; 
 		
@@ -103,9 +103,9 @@ To enable the use of the input area, additionally a new rule for edges colored $
 \begin{figure}
 	\centering
 	\begin{tikzpicture}[node distance={2cm and 2cm}, thick, scale=1, main/.style = {draw, circle}] 
-	\node[main] (3) at (0,0) [label=west:$v_3$]{$I_3$}; 
+	\node[main] (3) at (0,0) [label=west:$v_2$]{$I_2$}; 
 	\node[main] (1) at (0,-2)[label=west:$v_1$] {$I_1$};
-	\node[main] (2) at (0,-4)[label=west:$v_2$] {$I_2$};
+	\node[main] (2) at (0,-4)[label=west:$v_3$] {$I_3$};
 	
 	\node[main] (4) at (2,-2)[label=north:$v_4$]{$F$}; 
 	
@@ -166,7 +166,7 @@ To further reduce the number of inverters in the logic network and prevent exces
 
 Looking again at Figure~\ref{subfig:input_network_mux_21}, the placement and routing of the ortho algorithm after implementing the proposed ODN can be seen. The ordering of the inputs first places the fan-out node and then the two connected PIs. Since the inverter is part of the ODN it gets colored $east$ and allows the AND gates connected to the PIs to be colored $south$ and the new rule for placement and routing can be applied. The last OR gate is not part of the ODN and is therefore placed by the default rules of the ortho algorithm. In comparison to the layout in Figure~\ref{subfig:ortho_mux_21}, it can be quickly seen that the resulting layout saves up area and even wire crossings. The detailed results are presented and analyzed in the next chapter.
 
-\begin{algorithm}[H]
+\begin{algorithm}[t!]
 	\vdots
 	
 	\begin{algorithmic}
@@ -176,18 +176,18 @@ Looking again at Figure~\ref{subfig:input_network_mux_21}, the placement and rou
 		\State Generate \textbf{conditional} direction assignment $d : \Delta \rightarrow \{east, south\}$ and subdivide signals if necessary
 		\State Compute topological ordering $v_1, . . . , v_i \in N$
 		\State Extend $L$ by one column and reserve it for PIs
-		\ForAll {vertex $v_1, ..., v_i \in N $ with at most two incoming signals $\sigma_1, \sigma_2$}
+		\ForEach {vertex $v_1, ..., v_i \in N $ with at most two incoming signals $\sigma_1, \sigma_2$}
 		\If{vertex $v$ is terminal/PI}
 		\State Extend $L$ by one row
-		\State Place v at position $(0, h - 1)$
+		\State Place $v$ at position $(0, h - 1)$
 		\ElsIf{$d(\sigma_1) = d(\sigma_2) = east$}
 		\State \vdots
 		\ElsIf { signals are labeled $south$}
 		\If{\textbf{not} root node exists}
 		\State Extend $L$ by one row
 		\EndIf
-		\State $w_p \leftarrow$ max. horizontal position of v's predecessors
-		\State Place v at position $(w _p, h - 1)$
+		\State $w_p \leftarrow$ max. horizontal position of $v$'s predecessors
+		\State Place $v$ at position $(w _p, h - 1)$
 		\EndIf
 		
 		\EndFor
@@ -385,32 +385,31 @@ The placement and routing using the proposed DN results in a delay of one clock 
 	\caption{Buffer in $east$ direction with respective clocking}\label{fig:QCA_buf}
 \end{figure}
 
-Figure~\ref{fig:QCA_buf} depicts a buffer in the $east$ direction, which can also be used in the $south$ direction by just rotating it by $90$ degrees. The snake-shaped structure delays a signal by exactly one clock cycle, but can be extended for any number of clock cycles. This structure is also used in custom placement and routing resulting from the QCA ONE library~\cite{QCA_scl}. As in the MGDN, the buffers support irregular clocking, creating zones through which the algorithm cannot wire. In the case of buffers only one column or row is made impassable, introducing a rewiring for conflicts. Algorithm~\ref{alg:majority_network} shows the code snippets which are changed and added to ortho in order to allow the placement and routing of MGDNs. Figure~\ref{fig:majority_with_buf} shows the placement of a majority gate inside the input DN and one AND gate that needs the incoming signal from the PI to be delayed in order to match the delay of the connected MGDN. The insertion of the buffer happens in $south$ direction, while one column is held free in order to resolve any upcoming conflict. From this layout, it can already be seen that the implementation of the MGDN brings several complications with it, all resulting in area overhead, which stands in contrast to the area which should be saved by introducing majority gates in the first place.
+Figure~\ref{fig:QCA_buf} depicts a buffer in the $east$ direction, which can also be used in the $south$ direction by just rotating it by $90$ degrees. The snake-shaped structure delays a signal by exactly one clock cycle, but can be extended for any number of clock cycles. This structure is also used in custom placement and routing resulting from the QCA ONE library~\cite{QCA_scl}. As in the MGDN, the buffers support irregular clocking, creating zones through which the algorithm cannot wire. In the case of buffers only one column or row is made impassable, introducing a rewiring for conflicts. Algorithm~\ref{alg:majority_network} shows the code snippets which are changed and added to ortho in order to allow the placement and routing of MGDNs. Figure~\ref{fig:majority_with_buf} shows the placement of a majority gate and one AND gate that needs the incoming signal from the PI to be delayed in order to match the delay of the connected MGDN. The insertion of the buffer happens in $south$ direction, while one column is held free in order to resolve any upcoming conflict. The MGDN and its corresponding PIs are marked orange, while the delayed PI and the corresponding buffer are marked green. From this layout, it can already be seen that the implementation of the MGDN brings several complications with it, all resulting in area overhead, which stands in contrast to the area which should be saved by introducing majority gates in the first place.
 
-\begin{algorithm}[H]
+\begin{algorithm}[t!]
 	\vdots
 	
 	\begin{algorithmic}
 		\State Convert $N$ to a 3-graph by substitution and balance inverters at fan-out nodes, except for majority gates
-		\State Compute the delay as majority buffer insertion $buf_{maj}$ for every node and assign it to the incoming signals $\sigma$
+		\State Compute the delay as majority buffer insertion $\mathit{buf_{maj}}$ for every node and assign it to the incoming signals $\sigma$
 		\State Order PI nodes
-		\State Create vectors with from the majority buffers blocked columns $bl_c$ and rows $bl_r$
 		\State \vdots
-		\ForAll {vertex $v_1, ..., v_i \in N $ with at most three incoming signals $\sigma_1, \sigma_2, \sigma_3$}
+		\ForEach {vertex $v_1, ..., v_i \in N $ with at most three incoming signals $\sigma_1, \sigma_2, \sigma_3$}
 		\State Rewire incoming signals which are wired on $bl_c$ or $bl_r$
 		\State \vdots
 		\If{vertex $v$ has fanin of three (is a majority gate)}
 		\If{$d(\sigma_1) = d(\sigma_2) = d(\sigma_3) = south$}
 		\State{Extend $L$ by one row and wire the incoming signal to $(w_p, h-1)$ for every incoming signal}
 		\EndIf
-		\State Insert majority buffers according to the delay computed in $buf_{maj}$ and safe blocked columns $bl_c$ and rows $bl_r$
+		\State Insert majority buffers according to the delay computed in $\mathit{buf_{maj}}$ and safe blocked columns $bl_c$ and rows $bl_r$
 		\State Extend the layout by number of rows $(7)$ and columns $(5)$ of the MGDN and place the DN at $(w-5, h-7)$
 		\State Connect incoming signals west to the inputs of the DN
 		\ElsIf{$d(\sigma_1) = d(\sigma_2) = east$}
-		\State Insert majority buffers according to the delay computed in $buf_{maj}$ and safe blocked rows $bl_r$
+		\State Insert majority buffers according to the delay computed in $\mathit{buf_{maj}}$ and safe blocked rows $bl_r$
 		\State \vdots
 		\ElsIf { signals are labeled $south$}
-		\State Insert majority buffers according to the delay computed in $buf_{maj}$ and safe blocked columns $bl_c$
+		\State Insert majority buffers according to the delay computed in $\mathit{buf_{maj}}$ and safe blocked columns $bl_c$
 		\State \vdots
 		\EndIf
 		
@@ -423,16 +422,16 @@ Figure~\ref{fig:QCA_buf} depicts a buffer in the $east$ direction, which can als
 
 \begin{figure}
 	\centering
-	\includegraphics[scale=0.65]{maj_example}
+	\includegraphics[scale=0.65]{maj_example_marked}
 	\caption{Placement and routing of a majority gate in conjunction with a delayed PI}\label{fig:majority_with_buf}
 \end{figure}
 
 
 \section{Sequential Distribution Network (SDN)}
-In this section, a DN that enables ortho automatic design of sequential circuits is presented. To the authors' knowledge, there is currently no solution for automatically placing and routing sequential circuits in QCA. The existing algorithms for handling sequentiality in QCA, discussed in Chapter~\ref{chapter:SotA}, simply translate CMOS structures into QCA and rely on an additional external clock signal, which is considered unnatural in the context of QCA's inherent clocking paradigm. The proposed placement and routing method utilizes the concept of signal-delaying wires from~\cite{Walter}, and builds upon it to enable automatic placement and routing.
+In this section, a DN that enables ortho automatic design of sequential circuits is presented. To the authors' knowledge, there is currently no solution for automatically placing and routing sequential circuits in QCA. The existing algorithms for handling sequentiality in QCA, discussed in Chapter~\ref{chapter:SotA}, simply translate CMOS structures into QCA and rely on an additional external clock signal, which is considered unnatural in the context of QCA's inherent clocking paradigm. The proposed placement and routing method utilizes the concept of signal-delaying wires from~\cite{torres2018synchronization}, and builds upon it to enable automatic placement and routing.
 
 \subsection{Placement and Routing}
-Before delving into the algorithm, it is important to first discuss the concept of a FF wire in the context of placement and routing, rather than just considering it as a standalone element. The proposed FF implementation in QCA requires more complex clock generators for each FF, and it is uncertain if this is possible to implement. From the basic architecture of sequential circuits, we can see that a sequential circuit includes a combinational logic block and a storage element, which is formed by a FF wire in QCA. However, in contrast to CMOS, where the information can be arbitrarily wired back from the storage to the inputs of the combinational logic, in QCA, wiring back implies the placement of wire segments, each of which delays the information by one clocking zone, acting as a partial FF. When a signal is wired through four adjacent wire gates, a basic FF is formed, since the information is delayed by four clock zones, equivalent to one clock cycle. This delay is the purpose of a clocking element, and the reason why the clocking for the wire FF is customized. The proposed idea in this work is to use the natural delay that occurs due to sequential wiring to mimic storage elements, reducing the need for customized clocking and allowing wire segments to be summarized as FFs.
+Before delving into the algorithm, it is important to first discuss the concept of a storage element in the context of placement and routing, rather than just considering it as a standalone element. From the basic architecture of sequential circuits, we can see that a sequential circuit includes a combinational logic block and a storage element. When translating this directly to QCA, the combinational circuit can be placed as per usual and he storage element can be implemented using a synchronization element(SE). The synchronization element would then stall the signal until new information is entered into the circuit. This has two major drawbacks. FIrst, the proposed SEs implementation in QCA requires more complex clock generators, and it is uncertain if this is possible to implement. Secondly, in contrast to CMOS, where the information can be arbitrarily wired back from the storage to the inputs of the combinational logic, in QCA, wiring back implies the placement of wire segments, each of which delays the information by one clocking zone, acting as a partial FF. When a signal is wired through four adjacent wire gates, a basic FF is formed, since the information is delayed by four clock zones, equivalent to one clock cycle. This delay is the purpose of a clocking element, and the reason why the clocking for the SE is customized. The proposed idea in this work is to use the natural delay that occurs due to sequential wiring to mimic storage elements, reducing the need for customized clocking and allowing wire segments to be summarized as FFs.
 
 \begin{figure}
 	\centering
@@ -461,21 +460,19 @@ Before delving into the algorithm, it is important to first discuss the concept 
 	\caption{Scheme of a sequential circuit layout after placement and routing} \label{fig:sequential_gate_sample}
 \end{figure}
 
-Considering the placement and routing of sequential circuits, not only a DN has to be designed but also the logic network has to be expanded regarding to storage elements. They are represented in the logic network by registers with its corresponding input, determining the value, which has to be stored, and its output, which gives the register value to the combinational logic again after delaying it to the next \textit{circuit clocking cycle}. A circuit clocking cycle refers to one cycle of Bennett clocking that has propagated through the circuit completely. The registers are implemented into the logic network as follows. Register inputs (RIs) are treated similar to POs, therefore they are dangling edges, which point to no node but additionally have a RO (RO) assigned. ROs are treated similarly to PIs, being terminal vertices, but always feeding in the data which were given to the corresponding RI in the last circuit clocking cycle. Therefore, the logic network extends to $N = (\Lambda, I, RO, \Sigma, O, RI)$. Here it has to be mentioned that for the input DN due to their similarity ROs can be treated just like PIs, enabling the combination with the SDN.
+Considering the placement and routing of sequential circuits, not only a DN has to be designed but also the logic network has to be expanded regarding storage elements. They are represented in the logic network by registers with their corresponding register input (RI), determining the value, which has to be stored, and its register output (RO), which gives the register value to the combinational logic again, synchronized with the information entered at the PIs. This has to be considered within the clocking of the whole circuit. The registers are implemented into the logic network as follows. RIs are treated similar to POs, therefore they are dangling edges, which point to no node but additionally have a RO assigned. ROs are treated similarly to PIs, being terminal vertices, but always feeding in the data which were given to the corresponding RI, computed from the last inputs of the circuit. Therefore, the logic network extends to $N = (\Lambda, I, RO, \Sigma, O, RI)$.
 
-Also, for placement and routing, the similarities between PIs/ROs and POs/RIs can be exploited. The schematic layout resulting from the described algorithm is shown in Figure~\ref{fig:sequential_gate_sample}. When the first part of ortho is performed, first the combinational logic part is placed and routed, treating ROs like PIs and RIs like POs, wiht the only difference, that PIs and PO are wired to the borders. From this stage, a routing from the RIs to the ROs has to be found, which retains the local and global synchronization constraint. Because every RI has exactly one RO assigned, first of all, the RIs are rewired and sorted in the same order as the ROs. The ordering follows in a way that all RIs are put on a diagonal, and since to this point every gate is clocked uniformly with 2DDWave, the signals are all synchronized. With this starting position, now wires with the same length have to be found between every RI and output. Since the wires now also have to go in western and northern directions in order to close the loop between the ROs in the upper left corner and the RIs in the down-right corner of the layout, the wiring is not arbitrary. Another big issue is that the clocking cannot be chosen independently for each back-loop because the loops cross each other. Also the global timing constraint has to be viewed again. Considering a PI in a completely combinational circuit being placed in the fifth row of the layout. In this case the PI is set in a different \textit{time zone}, because its signal is globally delayed by one clock cycle. Until now the assumption was made, that an input network can be used to delay the PI by one clocking cycle to achieve again global synchronization. When an RO is placed in a different time zone, this also has to be respected by the wiring of the registers. As already mentioned, the registers do not delay the information by only one clocking cycle but by multiple clocking slowing down the performance of the circuit drastically. This huge delay is due to the fact that ortho lays the combinational logic only in the south-eastern direction, always increasing the distance between PIs/ROs and POs/RIs. Therefore the sequential signal DN always grows with the size of the combinational logic.
+Also, for placement and routing, the similarities between PIs/ROs and POs/RIs can be exploited. The schematic layout resulting from the described algorithm is shown in Figure~\ref{fig:sequential_gate_sample}. When first the combinational logic part is placed and routed, treating ROs like PIs and RIs like POs, with the only difference, that PIs and PO are wired to the borders. From this stage, a routing from the RIs to the ROs has to be found, which retains the local and global synchronization constraint. Because every RI has exactly one RO assigned, first of all, the RIs are rewired and sorted in the same order as the ROs. The ordering follows in a way that all RIs are put on a diagonal, and since to this point every gate is clocked uniformly with 2DDWave, the signals are all synchronized. With this starting position, now wires with the same length have to be found between every RI and RO. Since the wires now also have to go in western and northern directions in order to close the loop between the ROs in the upper left corner and the RIs in the down-right corner of the layout, the wiring is not arbitrary. Another big issue is that the clocking cannot be chosen independently for each back-loop because the loops cross each other. Also, the global synchronization constraint has to be viewed again. Considering a PI in a completely combinational circuit being placed in the fifth row of the layout. In this case, the PI is set in a different clock cycle, because its signal is globally delayed by one clock cycle. Until now the assumption was made, that an input network can be used to delay the PI by one clocking cycle to achieve again global synchronization. When an RO is placed in a different clock cycle, this also has to be respected by the wiring of the registers. As already mentioned, the registers do not delay the information by only one clock cycle, but by multiple clock cycles, slowing down the performance of the circuit drastically. This huge delay is due to the fact that ortho lays the combinational logic only in the south-eastern direction, always increasing the distance between PIs/ROs and POs/RIs. Therefore, the SDN always grows with the size of the combinational logic. Figure~\ref{fig:sequential_gate_sample} shows, that if the combinational logic grows, also the distance between the RIs and ROs grows, and therefore, the throughput of the circuit is deteriorated.
 
-For further research, maybe a folding operation can be found for the ortho algorithm so that the distance between RIs and ROs can be decreased, and therefore, the delay produced by the SDN can be decreased as well.
-
-\begin{algorithm}[H]
+\begin{algorithm}[t!]
 	\vdots
 	
 	\begin{algorithmic}
 		\If{vertex $v$ is PI}
 		{
 			\State Extend $L$ by one row
-			\State Place v at position $(0, h - 1)$
-			\State Wire the PI to position $(num_{reg}*2, h - 1)$ 
+			\State Place $v$ at position $(0, h - 1)$
+			\State Wire the PI to position $(num_{reg}\cdot2, h - 1)$ 
 			\If{vertex $v$ is colored $south$}
 			\State Extend $L$ by one column
 			\State Wire the PI to position $(w - 1, h - 1)$ 
@@ -484,7 +481,7 @@ For further research, maybe a folding operation can be found for the ortho algor
 		\ElsIf{vertex $v$ is RO}
 		{
 			\State Extend $L$ by one row
-			\State Place v at position $(num_{reg}*2, h - 1)$
+			\State Place $v$ at position $(num_{reg}\cdot2, h - 1)$
 			\If{vertex $v$ is colored $south$}
 			\State Extend $L$ by one column
 			\State Wire the PI to position $(w - 1, h - 1)$ 
@@ -493,7 +490,7 @@ For further research, maybe a folding operation can be found for the ortho algor
 		\State\vdots
 		\EndIf
 		\State Connect the primary outputs to the respective borders
-		\State Connect the RIs to the respective borders and connect the RIs to the ROs
+		\State Connect the RIs to the respective borders and connect the RIs to the ROs\\
 		\Return $L$
 		
 		
@@ -501,8 +498,12 @@ For further research, maybe a folding operation can be found for the ortho algor
 	\caption{Ortho changes with SDN}\label{alg:seq_network}
 \end{algorithm}
 
+For further research, maybe a folding operation can be found for the ortho algorithm
+so that the distance between RIs and ROs can be decreased, and therefore, the delay
+produced by the SDN can be decreased as well.
+
 \subsection{RAM cell}
-As previously discussed in Section~\ref{subsec:RAM_SoA}, a RAM cell can be implemented using wire delays to temporarily store data. Figure~\ref{fig:QCA_RAM} illustrates a RAM cell, including its WL, BL, and register components. The cell comprises of two main components: a 2:1 MUX and a register. The register transfers data from the output to one of the inputs of the MUX, which then determines whether new data should be written to the cell or if the existing data should be retained. It is worth noting that the depicted RAM cell was designed manually, however, the proposed SDN is also able to layout a RAM cell, but with the drawback of increased layout area and slower operation.
+As previously discussed in Section~\ref{subsec:RAM_SoA}, a RAM cell can be implemented using wire delays to temporarily store data. Figure~\ref{fig:QCA_RAM} illustrates a RAM cell, including its WL, BL, and register components. The cell comprises of two main components: (1) a 2:1 MUX and (2) a register (marked turquoise). The register transfers data from the output to one of the inputs of the MUX, which then determines whether new data should be written to the cell or if the existing data should be retained. It is worth noting that the depicted RAM cell was designed manually, however, the proposed SDN is also able to layout a RAM cell, but with the drawback of increased layout area and slower operation.
 
 \begin{figure}
 	\centering
@@ -521,5 +522,5 @@ As previously discussed in Section~\ref{subsec:RAM_SoA}, a RAM cell can be imple
 %		\end{tabular}%
 %		\label{subfig:QCA_RAM_tt}
 %	}
-	\caption{QCA RAM cell designed as 2:1 mux with a SDN}\label{fig:QCA_RAM}
+	\caption{QCA RAM cell designed using 2:1 MUX with a SDN}\label{fig:QCA_RAM}
 \end{figure}
